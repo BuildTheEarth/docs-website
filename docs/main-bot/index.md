@@ -22,7 +22,6 @@ title: lol
 [![nps friendly](https://img.shields.io/badge/nps-friendly-blue.svg?style=flat)](https://www.npmjs.com/package/nps) 
 
 </div>
-<!-- markdownlint-restore -->
 
 * [BuildTheEarth](#BuildTheEarth)
 * [Bot](#Bot)
@@ -63,11 +62,6 @@ This project originated as a complete rewrite of our servers old bot, an extensi
 
 ### Contributors
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-
-<!-- prettier-ignore-start -->
-
-<!-- markdownlint-disable -->
 
 <table>
   <tr>
@@ -86,11 +80,6 @@ This project originated as a complete rewrite of our servers old bot, an extensi
   </tr>
 </table>
 
-<!-- markdownlint-restore -->
-
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [All Contributors](https://allcontributors.org) specification. Contributions of any kind are welcome!
 
@@ -121,5 +110,3 @@ To follow all of the changes made to the bot since its first release, check the 
 ## License
 
 This bot is licensed under the [MIT License](license).
-
-<!-- References -->

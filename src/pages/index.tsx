@@ -9,6 +9,18 @@ import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  //@ts-ignore
+  if (window.netlifyIdentity) {
+    //@ts-ignore
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        //@ts-ignore
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
