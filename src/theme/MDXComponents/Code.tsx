@@ -1,5 +1,6 @@
 import React, { isValidElement } from "react";
 
+import { Code } from "@mantine/core";
 import CodeBlock from "@theme/CodeBlock";
 
 export default function MDXCode(props) {
@@ -41,5 +42,9 @@ export default function MDXCode(props) {
       (typeof el === "string" && !el.includes("\n")) ||
       (isValidElement(el) && inlineElements.includes(el.props?.mdxType))
   );
-  return shouldBeInline ? <code {...props} /> : <CodeBlock {...props} />;
+  return shouldBeInline ? (
+    <Code>{props.children}</Code>
+  ) : (
+    <CodeBlock {...props} />
+  );
 }
