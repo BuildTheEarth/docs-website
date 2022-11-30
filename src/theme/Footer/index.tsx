@@ -6,7 +6,13 @@ function Footer() {
   if (!footer) {
     return null;
   }
+  var items = [];
+
   const { copyright, links, logo, style } = footer;
-  return <CFooter links={[]} />;
+  links.forEach((link) => {
+    link.items.forEach((i) => items.push({ label: i.label, link: i.to }));
+  });
+  console.log(copyright, links, logo, style);
+  return <CFooter links={items} />;
 }
 export default React.memo(Footer);

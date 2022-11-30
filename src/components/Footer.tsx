@@ -38,7 +38,13 @@ interface FooterSimpleProps {
 export default function Footer({ links, style }: FooterSimpleProps) {
   const { classes } = useStyles();
   const items = links.map((link) => (
-    <Anchor<"a"> color="dimmed" key={link.label} href={link.link} size="sm">
+    <Anchor<"a">
+      color="dimmed"
+      key={link.label}
+      href={link.link}
+      size="sm"
+      variant="text"
+    >
       {link.label}
     </Anchor>
   ));
@@ -47,8 +53,8 @@ export default function Footer({ links, style }: FooterSimpleProps) {
     <div className={classes.footer} style={style}>
       <Container className={classes.inner} size={"xl"}>
         <Anchor<"a"> style={{ fontSize: "14px" }} color="#666" variant="text">
-          Copyright &copy; {new Date().getFullYear()} BuildTheEarth. All rights
-          reserved.
+          Copyright &copy; {new Date().getFullYear()} BuildTheEarth. Built with
+          Docusaurus.
         </Anchor>
         <Group className={classes.links}>{items}</Group>
       </Container>

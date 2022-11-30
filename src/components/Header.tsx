@@ -59,8 +59,6 @@ const useStyles = createStyles((theme) => ({
     width: "100%",
     display: "flex",
     alignItems: "center",
-    paddingLeft: "24px",
-    paddingRight: "24px",
     justifyContent: "space-between",
     height: "100%",
   },
@@ -186,6 +184,7 @@ const Header = ({ links, className }: HeaderProps) => {
   const items = links.map((link) => (
     <a
       key={link.label}
+      id={link.label}
       className={cx(classes.link)}
       onClick={() => {
         window.location.href = link.link;
