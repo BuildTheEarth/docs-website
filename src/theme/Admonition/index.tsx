@@ -128,7 +128,7 @@ export default function Admonition(props) {
   const { iconComponent } = typeConfig;
   const icon = iconProp ?? iconComponent;
   return (
-    <Alert icon={icon} title={title} color={typeConfig.color} mt="md">
+    <Alert icon={icon} title={title} color={typeConfig.color} mb="md">
       {children}
     </Alert>
   );

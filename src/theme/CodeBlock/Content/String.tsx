@@ -34,5 +34,9 @@ export default function CodeBlockString({
   // We still parse the metastring in case we want to support more syntax in the
   // future. Note that MDX doesn't strip quotes when parsing metastring:
   // "title=\"xyz\"" => title: "\"xyz\""
-  return <Prism language={language}>{children}</Prism>;
+  return (
+    <Prism language={language} mb="md">
+      {children}
+    </Prism>
+  );
 }
