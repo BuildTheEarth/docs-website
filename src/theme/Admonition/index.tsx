@@ -15,62 +15,27 @@ import clsx from "clsx";
 const AdmonitionConfigs = {
   note: {
     iconComponent: <IconInfoCircle size={16} />,
-    label: (
-      <Translate
-        id="theme.admonition.note"
-        description="The default label used for the Note admonition (:::note)"
-      >
-        note
-      </Translate>
-    ),
+    label: "Note",
     color: "gray",
   },
   tip: {
     iconComponent: <IconBulb size={16} />,
-    label: (
-      <Translate
-        id="theme.admonition.tip"
-        description="The default label used for the Tip admonition (:::tip)"
-      >
-        tip
-      </Translate>
-    ),
+    label: "Tip",
     color: "green",
   },
   danger: {
     iconComponent: <IconFlame size={16} />,
-    label: (
-      <Translate
-        id="theme.admonition.danger"
-        description="The default label used for the Danger admonition (:::danger)"
-      >
-        danger
-      </Translate>
-    ),
+    label: "Danger",
     color: "red",
   },
   info: {
     iconComponent: <IconInfoCircle size={16} />,
-    label: (
-      <Translate
-        id="theme.admonition.info"
-        description="The default label used for the Info admonition (:::info)"
-      >
-        info
-      </Translate>
-    ),
+    label: "Info",
     color: "blue",
   },
   caution: {
     iconComponent: <IconAlertTriangle size={16} />,
-    label: (
-      <Translate
-        id="theme.admonition.caution"
-        description="The default label used for the Caution admonition (:::caution)"
-      >
-        caution
-      </Translate>
-    ),
+    label: "Caution",
     color: "orange",
   },
 };
@@ -124,11 +89,12 @@ export default function Admonition(props) {
     icon: iconProp,
   } = processAdmonitionProps(props);
   const typeConfig = getAdmonitionConfig(type);
-  const titleLabel = title ?? typeConfig.label;
+  const titleLabel = title || typeConfig.label;
+  console.log(titleLabel);
   const { iconComponent } = typeConfig;
   const icon = iconProp ?? iconComponent;
   return (
-    <Alert icon={icon} title={title} color={typeConfig.color} mb="md">
+    <Alert icon={icon} title={titleLabel} color={typeConfig.color} mb="md">
       {children}
     </Alert>
   );
