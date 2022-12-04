@@ -1,4 +1,13 @@
-import { Anchor, Container, Group, Menu, createStyles } from "@mantine/core";
+import {
+  ActionIcon,
+  Anchor,
+  Container,
+  Group,
+  Menu,
+  createStyles,
+  useMantineColorScheme,
+} from "@mantine/core";
+import { IconMoonStars, IconSun } from "@tabler/icons";
 
 import React from "react";
 
@@ -36,6 +45,7 @@ interface FooterSimpleProps {
 }
 
 export default function Footer({ links, style }: FooterSimpleProps) {
+  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const { classes } = useStyles();
   const items = links.map((link) => (
     <Anchor<"a">
@@ -55,7 +65,20 @@ export default function Footer({ links, style }: FooterSimpleProps) {
         <Anchor<"a"> style={{ fontSize: "14px" }} color="#666" variant="text">
           Copyright &copy; {new Date().getFullYear()} BuildTheEarth Community.
         </Anchor>
-        <Group className={classes.links}>{items}</Group>
+        <Group className={classes.links}>
+          {items}
+          <ActionIcon
+            variant="transparent"
+            onClick={() => toggleColorScheme()}
+            title="Toggle color scheme"
+          >
+            {colorScheme == "dark" ? (
+              <IconSun size={18} />
+            ) : (
+              <IconMoonStars size={18} />
+            )}
+          </ActionIcon>
+        </Group>
       </Container>
     </div>
   );

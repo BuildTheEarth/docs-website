@@ -3,7 +3,7 @@ import {
   ColorSchemeProvider,
   MantineProvider,
 } from "@mantine/core";
-import { useColorScheme, useLocalStorage } from "@mantine/hooks";
+import { useColorScheme, useHotkeys, useLocalStorage } from "@mantine/hooks";
 
 import React from "react";
 
@@ -17,6 +17,7 @@ export default function Root({ children }) {
   const toggleColorScheme = (value?: ColorScheme) =>
     setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
 
+  useHotkeys([["mod+J", () => toggleColorScheme()]]);
   return (
     <ColorSchemeProvider
       colorScheme={colorScheme}
