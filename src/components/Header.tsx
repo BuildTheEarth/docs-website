@@ -32,6 +32,7 @@ import React, { CSSProperties, useEffect, useState } from "react";
 import { useClickOutside, useDisclosure, useInterval } from "@mantine/hooks";
 
 import clsx from "clsx";
+import { IconSun, IconMoonStars } from '@tabler/icons'
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -179,6 +180,7 @@ const Header = ({ links, className }: HeaderProps) => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const { classes, cx } = useStyles();
   const theme = useMantineTheme();
+  const dark = colorScheme === 'dark';
   const mobilePaperRef = useClickOutside(() => handler.close());
 
   const items = links.map((link) => (
@@ -231,6 +233,14 @@ const Header = ({ links, className }: HeaderProps) => {
             </Paper>
           )}
         </Transition>
+        <ActionIcon
+          variant="outline"
+          color={dark ? 'yellow' : 'blue'}
+          onClick={() => toggleColorScheme()}
+          title="Toggle color scheme"
+        >
+          {dark ? <IconSun size={18} /> : <IconMoonStars size={18} />}
+        </ActionIcon>
       </Container>
     </MantineHeader>
   );

@@ -53,8 +53,7 @@ export default function Footer({ links, style }: FooterSimpleProps) {
     <div className={classes.footer} style={style}>
       <Container className={classes.inner} size={"xl"}>
         <Anchor<"a"> style={{ fontSize: "14px" }} color="#666" variant="text">
-          Copyright &copy; {new Date().getFullYear()} BuildTheEarth. Built with
-          Docusaurus.
+          Copyright &copy; {new Date().getFullYear()} BuildTheEarth Community.
         </Anchor>
         <Group className={classes.links}>{items}</Group>
       </Container>

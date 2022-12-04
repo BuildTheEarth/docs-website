@@ -8,7 +8,7 @@ import { useColorScheme, useLocalStorage } from "@mantine/hooks";
 import React from "react";
 
 export default function Root({ children }) {
-  const preferredColorScheme = useColorScheme();
+  const preferredColorScheme = useColorScheme("dark");
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
     key: "scheme",
     defaultValue: preferredColorScheme,

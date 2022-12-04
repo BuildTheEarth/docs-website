@@ -3,6 +3,7 @@ import Link from "@docusaurus/Link";
 import React from "react";
 import clsx from "clsx";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Header from "../components/Header";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -18,7 +19,7 @@ function HomepageHeader() {
       }
     });
   }
-  return (
+  return (<>
     <header className={clsx("hero hero--primary")}>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
@@ -33,7 +34,7 @@ function HomepageHeader() {
         </div>
       </div>
     </header>
-  );
+    </>);
 }
 
 export default function Home(): JSX.Element {
