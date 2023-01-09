@@ -4,7 +4,7 @@ import Translate, { translate } from "@docusaurus/Translate";
 import Page from "../components/Page";
 import { PageMetadata } from "@docusaurus/theme-common";
 import React from "react";
-import BrowserOnly from '@docusaurus/BrowserOnly';
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 
 export default function ErrorPage() {
   const theme = useMantineTheme();
@@ -14,8 +14,10 @@ export default function ErrorPage() {
     message:
       "We can't find the page you're looking for. Please check the URL and try again.",
   };
-  return (
-    <BrowserOnly>
+
+  if (!ExecutionEnvironment.canUseDOM) return (<></>)
+
+  else return (
       <>
         <PageMetadata
           title={translate({
@@ -104,6 +106,5 @@ export default function ErrorPage() {
           </div>
         </Page>
       </>
-    </BrowserOnly>
   );
 }

@@ -3,7 +3,7 @@ import TOCItems from "@theme/TOCItems";
 import { TableOfContents } from "@site/src/components/TOC";
 import clsx from "clsx";
 import styles from "./styles.module.css";
-import BrowserOnly from '@docusaurus/BrowserOnly';
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 
 // Using a custom className
 // This prevents TOCInline/TOCCollapsible getting highlighted by mistake
@@ -15,14 +15,14 @@ export default function TOC({ className, ...props }) {
     link: "#" + l.id,
     order: l.level,
   }));
-  return (
-    <BrowserOnly>
+
+  if (!ExecutionEnvironment.canUseDOM) return (<></>)
+  else return (
       <div style={{ position: "sticky", top: 70 }}>
         <TableOfContents
           active={"#" + window.location.href.split("#")[1] || links[0].link}
           links={links}
         ></TableOfContents>
       </div>
-    </BrowserOnly>
   );
 }

@@ -8,7 +8,6 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
-  
   if (ExecutionEnvironment.canUseDOM) {
     //@ts-ignore
     if (window.netlifyIdentity) {

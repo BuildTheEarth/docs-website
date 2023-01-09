@@ -33,7 +33,7 @@ import React, { CSSProperties, useEffect, useState } from "react";
 import { useClickOutside, useDisclosure, useInterval } from "@mantine/hooks";
 
 import clsx from "clsx";
-import BrowserOnly from '@docusaurus/BrowserOnly';
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -197,8 +197,9 @@ const Header = ({ links, className }: HeaderProps) => {
       {link.label}
     </a>
   ));
-  return (
-    <BrowserOnly>
+  if (!ExecutionEnvironment.canUseDOM) return (<></>)
+
+  else return (
       <MantineHeader height={60} className={clsx(classes.root, className)} fixed>
         <Container className={classes.header} size={"xl"}>
           <Group
@@ -238,7 +239,6 @@ const Header = ({ links, className }: HeaderProps) => {
           <div></div>
         </Container>
       </MantineHeader>
-    </BrowserOnly>
   );
 };
 
