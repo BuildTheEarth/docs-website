@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+
+        [data-slate-editor] { 
+            -webkit-user-modify: read-write !important; 
+        }
+    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content | BuildTheEarth Documentation</title>
+</head>
+<body>
+  <!-- Include the script that builds the page and powers Netlify CMS -->
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="https://unpkg.com/react-markdown@5.0.3/react-markdown.min.js"></script>
+  <script type="module">
+    import remarkGfm from 'https://esm.sh/remark-gfm@1?bundle'
+
+    const DocPreview = createClass({
+        
+      render: function() {
+        const bodyText = this.props.entry.getIn(["data", "body"]);
+
+        return h(window.ReactMarkdown, { plugins: [remarkGfm], className: 'markdown-body', escapeHtml: false}, bodyText);
+      },
+    });
+
+    window.CMS.registerPreviewStyle("github-markdown-dark.css");
+    window.CMS.registerPreviewTemplate("pages", DocPreview);
+
+  </script>
+</body>
+</html>
