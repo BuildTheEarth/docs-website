@@ -4,6 +4,7 @@ import Translate, { translate } from "@docusaurus/Translate";
 import Page from "../components/Page";
 import { PageMetadata } from "@docusaurus/theme-common";
 import React from "react";
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 export default function ErrorPage() {
   const theme = useMantineTheme();
