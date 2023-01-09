@@ -3,6 +3,8 @@ import TOCItems from "@theme/TOCItems";
 import { TableOfContents } from "@site/src/components/TOC";
 import clsx from "clsx";
 import styles from "./styles.module.css";
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
 // Using a custom className
 // This prevents TOCInline/TOCCollapsible getting highlighted by mistake
 const LINK_CLASS_NAME = "table-of-contents__link toc-highlight";
@@ -14,11 +16,13 @@ export default function TOC({ className, ...props }) {
     order: l.level,
   }));
   return (
-    <div style={{ position: "sticky", top: 70 }}>
-      <TableOfContents
-        active={"#" + window.location.href.split("#")[1] || links[0].link}
-        links={links}
-      ></TableOfContents>
-    </div>
+    <BrowserOnly>
+      <div style={{ position: "sticky", top: 70 }}>
+        <TableOfContents
+          active={"#" + window.location.href.split("#")[1] || links[0].link}
+          links={links}
+        ></TableOfContents>
+      </div>
+    </BrowserOnly>
   );
 }
