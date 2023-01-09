@@ -33,6 +33,7 @@ import React, { CSSProperties, useEffect, useState } from "react";
 import { useClickOutside, useDisclosure, useInterval } from "@mantine/hooks";
 
 import clsx from "clsx";
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -197,45 +198,47 @@ const Header = ({ links, className }: HeaderProps) => {
     </a>
   ));
   return (
-    <MantineHeader height={60} className={clsx(classes.root, className)} fixed>
-      <Container className={classes.header} size={"xl"}>
-        <Group
-          spacing={5}
-          className={classes.logo}
-          onClick={() => (window.location.href = "/")}
-        >
-          <img
-            src="/logo.gif"
-            alt="Mantine"
-            height="40"
-            style={{ marginRight: "4px" }}
-          />
-          BuildTheEarth Documentation
-        </Group>
-        <Group spacing={5} className={classes.links}>
-          {items}
-        </Group>
-        <Group spacing={5} className={classes.links}></Group>
+    <BrowserOnly>
+      <MantineHeader height={60} className={clsx(classes.root, className)} fixed>
+        <Container className={classes.header} size={"xl"}>
+          <Group
+            spacing={5}
+            className={classes.logo}
+            onClick={() => (window.location.href = "/")}
+          >
+            <img
+              src="/logo.gif"
+              alt="Mantine"
+              height="40"
+              style={{ marginRight: "4px" }}
+            />
+            BuildTheEarth Documentation
+          </Group>
+          <Group spacing={5} className={classes.links}>
+            {items}
+          </Group>
+          <Group spacing={5} className={classes.links}></Group>
 
-        <Group spacing={5} className={classes.burger}>
-          <Burger opened={opened} onClick={() => handler.open()} size="sm" />
-        </Group>
+          <Group spacing={5} className={classes.burger}>
+            <Burger opened={opened} onClick={() => handler.open()} size="sm" />
+          </Group>
 
-        <Transition transition="scale-y" duration={200} mounted={opened}>
-          {(styles: CSSProperties) => (
-            <Paper
-              className={classes.dropdown}
-              withBorder
-              style={styles}
-              ref={mobilePaperRef}
-            >
-              {items}
-            </Paper>
-          )}
-        </Transition>
-        <div></div>
-      </Container>
-    </MantineHeader>
+          <Transition transition="scale-y" duration={200} mounted={opened}>
+            {(styles: CSSProperties) => (
+              <Paper
+                className={classes.dropdown}
+                withBorder
+                style={styles}
+                ref={mobilePaperRef}
+              >
+                {items}
+              </Paper>
+            )}
+          </Transition>
+          <div></div>
+        </Container>
+      </MantineHeader>
+    </BrowserOnly>
   );
 };
 
