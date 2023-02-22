@@ -205,8 +205,8 @@ const Header = ({ links, className }: HeaderProps) => {
           onClick={() => (window.location.href = "/")}
         >
           <img
-            src="/logo.gif"
-            alt="Mantine"
+            src="/logo.png"
+            alt="BuildTheEarth Documentation"
             height="40"
             style={{ marginRight: "4px" }}
           />
