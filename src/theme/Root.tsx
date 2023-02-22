@@ -1,4 +1,3 @@
-import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 import {
   ColorScheme,
   ColorSchemeProvider,
@@ -6,6 +5,7 @@ import {
 } from "@mantine/core";
 import { useColorScheme, useHotkeys, useLocalStorage } from "@mantine/hooks";
 
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 import React from "react";
 
 export default function Root({ children }) {
@@ -15,14 +15,18 @@ export default function Root({ children }) {
     defaultValue: preferredColorScheme,
     getInitialValueInEffect: true,
   });
-  const toggleColorScheme = (value?: ColorScheme) =>
-    setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
+  const toggleColorScheme = (value?: ColorScheme) => {
+    const newTheme = value || (colorScheme === "dark" ? "light" : "dark");
+    setColorScheme(newTheme);
+    window.localStorage.setItem("theme", newTheme);
+    window.location.reload();
+  };
 
   useHotkeys([["mod+J", () => toggleColorScheme()]]);
 
-  if (!ExecutionEnvironment.canUseDOM) return (<></>)
-
-  else return (
+  if (!ExecutionEnvironment.canUseDOM) return <></>;
+  else
+    return (
       <ColorSchemeProvider
         colorScheme={colorScheme}
         toggleColorScheme={toggleColorScheme}
@@ -39,5 +43,5 @@ export default function Root({ children }) {
           {children}
         </MantineProvider>
       </ColorSchemeProvider>
-  );
+    );
 }
