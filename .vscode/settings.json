@@ -1,3 +1,3 @@
 {
-  "conventionalCommits.scopes": ["src", "theme"]
+  "conventionalCommits.scopes": ["src", "theme", "sidebar"]
 }
