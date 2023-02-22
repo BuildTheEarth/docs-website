@@ -1,3 +1,4 @@
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 import {
   ColorScheme,
   ColorSchemeProvider,
@@ -18,22 +19,25 @@ export default function Root({ children }) {
     setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
 
   useHotkeys([["mod+J", () => toggleColorScheme()]]);
-  return (
-    <ColorSchemeProvider
-      colorScheme={colorScheme}
-      toggleColorScheme={toggleColorScheme}
-    >
-      <MantineProvider
-        theme={{
-          colorScheme,
-          fontFamily:
-            '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
-        }}
-        withGlobalStyles
-        withNormalizeCSS
+
+  if (!ExecutionEnvironment.canUseDOM) return (<></>)
+
+  else return (
+      <ColorSchemeProvider
+        colorScheme={colorScheme}
+        toggleColorScheme={toggleColorScheme}
       >
-        {children}
-      </MantineProvider>
-    </ColorSchemeProvider>
+        <MantineProvider
+          theme={{
+            colorScheme,
+            fontFamily:
+              '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
+          }}
+          withGlobalStyles
+          withNormalizeCSS
+        >
+          {children}
+        </MantineProvider>
+      </ColorSchemeProvider>
   );
 }

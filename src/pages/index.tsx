@@ -4,20 +4,23 @@ import Link from "@docusaurus/Link";
 import React from "react";
 import clsx from "clsx";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
-  //@ts-ignore
-  if (window.netlifyIdentity) {
+  if (ExecutionEnvironment.canUseDOM) {
     //@ts-ignore
-    window.netlifyIdentity.on("init", (user) => {
-      if (!user) {
-        //@ts-ignore
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
+    if (window.netlifyIdentity) {
+      //@ts-ignore
+      window.netlifyIdentity.on("init", (user) => {
+        if (!user) {
+          //@ts-ignore
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
   }
   return (
     <>

@@ -2,6 +2,7 @@ backend:
   name: github
   branch: main
   repo: BuildTheEarth/docs-website
+  base_url: https://netauth.buildtheearth.net
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
     update: "Update {{collection}} “{{slug}}”"
@@ -10,7 +11,7 @@ backend:
     deleteMedia: "[skip ci] Delete “{{path}}”"
 
 local_backend: true
-media_folder: static/img/content
+media_folder: img/content
 public_folder: /img/content
 
 collections:

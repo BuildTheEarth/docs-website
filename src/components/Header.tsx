@@ -32,6 +32,7 @@ import { IconMoonStars, IconSun } from "@tabler/icons";
 import React, { CSSProperties, useEffect, useState } from "react";
 import { useClickOutside, useDisclosure, useInterval } from "@mantine/hooks";
 
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 import clsx from "clsx";
 
 const useStyles = createStyles((theme) => ({
@@ -196,46 +197,48 @@ const Header = ({ links, className }: HeaderProps) => {
       {link.label}
     </a>
   ));
-  return (
-    <MantineHeader height={60} className={clsx(classes.root, className)} fixed>
-      <Container className={classes.header} size={"xl"}>
-        <Group
-          spacing={5}
-          className={classes.logo}
-          onClick={() => (window.location.href = "/")}
-        >
-          <img
-            src="/logo.png"
-            alt="BuildTheEarth Documentation"
-            height="40"
-            style={{ marginRight: "4px" }}
-          />
-          BuildTheEarth Documentation
-        </Group>
-        <Group spacing={5} className={classes.links}>
-          {items}
-        </Group>
-        <Group spacing={5} className={classes.links}></Group>
+  if (!ExecutionEnvironment.canUseDOM) return (<></>)
 
-        <Group spacing={5} className={classes.burger}>
-          <Burger opened={opened} onClick={() => handler.open()} size="sm" />
-        </Group>
+  else return (
+      <MantineHeader height={60} className={clsx(classes.root, className)} fixed>
+        <Container className={classes.header} size={"xl"}>
+          <Group
+            spacing={5}
+            className={classes.logo}
+            onClick={() => (window.location.href = "/")}
+          >
+            <img
+              src="/logo.png"
+              alt="BuildTheEarth Documentation"
+              height="40"
+              style={{ marginRight: "4px" }}
+            />
+            BuildTheEarth Documentation
+          </Group>
+          <Group spacing={5} className={classes.links}>
+            {items}
+          </Group>
+          <Group spacing={5} className={classes.links}></Group>
 
-        <Transition transition="scale-y" duration={200} mounted={opened}>
-          {(styles: CSSProperties) => (
-            <Paper
-              className={classes.dropdown}
-              withBorder
-              style={styles}
-              ref={mobilePaperRef}
-            >
-              {items}
-            </Paper>
-          )}
-        </Transition>
-        <div></div>
-      </Container>
-    </MantineHeader>
+          <Group spacing={5} className={classes.burger}>
+            <Burger opened={opened} onClick={() => handler.open()} size="sm" />
+          </Group>
+
+          <Transition transition="scale-y" duration={200} mounted={opened}>
+            {(styles: CSSProperties) => (
+              <Paper
+                className={classes.dropdown}
+                withBorder
+                style={styles}
+                ref={mobilePaperRef}
+              >
+                {items}
+              </Paper>
+            )}
+          </Transition>
+          <div></div>
+        </Container>
+      </MantineHeader>
   );
 };
 
