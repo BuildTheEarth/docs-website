@@ -14,8 +14,8 @@ __webpack_require__.d(__webpack_exports__, {
 var react = __webpack_require__(7294);
 // EXTERNAL MODULE: ./node_modules/clsx/dist/clsx.m.js
 var clsx_m = __webpack_require__(6010);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 18 modules
-var Layout = __webpack_require__(4250);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 19 modules
+var Layout = __webpack_require__(1837);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/hooks/useWindowSize.js
 var useWindowSize = __webpack_require__(7524);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Link.js + 1 modules

@@ -1,6 +1,34 @@
 "use strict";
 (self["webpackChunkbte_docs"] = self["webpackChunkbte_docs"] || []).push([[9817],{
 
+/***/ 4241:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "k": () => (/* binding */ isElement)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
+
+
+function isElement(value) {
+  if (Array.isArray(value) || value === null) {
+    return false;
+  }
+  if (typeof value === "object") {
+    if (value.type === react__WEBPACK_IMPORTED_MODULE_0__.Fragment) {
+      return false;
+    }
+    return true;
+  }
+  return false;
+}
+
+
+//# sourceMappingURL=is-element.js.map
+
+
+/***/ }),
+
 /***/ 9960:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -71,60 +99,6 @@ react.createElement("a",(0,esm_extends/* default */.Z)({ref:innerRef,href:target
 
 /***/ }),
 
-/***/ 1986:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "Z": () => (/* binding */ DocBreadcrumbs)
-});
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
-var esm_extends = __webpack_require__(7462);
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(7294);
-// EXTERNAL MODULE: ./node_modules/clsx/dist/clsx.m.js
-var clsx_m = __webpack_require__(6010);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/ThemeClassNames.js
-var ThemeClassNames = __webpack_require__(5281);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/docsUtils.js
-var docsUtils = __webpack_require__(3438);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/routesUtils.js
-var routesUtils = __webpack_require__(8596);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Link.js + 1 modules
-var Link = __webpack_require__(9960);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useBaseUrl.js
-var useBaseUrl = __webpack_require__(4996);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
-var Translate = __webpack_require__(5999);
-;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Icon/Home/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */function IconHome(props){return/*#__PURE__*/react.createElement("svg",(0,esm_extends/* default */.Z)({viewBox:"0 0 24 24"},props),/*#__PURE__*/react.createElement("path",{d:"M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z",fill:"currentColor"}));}
-;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/DocBreadcrumbs/styles.module.css
-// extracted by mini-css-extract-plugin
-/* harmony default export */ const styles_module = ({"breadcrumbsContainer":"breadcrumbsContainer_Z_bl","breadcrumbHomeIcon":"breadcrumbHomeIcon_OVgt"});
-;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/DocBreadcrumbs/index.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// TODO move to design system folder
-function BreadcrumbsItemLink(_ref){let{children,href,isLast}=_ref;const className='breadcrumbs__link';if(isLast){return/*#__PURE__*/react.createElement("span",{className:className,itemProp:"name"},children);}return href?/*#__PURE__*/react.createElement(Link/* default */.Z,{className:className,href:href,itemProp:"item"},/*#__PURE__*/react.createElement("span",{itemProp:"name"},children)):/*#__PURE__*/ // TODO Google search console doesn't like breadcrumb items without href.
-// The schema doesn't seem to require `id` for each `item`, although Google
-// insist to infer one, even if it's invalid. Removing `itemProp="item
-// name"` for now, since I don't know how to properly fix it.
-// See https://github.com/facebook/docusaurus/issues/7241
-react.createElement("span",{className:className},children);}// TODO move to design system folder
-function BreadcrumbsItem(_ref2){let{children,active,index,addMicrodata}=_ref2;return/*#__PURE__*/react.createElement("li",(0,esm_extends/* default */.Z)({},addMicrodata&&{itemScope:true,itemProp:'itemListElement',itemType:'https://schema.org/ListItem'},{className:(0,clsx_m/* default */.Z)('breadcrumbs__item',{'breadcrumbs__item--active':active})}),children,/*#__PURE__*/react.createElement("meta",{itemProp:"position",content:String(index+1)}));}function HomeBreadcrumbItem(){const homeHref=(0,useBaseUrl/* default */.Z)('/');return/*#__PURE__*/react.createElement("li",{className:"breadcrumbs__item"},/*#__PURE__*/react.createElement(Link/* default */.Z,{"aria-label":(0,Translate/* translate */.I)({id:'theme.docs.breadcrumbs.home',message:'Home page',description:'The ARIA label for the home page in the breadcrumbs'}),className:(0,clsx_m/* default */.Z)('breadcrumbs__link',styles_module.breadcrumbsItemLink),href:homeHref},/*#__PURE__*/react.createElement(IconHome,{className:styles_module.breadcrumbHomeIcon})));}function DocBreadcrumbs(){const breadcrumbs=(0,docsUtils/* useSidebarBreadcrumbs */.s1)();const homePageRoute=(0,routesUtils/* useHomePageRoute */.Ns)();if(!breadcrumbs){return null;}return/*#__PURE__*/react.createElement("nav",{className:(0,clsx_m/* default */.Z)(ThemeClassNames/* ThemeClassNames.docs.docBreadcrumbs */.k.docs.docBreadcrumbs,styles_module.breadcrumbsContainer),"aria-label":(0,Translate/* translate */.I)({id:'theme.docs.breadcrumbs.navAriaLabel',message:'Breadcrumbs',description:'The ARIA label for the breadcrumbs'})},/*#__PURE__*/react.createElement("ul",{className:"breadcrumbs",itemScope:true,itemType:"https://schema.org/BreadcrumbList"},homePageRoute&&/*#__PURE__*/react.createElement(HomeBreadcrumbItem,null),breadcrumbs.map((item,idx)=>{const isLast=idx===breadcrumbs.length-1;return/*#__PURE__*/react.createElement(BreadcrumbsItem,{key:idx,active:isLast,index:idx,addMicrodata:!!item.href},/*#__PURE__*/react.createElement(BreadcrumbsItemLink,{href:item.href,isLast:isLast},item.label));})));}
-
-/***/ }),
-
 /***/ 4228:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -176,8 +150,8 @@ var DocPaginator = __webpack_require__(49);
 var DocVersionBanner = __webpack_require__(3120);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/DocVersionBadge/index.js
 var DocVersionBadge = __webpack_require__(4364);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/DocBreadcrumbs/index.js + 2 modules
-var DocBreadcrumbs = __webpack_require__(1986);
+// EXTERNAL MODULE: ./src/theme/DocBreadcrumbs/index.tsx + 2 modules
+var DocBreadcrumbs = __webpack_require__(5415);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Heading/index.js + 1 modules
 var Heading = __webpack_require__(2503);
 ;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/DocCategoryGeneratedIndexPage/styles.module.css
@@ -340,6 +314,138 @@ const shouldNotApply=pathname==='/'||pathname===baseUrl;const newPathname=should
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */var __importDefault=this&&this.__importDefault||function(mod){return mod&&mod.__esModule?mod:{"default":mod};};Object.defineProperty(exports, "__esModule", ({value:true}));exports.applyTrailingSlash=exports.blogPostContainerID=void 0;exports.blogPostContainerID='post-content';var applyTrailingSlash_1=__webpack_require__(8802);Object.defineProperty(exports, "applyTrailingSlash", ({enumerable:true,get:function(){return __importDefault(applyTrailingSlash_1).default;}}));
+
+/***/ }),
+
+/***/ 5415:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": () => (/* binding */ DocBreadcrumbs)
+});
+
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(7294);
+// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 25 modules
+var MantineProvider = __webpack_require__(4215);
+// EXTERNAL MODULE: ./node_modules/@mantine/utils/esm/is-element/is-element.js
+var is_element = __webpack_require__(4241);
+// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/tss/create-styles.js + 1 modules
+var create_styles = __webpack_require__(6817);
+;// CONCATENATED MODULE: ./node_modules/@mantine/core/esm/Breadcrumbs/Breadcrumbs.styles.js
+
+
+var useStyles = (0,create_styles/* createStyles */.k)((theme) => ({
+  root: {
+    display: "flex",
+    alignItems: "center"
+  },
+  breadcrumb: {
+    lineHeight: 1,
+    whiteSpace: "nowrap",
+    WebkitTapHighlightColor: "transparent"
+  },
+  separator: {
+    marginLeft: theme.spacing.xs,
+    marginRight: theme.spacing.xs,
+    color: theme.colorScheme === "dark" ? theme.colors.dark[2] : theme.colors.gray[7],
+    lineHeight: 1,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
+  }
+}));
+
+/* harmony default export */ const Breadcrumbs_styles = (useStyles);
+//# sourceMappingURL=Breadcrumbs.styles.js.map
+
+// EXTERNAL MODULE: ./node_modules/@mantine/core/esm/Text/Text.js + 1 modules
+var Text = __webpack_require__(5117);
+// EXTERNAL MODULE: ./node_modules/@mantine/core/esm/Box/Box.js + 9 modules
+var Box = __webpack_require__(7414);
+;// CONCATENATED MODULE: ./node_modules/@mantine/core/esm/Breadcrumbs/Breadcrumbs.js
+
+
+
+
+
+
+
+var __defProp = Object.defineProperty;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var __objRest = (source, exclude) => {
+  var target = {};
+  for (var prop in source)
+    if (__hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
+      target[prop] = source[prop];
+  if (source != null && __getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(source)) {
+      if (exclude.indexOf(prop) < 0 && __propIsEnum.call(source, prop))
+        target[prop] = source[prop];
+    }
+  return target;
+};
+const defaultProps = {
+  separator: "/"
+};
+const Breadcrumbs = (0,react.forwardRef)((props, ref) => {
+  const _a = (0,MantineProvider/* useComponentDefaultProps */.N4)("Breadcrumbs", defaultProps, props), { className, children, separator, classNames, styles, unstyled } = _a, others = __objRest(_a, ["className", "children", "separator", "classNames", "styles", "unstyled"]);
+  const { classes, cx } = Breadcrumbs_styles(null, { classNames, styles, unstyled, name: "Breadcrumbs" });
+  const items = react.Children.toArray(children).reduce((acc, child, index, array) => {
+    var _a2;
+    const item = (0,is_element/* isElement */.k)(child) ? react.cloneElement(child, {
+      className: cx(classes.breadcrumb, (_a2 = child.props) == null ? void 0 : _a2.className),
+      key: index
+    }) : /* @__PURE__ */ react.createElement("div", {
+      className: classes.breadcrumb,
+      key: index
+    }, child);
+    acc.push(item);
+    if (index !== array.length - 1) {
+      acc.push(/* @__PURE__ */ react.createElement(Text/* Text */.x, {
+        size: "sm",
+        className: classes.separator,
+        key: `separator-${index}`
+      }, separator));
+    }
+    return acc;
+  }, []);
+  return /* @__PURE__ */ react.createElement(Box/* Box */.x, __spreadValues({
+    className: cx(classes.root, className),
+    ref
+  }, others), items);
+});
+Breadcrumbs.displayName = "@mantine/core/Breadcrumbs";
+
+
+//# sourceMappingURL=Breadcrumbs.js.map
+
+// EXTERNAL MODULE: ./node_modules/@mantine/core/esm/Anchor/Anchor.js + 1 modules
+var Anchor = __webpack_require__(4685);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/docsUtils.js
+var docsUtils = __webpack_require__(3438);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/routesUtils.js
+var routesUtils = __webpack_require__(8596);
+// EXTERNAL MODULE: ./node_modules/@tabler/icons/icons-react/dist/index.esm.js
+var index_esm = __webpack_require__(3991);
+;// CONCATENATED MODULE: ./src/theme/DocBreadcrumbs/index.tsx
+function DocBreadcrumbs(){const breadcrumbs=(0,docsUtils/* useSidebarBreadcrumbs */.s1)();const homePageRoute=(0,routesUtils/* useHomePageRoute */.Ns)();if(!breadcrumbs){return null;}return/*#__PURE__*/react.createElement(Breadcrumbs,null,/*#__PURE__*/react.createElement(Anchor/* Anchor */.e,{href:"/docs"},/*#__PURE__*/react.createElement(index_esm/* IconHome */.A2c,{color:"white",size:18})),breadcrumbs.map((item,idx)=>/*#__PURE__*/react.createElement(Anchor/* Anchor */.e,{href:item.href,key:idx},item.label)));}
 
 /***/ })
 

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkbte_docs"] = self["webpackChunkbte_docs"] || []).push([[9274],{
+(self["webpackChunkbte_docs"] = self["webpackChunkbte_docs"] || []).push([[1602],{
 
 /***/ 6869:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -56,8 +56,8 @@ var useStyles = (0,create_styles/* createStyles */.k)((_theme, { orientation, bu
 /* harmony default export */ const ButtonGroup_styles = (useStyles);
 //# sourceMappingURL=ButtonGroup.styles.js.map
 
-// EXTERNAL MODULE: ./node_modules/@mantine/core/esm/Box/Box.js + 10 modules
-var Box = __webpack_require__(9845);
+// EXTERNAL MODULE: ./node_modules/@mantine/core/esm/Box/Box.js + 9 modules
+var Box = __webpack_require__(7414);
 ;// CONCATENATED MODULE: ./node_modules/@mantine/core/esm/Button/ButtonGroup/ButtonGroup.js
 
 
@@ -586,7 +586,7 @@ const Button = (0,create_polymorphic_component/* createPolymorphicComponent */.F
 /* harmony import */ var _mantine_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4215);
 /* harmony import */ var _mantine_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7818);
 /* harmony import */ var _mantine_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8427);
-/* harmony import */ var _Box_Box_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9845);
+/* harmony import */ var _Box_Box_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7414);
 
 
 
@@ -639,143 +639,6 @@ const Center = (0,_mantine_utils__WEBPACK_IMPORTED_MODULE_4__/* .createPolymorph
 
 
 //# sourceMappingURL=Center.js.map
-
-
-/***/ }),
-
-/***/ 9236:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "D": () => (/* binding */ Title)
-});
-
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(7294);
-// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 25 modules
-var MantineProvider = __webpack_require__(4215);
-// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/tss/create-styles.js + 1 modules
-var create_styles = __webpack_require__(6817);
-;// CONCATENATED MODULE: ./node_modules/@mantine/core/esm/Title/Title.styles.js
-
-
-var __defProp = Object.defineProperty;
-var __defProps = Object.defineProperties;
-var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
-var __getOwnPropSymbols = Object.getOwnPropertySymbols;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __propIsEnum = Object.prototype.propertyIsEnumerable;
-var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var __spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (__hasOwnProp.call(b, prop))
-      __defNormalProp(a, prop, b[prop]);
-  if (__getOwnPropSymbols)
-    for (var prop of __getOwnPropSymbols(b)) {
-      if (__propIsEnum.call(b, prop))
-        __defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
-function getFontSize(size, element, theme) {
-  if (typeof size !== "undefined") {
-    return size in theme.headings.sizes ? theme.headings.sizes[size].fontSize : size;
-  }
-  return theme.headings.sizes[element].fontSize;
-}
-function getLineHeight(size, element, theme) {
-  if (typeof size !== "undefined" && size in theme.headings.sizes) {
-    return theme.headings.sizes[size].lineHeight;
-  }
-  return theme.headings.sizes[element].lineHeight;
-}
-var useStyles = (0,create_styles/* createStyles */.k)((theme, { element, weight, size, inline }) => ({
-  root: __spreadProps(__spreadValues({}, theme.fn.fontStyles()), {
-    fontFamily: theme.headings.fontFamily,
-    fontWeight: weight || theme.headings.sizes[element].fontWeight || theme.headings.fontWeight,
-    fontSize: getFontSize(size, element, theme),
-    lineHeight: inline ? 1 : getLineHeight(size, element, theme),
-    margin: 0
-  })
-}));
-
-/* harmony default export */ const Title_styles = (useStyles);
-//# sourceMappingURL=Title.styles.js.map
-
-// EXTERNAL MODULE: ./node_modules/@mantine/core/esm/Text/Text.js + 1 modules
-var Text = __webpack_require__(5117);
-;// CONCATENATED MODULE: ./node_modules/@mantine/core/esm/Title/Title.js
-
-
-
-
-
-var Title_defProp = Object.defineProperty;
-var Title_getOwnPropSymbols = Object.getOwnPropertySymbols;
-var Title_hasOwnProp = Object.prototype.hasOwnProperty;
-var Title_propIsEnum = Object.prototype.propertyIsEnumerable;
-var Title_defNormalProp = (obj, key, value) => key in obj ? Title_defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var Title_spreadValues = (a, b) => {
-  for (var prop in b || (b = {}))
-    if (Title_hasOwnProp.call(b, prop))
-      Title_defNormalProp(a, prop, b[prop]);
-  if (Title_getOwnPropSymbols)
-    for (var prop of Title_getOwnPropSymbols(b)) {
-      if (Title_propIsEnum.call(b, prop))
-        Title_defNormalProp(a, prop, b[prop]);
-    }
-  return a;
-};
-var __objRest = (source, exclude) => {
-  var target = {};
-  for (var prop in source)
-    if (Title_hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
-      target[prop] = source[prop];
-  if (source != null && Title_getOwnPropSymbols)
-    for (var prop of Title_getOwnPropSymbols(source)) {
-      if (exclude.indexOf(prop) < 0 && Title_propIsEnum.call(source, prop))
-        target[prop] = source[prop];
-    }
-  return target;
-};
-const defaultProps = {
-  order: 1
-};
-const Title = (0,react.forwardRef)((props, ref) => {
-  const _a = (0,MantineProvider/* useComponentDefaultProps */.N4)("Title", defaultProps, props), { className, order, children, unstyled, size, weight, inline } = _a, others = __objRest(_a, ["className", "order", "children", "unstyled", "size", "weight", "inline"]);
-  const { classes, cx } = Title_styles({ element: `h${order}`, weight, size, inline }, { name: "Title", unstyled });
-  if (![1, 2, 3, 4, 5, 6].includes(order)) {
-    return null;
-  }
-  return /* @__PURE__ */ react.createElement(Text/* Text */.x, Title_spreadValues({
-    component: `h${order}`,
-    ref,
-    className: cx(classes.root, className)
-  }, others), children);
-});
-Title.displayName = "@mantine/core/Title";
-
-
-//# sourceMappingURL=Title.js.map
-
-
-/***/ }),
-
-/***/ 7818:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "R": () => (/* binding */ packSx)
-/* harmony export */ });
-function packSx(sx) {
-  return Array.isArray(sx) ? sx : [sx];
-}
-
-
-//# sourceMappingURL=pack-sx.js.map
 
 
 /***/ })

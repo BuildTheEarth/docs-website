@@ -1,5 +1,45 @@
 "use strict";
-(self["webpackChunkbte_docs"] = self["webpackChunkbte_docs"] || []).push([[4697],{
+(self["webpackChunkbte_docs"] = self["webpackChunkbte_docs"] || []).push([[9514],{
+
+/***/ 6279:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": () => (/* binding */ DocSidebar)
+});
+
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/DocSidebar/Mobile/index.js + 10 modules
+var Mobile = __webpack_require__(7816);
+// EXTERNAL MODULE: ./node_modules/@mantine/core/esm/Accordion/Accordion.js + 13 modules
+var Accordion = __webpack_require__(6222);
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(7294);
+;// CONCATENATED MODULE: ./src/components/nav/NavbarItem.tsx
+const NavbarItem=props=>{return/*#__PURE__*/react.createElement(Accordion/* Accordion */.U,null,props.items.map(element=>/*#__PURE__*/react.createElement(Accordion/* Accordion.Item */.U.Item,{value:element.href},/*#__PURE__*/react.createElement(Accordion/* Accordion.Control */.U.Control,{chevron:element.type=="link"&&"ㅤ",onClick:e=>element.type=="link"?window.location.href=element.href:undefined},element.label),element.type!="link"&&/*#__PURE__*/react.createElement(Accordion/* Accordion.Panel */.U.Panel,null,/*#__PURE__*/react.createElement(NavbarItem,element)))));};/* harmony default export */ const nav_NavbarItem = (NavbarItem);
+;// CONCATENATED MODULE: ./src/components/nav/NavbarRoot.tsx
+const NavbarRoot=props=>{return/*#__PURE__*/react.createElement(Accordion/* Accordion */.U,{mt:120,defaultValue:props.path},props.sidebar.map(element=>/*#__PURE__*/react.createElement(Accordion/* Accordion.Item */.U.Item,{value:element.href},/*#__PURE__*/react.createElement(Accordion/* Accordion.Control */.U.Control,{chevron:element.type=="link"&&"ㅤ",onClick:e=>element.type=="link"?window.location.href=element.href:undefined},element.label),element.type!="link"&&/*#__PURE__*/react.createElement(Accordion/* Accordion.Panel */.U.Panel,null,/*#__PURE__*/react.createElement(nav_NavbarItem,element)))));};/* harmony default export */ const nav_NavbarRoot = (NavbarRoot);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/hooks/useWindowSize.js
+var useWindowSize = __webpack_require__(7524);
+;// CONCATENATED MODULE: ./src/theme/DocSidebar/index.tsx
+function DocSidebar(props){const windowSize=(0,useWindowSize/* useWindowSize */.i)();// Desktop sidebar visible on hydration: need SSR rendering
+const shouldRenderSidebarDesktop=windowSize==="desktop"||windowSize==="ssr";// Mobile sidebar not visible on hydration: can avoid SSR rendering
+const shouldRenderSidebarMobile=windowSize==="mobile";console.log(props);return/*#__PURE__*/react.createElement(react.Fragment,null,shouldRenderSidebarDesktop&&/*#__PURE__*/react.createElement(nav_NavbarRoot,props),shouldRenderSidebarMobile&&/*#__PURE__*/react.createElement(Mobile/* default */.Z,props));}
+
+/***/ }),
+
+/***/ 4818:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ IconArrow)
+/* harmony export */ });
+/* harmony import */ var _tabler_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3991);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
+function IconArrow(props){console.log(props);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_tabler_icons__WEBPACK_IMPORTED_MODULE_1__/* .IconArrowRight */ .Ec8,null);}
+
+/***/ }),
 
 /***/ 4697:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
