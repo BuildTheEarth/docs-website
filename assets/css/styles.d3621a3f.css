@@ -3077,7 +3077,10 @@ html[data-theme='dark'] {
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-
+:root {
+	--ifm-color-primary: #1b7cd2;
+	--ifm-card-background-color: #1a1b1e;
+}
  @font-face {
 	font-family: 'Plus Jakarta Display Bold';
 	src: url('https://tokotype.github.io/plusjakarta-sans/fonts/PlusJakartaDisplay-Bold.woff') format('woff2');
@@ -3130,8 +3133,12 @@ a:hover {
 		border:none;
 }
 .row {
+}
+.container {
+	
 	margin-top: 72px
 }
+
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -3354,14 +3361,7 @@ body {
   margin: 0.5rem 0.5rem 0 1rem;
 }
 
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-.cardContainer_fWXF {
+.cardContainer_S8oU {
   --ifm-link-color: var(--ifm-color-emphasis-800);
   --ifm-link-hover-color: var(--ifm-color-emphasis-700);
   --ifm-link-hover-decoration: none;
@@ -3372,67 +3372,21 @@ body {
   transition-property: border, box-shadow;
 }
 
-.cardContainer_fWXF:hover {
+.cardContainer_S8oU:hover {
   border-color: var(--ifm-color-primary);
   box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%);
 }
 
-.cardContainer_fWXF *:last-child {
+.cardContainer_S8oU *:last-child {
   margin-bottom: 0;
 }
 
-.cardTitle_rnsV {
+.cardTitle_HoSo {
   font-size: 1.2rem;
 }
 
-.cardDescription_PWke {
+.cardDescription_c27F {
   font-size: 0.8rem;
-}
-
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-.backToTopButton_sjWU {
-  position: fixed;
-  right: 1.3rem;
-  bottom: 1.3rem;
-  border-radius: 50%;
-  background-color: var(--ifm-color-emphasis-200);
-  width: 3rem;
-  height: 3rem;
-  z-index: calc(var(--ifm-z-index-fixed) - 1);
-  box-shadow: var(--ifm-global-shadow-lw);
-  transition: all var(--ifm-transition-fast)
-    var(--ifm-transition-timing-default);
-  opacity: 0;
-  transform: scale(0);
-  visibility: hidden;
-}
-
-.backToTopButton_sjWU::after {
-  content: ' ';
-  display: inline-block;
-  -webkit-mask: var(--ifm-menu-link-sublist-icon) 50% / 2rem 2rem no-repeat;
-          mask: var(--ifm-menu-link-sublist-icon) 50% / 2rem 2rem no-repeat;
-  background-color: var(--ifm-color-emphasis-1000);
-  width: 100%;
-  height: 100%;
-}
-
-@media (hover: hover) {
-  .backToTopButton_sjWU:hover {
-    background-color: var(--ifm-color-emphasis-300);
-  }
-}
-
-.backToTopButtonShow_xfvO {
-  opacity: 1;
-  transform: scale(1);
-  visibility: visible;
 }
 
 /**

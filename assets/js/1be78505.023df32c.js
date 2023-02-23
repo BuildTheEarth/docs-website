@@ -1,6 +1,22 @@
 "use strict";
 (self["webpackChunkbte_docs"] = self["webpackChunkbte_docs"] || []).push([[9514],{
 
+/***/ 477:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ BackToTopButton)
+/* harmony export */ });
+/* harmony import */ var _mantine_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4215);
+/* harmony import */ var _mantine_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9834);
+/* harmony import */ var _tabler_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3991);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
+/* harmony import */ var _docusaurus_Translate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5999);
+/* harmony import */ var _docusaurus_theme_common_internal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2730);
+function BackToTopButton(){const theme=(0,_mantine_core__WEBPACK_IMPORTED_MODULE_2__/* .useMantineTheme */ .rZ)();const{shown,scrollToTop}=(0,_docusaurus_theme_common_internal__WEBPACK_IMPORTED_MODULE_3__/* .useBackToTopButton */ .a)({threshold:10});return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mantine_core__WEBPACK_IMPORTED_MODULE_4__/* .ActionIcon */ .A,{color:"blue",size:"xl",variant:"default",style:{zIndex:100,position:"fixed",bottom:theme.spacing.xl,right:theme.spacing.xl,opacity:shown?1:0,transition:"opacity ease-out 0.1s"},"aria-label":(0,_docusaurus_Translate__WEBPACK_IMPORTED_MODULE_1__/* .translate */ .I)({id:"theme.BackToTopButton.buttonAriaLabel",message:"Scroll back to top",description:"The ARIA label for the back to top button"}),onClick:scrollToTop},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_tabler_icons__WEBPACK_IMPORTED_MODULE_5__/* .IconChevronUp */ .y_Q,null));}
+
+/***/ }),
+
 /***/ 6279:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
