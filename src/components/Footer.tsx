@@ -42,9 +42,10 @@ const useStyles = createStyles((theme) => ({
 interface FooterSimpleProps {
   links: { link: string; label: string }[];
   style?: React.CSSProperties;
+  copyright?: string;
 }
 
-export default function Footer({ links, style }: FooterSimpleProps) {
+export default function Footer({ links, style, copyright }: FooterSimpleProps) {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const { classes } = useStyles();
   const items = links.map((link) => (
@@ -52,6 +53,7 @@ export default function Footer({ links, style }: FooterSimpleProps) {
       color="dimmed"
       key={link.label}
       href={link.link}
+      target="_blank"
       size="sm"
       variant="text"
     >
@@ -63,7 +65,7 @@ export default function Footer({ links, style }: FooterSimpleProps) {
     <div className={classes.footer} style={style}>
       <Container className={classes.inner} size={"xl"}>
         <Anchor<"a"> style={{ fontSize: "14px" }} color="#666" variant="text">
-          Copyright &copy; {new Date().getFullYear()} BuildTheEarth Community.
+          {copyright || "Copyright BuildTheEarth Community."}
         </Anchor>
         <Group className={classes.links}>
           {items}

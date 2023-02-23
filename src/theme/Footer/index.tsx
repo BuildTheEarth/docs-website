@@ -10,9 +10,9 @@ function Footer() {
 
   const { copyright, links, logo, style } = footer;
   links.forEach((link) => {
-    link.items.forEach((i) => items.push({ label: i.label, link: i.to }));
+    link.items.forEach((i) => items.push({ label: i.label, link: i.href }));
   });
   console.log(copyright, links, logo, style);
-  return <CFooter links={items} />;
+  return <CFooter links={items} copyright={copyright} />;
 }
 export default React.memo(Footer);
