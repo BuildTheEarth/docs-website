@@ -173,9 +173,10 @@ interface HeaderProps {
     label: string;
   }[];
   className?: string;
+  title?: string;
 }
 
-const Header = ({ links, className }: HeaderProps) => {
+const Header = ({ links, className, title }: HeaderProps) => {
   const [opened, handler] = useDisclosure(false);
   const [userMenuOpened, setUserMenuOpened] = useState(false);
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
@@ -197,10 +198,14 @@ const Header = ({ links, className }: HeaderProps) => {
       {link.label}
     </a>
   ));
-  if (!ExecutionEnvironment.canUseDOM) return (<></>)
-
-  else return (
-      <MantineHeader height={60} className={clsx(classes.root, className)} fixed>
+  if (!ExecutionEnvironment.canUseDOM) return <></>;
+  else
+    return (
+      <MantineHeader
+        height={60}
+        className={clsx(classes.root, className)}
+        fixed
+      >
         <Container className={classes.header} size={"xl"}>
           <Group
             spacing={5}
@@ -209,11 +214,11 @@ const Header = ({ links, className }: HeaderProps) => {
           >
             <img
               src="/logo.png"
-              alt="BuildTheEarth Documentation"
+              alt={title || "BuildTheEarth"}
               height="40"
               style={{ marginRight: "4px" }}
             />
-            BuildTheEarth Documentation
+            {title || "BuildTheEarth"}
           </Group>
           <Group spacing={5} className={classes.links}>
             {items}
@@ -239,7 +244,7 @@ const Header = ({ links, className }: HeaderProps) => {
           <div></div>
         </Container>
       </MantineHeader>
-  );
+    );
 };
 
 export default Header;
