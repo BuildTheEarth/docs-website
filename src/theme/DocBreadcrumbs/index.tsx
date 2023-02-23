@@ -1,4 +1,4 @@
-import { Anchor, Breadcrumbs } from "@mantine/core";
+import { Anchor, Breadcrumbs, useMantineTheme } from "@mantine/core";
 import {
   useHomePageRoute,
   useSidebarBreadcrumbs,
@@ -9,12 +9,13 @@ import React from "react";
 
 export default function DocBreadcrumbs() {
   const breadcrumbs = useSidebarBreadcrumbs();
+  const theme = useMantineTheme();
   const homePageRoute = useHomePageRoute();
   if (!breadcrumbs) {
     return null;
   }
   return (
-    <Breadcrumbs>
+    <Breadcrumbs style={{ marginBottom: theme.spacing.lg * 2 }}>
       <Anchor href={"/docs"}>
         <IconHome color="white" size={18} />
       </Anchor>

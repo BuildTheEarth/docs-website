@@ -28,10 +28,7 @@ export default function DocItemContent({ children }) {
   const syntheticTitle = useSyntheticTitle();
   const theme = useMantineTheme();
   return (
-    <div
-      className={clsx(ThemeClassNames.docs.docMarkdown, "markdown")}
-      style={{ marginTop: theme.spacing.lg * 2 }}
-    >
+    <div className={clsx(ThemeClassNames.docs.docMarkdown, "markdown")}>
       {syntheticTitle && (
         <header>
           <Heading as="h1">{syntheticTitle}</Heading>

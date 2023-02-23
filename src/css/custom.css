@@ -3,7 +3,10 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-
+:root {
+	--ifm-color-primary: #1b7cd2;
+	--ifm-card-background-color: #1a1b1e;
+}
  @font-face {
 	font-family: 'Plus Jakarta Display Bold';
 	src: url('https://tokotype.github.io/plusjakarta-sans/fonts/PlusJakartaDisplay-Bold.woff') format('woff2');
@@ -56,5 +59,8 @@ a:hover {
 		border:none;
 }
 .row {
+}
+.container {
+	
 	margin-top: 72px
 }
