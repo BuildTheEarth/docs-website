@@ -1,10 +1,23 @@
+import {
+  ActionIcon,
+  BackgroundImage,
+  Box,
+  Button,
+  Center,
+  Grid,
+  MediaQuery,
+  Title,
+  useMantineTheme,
+} from "@mantine/core";
+
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 import Header from "../components/Header";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
+import Page from "../components/Page";
 import React from "react";
 import clsx from "clsx";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -43,16 +56,49 @@ function HomepageHeader() {
 }
 
 export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
+  const theme = useMantineTheme();
+  const { siteConfig }: any = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
-    >
-      <HomepageHeader />
-      <main>
-        <h1>test</h1>
-      </main>
-    </Layout>
+    <Page fullWidth>
+      <BackgroundImage
+        src="/images/placeholder.png"
+        style={{ height: "100vh", width: "100%" }}
+        mb="0"
+      >
+        <Center
+          style={{
+            width: "100%",
+            height: "100%",
+            backgroundColor: "#00000044",
+            padding: 16,
+          }}
+        >
+          <Title
+            style={{ color: "#ffffff", fontSize: 64 }}
+            align="center"
+            order={1}
+          >
+            {siteConfig.title}
+            <br />
+            <Button
+              variant="outline"
+              size="xl"
+              style={{
+                color: "white",
+                borderColor: "white",
+                borderWidth: 3,
+                marginTop: theme.spacing.xl * 1.5,
+              }}
+              onClick={() =>
+                (window.location.href =
+                  siteConfig.themeConfig.navbar.items[0].to)
+              }
+            >
+              {siteConfig.tagline}
+            </Button>
+          </Title>
+        </Center>
+      </BackgroundImage>
+    </Page>
   );
 }
