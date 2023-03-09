@@ -12,10 +12,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
-// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 25 modules
-var MantineProvider = __webpack_require__(4215);
-// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/StylesApiContext.js
-var StylesApiContext = __webpack_require__(4526);
+// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 26 modules
+var MantineProvider = __webpack_require__(8495);
 // EXTERNAL MODULE: ./node_modules/@mantine/utils/esm/get-safe-id/get-safe-id.js
 var get_safe_id = __webpack_require__(1943);
 // EXTERNAL MODULE: ./node_modules/@mantine/hooks/esm/use-id/use-id.js
@@ -65,7 +63,10 @@ function AccordionProvider({
   order,
   chevron,
   variant,
-  radius
+  radius,
+  classNames,
+  styles,
+  unstyled
 }) {
   const uid = (0,use_id/* useId */.M)(id);
   const [_value, handleChange] = (0,use_uncontrolled/* useUncontrolled */.C)({
@@ -93,7 +94,10 @@ function AccordionProvider({
       chevron,
       loop,
       variant,
-      radius
+      radius,
+      classNames,
+      styles,
+      unstyled
     }
   }, children);
 }
@@ -223,11 +227,11 @@ var __objRest = (source, exclude) => {
     }
   return target;
 };
-const AccordionItem = (0,react.forwardRef)((_a, ref) => {
-  var _b = _a, { children, className, value } = _b, others = __objRest(_b, ["children", "className", "value"]);
-  const { classNames, styles, unstyled } = (0,StylesApiContext/* useContextStylesApi */.F)();
+const defaultProps = {};
+const AccordionItem = (0,react.forwardRef)((props, ref) => {
+  const _a = (0,MantineProvider/* useComponentDefaultProps */.N4)("AccordionItem", defaultProps, props), { children, className, value } = _a, others = __objRest(_a, ["children", "className", "value"]);
   const ctx = useAccordionContext();
-  const { classes, cx } = AccordionItem_styles({ variant: ctx.variant, radius: ctx.radius }, { name: "Accordion", classNames, styles, unstyled });
+  const { classes, cx } = AccordionItem_styles({ variant: ctx.variant, radius: ctx.radius }, { name: "Accordion", classNames: ctx.classNames, styles: ctx.styles, unstyled: ctx.unstyled });
   return /* @__PURE__ */ react.createElement(AccordionItemContextProvider, {
     value: { value }
   }, /* @__PURE__ */ react.createElement(Box/* Box */.x, __spreadValues({
@@ -381,34 +385,18 @@ var AccordionControl_objRest = (source, exclude) => {
     }
   return target;
 };
-const AccordionControl = (0,react.forwardRef)((_a, ref) => {
-  var _b = _a, {
-    disabled,
-    onKeyDown,
-    onClick,
-    chevron,
-    children,
-    className,
-    icon
-  } = _b, others = AccordionControl_objRest(_b, [
-    "disabled",
-    "onKeyDown",
-    "onClick",
-    "chevron",
-    "children",
-    "className",
-    "icon"
-  ]);
+const AccordionControl_defaultProps = {};
+const AccordionControl = (0,react.forwardRef)((props, ref) => {
+  const _a = (0,MantineProvider/* useComponentDefaultProps */.N4)("AccordionControl", AccordionControl_defaultProps, props), { disabled, onKeyDown, onClick, chevron, children, className, icon } = _a, others = AccordionControl_objRest(_a, ["disabled", "onKeyDown", "onClick", "chevron", "children", "className", "icon"]);
   const ctx = useAccordionContext();
   const { value } = useAccordionItemContext();
-  const { classNames, styles, unstyled } = (0,StylesApiContext/* useContextStylesApi */.F)();
   const { classes, cx } = AccordionControl_styles({
     transitionDuration: ctx.transitionDuration,
     chevronPosition: ctx.chevronPosition,
     chevronSize: ctx.chevronSize,
     variant: ctx.variant,
     radius: ctx.radius
-  }, { name: "Accordion", classNames, styles, unstyled });
+  }, { name: "Accordion", classNames: ctx.classNames, styles: ctx.styles, unstyled: ctx.unstyled });
   const isActive = ctx.isItemActive(value);
   const shouldWrapWithHeading = typeof ctx.order === "number";
   const Heading = `h${ctx.order}`;
@@ -426,7 +414,7 @@ const AccordionControl = (0,react.forwardRef)((_a, ref) => {
     "aria-expanded": isActive,
     "aria-controls": ctx.getRegionId(value),
     id: ctx.getControlId(value),
-    unstyled,
+    unstyled: ctx.unstyled,
     onKeyDown: (0,create_scoped_keydown_handler/* createScopedKeydownHandler */.R)({
       siblingSelector: "[data-accordion-control]",
       parentSelector: "[data-accordion]",
@@ -542,21 +530,22 @@ function getAutoHeightDuration(height) {
 function getElementHeight(el) {
   return (el == null ? void 0 : el.current) ? el.current.scrollHeight : "auto";
 }
-function getElementWidth(el) {
-  return (el == null ? void 0 : el.current) ? el.current.scrollWidth : "auto";
-}
 const raf = typeof window !== "undefined" && window.requestAnimationFrame;
 function useCollapse({
   transitionDuration,
   transitionTimingFunction = "ease",
   onTransitionEnd = () => {
   },
-  opened,
-  axis
+  opened
 }) {
   const el = (0,react.useRef)(null);
   const collapsedHeight = "0px";
-  const [styles, setStylesRaw] = (0,react.useState)({});
+  const collapsedStyles = {
+    display: "none",
+    height: "0px",
+    overflow: "hidden"
+  };
+  const [styles, setStylesRaw] = (0,react.useState)(opened ? {} : collapsedStyles);
   const setStyles = (newStyles) => {
     (0,react_dom.flushSync)(() => setStylesRaw(newStyles));
   };
@@ -566,38 +555,10 @@ function useCollapse({
   function getTransitionStyles(height) {
     const _duration = transitionDuration || getAutoHeightDuration(height);
     return {
-      transitionProperty: `${axis === "x" ? "width" : "height"}`,
-      transitionDuration: `${_duration}ms`,
-      transitionTimingFunction: `${transitionTimingFunction}`
+      transition: `height ${_duration}ms ${transitionTimingFunction}`
     };
   }
-  const getDefaultSizes = () => {
-    const oldStyles = styles;
-    setStyles({});
-    const sizes = { width: getElementWidth(el), height: getElementHeight(el) };
-    setStyles(oldStyles);
-    return sizes;
-  };
-  const getCollapsedStyles = () => {
-    const { height } = getDefaultSizes();
-    return {
-      x: { height, width: "0px", overflow: "hidden" },
-      y: { display: "none", height: "0px", overflow: "hidden" }
-    };
-  };
-  (0,react.useEffect)(() => {
-    raf(() => {
-      const { x, y } = getCollapsedStyles();
-      if (axis === "x" && !opened) {
-        setStyles(use_collapse_spreadValues({}, x));
-      } else if (axis === "y" && !opened) {
-        setStyles(use_collapse_spreadValues({}, y));
-      }
-    });
-  }, []);
   (0,use_did_update/* useDidUpdate */.l)(() => {
-    if (axis === "x")
-      return;
     if (opened) {
       raf(() => {
         mergeStyles({ willChange: "height", display: "block", overflow: "hidden" });
@@ -614,48 +575,21 @@ function useCollapse({
       });
     }
   }, [opened]);
-  (0,use_did_update/* useDidUpdate */.l)(() => {
-    if (axis === "y")
-      return;
-    if (opened) {
-      raf(() => {
-        const { width } = getDefaultSizes();
-        mergeStyles({
-          display: "block",
-          overflow: "hidden",
-          willChange: "width",
-          flexShrink: 0
-        });
-        raf(() => {
-          mergeStyles(use_collapse_spreadProps(use_collapse_spreadValues({}, getTransitionStyles(width)), { width }));
-        });
-      });
-    } else {
-      raf(() => {
-        const { width, height } = getDefaultSizes();
-        mergeStyles(use_collapse_spreadProps(use_collapse_spreadValues({}, getTransitionStyles(width)), {
-          flexShrink: 0,
-          willChange: "width",
-          width,
-          height
-        }));
-        raf(() => mergeStyles({ width: "0px", overflow: "hidden" }));
-      });
-    }
-  }, [opened]);
   const handleTransitionEnd = (e) => {
-    if (e.target !== el.current || !(e.propertyName === "width" || "height")) {
+    if (e.target !== el.current || e.propertyName !== "height") {
       return;
     }
-    onTransitionEnd();
     if (opened) {
-      setStyles({});
-    } else {
-      const { x, y } = getCollapsedStyles();
-      if (axis === "x")
-        setStyles(x);
-      else
-        setStyles(y);
+      const height = getElementHeight(el);
+      if (height === styles.height) {
+        setStyles({});
+      } else {
+        mergeStyles({ height });
+      }
+      onTransitionEnd();
+    } else if (styles.height === collapsedHeight) {
+      setStyles(collapsedStyles);
+      onTransitionEnd();
     }
   };
   function getCollapseProps(_a = {}) {
@@ -713,22 +647,20 @@ var Collapse_objRest = (source, exclude) => {
     }
   return target;
 };
-const defaultProps = {
+const Collapse_defaultProps = {
   transitionDuration: 200,
   transitionTimingFunction: "ease",
-  animateOpacity: true,
-  axis: "y"
+  animateOpacity: true
 };
 const Collapse = (0,react.forwardRef)((props, ref) => {
-  const _a = (0,MantineProvider/* useComponentDefaultProps */.N4)("Collapse", defaultProps, props), {
+  const _a = (0,MantineProvider/* useComponentDefaultProps */.N4)("Collapse", Collapse_defaultProps, props), {
     children,
     in: opened,
     transitionDuration,
     transitionTimingFunction,
     style,
     onTransitionEnd,
-    animateOpacity,
-    axis
+    animateOpacity
   } = _a, others = Collapse_objRest(_a, [
     "children",
     "in",
@@ -736,8 +668,7 @@ const Collapse = (0,react.forwardRef)((props, ref) => {
     "transitionTimingFunction",
     "style",
     "onTransitionEnd",
-    "animateOpacity",
-    "axis"
+    "animateOpacity"
   ]);
   const theme = (0,MantineProvider/* useMantineTheme */.rZ)();
   const shouldReduceMotion = (0,use_reduced_motion/* useReducedMotion */.J)();
@@ -748,8 +679,7 @@ const Collapse = (0,react.forwardRef)((props, ref) => {
     opened,
     transitionDuration: duration,
     transitionTimingFunction,
-    onTransitionEnd,
-    axis
+    onTransitionEnd
   });
   if (duration === 0) {
     return opened ? /* @__PURE__ */ react.createElement(Box/* Box */.x, Collapse_spreadValues({}, rest), children) : null;
@@ -805,11 +735,12 @@ var AccordionPanel_objRest = (source, exclude) => {
     }
   return target;
 };
-function AccordionPanel(_a) {
-  var _b = _a, { children, className } = _b, others = AccordionPanel_objRest(_b, ["children", "className"]);
+const AccordionPanel_defaultProps = {};
+function AccordionPanel(props) {
+  const _a = (0,MantineProvider/* useComponentDefaultProps */.N4)("AccordionPanel", AccordionPanel_defaultProps, props), { children, className } = _a, others = AccordionPanel_objRest(_a, ["children", "className"]);
   const ctx = useAccordionContext();
   const { value } = useAccordionItemContext();
-  const { classNames, styles, unstyled } = (0,StylesApiContext/* useContextStylesApi */.F)();
+  const { classNames, styles, unstyled } = useAccordionContext();
   const { classes, cx } = AccordionPanel_styles({ variant: ctx.variant, radius: ctx.radius }, { name: "Accordion", classNames, styles, unstyled });
   return /* @__PURE__ */ react.createElement(Collapse, AccordionPanel_spreadProps(AccordionPanel_spreadValues({}, others), {
     className: cx(classes.panel, className),
@@ -968,14 +899,13 @@ function Accordion(props) {
     order,
     chevron,
     variant,
-    radius
-  }, /* @__PURE__ */ react.createElement(StylesApiContext/* StylesApiProvider */.V, {
+    radius,
     classNames,
     styles,
     unstyled
   }, /* @__PURE__ */ react.createElement(Box/* Box */.x, Accordion_spreadProps(Accordion_spreadValues({}, others), {
     "data-accordion": true
-  }), children)));
+  }), children));
 }
 Accordion.Item = AccordionItem;
 Accordion.Control = AccordionControl;
@@ -1111,42 +1041,6 @@ function useUncontrolled({
 
 
 //# sourceMappingURL=use-uncontrolled.js.map
-
-
-/***/ }),
-
-/***/ 4526:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "F": () => (/* binding */ useContextStylesApi),
-/* harmony export */   "V": () => (/* binding */ StylesApiProvider)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
-
-
-const StylesApiContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)({
-  classNames: {},
-  styles: {},
-  unstyled: false
-});
-function StylesApiProvider({
-  children,
-  classNames,
-  unstyled,
-  styles,
-  staticSelector
-}) {
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(StylesApiContext.Provider, {
-    value: { classNames, styles, unstyled, staticSelector }
-  }, children);
-}
-function useContextStylesApi() {
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(StylesApiContext);
-}
-
-
-//# sourceMappingURL=StylesApiContext.js.map
 
 
 /***/ }),
@@ -1351,8 +1245,8 @@ var esm_extends = __webpack_require__(7462);
 var react = __webpack_require__(7294);
 // EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js
 var react_router_dom = __webpack_require__(3727);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/core/node_modules/@docusaurus/utils-common/lib/index.js
-var lib = __webpack_require__(9356);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/utils-common/lib/index.js
+var lib = __webpack_require__(8780);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
 var useDocusaurusContext = __webpack_require__(2263);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/isInternalUrl.js
@@ -1406,39 +1300,6 @@ react.createElement("a",(0,esm_extends/* default */.Z)({ref:innerRef,href:target
 
 /***/ }),
 
-/***/ 5743:
-/***/ ((__unused_webpack_module, exports) => {
-
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */Object.defineProperty(exports, "__esModule", ({value:true}));// Trailing slash handling depends in some site configuration options
-function applyTrailingSlash(path,options){const{trailingSlash,baseUrl}=options;if(path.startsWith('#')){// Never apply trailing slash to an anchor link
-return path;}// TODO deduplicate: also present in @docusaurus/utils
-function addTrailingSlash(str){return str.endsWith('/')?str:`${str}/`;}function removeTrailingSlash(str){return str.endsWith('/')?str.slice(0,-1):str;}function handleTrailingSlash(str,trailing){return trailing?addTrailingSlash(str):removeTrailingSlash(str);}// undefined = legacy retrocompatible behavior
-if(typeof trailingSlash==='undefined'){return path;}// The trailing slash should be handled before the ?search#hash !
-const[pathname]=path.split(/[#?]/);// Never transform '/' to ''
-// Never remove the baseUrl trailing slash!
-// If baseUrl = /myBase/, we want to emit /myBase/index.html and not
-// /myBase.html! See https://github.com/facebook/docusaurus/issues/5077
-const shouldNotApply=pathname==='/'||pathname===baseUrl;const newPathname=shouldNotApply?pathname:handleTrailingSlash(pathname,trailingSlash);return path.replace(pathname,newPathname);}exports["default"]=applyTrailingSlash;
-
-/***/ }),
-
-/***/ 9356:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */var __importDefault=this&&this.__importDefault||function(mod){return mod&&mod.__esModule?mod:{"default":mod};};Object.defineProperty(exports, "__esModule", ({value:true}));exports.applyTrailingSlash=exports.blogPostContainerID=void 0;exports.blogPostContainerID='post-content';var applyTrailingSlash_1=__webpack_require__(5743);Object.defineProperty(exports, "applyTrailingSlash", ({enumerable:true,get:function(){return __importDefault(applyTrailingSlash_1).default;}}));
-
-/***/ }),
-
 /***/ 1651:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1466,8 +1327,8 @@ var docsUtils = __webpack_require__(3438);
 var docsVersion = __webpack_require__(4477);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/contexts/docsSidebar.js
 var docsSidebar = __webpack_require__(1116);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 19 modules
-var Layout = __webpack_require__(1837);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 18 modules
+var Layout = __webpack_require__(4204);
 // EXTERNAL MODULE: ./src/theme/BackToTopButton/index.tsx
 var BackToTopButton = __webpack_require__(477);
 // EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js
@@ -1490,7 +1351,7 @@ var Arrow = __webpack_require__(4818);
  */function DocPageLayoutSidebarExpandButton(_ref){let{toggleSidebar}=_ref;return/*#__PURE__*/react.createElement("div",{className:styles_module.expandButton,title:(0,Translate/* translate */.I)({id:'theme.docs.sidebar.expandButtonTitle',message:'Expand sidebar',description:'The ARIA label and title attribute for expand button of doc sidebar'}),"aria-label":(0,Translate/* translate */.I)({id:'theme.docs.sidebar.expandButtonAriaLabel',message:'Expand sidebar',description:'The ARIA label and title attribute for expand button of doc sidebar'}),tabIndex:0,role:"button",onKeyDown:toggleSidebar,onClick:toggleSidebar},/*#__PURE__*/react.createElement(Arrow/* default */.Z,{className:styles_module.expandButtonIcon}));}
 ;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/DocPage/Layout/Sidebar/styles.module.css
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const Sidebar_styles_module = ({"docSidebarContainer":"docSidebarContainer_b6E3","docSidebarContainerHidden":"docSidebarContainerHidden_b3ry"});
+/* harmony default export */ const Sidebar_styles_module = ({"docSidebarContainer":"docSidebarContainer_b6E3","docSidebarContainerHidden":"docSidebarContainerHidden_b3ry","sidebarViewport":"sidebarViewport_Xe31"});
 ;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/DocPage/Layout/Sidebar/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -1500,7 +1361,7 @@ var Arrow = __webpack_require__(4818);
  */// Reset sidebar state when sidebar changes
 // Use React key to unmount/remount the children
 // See https://github.com/facebook/docusaurus/issues/3414
-function ResetOnSidebarChange(_ref){let{children}=_ref;const sidebar=(0,docsSidebar/* useDocsSidebar */.V)();return/*#__PURE__*/react.createElement(react.Fragment,{key:sidebar?.name??'noSidebar'},children);}function DocPageLayoutSidebar(_ref2){let{sidebar,hiddenSidebarContainer,setHiddenSidebarContainer}=_ref2;const{pathname}=(0,react_router/* useLocation */.TH)();const[hiddenSidebar,setHiddenSidebar]=(0,react.useState)(false);const toggleSidebar=(0,react.useCallback)(()=>{if(hiddenSidebar){setHiddenSidebar(false);}setHiddenSidebarContainer(value=>!value);},[setHiddenSidebarContainer,hiddenSidebar]);return/*#__PURE__*/react.createElement("aside",{className:(0,clsx_m/* default */.Z)(ThemeClassNames/* ThemeClassNames.docs.docSidebarContainer */.k.docs.docSidebarContainer,Sidebar_styles_module.docSidebarContainer,hiddenSidebarContainer&&Sidebar_styles_module.docSidebarContainerHidden),onTransitionEnd:e=>{if(!e.currentTarget.classList.contains(Sidebar_styles_module.docSidebarContainer)){return;}if(hiddenSidebarContainer){setHiddenSidebar(true);}}},/*#__PURE__*/react.createElement(ResetOnSidebarChange,null,/*#__PURE__*/react.createElement(DocSidebar/* default */.Z,{sidebar:sidebar,path:pathname,onCollapse:toggleSidebar,isHidden:hiddenSidebar})),hiddenSidebar&&/*#__PURE__*/react.createElement(DocPageLayoutSidebarExpandButton,{toggleSidebar:toggleSidebar}));}
+function ResetOnSidebarChange(_ref){let{children}=_ref;const sidebar=(0,docsSidebar/* useDocsSidebar */.V)();return/*#__PURE__*/react.createElement(react.Fragment,{key:sidebar?.name??'noSidebar'},children);}function DocPageLayoutSidebar(_ref2){let{sidebar,hiddenSidebarContainer,setHiddenSidebarContainer}=_ref2;const{pathname}=(0,react_router/* useLocation */.TH)();const[hiddenSidebar,setHiddenSidebar]=(0,react.useState)(false);const toggleSidebar=(0,react.useCallback)(()=>{if(hiddenSidebar){setHiddenSidebar(false);}setHiddenSidebarContainer(value=>!value);},[setHiddenSidebarContainer,hiddenSidebar]);return/*#__PURE__*/react.createElement("aside",{className:(0,clsx_m/* default */.Z)(ThemeClassNames/* ThemeClassNames.docs.docSidebarContainer */.k.docs.docSidebarContainer,Sidebar_styles_module.docSidebarContainer,hiddenSidebarContainer&&Sidebar_styles_module.docSidebarContainerHidden),onTransitionEnd:e=>{if(!e.currentTarget.classList.contains(Sidebar_styles_module.docSidebarContainer)){return;}if(hiddenSidebarContainer){setHiddenSidebar(true);}}},/*#__PURE__*/react.createElement(ResetOnSidebarChange,null,/*#__PURE__*/react.createElement("div",{className:(0,clsx_m/* default */.Z)(Sidebar_styles_module.sidebarViewport,hiddenSidebar&&Sidebar_styles_module.sidebarViewportHidden)},/*#__PURE__*/react.createElement(DocSidebar/* default */.Z,{sidebar:sidebar,path:pathname,onCollapse:toggleSidebar,isHidden:hiddenSidebar}),hiddenSidebar&&/*#__PURE__*/react.createElement(DocPageLayoutSidebarExpandButton,{toggleSidebar:toggleSidebar}))));}
 ;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/DocPage/Layout/Main/styles.module.css
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const Main_styles_module = ({"docMainContainer":"docMainContainer_gTbr","docMainContainerEnhanced":"docMainContainerEnhanced_Uz_u","docItemWrapperEnhanced":"docItemWrapperEnhanced_czyv"});
@@ -1521,8 +1382,8 @@ function ResetOnSidebarChange(_ref){let{children}=_ref;const sidebar=(0,docsSide
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */function DocPageLayout(_ref){let{children}=_ref;const sidebar=(0,docsSidebar/* useDocsSidebar */.V)();const[hiddenSidebarContainer,setHiddenSidebarContainer]=(0,react.useState)(false);return/*#__PURE__*/react.createElement(Layout/* default */.Z,{wrapperClassName:Layout_styles_module.docsWrapper},/*#__PURE__*/react.createElement(BackToTopButton/* default */.Z,null),/*#__PURE__*/react.createElement("div",{className:Layout_styles_module.docPage},sidebar&&/*#__PURE__*/react.createElement(DocPageLayoutSidebar,{sidebar:sidebar.items,hiddenSidebarContainer:hiddenSidebarContainer,setHiddenSidebarContainer:setHiddenSidebarContainer}),/*#__PURE__*/react.createElement(DocPageLayoutMain,{hiddenSidebarContainer:hiddenSidebarContainer},children)));}
-// EXTERNAL MODULE: ./src/theme/NotFound.tsx + 1 modules
-var NotFound = __webpack_require__(4697);
+// EXTERNAL MODULE: ./src/theme/NotFound.tsx
+var NotFound = __webpack_require__(486);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/SearchMetadata/index.js
 var SearchMetadata = __webpack_require__(197);
 ;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/DocPage/index.js
@@ -1729,6 +1590,39 @@ isFocusedAnchor.current=false;}else if(scrollTop>=lastScrollTop){// The user has
 // animation under progress.
 cancelScroll();setShown(false);}else if(scrollTop<threshold){// Scrolled to the minimum position; hide the button.
 setShown(false);}else if(scrollTop+window.innerHeight<document.documentElement.scrollHeight){setShown(true);}});(0,_utils_useLocationChange__WEBPACK_IMPORTED_MODULE_2__/* .useLocationChange */ .S)(locationChangeEvent=>{if(locationChangeEvent.location.hash){isFocusedAnchor.current=true;setShown(false);}});return{shown,scrollToTop:()=>startScroll(0)};}
+
+/***/ }),
+
+/***/ 8802:
+/***/ ((__unused_webpack_module, exports) => {
+
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */Object.defineProperty(exports, "__esModule", ({value:true}));// Trailing slash handling depends in some site configuration options
+function applyTrailingSlash(path,options){const{trailingSlash,baseUrl}=options;if(path.startsWith('#')){// Never apply trailing slash to an anchor link
+return path;}// TODO deduplicate: also present in @docusaurus/utils
+function addTrailingSlash(str){return str.endsWith('/')?str:`${str}/`;}function removeTrailingSlash(str){return str.endsWith('/')?str.slice(0,-1):str;}function handleTrailingSlash(str,trailing){return trailing?addTrailingSlash(str):removeTrailingSlash(str);}// undefined = legacy retrocompatible behavior
+if(typeof trailingSlash==='undefined'){return path;}// The trailing slash should be handled before the ?search#hash !
+const[pathname]=path.split(/[#?]/);// Never transform '/' to ''
+// Never remove the baseUrl trailing slash!
+// If baseUrl = /myBase/, we want to emit /myBase/index.html and not
+// /myBase.html! See https://github.com/facebook/docusaurus/issues/5077
+const shouldNotApply=pathname==='/'||pathname===baseUrl;const newPathname=shouldNotApply?pathname:handleTrailingSlash(pathname,trailingSlash);return path.replace(pathname,newPathname);}exports["default"]=applyTrailingSlash;
+
+/***/ }),
+
+/***/ 8780:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var __importDefault=this&&this.__importDefault||function(mod){return mod&&mod.__esModule?mod:{"default":mod};};Object.defineProperty(exports, "__esModule", ({value:true}));exports.applyTrailingSlash=exports.blogPostContainerID=void 0;exports.blogPostContainerID='post-content';var applyTrailingSlash_1=__webpack_require__(8802);Object.defineProperty(exports, "applyTrailingSlash", ({enumerable:true,get:function(){return __importDefault(applyTrailingSlash_1).default;}}));
 
 /***/ })
 

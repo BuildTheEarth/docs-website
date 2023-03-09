@@ -1,4 +1,4 @@
-(self["webpackChunkbte_docs"] = self["webpackChunkbte_docs"] || []).push([[786],{
+(self["webpackChunkbte_docs"] = self["webpackChunkbte_docs"] || []).push([[870],{
 
 /***/ 7479:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -12,8 +12,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
-// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 25 modules
-var MantineProvider = __webpack_require__(4215);
+// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 26 modules
+var MantineProvider = __webpack_require__(8495);
 // EXTERNAL MODULE: ./node_modules/@mantine/hooks/esm/use-id/use-id.js
 var use_id = __webpack_require__(6289);
 // EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/tss/create-styles.js + 1 modules
@@ -362,8 +362,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
-// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 25 modules
-var MantineProvider = __webpack_require__(4215);
+// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 26 modules
+var MantineProvider = __webpack_require__(8495);
 // EXTERNAL MODULE: ./node_modules/@mantine/utils/esm/create-polymorphic-component/create-polymorphic-component.js
 var create_polymorphic_component = __webpack_require__(8427);
 // EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/tss/create-styles.js + 1 modules
@@ -582,8 +582,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
-// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 25 modules
-var MantineProvider = __webpack_require__(4215);
+// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 26 modules
+var MantineProvider = __webpack_require__(8495);
 // EXTERNAL MODULE: ./node_modules/@mantine/utils/esm/is-element/is-element.js
 var is_element = __webpack_require__(4241);
 // EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/tss/create-styles.js + 1 modules
@@ -705,8 +705,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
-// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 25 modules
-var MantineProvider = __webpack_require__(4215);
+// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 26 modules
+var MantineProvider = __webpack_require__(8495);
 // EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/tss/create-styles.js + 1 modules
 var create_styles = __webpack_require__(6817);
 ;// CONCATENATED MODULE: ./node_modules/@mantine/core/esm/Code/Code.styles.js
@@ -829,8 +829,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
-// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 25 modules
-var MantineProvider = __webpack_require__(4215);
+// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 26 modules
+var MantineProvider = __webpack_require__(8495);
 // EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/tss/create-styles.js + 1 modules
 var create_styles = __webpack_require__(6817);
 ;// CONCATENATED MODULE: ./node_modules/@mantine/core/esm/Title/Title.styles.js
@@ -1070,7 +1070,7 @@ function useUncontrolled({
 
 /***/ }),
 
-/***/ 4895:
+/***/ 8604:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1083,10 +1083,8 @@ __webpack_require__.d(__webpack_exports__, {
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
 var react_namespaceObject = /*#__PURE__*/__webpack_require__.t(react, 2);
-// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 25 modules
-var MantineProvider = __webpack_require__(4215);
-// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/StylesApiContext.js
-var StylesApiContext = __webpack_require__(4526);
+// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 26 modules
+var MantineProvider = __webpack_require__(8495);
 // EXTERNAL MODULE: ./node_modules/@mantine/utils/esm/create-safe-context/create-safe-context.js
 var create_safe_context = __webpack_require__(8216);
 ;// CONCATENATED MODULE: ./node_modules/@mantine/core/esm/Tabs/Tabs.errors.js
@@ -1208,10 +1206,13 @@ var __objRest = (source, exclude) => {
     }
   return target;
 };
-const TabsList = (0,react.forwardRef)((_a, ref) => {
-  var _b = _a, { children, className, grow = false, position = "left" } = _b, others = __objRest(_b, ["children", "className", "grow", "position"]);
-  const { orientation, variant, color, radius, inverted, placement } = useTabsContext();
-  const { classNames, styles, unstyled } = (0,StylesApiContext/* useContextStylesApi */.F)();
+const defaultProps = {
+  grow: false,
+  position: "left"
+};
+const TabsList = (0,react.forwardRef)((props, ref) => {
+  const _a = (0,MantineProvider/* useComponentDefaultProps */.N4)("TabsList", defaultProps, props), { children, className, grow, position } = _a, others = __objRest(_a, ["children", "className", "grow", "position"]);
+  const { orientation, variant, color, radius, inverted, placement, classNames, styles, unstyled } = useTabsContext();
   const { classes, cx } = TabsList_styles({ orientation, grow, variant, color, position, radius, inverted, placement }, { name: "Tabs", unstyled, classNames, styles });
   return /* @__PURE__ */ react.createElement(Box/* Box */.x, __spreadProps(TabsList_spreadValues({}, others), {
     className: cx(classes.tabsList, className),
@@ -1278,10 +1279,10 @@ var TabsPanel_objRest = (source, exclude) => {
     }
   return target;
 };
-const TabsPanel = (0,react.forwardRef)((_a, ref) => {
-  var _b = _a, { value, children, sx, className } = _b, others = TabsPanel_objRest(_b, ["value", "children", "sx", "className"]);
+const TabsPanel_defaultProps = {};
+const TabsPanel = (0,react.forwardRef)((props, ref) => {
+  const _a = (0,MantineProvider/* useComponentDefaultProps */.N4)("TabsPanel", TabsPanel_defaultProps, props), { value, children, sx, className } = _a, others = TabsPanel_objRest(_a, ["value", "children", "sx", "className"]);
   const ctx = useTabsContext();
-  const { classNames, styles, unstyled } = (0,StylesApiContext/* useContextStylesApi */.F)();
   const { classes, cx } = TabsPanel_styles({
     orientation: ctx.orientation,
     variant: ctx.variant,
@@ -1289,7 +1290,7 @@ const TabsPanel = (0,react.forwardRef)((_a, ref) => {
     radius: ctx.radius,
     inverted: ctx.inverted,
     placement: ctx.placement
-  }, { name: "Tabs", unstyled, classNames, styles });
+  }, { name: "Tabs", unstyled: ctx.unstyled, classNames: ctx.classNames, styles: ctx.styles });
   const active = ctx.value === value;
   const content = ctx.keepMounted ? children : active ? children : null;
   return /* @__PURE__ */ react.createElement(Box/* Box */.x, TabsPanel_spreadProps(TabsPanel_spreadValues({}, others), {
@@ -1468,10 +1469,10 @@ var Tab_objRest = (source, exclude) => {
     }
   return target;
 };
-const Tab = (0,react.forwardRef)((_a, ref) => {
-  var _b = _a, { value, children, onKeyDown, onClick, className, icon, rightSection, color } = _b, others = Tab_objRest(_b, ["value", "children", "onKeyDown", "onClick", "className", "icon", "rightSection", "color"]);
+const Tab_defaultProps = {};
+const Tab = (0,react.forwardRef)((props, ref) => {
+  const _a = (0,MantineProvider/* useComponentDefaultProps */.N4)("TabsTab", Tab_defaultProps, props), { value, children, onKeyDown, onClick, className, icon, rightSection, color } = _a, others = Tab_objRest(_a, ["value", "children", "onKeyDown", "onClick", "className", "icon", "rightSection", "color"]);
   const ctx = useTabsContext();
-  const { classNames, styles, unstyled } = (0,StylesApiContext/* useContextStylesApi */.F)();
   const hasIcon = !!icon;
   const hasRightSection = !!rightSection;
   const { theme, classes, cx } = Tab_styles({
@@ -1483,14 +1484,14 @@ const Tab = (0,react.forwardRef)((_a, ref) => {
     radius: ctx.radius,
     inverted: ctx.inverted,
     placement: ctx.placement
-  }, { name: "Tabs", unstyled, classNames, styles });
+  }, { name: "Tabs", unstyled: ctx.unstyled, classNames: ctx.classNames, styles: ctx.styles });
   const isActive = value === ctx.value;
   const activateTab = (event) => {
     ctx.onTabChange(ctx.allowTabDeactivation ? value === ctx.value ? null : value : value);
     onClick == null ? void 0 : onClick(event);
   };
   return /* @__PURE__ */ react.createElement(UnstyledButton/* UnstyledButton */.k, Tab_spreadProps(Tab_spreadValues({}, others), {
-    unstyled,
+    unstyled: ctx.unstyled,
     className: cx(classes.tab, className),
     "data-active": isActive || void 0,
     ref,
@@ -1551,7 +1552,10 @@ function TabsProvider({
   radius,
   inverted,
   placement,
-  keepMounted = true
+  keepMounted = true,
+  classNames,
+  styles,
+  unstyled
 }) {
   const uid = (0,use_id/* useId */.M)(id);
   const [_value, onChange] = (0,use_uncontrolled/* useUncontrolled */.C)({
@@ -1576,7 +1580,10 @@ function TabsProvider({
       color,
       radius,
       inverted,
-      keepMounted
+      keepMounted,
+      classNames,
+      styles,
+      unstyled
     }
   }, children);
 }
@@ -1639,7 +1646,7 @@ var Tabs_objRest = (source, exclude) => {
     }
   return target;
 };
-const defaultProps = {
+const Tabs_defaultProps = {
   orientation: "horizontal",
   loop: true,
   activateTabWithKeyboard: true,
@@ -1650,7 +1657,7 @@ const defaultProps = {
   placement: "left"
 };
 const Tabs = (0,react.forwardRef)((props, ref) => {
-  const _a = (0,MantineProvider/* useComponentDefaultProps */.N4)("Tabs", defaultProps, props), {
+  const _a = (0,MantineProvider/* useComponentDefaultProps */.N4)("Tabs", Tabs_defaultProps, props), {
     defaultValue,
     value,
     orientation,
@@ -1692,11 +1699,7 @@ const Tabs = (0,react.forwardRef)((props, ref) => {
     "placement"
   ]);
   const { classes, cx } = Tabs_styles({ orientation, color, variant, radius, inverted, placement }, { unstyled, name: "Tabs", classNames, styles });
-  return /* @__PURE__ */ react.createElement(StylesApiContext/* StylesApiProvider */.V, {
-    classNames,
-    styles,
-    unstyled
-  }, /* @__PURE__ */ react.createElement(TabsProvider, {
+  return /* @__PURE__ */ react.createElement(TabsProvider, {
     activateTabWithKeyboard,
     defaultValue,
     orientation,
@@ -1710,12 +1713,15 @@ const Tabs = (0,react.forwardRef)((props, ref) => {
     radius,
     inverted,
     keepMounted,
-    placement
+    placement,
+    classNames,
+    styles,
+    unstyled
   }, /* @__PURE__ */ react.createElement(Box/* Box */.x, Tabs_spreadProps(Tabs_spreadValues({}, others), {
     className: cx(classes.root, className),
     id,
     ref
-  }), children)));
+  }), children));
 });
 Tabs.List = TabsList;
 Tabs.Tab = Tab;
@@ -2237,12 +2243,15 @@ function $5e63c961fc1ce211$var$mergeProps(slotProps, childProps) {
     for(const propName in childProps){
         const slotPropValue = slotProps[propName];
         const childPropValue = childProps[propName];
-        const isHandler = /^on[A-Z]/.test(propName); // if it's a handler, modify the override by composing the base handler
-        if (isHandler) overrideProps[propName] = (...args)=>{
-            childPropValue === null || childPropValue === void 0 || childPropValue(...args);
-            slotPropValue === null || slotPropValue === void 0 || slotPropValue(...args);
-        };
-        else if (propName === 'style') overrideProps[propName] = {
+        const isHandler = /^on[A-Z]/.test(propName);
+        if (isHandler) {
+            // if the handler exists on both, we compose them
+            if (slotPropValue && childPropValue) overrideProps[propName] = (...args)=>{
+                childPropValue(...args);
+                slotPropValue(...args);
+            };
+            else if (slotPropValue) overrideProps[propName] = slotPropValue;
+        } else if (propName === 'style') overrideProps[propName] = {
             ...slotPropValue,
             ...childPropValue
         };
@@ -2281,6 +2290,7 @@ const $8927f6f2acc4f386$var$NODES = [
     'h2',
     'h3',
     'img',
+    'label',
     'li',
     'nav',
     'ol',
@@ -3258,7 +3268,7 @@ const $57acba87d6e25586$var$ScrollAreaScrollbarImpl = /*#__PURE__*/ (0,react.for
         onPointerMove: $e42e1063c40fb3ef$export$b9ecd428b558ff10(props.onPointerMove, handleDragScroll),
         onPointerUp: $e42e1063c40fb3ef$export$b9ecd428b558ff10(props.onPointerUp, (event)=>{
             const element = event.target;
-            element.releasePointerCapture(event.pointerId);
+            if (element.hasPointerCapture(event.pointerId)) element.releasePointerCapture(event.pointerId);
             document.body.style.webkitUserSelect = prevWebkitUserSelectRef.current;
             rectRef.current = null;
         })
@@ -3572,6 +3582,7 @@ var ScrollArea_styles_useStyles = (0,create_styles/* createStyles */.k)((theme, 
     position: "relative",
     transition: "background-color 150ms ease",
     display: hidden ? "none" : void 0,
+    overflow: "hidden",
     "&::before": {
       content: '""',
       position: "absolute",
@@ -3579,7 +3590,9 @@ var ScrollArea_styles_useStyles = (0,create_styles/* createStyles */.k)((theme, 
       left: "50%",
       transform: "translate(-50%, -50%)",
       width: "100%",
-      height: "100%"
+      height: "100%",
+      minWidth: 44,
+      minHeight: 44
     }
   },
   corner: {
@@ -3651,7 +3664,8 @@ const _ScrollArea = (0,react.forwardRef)((props, ref) => {
     offsetScrollbars,
     viewportRef,
     onScrollPositionChange,
-    unstyled
+    unstyled,
+    viewportProps
   } = _a, others = ScrollArea_objRest(_a, [
     "children",
     "className",
@@ -3664,7 +3678,8 @@ const _ScrollArea = (0,react.forwardRef)((props, ref) => {
     "offsetScrollbars",
     "viewportRef",
     "onScrollPositionChange",
-    "unstyled"
+    "unstyled",
+    "viewportProps"
   ]);
   const [scrollbarHovered, setScrollbarHovered] = (0,react.useState)(false);
   const theme = (0,MantineProvider/* useMantineTheme */.rZ)();
@@ -3677,14 +3692,14 @@ const _ScrollArea = (0,react.forwardRef)((props, ref) => {
     asChild: true
   }, /* @__PURE__ */ react.createElement(Box/* Box */.x, ScrollArea_spreadValues({
     className: cx(classes.root, className)
-  }, others), /* @__PURE__ */ react.createElement($57acba87d6e25586$export$d5c6c08dc2d3ca7, {
+  }, others), /* @__PURE__ */ react.createElement($57acba87d6e25586$export$d5c6c08dc2d3ca7, ScrollArea_spreadProps(ScrollArea_spreadValues({}, viewportProps), {
     className: classes.viewport,
     ref: viewportRef,
     onScroll: typeof onScrollPositionChange === "function" ? ({ currentTarget }) => onScrollPositionChange({
       x: currentTarget.scrollLeft,
       y: currentTarget.scrollTop
     }) : void 0
-  }, children), /* @__PURE__ */ react.createElement($57acba87d6e25586$export$9a4e88b92edfce6b, {
+  }), children), /* @__PURE__ */ react.createElement($57acba87d6e25586$export$9a4e88b92edfce6b, {
     orientation: "horizontal",
     className: classes.scrollbar,
     forceMount: true,
@@ -3767,10 +3782,10 @@ var use_merged_ref = __webpack_require__(4731);
 // EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/utils/get-default-z-index/get-default-z-index.js
 var get_default_z_index = __webpack_require__(3594);
 ;// CONCATENATED MODULE: ./node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs
-function t(t){return t.split("-")[0]}function e(t){return t.split("-")[1]}function n(e){return["top","bottom"].includes(t(e))?"x":"y"}function r(t){return"y"===t?"height":"width"}function i(i,o,a){let{reference:l,floating:s}=i;const c=l.x+l.width/2-s.width/2,f=l.y+l.height/2-s.height/2,u=n(o),m=r(u),g=l[m]/2-s[m]/2,d="x"===u;let p;switch(t(o)){case"top":p={x:c,y:l.y-s.height};break;case"bottom":p={x:c,y:l.y+l.height};break;case"right":p={x:l.x+l.width,y:f};break;case"left":p={x:l.x-s.width,y:f};break;default:p={x:l.x,y:l.y}}switch(e(o)){case"start":p[u]-=g*(a&&d?-1:1);break;case"end":p[u]+=g*(a&&d?-1:1)}return p}const floating_ui_core_browser_min_o=async(t,e,n)=>{const{placement:r="bottom",strategy:o="absolute",middleware:a=[],platform:l}=n,s=a.filter(Boolean),c=await(null==l.isRTL?void 0:l.isRTL(e));let f=await l.getElementRects({reference:t,floating:e,strategy:o}),{x:u,y:m}=i(f,r,c),g=r,d={},p=0;for(let n=0;n<s.length;n++){const{name:a,fn:h}=s[n],{x:y,y:x,data:w,reset:v}=await h({x:u,y:m,initialPlacement:r,placement:g,strategy:o,middlewareData:d,rects:f,platform:l,elements:{reference:t,floating:e}});u=null!=y?y:u,m=null!=x?x:m,d={...d,[a]:{...d[a],...w}},v&&p<=50&&(p++,"object"==typeof v&&(v.placement&&(g=v.placement),v.rects&&(f=!0===v.rects?await l.getElementRects({reference:t,floating:e,strategy:o}):v.rects),({x:u,y:m}=i(f,g,c))),n=-1)}return{x:u,y:m,placement:g,strategy:o,middlewareData:d}};function a(t){return"number"!=typeof t?function(t){return{top:0,right:0,bottom:0,left:0,...t}}(t):{top:t,right:t,bottom:t,left:t}}function l(t){return{...t,top:t.y,left:t.x,right:t.x+t.width,bottom:t.y+t.height}}async function s(t,e){var n;void 0===e&&(e={});const{x:r,y:i,platform:o,rects:s,elements:c,strategy:f}=t,{boundary:u="clippingAncestors",rootBoundary:m="viewport",elementContext:g="floating",altBoundary:d=!1,padding:p=0}=e,h=a(p),y=c[d?"floating"===g?"reference":"floating":g],x=l(await o.getClippingRect({element:null==(n=await(null==o.isElement?void 0:o.isElement(y)))||n?y:y.contextElement||await(null==o.getDocumentElement?void 0:o.getDocumentElement(c.floating)),boundary:u,rootBoundary:m,strategy:f})),w=l(o.convertOffsetParentRelativeRectToViewportRelativeRect?await o.convertOffsetParentRelativeRectToViewportRelativeRect({rect:"floating"===g?{...s.floating,x:r,y:i}:s.reference,offsetParent:await(null==o.getOffsetParent?void 0:o.getOffsetParent(c.floating)),strategy:f}):s[g]);return{top:x.top-w.top+h.top,bottom:w.bottom-x.bottom+h.bottom,left:x.left-w.left+h.left,right:w.right-x.right+h.right}}const c=Math.min,f=Math.max;function u(t,e,n){return f(t,c(e,n))}const m=t=>({name:"arrow",options:t,async fn(i){const{element:o,padding:l=0}=null!=t?t:{},{x:s,y:c,placement:f,rects:m,platform:g}=i;if(null==o)return{};const d=a(l),p={x:s,y:c},h=n(f),y=e(f),x=r(h),w=await g.getDimensions(o),v="y"===h?"top":"left",b="y"===h?"bottom":"right",R=m.reference[x]+m.reference[h]-p[h]-m.floating[x],A=p[h]-m.reference[h],P=await(null==g.getOffsetParent?void 0:g.getOffsetParent(o));let T=P?"y"===h?P.clientHeight||0:P.clientWidth||0:0;0===T&&(T=m.floating[x]);const O=R/2-A/2,L=d[v],D=T-w[x]-d[b],k=T/2-w[x]/2+O,E=u(L,k,D),B=("start"===y?d[v]:d[b])>0&&k!==E&&m.reference[x]<=m.floating[x];return{[h]:p[h]-(B?k<L?L-k:D-k:0),data:{[h]:E,centerOffset:k-E}}}}),g={left:"right",right:"left",bottom:"top",top:"bottom"};function d(t){return t.replace(/left|right|bottom|top/g,(t=>g[t]))}function p(t,i,o){void 0===o&&(o=!1);const a=e(t),l=n(t),s=r(l);let c="x"===l?a===(o?"end":"start")?"right":"left":"start"===a?"bottom":"top";return i.reference[s]>i.floating[s]&&(c=d(c)),{main:c,cross:d(c)}}const h={start:"end",end:"start"};function y(t){return t.replace(/start|end/g,(t=>h[t]))}const x=["top","right","bottom","left"],w=x.reduce(((t,e)=>t.concat(e,e+"-start",e+"-end")),[]);const v=function(n){return void 0===n&&(n={}),{name:"autoPlacement",options:n,async fn(r){var i,o,a,l,c;const{x:f,y:u,rects:m,middlewareData:g,placement:d,platform:h,elements:x}=r,{alignment:v=null,allowedPlacements:b=w,autoAlignment:R=!0,...A}=n,P=function(n,r,i){return(n?[...i.filter((t=>e(t)===n)),...i.filter((t=>e(t)!==n))]:i.filter((e=>t(e)===e))).filter((t=>!n||e(t)===n||!!r&&y(t)!==t))}(v,R,b),T=await s(r,A),O=null!=(i=null==(o=g.autoPlacement)?void 0:o.index)?i:0,L=P[O];if(null==L)return{};const{main:D,cross:k}=p(L,m,await(null==h.isRTL?void 0:h.isRTL(x.floating)));if(d!==L)return{x:f,y:u,reset:{placement:P[0]}};const E=[T[t(L)],T[D],T[k]],B=[...null!=(a=null==(l=g.autoPlacement)?void 0:l.overflows)?a:[],{placement:L,overflows:E}],C=P[O+1];if(C)return{data:{index:O+1,overflows:B},reset:{placement:C}};const H=B.slice().sort(((t,e)=>t.overflows[0]-e.overflows[0])),V=null==(c=H.find((t=>{let{overflows:e}=t;return e.every((t=>t<=0))})))?void 0:c.placement,F=null!=V?V:H[0].placement;return F!==d?{data:{index:O+1,overflows:B},reset:{placement:F}}:{}}}};const b=function(e){return void 0===e&&(e={}),{name:"flip",options:e,async fn(n){var r;const{placement:i,middlewareData:o,rects:a,initialPlacement:l,platform:c,elements:f}=n,{mainAxis:u=!0,crossAxis:m=!0,fallbackPlacements:g,fallbackStrategy:h="bestFit",flipAlignment:x=!0,...w}=e,v=t(i),b=g||(v===l||!x?[d(l)]:function(t){const e=d(t);return[y(t),e,y(e)]}(l)),R=[l,...b],A=await s(n,w),P=[];let T=(null==(r=o.flip)?void 0:r.overflows)||[];if(u&&P.push(A[v]),m){const{main:t,cross:e}=p(i,a,await(null==c.isRTL?void 0:c.isRTL(f.floating)));P.push(A[t],A[e])}if(T=[...T,{placement:i,overflows:P}],!P.every((t=>t<=0))){var O,L;const t=(null!=(O=null==(L=o.flip)?void 0:L.index)?O:0)+1,e=R[t];if(e)return{data:{index:t,overflows:T},reset:{placement:e}};let n="bottom";switch(h){case"bestFit":{var D;const t=null==(D=T.map((t=>[t,t.overflows.filter((t=>t>0)).reduce(((t,e)=>t+e),0)])).sort(((t,e)=>t[1]-e[1]))[0])?void 0:D[0].placement;t&&(n=t);break}case"initialPlacement":n=l}if(i!==n)return{reset:{placement:n}}}return{}}}};function R(t,e){return{top:t.top-e.height,right:t.right-e.width,bottom:t.bottom-e.height,left:t.left-e.width}}function A(t){return x.some((e=>t[e]>=0))}const P=function(t){let{strategy:e="referenceHidden",...n}=void 0===t?{}:t;return{name:"hide",async fn(t){const{rects:r}=t;switch(e){case"referenceHidden":{const e=R(await s(t,{...n,elementContext:"reference"}),r.reference);return{data:{referenceHiddenOffsets:e,referenceHidden:A(e)}}}case"escaped":{const e=R(await s(t,{...n,altBoundary:!0}),r.floating);return{data:{escapedOffsets:e,escaped:A(e)}}}default:return{}}}}};const T=function(r){return void 0===r&&(r=0),{name:"offset",options:r,async fn(i){const{x:o,y:a}=i,l=await async function(r,i){const{placement:o,platform:a,elements:l}=r,s=await(null==a.isRTL?void 0:a.isRTL(l.floating)),c=t(o),f=e(o),u="x"===n(o),m=["left","top"].includes(c)?-1:1,g=s&&u?-1:1,d="function"==typeof i?i(r):i;let{mainAxis:p,crossAxis:h,alignmentAxis:y}="number"==typeof d?{mainAxis:d,crossAxis:0,alignmentAxis:null}:{mainAxis:0,crossAxis:0,alignmentAxis:null,...d};return f&&"number"==typeof y&&(h="end"===f?-1*y:y),u?{x:h*g,y:p*m}:{x:p*m,y:h*g}}(i,r);return{x:o+l.x,y:a+l.y,data:l}}}};function O(t){return"x"===t?"y":"x"}const L=function(e){return void 0===e&&(e={}),{name:"shift",options:e,async fn(r){const{x:i,y:o,placement:a}=r,{mainAxis:l=!0,crossAxis:c=!1,limiter:f={fn:t=>{let{x:e,y:n}=t;return{x:e,y:n}}},...m}=e,g={x:i,y:o},d=await s(r,m),p=n(t(a)),h=O(p);let y=g[p],x=g[h];if(l){const t="y"===p?"bottom":"right";y=u(y+d["y"===p?"top":"left"],y,y-d[t])}if(c){const t="y"===h?"bottom":"right";x=u(x+d["y"===h?"top":"left"],x,x-d[t])}const w=f.fn({...r,[p]:y,[h]:x});return{...w,data:{x:w.x-i,y:w.y-o}}}}},D=function(e){return void 0===e&&(e={}),{options:e,fn(r){const{x:i,y:o,placement:a,rects:l,middlewareData:s}=r,{offset:c=0,mainAxis:f=!0,crossAxis:u=!0}=e,m={x:i,y:o},g=n(a),d=O(g);let p=m[g],h=m[d];const y="function"==typeof c?c(r):c,x="number"==typeof y?{mainAxis:y,crossAxis:0}:{mainAxis:0,crossAxis:0,...y};if(f){const t="y"===g?"height":"width",e=l.reference[g]-l.floating[t]+x.mainAxis,n=l.reference[g]+l.reference[t]-x.mainAxis;p<e?p=e:p>n&&(p=n)}if(u){var w,v,b,R;const e="y"===g?"width":"height",n=["top","left"].includes(t(a)),r=l.reference[d]-l.floating[e]+(n&&null!=(w=null==(v=s.offset)?void 0:v[d])?w:0)+(n?0:x.crossAxis),i=l.reference[d]+l.reference[e]+(n?0:null!=(b=null==(R=s.offset)?void 0:R[d])?b:0)-(n?x.crossAxis:0);h<r?h=r:h>i&&(h=i)}return{[g]:p,[d]:h}}}},k=function(n){return void 0===n&&(n={}),{name:"size",options:n,async fn(r){const{placement:i,rects:o,platform:a,elements:l}=r,{apply:c=(()=>{}),...u}=n,m=await s(r,u),g=t(i),d=e(i);let p,h;"top"===g||"bottom"===g?(p=g,h=d===(await(null==a.isRTL?void 0:a.isRTL(l.floating))?"start":"end")?"left":"right"):(h=g,p="end"===d?"top":"bottom");const y=f(m.left,0),x=f(m.right,0),w=f(m.top,0),v=f(m.bottom,0),b={availableHeight:o.floating.height-(["left","right"].includes(i)?2*(0!==w||0!==v?w+v:f(m.top,m.bottom)):m[p]),availableWidth:o.floating.width-(["top","bottom"].includes(i)?2*(0!==y||0!==x?y+x:f(m.left,m.right)):m[h])};await c({...r,...b});const R=await a.getDimensions(l.floating);return o.floating.width!==R.width||o.floating.height!==R.height?{reset:{rects:!0}}:{}}}},E=function(e){return void 0===e&&(e={}),{name:"inline",options:e,async fn(r){var i;const{placement:o,elements:s,rects:u,platform:m,strategy:g}=r,{padding:d=2,x:p,y:h}=e,y=l(m.convertOffsetParentRelativeRectToViewportRelativeRect?await m.convertOffsetParentRelativeRectToViewportRelativeRect({rect:u.reference,offsetParent:await(null==m.getOffsetParent?void 0:m.getOffsetParent(s.floating)),strategy:g}):u.reference),x=null!=(i=await(null==m.getClientRects?void 0:m.getClientRects(s.reference)))?i:[],w=a(d);const v=await m.getElementRects({reference:{getBoundingClientRect:function(){var e;if(2===x.length&&x[0].left>x[1].right&&null!=p&&null!=h)return null!=(e=x.find((t=>p>t.left-w.left&&p<t.right+w.right&&h>t.top-w.top&&h<t.bottom+w.bottom)))?e:y;if(x.length>=2){if("x"===n(o)){const e=x[0],n=x[x.length-1],r="top"===t(o),i=e.top,a=n.bottom,l=r?e.left:n.left,s=r?e.right:n.right;return{top:i,bottom:a,left:l,right:s,width:s-l,height:a-i,x:l,y:i}}const e="left"===t(o),r=f(...x.map((t=>t.right))),i=c(...x.map((t=>t.left))),a=x.filter((t=>e?t.left===i:t.right===r)),l=a[0].top,s=a[a.length-1].bottom;return{top:l,bottom:s,left:i,right:r,width:r-i,height:s-l,x:i,y:l}}return y}},floating:s.floating,strategy:g});return u.reference.x!==v.reference.x||u.reference.y!==v.reference.y||u.reference.width!==v.reference.width||u.reference.height!==v.reference.height?{reset:{rects:v}}:{}}}};
+function t(t){return t.split("-")[1]}function e(t){return"y"===t?"height":"width"}function n(t){return t.split("-")[0]}function o(t){return["top","bottom"].includes(n(t))?"x":"y"}function i(i,r,a){let{reference:l,floating:s}=i;const c=l.x+l.width/2-s.width/2,f=l.y+l.height/2-s.height/2,m=o(r),u=e(m),g=l[u]/2-s[u]/2,d="x"===m;let p;switch(n(r)){case"top":p={x:c,y:l.y-s.height};break;case"bottom":p={x:c,y:l.y+l.height};break;case"right":p={x:l.x+l.width,y:f};break;case"left":p={x:l.x-s.width,y:f};break;default:p={x:l.x,y:l.y}}switch(t(r)){case"start":p[m]-=g*(a&&d?-1:1);break;case"end":p[m]+=g*(a&&d?-1:1)}return p}const floating_ui_core_browser_min_r=async(t,e,n)=>{const{placement:o="bottom",strategy:r="absolute",middleware:a=[],platform:l}=n,s=a.filter(Boolean),c=await(null==l.isRTL?void 0:l.isRTL(e));let f=await l.getElementRects({reference:t,floating:e,strategy:r}),{x:m,y:u}=i(f,o,c),g=o,d={},p=0;for(let n=0;n<s.length;n++){const{name:a,fn:h}=s[n],{x:y,y:x,data:w,reset:v}=await h({x:m,y:u,initialPlacement:o,placement:g,strategy:r,middlewareData:d,rects:f,platform:l,elements:{reference:t,floating:e}});m=null!=y?y:m,u=null!=x?x:u,d={...d,[a]:{...d[a],...w}},v&&p<=50&&(p++,"object"==typeof v&&(v.placement&&(g=v.placement),v.rects&&(f=!0===v.rects?await l.getElementRects({reference:t,floating:e,strategy:r}):v.rects),({x:m,y:u}=i(f,g,c))),n=-1)}return{x:m,y:u,placement:g,strategy:r,middlewareData:d}};function a(t){return"number"!=typeof t?function(t){return{top:0,right:0,bottom:0,left:0,...t}}(t):{top:t,right:t,bottom:t,left:t}}function floating_ui_core_browser_min_l(t){return{...t,top:t.y,left:t.x,right:t.x+t.width,bottom:t.y+t.height}}async function s(t,e){var n;void 0===e&&(e={});const{x:o,y:i,platform:r,rects:s,elements:c,strategy:f}=t,{boundary:m="clippingAncestors",rootBoundary:u="viewport",elementContext:g="floating",altBoundary:d=!1,padding:p=0}=e,h=a(p),y=c[d?"floating"===g?"reference":"floating":g],x=floating_ui_core_browser_min_l(await r.getClippingRect({element:null==(n=await(null==r.isElement?void 0:r.isElement(y)))||n?y:y.contextElement||await(null==r.getDocumentElement?void 0:r.getDocumentElement(c.floating)),boundary:m,rootBoundary:u,strategy:f})),w="floating"===g?{...s.floating,x:o,y:i}:s.reference,v=await(null==r.getOffsetParent?void 0:r.getOffsetParent(c.floating)),b=await(null==r.isElement?void 0:r.isElement(v))&&await(null==r.getScale?void 0:r.getScale(v))||{x:1,y:1},R=floating_ui_core_browser_min_l(r.convertOffsetParentRelativeRectToViewportRelativeRect?await r.convertOffsetParentRelativeRectToViewportRelativeRect({rect:w,offsetParent:v,strategy:f}):w);return{top:(x.top-R.top+h.top)/b.y,bottom:(R.bottom-x.bottom+h.bottom)/b.y,left:(x.left-R.left+h.left)/b.x,right:(R.right-x.right+h.right)/b.x}}const c=Math.min,f=Math.max;function m(t,e,n){return f(t,c(e,n))}const u=n=>({name:"arrow",options:n,async fn(i){const{element:r,padding:l=0}=n||{},{x:s,y:c,placement:f,rects:u,platform:g,elements:d}=i;if(null==r)return{};const p=a(l),h={x:s,y:c},y=o(f),x=e(y),w=await g.getDimensions(r),v="y"===y,b=v?"top":"left",R=v?"bottom":"right",A=v?"clientHeight":"clientWidth",P=u.reference[x]+u.reference[y]-h[y]-u.floating[x],T=h[y]-u.reference[y],O=await(null==g.getOffsetParent?void 0:g.getOffsetParent(r));let E=O?O[A]:0;E&&await(null==g.isElement?void 0:g.isElement(O))||(E=d.floating[A]||u.floating[x]);const D=P/2-T/2,L=p[b],k=E-w[x]-p[R],B=E/2-w[x]/2+D,C=m(L,B,k),H=null!=t(f)&&B!=C&&u.reference[x]/2-(B<L?p[b]:p[R])-w[x]/2<0;return{[y]:h[y]-(H?B<L?L-B:k-B:0),data:{[y]:C,centerOffset:B-C}}}}),g=["top","right","bottom","left"],d=g.reduce(((t,e)=>t.concat(e,e+"-start",e+"-end")),[]),p={left:"right",right:"left",bottom:"top",top:"bottom"};function h(t){return t.replace(/left|right|bottom|top/g,(t=>p[t]))}function y(n,i,r){void 0===r&&(r=!1);const a=t(n),l=o(n),s=e(l);let c="x"===l?a===(r?"end":"start")?"right":"left":"start"===a?"bottom":"top";return i.reference[s]>i.floating[s]&&(c=h(c)),{main:c,cross:h(c)}}const x={start:"end",end:"start"};function w(t){return t.replace(/start|end/g,(t=>x[t]))}const v=function(e){return void 0===e&&(e={}),{name:"autoPlacement",options:e,async fn(o){var i,r,a;const{rects:l,middlewareData:c,placement:f,platform:m,elements:u}=o,{crossAxis:g=!1,alignment:p,allowedPlacements:h=d,autoAlignment:x=!0,...v}=e,b=void 0!==p||h===d?function(e,o,i){return(e?[...i.filter((n=>t(n)===e)),...i.filter((n=>t(n)!==e))]:i.filter((t=>n(t)===t))).filter((n=>!e||t(n)===e||!!o&&w(n)!==n))}(p||null,x,h):h,R=await s(o,v),A=(null==(i=c.autoPlacement)?void 0:i.index)||0,P=b[A];if(null==P)return{};const{main:T,cross:O}=y(P,l,await(null==m.isRTL?void 0:m.isRTL(u.floating)));if(f!==P)return{reset:{placement:b[0]}};const E=[R[n(P)],R[T],R[O]],D=[...(null==(r=c.autoPlacement)?void 0:r.overflows)||[],{placement:P,overflows:E}],L=b[A+1];if(L)return{data:{index:A+1,overflows:D},reset:{placement:L}};const k=D.map((e=>{const n=t(e.placement);return[e.placement,n&&g?e.overflows.slice(0,2).reduce(((t,e)=>t+e),0):e.overflows[0],e.overflows]})).sort(((t,e)=>t[1]-e[1])),B=(null==(a=k.filter((e=>e[2].slice(0,t(e[0])?2:3).every((t=>t<=0))))[0])?void 0:a[0])||k[0][0];return B!==f?{data:{index:A+1,overflows:D},reset:{placement:B}}:{}}}};const b=function(e){return void 0===e&&(e={}),{name:"flip",options:e,async fn(o){var i;const{placement:r,middlewareData:a,rects:l,initialPlacement:c,platform:f,elements:m}=o,{mainAxis:u=!0,crossAxis:g=!0,fallbackPlacements:d,fallbackStrategy:p="bestFit",fallbackAxisSideDirection:x="none",flipAlignment:v=!0,...b}=e,R=n(r),A=n(c)===c,P=await(null==f.isRTL?void 0:f.isRTL(m.floating)),T=d||(A||!v?[h(c)]:function(t){const e=h(t);return[w(t),e,w(e)]}(c));d||"none"===x||T.push(...function(e,o,i,r){const a=t(e);let l=function(t,e,n){const o=["left","right"],i=["right","left"],r=["top","bottom"],a=["bottom","top"];switch(t){case"top":case"bottom":return n?e?i:o:e?o:i;case"left":case"right":return e?r:a;default:return[]}}(n(e),"start"===i,r);return a&&(l=l.map((t=>t+"-"+a)),o&&(l=l.concat(l.map(w)))),l}(c,v,x,P));const O=[c,...T],E=await s(o,b),D=[];let L=(null==(i=a.flip)?void 0:i.overflows)||[];if(u&&D.push(E[R]),g){const{main:t,cross:e}=y(r,l,P);D.push(E[t],E[e])}if(L=[...L,{placement:r,overflows:D}],!D.every((t=>t<=0))){var k,B;const t=((null==(k=a.flip)?void 0:k.index)||0)+1,e=O[t];if(e)return{data:{index:t,overflows:L},reset:{placement:e}};let n=null==(B=L.filter((t=>t.overflows[0]<=0)).sort(((t,e)=>t.overflows[1]-e.overflows[1]))[0])?void 0:B.placement;if(!n)switch(p){case"bestFit":{var C;const t=null==(C=L.map((t=>[t.placement,t.overflows.filter((t=>t>0)).reduce(((t,e)=>t+e),0)])).sort(((t,e)=>t[1]-e[1]))[0])?void 0:C[0];t&&(n=t);break}case"initialPlacement":n=c}if(r!==n)return{reset:{placement:n}}}return{}}}};function R(t,e){return{top:t.top-e.height,right:t.right-e.width,bottom:t.bottom-e.height,left:t.left-e.width}}function A(t){return g.some((e=>t[e]>=0))}const P=function(t){return void 0===t&&(t={}),{name:"hide",options:t,async fn(e){const{strategy:n="referenceHidden",...o}=t,{rects:i}=e;switch(n){case"referenceHidden":{const t=R(await s(e,{...o,elementContext:"reference"}),i.reference);return{data:{referenceHiddenOffsets:t,referenceHidden:A(t)}}}case"escaped":{const t=R(await s(e,{...o,altBoundary:!0}),i.floating);return{data:{escapedOffsets:t,escaped:A(t)}}}default:return{}}}}},T=function(t){return void 0===t&&(t={}),{name:"inline",options:t,async fn(e){const{placement:i,elements:r,rects:s,platform:m,strategy:u}=e,{padding:g=2,x:d,y:p}=t,h=floating_ui_core_browser_min_l(m.convertOffsetParentRelativeRectToViewportRelativeRect?await m.convertOffsetParentRelativeRectToViewportRelativeRect({rect:s.reference,offsetParent:await(null==m.getOffsetParent?void 0:m.getOffsetParent(r.floating)),strategy:u}):s.reference),y=await(null==m.getClientRects?void 0:m.getClientRects(r.reference))||[],x=a(g);const w=await m.getElementRects({reference:{getBoundingClientRect:function(){if(2===y.length&&y[0].left>y[1].right&&null!=d&&null!=p)return y.find((t=>d>t.left-x.left&&d<t.right+x.right&&p>t.top-x.top&&p<t.bottom+x.bottom))||h;if(y.length>=2){if("x"===o(i)){const t=y[0],e=y[y.length-1],o="top"===n(i),r=t.top,a=e.bottom,l=o?t.left:e.left,s=o?t.right:e.right;return{top:r,bottom:a,left:l,right:s,width:s-l,height:a-r,x:l,y:r}}const t="left"===n(i),e=f(...y.map((t=>t.right))),r=c(...y.map((t=>t.left))),a=y.filter((n=>t?n.left===r:n.right===e)),l=a[0].top,s=a[a.length-1].bottom;return{top:l,bottom:s,left:r,right:e,width:e-r,height:s-l,x:r,y:l}}return h}},floating:r.floating,strategy:u});return s.reference.x!==w.reference.x||s.reference.y!==w.reference.y||s.reference.width!==w.reference.width||s.reference.height!==w.reference.height?{reset:{rects:w}}:{}}}};const O=function(e){return void 0===e&&(e=0),{name:"offset",options:e,async fn(i){const{x:r,y:a}=i,l=await async function(e,i){const{placement:r,platform:a,elements:l}=e,s=await(null==a.isRTL?void 0:a.isRTL(l.floating)),c=n(r),f=t(r),m="x"===o(r),u=["left","top"].includes(c)?-1:1,g=s&&m?-1:1,d="function"==typeof i?i(e):i;let{mainAxis:p,crossAxis:h,alignmentAxis:y}="number"==typeof d?{mainAxis:d,crossAxis:0,alignmentAxis:null}:{mainAxis:0,crossAxis:0,alignmentAxis:null,...d};return f&&"number"==typeof y&&(h="end"===f?-1*y:y),m?{x:h*g,y:p*u}:{x:p*u,y:h*g}}(i,e);return{x:r+l.x,y:a+l.y,data:l}}}};function E(t){return"x"===t?"y":"x"}const D=function(t){return void 0===t&&(t={}),{name:"shift",options:t,async fn(e){const{x:i,y:r,placement:a}=e,{mainAxis:l=!0,crossAxis:c=!1,limiter:f={fn:t=>{let{x:e,y:n}=t;return{x:e,y:n}}},...u}=t,g={x:i,y:r},d=await s(e,u),p=o(n(a)),h=E(p);let y=g[p],x=g[h];if(l){const t="y"===p?"bottom":"right";y=m(y+d["y"===p?"top":"left"],y,y-d[t])}if(c){const t="y"===h?"bottom":"right";x=m(x+d["y"===h?"top":"left"],x,x-d[t])}const w=f.fn({...e,[p]:y,[h]:x});return{...w,data:{x:w.x-i,y:w.y-r}}}}},L=function(t){return void 0===t&&(t={}),{options:t,fn(e){const{x:i,y:r,placement:a,rects:l,middlewareData:s}=e,{offset:c=0,mainAxis:f=!0,crossAxis:m=!0}=t,u={x:i,y:r},g=o(a),d=E(g);let p=u[g],h=u[d];const y="function"==typeof c?c(e):c,x="number"==typeof y?{mainAxis:y,crossAxis:0}:{mainAxis:0,crossAxis:0,...y};if(f){const t="y"===g?"height":"width",e=l.reference[g]-l.floating[t]+x.mainAxis,n=l.reference[g]+l.reference[t]-x.mainAxis;p<e?p=e:p>n&&(p=n)}if(m){var w,v;const t="y"===g?"width":"height",e=["top","left"].includes(n(a)),o=l.reference[d]-l.floating[t]+(e&&(null==(w=s.offset)?void 0:w[d])||0)+(e?0:x.crossAxis),i=l.reference[d]+l.reference[t]+(e?0:(null==(v=s.offset)?void 0:v[d])||0)-(e?x.crossAxis:0);h<o?h=o:h>i&&(h=i)}return{[g]:p,[d]:h}}}},k=function(e){return void 0===e&&(e={}),{name:"size",options:e,async fn(i){const{placement:r,rects:a,platform:l,elements:m}=i,{apply:u=(()=>{}),...g}=e,d=await s(i,g),p=n(r),h=t(r),y="x"===o(r),{width:x,height:w}=a.floating;let v,b;"top"===p||"bottom"===p?(v=p,b=h===(await(null==l.isRTL?void 0:l.isRTL(m.floating))?"start":"end")?"left":"right"):(b=p,v="end"===h?"top":"bottom");const R=w-d[v],A=x-d[b];let P=R,T=A;if(y?T=c(x-d.right-d.left,A):P=c(w-d.bottom-d.top,R),!i.middlewareData.shift&&!h){const t=f(d.left,0),e=f(d.right,0),n=f(d.top,0),o=f(d.bottom,0);y?T=x-2*(0!==t||0!==e?t+e:f(d.left,d.right)):P=w-2*(0!==n||0!==o?n+o:f(d.top,d.bottom))}await u({...i,availableWidth:T,availableHeight:P});const O=await l.getDimensions(m.floating);return x!==O.width||w!==O.height?{reset:{rects:!0}}:{}}}};
 
 ;// CONCATENATED MODULE: ./node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs
-function floating_ui_dom_browser_min_n(t){return t&&t.document&&t.location&&t.alert&&t.setInterval}function o(t){if(null==t)return window;if(!floating_ui_dom_browser_min_n(t)){const e=t.ownerDocument;return e&&e.defaultView||window}return t}function floating_ui_dom_browser_min_i(t){return o(t).getComputedStyle(t)}function floating_ui_dom_browser_min_r(t){return floating_ui_dom_browser_min_n(t)?"":t?(t.nodeName||"").toLowerCase():""}function floating_ui_dom_browser_min_l(){const t=navigator.userAgentData;return t&&Array.isArray(t.brands)?t.brands.map((t=>t.brand+"/"+t.version)).join(" "):navigator.userAgent}function floating_ui_dom_browser_min_c(t){return t instanceof o(t).HTMLElement}function floating_ui_dom_browser_min_s(t){return t instanceof o(t).Element}function floating_ui_dom_browser_min_f(t){if("undefined"==typeof ShadowRoot)return!1;return t instanceof o(t).ShadowRoot||t instanceof ShadowRoot}function floating_ui_dom_browser_min_u(t){const{overflow:e,overflowX:n,overflowY:o,display:r}=floating_ui_dom_browser_min_i(t);return/auto|scroll|overlay|hidden/.test(e+o+n)&&!["inline","contents"].includes(r)}function floating_ui_dom_browser_min_a(t){return["table","td","th"].includes(floating_ui_dom_browser_min_r(t))}function floating_ui_dom_browser_min_d(t){const e=/firefox/i.test(floating_ui_dom_browser_min_l()),n=floating_ui_dom_browser_min_i(t),o=n.backdropFilter||n.WebkitBackdropFilter;return"none"!==n.transform||"none"!==n.perspective||!!o&&"none"!==o||e&&"filter"===n.willChange||e&&!!n.filter&&"none"!==n.filter||["transform","perspective"].some((t=>n.willChange.includes(t)))||["paint","layout","strict","content"].some((t=>{const e=n.contain;return null!=e&&e.includes(t)}))}function floating_ui_dom_browser_min_h(){return!/^((?!chrome|android).)*safari/i.test(floating_ui_dom_browser_min_l())}function floating_ui_dom_browser_min_g(t){return["html","body","#document"].includes(floating_ui_dom_browser_min_r(t))}const floating_ui_dom_browser_min_m=Math.min,floating_ui_dom_browser_min_p=Math.max,floating_ui_dom_browser_min_w=Math.round;function floating_ui_dom_browser_min_v(t,e,n){var i,r,l,f;void 0===e&&(e=!1),void 0===n&&(n=!1);const u=t.getBoundingClientRect();let a=1,d=1;e&&floating_ui_dom_browser_min_c(t)&&(a=t.offsetWidth>0&&floating_ui_dom_browser_min_w(u.width)/t.offsetWidth||1,d=t.offsetHeight>0&&floating_ui_dom_browser_min_w(u.height)/t.offsetHeight||1);const g=floating_ui_dom_browser_min_s(t)?o(t):window,m=!floating_ui_dom_browser_min_h()&&n,p=(u.left+(m&&null!=(i=null==(r=g.visualViewport)?void 0:r.offsetLeft)?i:0))/a,v=(u.top+(m&&null!=(l=null==(f=g.visualViewport)?void 0:f.offsetTop)?l:0))/d,y=u.width/a,x=u.height/d;return{width:y,height:x,top:v,right:p+y,bottom:v+x,left:p,x:p,y:v}}function floating_ui_dom_browser_min_y(t){return(e=t,(e instanceof o(e).Node?t.ownerDocument:t.document)||window.document).documentElement;var e}function floating_ui_dom_browser_min_x(t){return floating_ui_dom_browser_min_s(t)?{scrollLeft:t.scrollLeft,scrollTop:t.scrollTop}:{scrollLeft:t.pageXOffset,scrollTop:t.pageYOffset}}function floating_ui_dom_browser_min_b(t){return floating_ui_dom_browser_min_v(floating_ui_dom_browser_min_y(t)).left+floating_ui_dom_browser_min_x(t).scrollLeft}function floating_ui_dom_browser_min_L(t,e,n){const o=floating_ui_dom_browser_min_c(e),i=floating_ui_dom_browser_min_y(e),l=floating_ui_dom_browser_min_v(t,o&&function(t){const e=floating_ui_dom_browser_min_v(t);return floating_ui_dom_browser_min_w(e.width)!==t.offsetWidth||floating_ui_dom_browser_min_w(e.height)!==t.offsetHeight}(e),"fixed"===n);let s={scrollLeft:0,scrollTop:0};const f={x:0,y:0};if(o||!o&&"fixed"!==n)if(("body"!==floating_ui_dom_browser_min_r(e)||floating_ui_dom_browser_min_u(i))&&(s=floating_ui_dom_browser_min_x(e)),floating_ui_dom_browser_min_c(e)){const t=floating_ui_dom_browser_min_v(e,!0);f.x=t.x+e.clientLeft,f.y=t.y+e.clientTop}else i&&(f.x=floating_ui_dom_browser_min_b(i));return{x:l.left+s.scrollLeft-f.x,y:l.top+s.scrollTop-f.y,width:l.width,height:l.height}}function floating_ui_dom_browser_min_E(t){if("html"===floating_ui_dom_browser_min_r(t))return t;const e=t.assignedSlot||t.parentNode||(floating_ui_dom_browser_min_f(t)?t.host:null)||floating_ui_dom_browser_min_y(t);return floating_ui_dom_browser_min_f(e)?e.host:e}function floating_ui_dom_browser_min_R(t){return floating_ui_dom_browser_min_c(t)&&"fixed"!==floating_ui_dom_browser_min_i(t).position?t.offsetParent:null}function floating_ui_dom_browser_min_T(t){const e=o(t);let n=floating_ui_dom_browser_min_R(t);for(;n&&floating_ui_dom_browser_min_a(n)&&"static"===floating_ui_dom_browser_min_i(n).position;)n=floating_ui_dom_browser_min_R(n);return n&&("html"===floating_ui_dom_browser_min_r(n)||"body"===floating_ui_dom_browser_min_r(n)&&"static"===floating_ui_dom_browser_min_i(n).position&&!floating_ui_dom_browser_min_d(n))?e:n||function(t){let e=floating_ui_dom_browser_min_E(t);for(;floating_ui_dom_browser_min_c(e)&&!floating_ui_dom_browser_min_g(e);){if(floating_ui_dom_browser_min_d(e))return e;e=floating_ui_dom_browser_min_E(e)}return null}(t)||e}function W(t){const e=floating_ui_dom_browser_min_E(t);return floating_ui_dom_browser_min_g(e)?t.ownerDocument.body:floating_ui_dom_browser_min_c(e)&&floating_ui_dom_browser_min_u(e)?e:W(e)}function H(t,e){var n;void 0===e&&(e=[]);const i=W(t),r=i===(null==(n=t.ownerDocument)?void 0:n.body),l=o(i),c=r?[l].concat(l.visualViewport||[],floating_ui_dom_browser_min_u(i)?i:[]):i,s=e.concat(c);return r?s:s.concat(H(c))}function floating_ui_dom_browser_min_D(e,n,r){return"viewport"===n?l(function(t,e){const n=o(t),i=floating_ui_dom_browser_min_y(t),r=n.visualViewport;let l=i.clientWidth,c=i.clientHeight,s=0,f=0;if(r){l=r.width,c=r.height;const t=floating_ui_dom_browser_min_h();(t||!t&&"fixed"===e)&&(s=r.offsetLeft,f=r.offsetTop)}return{width:l,height:c,x:s,y:f}}(e,r)):floating_ui_dom_browser_min_s(n)?function(t,e){const n=floating_ui_dom_browser_min_v(t,!1,"fixed"===e),o=n.top+t.clientTop,i=n.left+t.clientLeft;return{top:o,left:i,x:i,y:o,right:i+t.clientWidth,bottom:o+t.clientHeight,width:t.clientWidth,height:t.clientHeight}}(n,r):l(function(t){var e;const n=floating_ui_dom_browser_min_y(t),o=floating_ui_dom_browser_min_x(t),r=null==(e=t.ownerDocument)?void 0:e.body,l=floating_ui_dom_browser_min_p(n.scrollWidth,n.clientWidth,r?r.scrollWidth:0,r?r.clientWidth:0),c=floating_ui_dom_browser_min_p(n.scrollHeight,n.clientHeight,r?r.scrollHeight:0,r?r.clientHeight:0);let s=-o.scrollLeft+floating_ui_dom_browser_min_b(t);const f=-o.scrollTop;return"rtl"===floating_ui_dom_browser_min_i(r||n).direction&&(s+=floating_ui_dom_browser_min_p(n.clientWidth,r?r.clientWidth:0)-l),{width:l,height:c,x:s,y:f}}(floating_ui_dom_browser_min_y(e)))}const floating_ui_dom_browser_min_A={getClippingRect:function(t){let{element:e,boundary:n,rootBoundary:o,strategy:l}=t;const c="clippingAncestors"===n?function(t){let e=H(t).filter((t=>floating_ui_dom_browser_min_s(t)&&"body"!==floating_ui_dom_browser_min_r(t))),n=null;const o="fixed"===floating_ui_dom_browser_min_i(t).position;let l=o?floating_ui_dom_browser_min_E(t):t;for(;floating_ui_dom_browser_min_s(l)&&!floating_ui_dom_browser_min_g(l);){const t=floating_ui_dom_browser_min_i(l),r=floating_ui_dom_browser_min_d(l);(o?r||n:r||"static"!==t.position||!n||!["absolute","fixed"].includes(n.position))?n=t:e=e.filter((t=>t!==l)),l=floating_ui_dom_browser_min_E(l)}return e}(e):[].concat(n),f=[...c,o],u=f[0],a=f.reduce(((t,n)=>{const o=floating_ui_dom_browser_min_D(e,n,l);return t.top=floating_ui_dom_browser_min_p(o.top,t.top),t.right=floating_ui_dom_browser_min_m(o.right,t.right),t.bottom=floating_ui_dom_browser_min_m(o.bottom,t.bottom),t.left=floating_ui_dom_browser_min_p(o.left,t.left),t}),floating_ui_dom_browser_min_D(e,u,l));return{width:a.right-a.left,height:a.bottom-a.top,x:a.left,y:a.top}},convertOffsetParentRelativeRectToViewportRelativeRect:function(t){let{rect:e,offsetParent:n,strategy:o}=t;const i=floating_ui_dom_browser_min_c(n),l=floating_ui_dom_browser_min_y(n);if(n===l)return e;let s={scrollLeft:0,scrollTop:0};const f={x:0,y:0};if((i||!i&&"fixed"!==o)&&(("body"!==floating_ui_dom_browser_min_r(n)||floating_ui_dom_browser_min_u(l))&&(s=floating_ui_dom_browser_min_x(n)),floating_ui_dom_browser_min_c(n))){const t=floating_ui_dom_browser_min_v(n,!0);f.x=t.x+n.clientLeft,f.y=t.y+n.clientTop}return{...e,x:e.x-s.scrollLeft+f.x,y:e.y-s.scrollTop+f.y}},isElement:floating_ui_dom_browser_min_s,getDimensions:function(t){if(floating_ui_dom_browser_min_c(t))return{width:t.offsetWidth,height:t.offsetHeight};const e=floating_ui_dom_browser_min_v(t);return{width:e.width,height:e.height}},getOffsetParent:floating_ui_dom_browser_min_T,getDocumentElement:floating_ui_dom_browser_min_y,async getElementRects(t){let{reference:e,floating:n,strategy:o}=t;const i=this.getOffsetParent||floating_ui_dom_browser_min_T,r=this.getDimensions;return{reference:floating_ui_dom_browser_min_L(e,await i(n),o),floating:{x:0,y:0,...await r(n)}}},getClientRects:t=>Array.from(t.getClientRects()),isRTL:t=>"rtl"===floating_ui_dom_browser_min_i(t).direction};function C(t,e,n,o){void 0===o&&(o={});const{ancestorScroll:i=!0,ancestorResize:r=!0,elementResize:l=!0,animationFrame:c=!1}=o,f=i&&!c,u=f||r?[...floating_ui_dom_browser_min_s(t)?H(t):t.contextElement?H(t.contextElement):[],...H(e)]:[];u.forEach((t=>{f&&t.addEventListener("scroll",n,{passive:!0}),r&&t.addEventListener("resize",n)}));let a,d=null;if(l){let o=!0;d=new ResizeObserver((()=>{o||n(),o=!1})),floating_ui_dom_browser_min_s(t)&&!c&&d.observe(t),floating_ui_dom_browser_min_s(t)||!t.contextElement||c||d.observe(t.contextElement),d.observe(e)}let h=c?floating_ui_dom_browser_min_v(t):null;return c&&function e(){const o=floating_ui_dom_browser_min_v(t);!h||o.x===h.x&&o.y===h.y&&o.width===h.width&&o.height===h.height||n();h=o,a=requestAnimationFrame(e)}(),n(),()=>{var t;u.forEach((t=>{f&&t.removeEventListener("scroll",n),r&&t.removeEventListener("resize",n)})),null==(t=d)||t.disconnect(),d=null,c&&cancelAnimationFrame(a)}}const floating_ui_dom_browser_min_O=(t,n,o)=>floating_ui_core_browser_min_o(t,n,{platform:floating_ui_dom_browser_min_A,...o});
+function floating_ui_dom_browser_min_n(t){var e;return(null==(e=t.ownerDocument)?void 0:e.defaultView)||window}function floating_ui_dom_browser_min_o(t){return floating_ui_dom_browser_min_n(t).getComputedStyle(t)}const floating_ui_dom_browser_min_i=Math.min,r=Math.max,l=Math.round;function floating_ui_dom_browser_min_c(t){const e=floating_ui_dom_browser_min_o(t);let n=parseFloat(e.width),i=parseFloat(e.height);const r=t.offsetWidth,c=t.offsetHeight,s=l(n)!==r||l(i)!==c;return s&&(n=r,i=c),{width:n,height:i,fallback:s}}function floating_ui_dom_browser_min_s(t){return floating_ui_dom_browser_min_h(t)?(t.nodeName||"").toLowerCase():""}let floating_ui_dom_browser_min_f;function floating_ui_dom_browser_min_u(){if(floating_ui_dom_browser_min_f)return floating_ui_dom_browser_min_f;const t=navigator.userAgentData;return t&&Array.isArray(t.brands)?(floating_ui_dom_browser_min_f=t.brands.map((t=>t.brand+"/"+t.version)).join(" "),floating_ui_dom_browser_min_f):navigator.userAgent}function floating_ui_dom_browser_min_a(t){return t instanceof floating_ui_dom_browser_min_n(t).HTMLElement}function floating_ui_dom_browser_min_d(t){return t instanceof floating_ui_dom_browser_min_n(t).Element}function floating_ui_dom_browser_min_h(t){return t instanceof floating_ui_dom_browser_min_n(t).Node}function floating_ui_dom_browser_min_p(t){if("undefined"==typeof ShadowRoot)return!1;return t instanceof floating_ui_dom_browser_min_n(t).ShadowRoot||t instanceof ShadowRoot}function floating_ui_dom_browser_min_g(t){const{overflow:e,overflowX:n,overflowY:i,display:r}=floating_ui_dom_browser_min_o(t);return/auto|scroll|overlay|hidden|clip/.test(e+i+n)&&!["inline","contents"].includes(r)}function floating_ui_dom_browser_min_m(t){return["table","td","th"].includes(floating_ui_dom_browser_min_s(t))}function floating_ui_dom_browser_min_y(t){const e=/firefox/i.test(floating_ui_dom_browser_min_u()),n=floating_ui_dom_browser_min_o(t),i=n.backdropFilter||n.WebkitBackdropFilter;return"none"!==n.transform||"none"!==n.perspective||!!i&&"none"!==i||e&&"filter"===n.willChange||e&&!!n.filter&&"none"!==n.filter||["transform","perspective"].some((t=>n.willChange.includes(t)))||["paint","layout","strict","content"].some((t=>{const e=n.contain;return null!=e&&e.includes(t)}))}function floating_ui_dom_browser_min_x(){return/^((?!chrome|android).)*safari/i.test(floating_ui_dom_browser_min_u())}function floating_ui_dom_browser_min_w(t){return["html","body","#document"].includes(floating_ui_dom_browser_min_s(t))}function floating_ui_dom_browser_min_v(t){return floating_ui_dom_browser_min_d(t)?t:t.contextElement}const floating_ui_dom_browser_min_b={x:1,y:1};function floating_ui_dom_browser_min_L(t){const e=floating_ui_dom_browser_min_v(t);if(!floating_ui_dom_browser_min_a(e))return floating_ui_dom_browser_min_b;const n=e.getBoundingClientRect(),{width:o,height:i,fallback:r}=floating_ui_dom_browser_min_c(e);let s=(r?l(n.width):n.width)/o,f=(r?l(n.height):n.height)/i;return s&&Number.isFinite(s)||(s=1),f&&Number.isFinite(f)||(f=1),{x:s,y:f}}function floating_ui_dom_browser_min_E(e,o,i,r){var l,c;void 0===o&&(o=!1),void 0===i&&(i=!1);const s=e.getBoundingClientRect(),f=floating_ui_dom_browser_min_v(e);let u=floating_ui_dom_browser_min_b;o&&(r?floating_ui_dom_browser_min_d(r)&&(u=floating_ui_dom_browser_min_L(r)):u=floating_ui_dom_browser_min_L(e));const a=f?floating_ui_dom_browser_min_n(f):window,h=floating_ui_dom_browser_min_x()&&i;let p=(s.left+(h&&(null==(l=a.visualViewport)?void 0:l.offsetLeft)||0))/u.x,g=(s.top+(h&&(null==(c=a.visualViewport)?void 0:c.offsetTop)||0))/u.y,m=s.width/u.x,y=s.height/u.y;if(f){const t=floating_ui_dom_browser_min_n(f),e=r&&floating_ui_dom_browser_min_d(r)?floating_ui_dom_browser_min_n(r):r;let o=t.frameElement;for(;o&&r&&e!==t;){const t=floating_ui_dom_browser_min_L(o),e=o.getBoundingClientRect(),i=getComputedStyle(o);e.x+=(o.clientLeft+parseFloat(i.paddingLeft))*t.x,e.y+=(o.clientTop+parseFloat(i.paddingTop))*t.y,p*=t.x,g*=t.y,m*=t.x,y*=t.y,p+=e.x,g+=e.y,o=floating_ui_dom_browser_min_n(o).frameElement}}return floating_ui_core_browser_min_l({width:m,height:y,x:p,y:g})}function floating_ui_dom_browser_min_R(t){return((floating_ui_dom_browser_min_h(t)?t.ownerDocument:t.document)||window.document).documentElement}function floating_ui_dom_browser_min_T(t){return floating_ui_dom_browser_min_d(t)?{scrollLeft:t.scrollLeft,scrollTop:t.scrollTop}:{scrollLeft:t.pageXOffset,scrollTop:t.pageYOffset}}function C(t){return floating_ui_dom_browser_min_E(floating_ui_dom_browser_min_R(t)).left+floating_ui_dom_browser_min_T(t).scrollLeft}function F(t){if("html"===floating_ui_dom_browser_min_s(t))return t;const e=t.assignedSlot||t.parentNode||floating_ui_dom_browser_min_p(t)&&t.host||floating_ui_dom_browser_min_R(t);return floating_ui_dom_browser_min_p(e)?e.host:e}function W(t){const e=F(t);return floating_ui_dom_browser_min_w(e)?e.ownerDocument.body:floating_ui_dom_browser_min_a(e)&&floating_ui_dom_browser_min_g(e)?e:W(e)}function floating_ui_dom_browser_min_D(t,e){var o;void 0===e&&(e=[]);const i=W(t),r=i===(null==(o=t.ownerDocument)?void 0:o.body),l=floating_ui_dom_browser_min_n(i);return r?e.concat(l,l.visualViewport||[],floating_ui_dom_browser_min_g(i)?i:[]):e.concat(i,floating_ui_dom_browser_min_D(i))}function S(e,i,l){let c;if("viewport"===i)c=function(t,e){const o=floating_ui_dom_browser_min_n(t),i=floating_ui_dom_browser_min_R(t),r=o.visualViewport;let l=i.clientWidth,c=i.clientHeight,s=0,f=0;if(r){l=r.width,c=r.height;const t=floating_ui_dom_browser_min_x();(!t||t&&"fixed"===e)&&(s=r.offsetLeft,f=r.offsetTop)}return{width:l,height:c,x:s,y:f}}(e,l);else if("document"===i)c=function(t){const e=floating_ui_dom_browser_min_R(t),n=floating_ui_dom_browser_min_T(t),i=t.ownerDocument.body,l=r(e.scrollWidth,e.clientWidth,i.scrollWidth,i.clientWidth),c=r(e.scrollHeight,e.clientHeight,i.scrollHeight,i.clientHeight);let s=-n.scrollLeft+C(t);const f=-n.scrollTop;return"rtl"===floating_ui_dom_browser_min_o(i).direction&&(s+=r(e.clientWidth,i.clientWidth)-l),{width:l,height:c,x:s,y:f}}(floating_ui_dom_browser_min_R(e));else if(floating_ui_dom_browser_min_d(i))c=function(t,e){const n=floating_ui_dom_browser_min_E(t,!0,"fixed"===e),o=n.top+t.clientTop,i=n.left+t.clientLeft,r=floating_ui_dom_browser_min_a(t)?floating_ui_dom_browser_min_L(t):{x:1,y:1};return{width:t.clientWidth*r.x,height:t.clientHeight*r.y,x:i*r.x,y:o*r.y}}(i,l);else{const t={...i};if(floating_ui_dom_browser_min_x()){var s,f;const o=floating_ui_dom_browser_min_n(e);t.x-=(null==(s=o.visualViewport)?void 0:s.offsetLeft)||0,t.y-=(null==(f=o.visualViewport)?void 0:f.offsetTop)||0}c=t}return floating_ui_core_browser_min_l(c)}function floating_ui_dom_browser_min_A(t,e){return floating_ui_dom_browser_min_a(t)&&"fixed"!==floating_ui_dom_browser_min_o(t).position?e?e(t):t.offsetParent:null}function H(t,e){const i=floating_ui_dom_browser_min_n(t);if(!floating_ui_dom_browser_min_a(t))return i;let r=floating_ui_dom_browser_min_A(t,e);for(;r&&floating_ui_dom_browser_min_m(r)&&"static"===floating_ui_dom_browser_min_o(r).position;)r=floating_ui_dom_browser_min_A(r,e);return r&&("html"===floating_ui_dom_browser_min_s(r)||"body"===floating_ui_dom_browser_min_s(r)&&"static"===floating_ui_dom_browser_min_o(r).position&&!floating_ui_dom_browser_min_y(r))?i:r||function(t){let e=F(t);for(;floating_ui_dom_browser_min_a(e)&&!floating_ui_dom_browser_min_w(e);){if(floating_ui_dom_browser_min_y(e))return e;e=F(e)}return null}(t)||i}function V(t,e,n){const o=floating_ui_dom_browser_min_a(e),i=floating_ui_dom_browser_min_R(e),r=floating_ui_dom_browser_min_E(t,!0,"fixed"===n,e);let l={scrollLeft:0,scrollTop:0};const c={x:0,y:0};if(o||!o&&"fixed"!==n)if(("body"!==floating_ui_dom_browser_min_s(e)||floating_ui_dom_browser_min_g(i))&&(l=floating_ui_dom_browser_min_T(e)),floating_ui_dom_browser_min_a(e)){const t=floating_ui_dom_browser_min_E(e,!0);c.x=t.x+e.clientLeft,c.y=t.y+e.clientTop}else i&&(c.x=C(i));return{x:r.left+l.scrollLeft-c.x,y:r.top+l.scrollTop-c.y,width:r.width,height:r.height}}const floating_ui_dom_browser_min_O={getClippingRect:function(t){let{element:e,boundary:n,rootBoundary:l,strategy:c}=t;const f="clippingAncestors"===n?function(t,e){const n=e.get(t);if(n)return n;let i=floating_ui_dom_browser_min_D(t).filter((t=>floating_ui_dom_browser_min_d(t)&&"body"!==floating_ui_dom_browser_min_s(t))),r=null;const l="fixed"===floating_ui_dom_browser_min_o(t).position;let c=l?F(t):t;for(;floating_ui_dom_browser_min_d(c)&&!floating_ui_dom_browser_min_w(c);){const t=floating_ui_dom_browser_min_o(c),e=floating_ui_dom_browser_min_y(c);"fixed"===t.position?r=null:(l?e||r:e||"static"!==t.position||!r||!["absolute","fixed"].includes(r.position))?r=t:i=i.filter((t=>t!==c)),c=F(c)}return e.set(t,i),i}(e,this._c):[].concat(n),u=[...f,l],a=u[0],h=u.reduce(((t,n)=>{const o=S(e,n,c);return t.top=r(o.top,t.top),t.right=floating_ui_dom_browser_min_i(o.right,t.right),t.bottom=floating_ui_dom_browser_min_i(o.bottom,t.bottom),t.left=r(o.left,t.left),t}),S(e,a,c));return{width:h.right-h.left,height:h.bottom-h.top,x:h.left,y:h.top}},convertOffsetParentRelativeRectToViewportRelativeRect:function(t){let{rect:e,offsetParent:n,strategy:o}=t;const i=floating_ui_dom_browser_min_a(n),r=floating_ui_dom_browser_min_R(n);if(n===r)return e;let l={scrollLeft:0,scrollTop:0},c={x:1,y:1};const f={x:0,y:0};if((i||!i&&"fixed"!==o)&&(("body"!==floating_ui_dom_browser_min_s(n)||floating_ui_dom_browser_min_g(r))&&(l=floating_ui_dom_browser_min_T(n)),floating_ui_dom_browser_min_a(n))){const t=floating_ui_dom_browser_min_E(n);c=floating_ui_dom_browser_min_L(n),f.x=t.x+n.clientLeft,f.y=t.y+n.clientTop}return{width:e.width*c.x,height:e.height*c.y,x:e.x*c.x-l.scrollLeft*c.x+f.x,y:e.y*c.y-l.scrollTop*c.y+f.y}},isElement:floating_ui_dom_browser_min_d,getDimensions:function(t){return floating_ui_dom_browser_min_a(t)?floating_ui_dom_browser_min_c(t):t.getBoundingClientRect()},getOffsetParent:H,getDocumentElement:floating_ui_dom_browser_min_R,getScale:floating_ui_dom_browser_min_L,async getElementRects(t){let{reference:e,floating:n,strategy:o}=t;const i=this.getOffsetParent||H,r=this.getDimensions;return{reference:V(e,await i(n),o),floating:{x:0,y:0,...await r(n)}}},getClientRects:t=>Array.from(t.getClientRects()),isRTL:t=>"rtl"===floating_ui_dom_browser_min_o(t).direction};function floating_ui_dom_browser_min_P(t,e,n,o){void 0===o&&(o={});const{ancestorScroll:i=!0,ancestorResize:r=!0,elementResize:l=!0,animationFrame:c=!1}=o,s=i&&!c,f=s||r?[...floating_ui_dom_browser_min_d(t)?floating_ui_dom_browser_min_D(t):t.contextElement?floating_ui_dom_browser_min_D(t.contextElement):[],...floating_ui_dom_browser_min_D(e)]:[];f.forEach((t=>{s&&t.addEventListener("scroll",n,{passive:!0}),r&&t.addEventListener("resize",n)}));let u,a=null;if(l){let o=!0;a=new ResizeObserver((()=>{o||n(),o=!1})),floating_ui_dom_browser_min_d(t)&&!c&&a.observe(t),floating_ui_dom_browser_min_d(t)||!t.contextElement||c||a.observe(t.contextElement),a.observe(e)}let h=c?floating_ui_dom_browser_min_E(t):null;return c&&function e(){const o=floating_ui_dom_browser_min_E(t);!h||o.x===h.x&&o.y===h.y&&o.width===h.width&&o.height===h.height||n();h=o,u=requestAnimationFrame(e)}(),n(),()=>{var t;f.forEach((t=>{s&&t.removeEventListener("scroll",n),r&&t.removeEventListener("resize",n)})),null==(t=a)||t.disconnect(),a=null,c&&cancelAnimationFrame(u)}}const z=(t,n,o)=>{const i=new Map,r={platform:floating_ui_dom_browser_min_O,...o},l={...r.platform,_c:i};return floating_ui_core_browser_min_r(t,n,{...r,platform:l})};
 
 ;// CONCATENATED MODULE: ./node_modules/@floating-ui/react-dom/dist/floating-ui.react-dom.esm.js
 
@@ -3778,6 +3793,44 @@ function floating_ui_dom_browser_min_n(t){return t&&t.document&&t.location&&t.al
 
 
 
+
+/**
+ * A data provider that provides data to position an inner element of the
+ * floating element (usually a triangle or caret) so that it is centered to the
+ * reference element.
+ * This wraps the core `arrow` middleware to allow React refs as the element.
+ * @see https://floating-ui.com/docs/arrow
+ */
+const arrow = options => {
+  const {
+    element,
+    padding
+  } = options;
+  function isRef(value) {
+    return Object.prototype.hasOwnProperty.call(value, 'current');
+  }
+  return {
+    name: 'arrow',
+    options,
+    fn(args) {
+      if (isRef(element)) {
+        if (element.current != null) {
+          return u({
+            element: element.current,
+            padding
+          }).fn(args);
+        }
+        return {};
+      } else if (element) {
+        return u({
+          element,
+          padding
+        }).fn(args);
+      }
+      return {};
+    }
+  };
+};
 
 var index = typeof document !== 'undefined' ? react.useLayoutEffect : react.useEffect;
 
@@ -3787,59 +3840,45 @@ function deepEqual(a, b) {
   if (a === b) {
     return true;
   }
-
   if (typeof a !== typeof b) {
     return false;
   }
-
   if (typeof a === 'function' && a.toString() === b.toString()) {
     return true;
   }
-
   let length, i, keys;
-
   if (a && b && typeof a == 'object') {
     if (Array.isArray(a)) {
       length = a.length;
       if (length != b.length) return false;
-
       for (i = length; i-- !== 0;) {
         if (!deepEqual(a[i], b[i])) {
           return false;
         }
       }
-
       return true;
     }
-
     keys = Object.keys(a);
     length = keys.length;
-
     if (length !== Object.keys(b).length) {
       return false;
     }
-
     for (i = length; i-- !== 0;) {
       if (!Object.prototype.hasOwnProperty.call(b, keys[i])) {
         return false;
       }
     }
-
     for (i = length; i-- !== 0;) {
       const key = keys[i];
-
       if (key === '_owner' && a.$$typeof) {
         continue;
       }
-
       if (!deepEqual(a[key], b[key])) {
         return false;
       }
     }
-
     return true;
   }
-
   return a !== a && b !== b;
 }
 
@@ -3851,57 +3890,87 @@ function useLatestRef(value) {
   return ref;
 }
 
-function useFloating(_temp) {
-  let {
-    middleware = [],
+/**
+ * Provides data to position a floating element.
+ * @see https://floating-ui.com/docs/react
+ */
+function useFloating(options) {
+  if (options === void 0) {
+    options = {};
+  }
+  const {
     placement = 'bottom',
     strategy = 'absolute',
-    whileElementsMounted
-  } = _temp === void 0 ? {} : _temp;
+    middleware = [],
+    platform,
+    whileElementsMounted,
+    open
+  } = options;
   const [data, setData] = react.useState({
-    // Setting these to `null` will allow the consumer to determine if
-    // `computePosition()` has run yet
     x: null,
     y: null,
     strategy,
     placement,
-    middlewareData: {}
+    middlewareData: {},
+    isPositioned: false
   });
   const [latestMiddleware, setLatestMiddleware] = react.useState(middleware);
-
   if (!deepEqual(latestMiddleware, middleware)) {
     setLatestMiddleware(middleware);
   }
-
-  const reference = react.useRef(null);
-  const floating = react.useRef(null);
-  const cleanupRef = react.useRef(null);
+  const referenceRef = react.useRef(null);
+  const floatingRef = react.useRef(null);
   const dataRef = react.useRef(data);
   const whileElementsMountedRef = useLatestRef(whileElementsMounted);
+  const platformRef = useLatestRef(platform);
+  const [reference, _setReference] = react.useState(null);
+  const [floating, _setFloating] = react.useState(null);
+  const setReference = react.useCallback(node => {
+    if (referenceRef.current !== node) {
+      referenceRef.current = node;
+      _setReference(node);
+    }
+  }, []);
+  const setFloating = react.useCallback(node => {
+    if (floatingRef.current !== node) {
+      floatingRef.current = node;
+      _setFloating(node);
+    }
+  }, []);
   const update = react.useCallback(() => {
-    if (!reference.current || !floating.current) {
+    if (!referenceRef.current || !floatingRef.current) {
       return;
     }
-
-    floating_ui_dom_browser_min_O(reference.current, floating.current, {
-      middleware: latestMiddleware,
+    const config = {
       placement,
-      strategy
-    }).then(data => {
-      if (isMountedRef.current && !deepEqual(dataRef.current, data)) {
-        dataRef.current = data;
+      strategy,
+      middleware: latestMiddleware
+    };
+    if (platformRef.current) {
+      config.platform = platformRef.current;
+    }
+    z(referenceRef.current, floatingRef.current, config).then(data => {
+      const fullData = {
+        ...data,
+        isPositioned: true
+      };
+      if (isMountedRef.current && !deepEqual(dataRef.current, fullData)) {
+        dataRef.current = fullData;
         react_dom.flushSync(() => {
-          setData(data);
+          setData(fullData);
         });
       }
     });
-  }, [latestMiddleware, placement, strategy]);
+  }, [latestMiddleware, placement, strategy, platformRef]);
   index(() => {
-    // Skip first update
-    if (isMountedRef.current) {
-      update();
+    if (open === false && dataRef.current.isPositioned) {
+      dataRef.current.isPositioned = false;
+      setData(data => ({
+        ...data,
+        isPositioned: false
+      }));
     }
-  }, [update]);
+  }, [open]);
   const isMountedRef = react.useRef(false);
   index(() => {
     isMountedRef.current = true;
@@ -3909,88 +3978,38 @@ function useFloating(_temp) {
       isMountedRef.current = false;
     };
   }, []);
-  const runElementMountCallback = react.useCallback(() => {
-    if (typeof cleanupRef.current === 'function') {
-      cleanupRef.current();
-      cleanupRef.current = null;
-    }
-
-    if (reference.current && floating.current) {
+  index(() => {
+    if (reference && floating) {
       if (whileElementsMountedRef.current) {
-        const cleanupFn = whileElementsMountedRef.current(reference.current, floating.current, update);
-        cleanupRef.current = cleanupFn;
+        return whileElementsMountedRef.current(reference, floating, update);
       } else {
         update();
       }
     }
-  }, [update, whileElementsMountedRef]);
-  const setReference = react.useCallback(node => {
-    reference.current = node;
-    runElementMountCallback();
-  }, [runElementMountCallback]);
-  const setFloating = react.useCallback(node => {
-    floating.current = node;
-    runElementMountCallback();
-  }, [runElementMountCallback]);
+  }, [reference, floating, update, whileElementsMountedRef]);
   const refs = react.useMemo(() => ({
+    reference: referenceRef,
+    floating: floatingRef,
+    setReference,
+    setFloating
+  }), [setReference, setFloating]);
+  const elements = react.useMemo(() => ({
     reference,
     floating
-  }), []);
-  return react.useMemo(() => ({ ...data,
+  }), [reference, floating]);
+  return react.useMemo(() => ({
+    ...data,
     update,
     refs,
+    elements,
     reference: setReference,
     floating: setFloating
-  }), [data, update, refs, setReference, setFloating]);
+  }), [data, update, refs, elements, setReference, setFloating]);
 }
 
-/**
- * Positions an inner element of the floating element such that it is centered
- * to the reference element.
- * This wraps the core `arrow` middleware to allow React refs as the element.
- * @see https://floating-ui.com/docs/arrow
- */
-
-const arrow = options => {
-  const {
-    element,
-    padding
-  } = options;
-
-  function isRef(value) {
-    return Object.prototype.hasOwnProperty.call(value, 'current');
-  }
-
-  return {
-    name: 'arrow',
-    options,
-
-    fn(args) {
-      if (isRef(element)) {
-        if (element.current != null) {
-          return m({
-            element: element.current,
-            padding
-          }).fn(args);
-        }
-
-        return {};
-      } else if (element) {
-        return m({
-          element,
-          padding
-        }).fn(args);
-      }
-
-      return {};
-    }
-
-  };
-};
 
 
-
-;// CONCATENATED MODULE: ./node_modules/@floating-ui/react-dom-interactions/dist/floating-ui.react-dom-interactions.esm.js
+;// CONCATENATED MODULE: ./node_modules/@floating-ui/react/dist/floating-ui.react.esm.js
 
 
 
@@ -3998,40 +4017,19 @@ const arrow = options => {
 
 
 
-var floating_ui_react_dom_interactions_esm_index = typeof document !== 'undefined' ? react.useLayoutEffect : react.useEffect;
 
-function createPubSub() {
-  const map = new Map();
-  return {
-    emit(event, data) {
-      var _map$get;
-
-      (_map$get = map.get(event)) == null ? void 0 : _map$get.forEach(handler => handler(data));
-    },
-
-    on(event, listener) {
-      map.set(event, [...(map.get(event) || []), listener]);
-    },
-
-    off(event, listener) {
-      map.set(event, (map.get(event) || []).filter(l => l !== listener));
-    }
-
-  };
-}
+var floating_ui_react_esm_index = typeof document !== 'undefined' ? react.useLayoutEffect : react.useEffect;
 
 let serverHandoffComplete = false;
 let count = 0;
-
 const genId = () => "floating-ui-" + count++;
-
 function useFloatingId() {
   const [id, setId] = react.useState(() => serverHandoffComplete ? genId() : undefined);
-  floating_ui_react_dom_interactions_esm_index(() => {
+  floating_ui_react_esm_index(() => {
     if (id == null) {
       setId(genId());
-    } // eslint-disable-next-line react-hooks/exhaustive-deps
-
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   react.useEffect(() => {
     if (!serverHandoffComplete) {
@@ -4039,36 +4037,52 @@ function useFloatingId() {
     }
   }, []);
   return id;
-} // `toString()` prevents bundlers from trying to `import { useId } from 'react'`
+}
 
-
+// `toString()` prevents bundlers from trying to `import { useId } from 'react'`
 const useReactId = react_namespaceObject[/*#__PURE__*/'useId'.toString()];
+
 /**
  * Uses React 18's built-in `useId()` when available, or falls back to a
  * slightly less performant (requiring a double render) implementation for
  * earlier React versions.
  * @see https://floating-ui.com/docs/useId
  */
+const useId = useReactId || useFloatingId;
 
-const useId = useReactId != null ? useReactId : useFloatingId;
+function createPubSub() {
+  const map = new Map();
+  return {
+    emit(event, data) {
+      var _map$get;
+      (_map$get = map.get(event)) == null ? void 0 : _map$get.forEach(handler => handler(data));
+    },
+    on(event, listener) {
+      map.set(event, [...(map.get(event) || []), listener]);
+    },
+    off(event, listener) {
+      map.set(event, (map.get(event) || []).filter(l => l !== listener));
+    }
+  };
+}
 
 const FloatingNodeContext = /*#__PURE__*/react.createContext(null);
 const FloatingTreeContext = /*#__PURE__*/react.createContext(null);
 const useFloatingParentNodeId = () => {
-  var _React$useContext$id, _React$useContext;
-
-  return (_React$useContext$id = (_React$useContext = react.useContext(FloatingNodeContext)) == null ? void 0 : _React$useContext.id) != null ? _React$useContext$id : null;
+  var _React$useContext;
+  return ((_React$useContext = react.useContext(FloatingNodeContext)) == null ? void 0 : _React$useContext.id) || null;
 };
 const useFloatingTree = () => react.useContext(FloatingTreeContext);
+
 /**
  * Registers a node into the floating tree, returning its id.
  */
-
-const useFloatingNodeId = () => {
+const useFloatingNodeId = customParentId => {
   const id = useId();
   const tree = useFloatingTree();
-  const parentId = useFloatingParentNodeId();
-  floating_ui_react_dom_interactions_esm_index(() => {
+  const reactParentId = useFloatingParentNodeId();
+  const parentId = customParentId || reactParentId;
+  floating_ui_react_esm_index(() => {
     const node = {
       id,
       parentId
@@ -4080,11 +4094,11 @@ const useFloatingNodeId = () => {
   }, [tree, id, parentId]);
   return id;
 };
+
 /**
  * Provides parent node context for nested floating elements.
  * @see https://floating-ui.com/docs/FloatingTree
  */
-
 const FloatingNode = _ref => {
   let {
     children,
@@ -4098,13 +4112,13 @@ const FloatingNode = _ref => {
     }), [id, parentId])
   }, children);
 };
+
 /**
  * Provides context for nested floating elements when they are not children of
  * each other on the DOM (i.e. portalled to a common node, rather than their
  * respective parent).
  * @see https://floating-ui.com/docs/FloatingTree
  */
-
 const FloatingTree = _ref2 => {
   let {
     children
@@ -4127,490 +4141,21 @@ const FloatingTree = _ref2 => {
   }, children);
 };
 
-function getDocument(floating) {
-  var _floating$ownerDocume;
-
-  return (_floating$ownerDocume = floating == null ? void 0 : floating.ownerDocument) != null ? _floating$ownerDocume : document;
+function getDocument(node) {
+  return (node == null ? void 0 : node.ownerDocument) || document;
 }
 
-function getWindow(value) {
-  var _getDocument$defaultV;
-
-  return (_getDocument$defaultV = getDocument(value).defaultView) != null ? _getDocument$defaultV : window;
-}
-
-function isElement(value) {
-  return value ? value instanceof getWindow(value).Element : false;
-}
-function isHTMLElement(value) {
-  return value ? value instanceof getWindow(value).HTMLElement : false;
-}
-
-// `toString()` prevents bundlers from trying to `import { useInsertionEffect } from 'react'`
-const useInsertionEffect = react_namespaceObject[/*#__PURE__*/'useInsertionEffect'.toString()];
-function useEvent(callback) {
-  const ref = react.useRef(() => {
-    if (false) {}
-  });
-
-  if (useInsertionEffect) {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    useInsertionEffect(() => {
-      ref.current = callback;
-    });
-  } else {
-    ref.current = callback;
-  }
-
-  return react.useCallback(function () {
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return ref.current == null ? void 0 : ref.current(...args);
-  }, []);
-}
-
-function floating_ui_react_dom_interactions_esm_useFloating(_temp) {
-  let {
-    open = false,
-    onOpenChange: unstable_onOpenChange,
-    whileElementsMounted,
-    placement,
-    middleware,
-    strategy,
-    nodeId
-  } = _temp === void 0 ? {} : _temp;
-  const [domReference, setDomReference] = react.useState(null);
-  const tree = useFloatingTree();
-  const domReferenceRef = react.useRef(null);
-  const dataRef = react.useRef({});
-  const events = react.useState(() => createPubSub())[0];
-  const position = useFloating({
-    placement,
-    middleware,
-    strategy,
-    whileElementsMounted
-  });
-  const onOpenChange = useEvent(unstable_onOpenChange);
-  const refs = react.useMemo(() => ({ ...position.refs,
-    domReference: domReferenceRef
-  }), [position.refs]);
-  const context = react.useMemo(() => ({ ...position,
-    refs,
-    dataRef,
-    nodeId,
-    events,
-    open,
-    onOpenChange,
-    _: {
-      domReference
-    }
-  }), [position, nodeId, events, open, onOpenChange, refs, domReference]);
-  floating_ui_react_dom_interactions_esm_index(() => {
-    const node = tree == null ? void 0 : tree.nodesRef.current.find(node => node.id === nodeId);
-
-    if (node) {
-      node.context = context;
-    }
-  });
-  const {
-    reference
-  } = position;
-  const setReference = react.useCallback(node => {
-    if (isElement(node) || node === null) {
-      context.refs.domReference.current = node;
-      setDomReference(node);
-    }
-
-    reference(node);
-  }, [reference, context.refs]);
-  return react.useMemo(() => ({ ...position,
-    context,
-    refs,
-    reference: setReference
-  }), [position, refs, context, setReference]);
-}
-
-function mergeProps(userProps, propsList, elementKey) {
-  const map = new Map();
-  return { ...(elementKey === 'floating' && {
-      tabIndex: -1
-    }),
-    ...userProps,
-    ...propsList.map(value => value ? value[elementKey] : null).concat(userProps).reduce((acc, props) => {
-      if (!props) {
-        return acc;
-      }
-
-      Object.entries(props).forEach(_ref => {
-        let [key, value] = _ref;
-
-        if (key.indexOf('on') === 0) {
-          if (!map.has(key)) {
-            map.set(key, []);
-          }
-
-          if (typeof value === 'function') {
-            var _map$get;
-
-            (_map$get = map.get(key)) == null ? void 0 : _map$get.push(value);
-
-            acc[key] = function () {
-              var _map$get2;
-
-              for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-                args[_key] = arguments[_key];
-              }
-
-              (_map$get2 = map.get(key)) == null ? void 0 : _map$get2.forEach(fn => fn(...args));
-            };
-          }
-        } else {
-          acc[key] = value;
-        }
-      });
-      return acc;
-    }, {})
-  };
-}
-
-const useInteractions = function (propsList) {
-  if (propsList === void 0) {
-    propsList = [];
-  }
-
-  // The dependencies are a dynamic array, so we can't use the linter's
-  // suggestion to add it to the deps array.
-  const deps = propsList;
-  const getReferenceProps = react.useCallback(userProps => mergeProps(userProps, propsList, 'reference'), // eslint-disable-next-line react-hooks/exhaustive-deps
-  deps);
-  const getFloatingProps = react.useCallback(userProps => mergeProps(userProps, propsList, 'floating'), // eslint-disable-next-line react-hooks/exhaustive-deps
-  deps);
-  const getItemProps = react.useCallback(userProps => mergeProps(userProps, propsList, 'item'), // eslint-disable-next-line react-hooks/exhaustive-deps
-  deps);
-  return react.useMemo(() => ({
-    getReferenceProps,
-    getFloatingProps,
-    getItemProps
-  }), [getReferenceProps, getFloatingProps, getItemProps]);
-};
-
-function getChildren(nodes, id) {
-  var _nodes$filter;
-
-  let allChildren = (_nodes$filter = nodes.filter(node => {
-    var _node$context;
-
-    return node.parentId === id && ((_node$context = node.context) == null ? void 0 : _node$context.open);
-  })) != null ? _nodes$filter : [];
-  let currentChildren = allChildren;
-
-  while (currentChildren.length) {
-    var _nodes$filter2;
-
-    currentChildren = (_nodes$filter2 = nodes.filter(node => {
-      var _currentChildren;
-
-      return (_currentChildren = currentChildren) == null ? void 0 : _currentChildren.some(n => {
-        var _node$context2;
-
-        return node.parentId === n.id && ((_node$context2 = node.context) == null ? void 0 : _node$context2.open);
-      });
-    })) != null ? _nodes$filter2 : [];
-    allChildren = allChildren.concat(currentChildren);
-  }
-
-  return allChildren;
-}
-
-function isPointInPolygon(point, polygon) {
-  const [x, y] = point;
-  let isInside = false;
-  const length = polygon.length;
-
-  for (let i = 0, j = length - 1; i < length; j = i++) {
-    const [xi, yi] = polygon[i] || [0, 0];
-    const [xj, yj] = polygon[j] || [0, 0];
-    const intersect = yi >= y !== yj >= y && x <= (xj - xi) * (y - yi) / (yj - yi) + xi;
-
-    if (intersect) {
-      isInside = !isInside;
-    }
-  }
-
-  return isInside;
-}
-
-function safePolygon(_temp) {
-  let {
-    restMs = 0,
-    buffer = 0.5,
-    blockPointerEvents = true,
-    debug = null
-  } = _temp === void 0 ? {} : _temp;
-  let timeoutId;
-  let polygonIsDestroyed = false;
-
-  const fn = _ref => {
-    let {
-      x,
-      y,
-      placement,
-      refs,
-      onClose,
-      nodeId,
-      tree,
-      leave = false
-    } = _ref;
-    return function onPointerMove(event) {
-      var _refs$domReference$cu, _refs$floating$curren, _refs$floating$curren2;
-
-      clearTimeout(timeoutId);
-
-      function close() {
-        clearTimeout(timeoutId);
-        onClose();
-      }
-
-      if (event.pointerType && event.pointerType !== 'mouse') {
-        return;
-      }
-
-      const {
-        clientX,
-        clientY
-      } = event;
-      const target = 'composedPath' in event ? event.composedPath()[0] : event.target;
-      const targetNode = target; // If the pointer is over the reference, there is no need to run the logic
-
-      if (event.type === 'pointermove' && (_refs$domReference$cu = refs.domReference.current) != null && _refs$domReference$cu.contains(targetNode)) {
-        return;
-      } // Prevent overlapping floating element from being stuck in an open-close
-      // loop: https://github.com/floating-ui/floating-ui/issues/1910
-
-
-      if (event.type === 'mouseleave' && isElement(event.relatedTarget) && (_refs$floating$curren = refs.floating.current) != null && _refs$floating$curren.contains(event.relatedTarget)) {
-        return;
-      } // If any nested child is open, abort.
-
-
-      if (tree && getChildren(tree.nodesRef.current, nodeId).some(_ref2 => {
-        let {
-          context
-        } = _ref2;
-        return context == null ? void 0 : context.open;
-      })) {
-        return;
-      } // The cursor landed, so we destroy the polygon logic
-
-
-      if ((_refs$floating$curren2 = refs.floating.current) != null && _refs$floating$curren2.contains(targetNode) && !leave) {
-        polygonIsDestroyed = true;
-        return;
-      }
-
-      if (!refs.domReference.current || !refs.floating.current || placement == null || x == null || y == null) {
-        return;
-      }
-
-      const refRect = refs.domReference.current.getBoundingClientRect();
-      const rect = refs.floating.current.getBoundingClientRect();
-      const side = placement.split('-')[0];
-      const cursorLeaveFromRight = x > rect.right - rect.width / 2;
-      const cursorLeaveFromBottom = y > rect.bottom - rect.height / 2; // If the pointer is leaving from the opposite side, the "buffer" logic
-      // creates a point where the floating element remains open, but should be
-      // ignored.
-      // A constant of 1 handles floating point rounding errors.
-
-      if (side === 'top' && y >= refRect.bottom - 1 || side === 'bottom' && y <= refRect.top + 1 || side === 'left' && x >= refRect.right - 1 || side === 'right' && x <= refRect.left + 1) {
-        return close();
-      } // Ignore when the cursor is within the rectangular trough between the
-      // two elements. Since the triangle is created from the cursor point,
-      // which can start beyond the ref element's edge, traversing back and
-      // forth from the ref to the floating element can cause it to close. This
-      // ensures it always remains open in that case.
-
-
-      switch (side) {
-        case 'top':
-          if (clientX >= rect.left && clientX <= rect.right && clientY >= rect.top && clientY <= refRect.top + 1) {
-            return;
-          }
-
-          break;
-
-        case 'bottom':
-          if (clientX >= rect.left && clientX <= rect.right && clientY >= refRect.bottom - 1 && clientY <= rect.bottom) {
-            return;
-          }
-
-          break;
-
-        case 'left':
-          if (clientX >= rect.left && clientX <= refRect.left + 1 && clientY >= rect.top && clientY <= rect.bottom) {
-            return;
-          }
-
-          break;
-
-        case 'right':
-          if (clientX >= refRect.right - 1 && clientX <= rect.right && clientY >= rect.top && clientY <= rect.bottom) {
-            return;
-          }
-
-          break;
-      }
-
-      if (polygonIsDestroyed) {
-        return close();
-      }
-
-      function getPolygon(_ref3) {
-        let [x, y] = _ref3;
-        const isFloatingWider = rect.width > refRect.width;
-        const isFloatingTaller = rect.height > refRect.height;
-
-        switch (side) {
-          case 'top':
-            {
-              const cursorPointOne = [isFloatingWider ? x + buffer / 2 : cursorLeaveFromRight ? x + buffer * 4 : x - buffer * 4, y + buffer + 1];
-              const cursorPointTwo = [isFloatingWider ? x - buffer / 2 : cursorLeaveFromRight ? x + buffer * 4 : x - buffer * 4, y + buffer + 1];
-              const commonPoints = [[rect.left, cursorLeaveFromRight ? rect.bottom - buffer : isFloatingWider ? rect.bottom - buffer : rect.top], [rect.right, cursorLeaveFromRight ? isFloatingWider ? rect.bottom - buffer : rect.top : rect.bottom - buffer]];
-              return [cursorPointOne, cursorPointTwo, ...commonPoints];
-            }
-
-          case 'bottom':
-            {
-              const cursorPointOne = [isFloatingWider ? x + buffer / 2 : cursorLeaveFromRight ? x + buffer * 4 : x - buffer * 4, y - buffer];
-              const cursorPointTwo = [isFloatingWider ? x - buffer / 2 : cursorLeaveFromRight ? x + buffer * 4 : x - buffer * 4, y - buffer];
-              const commonPoints = [[rect.left, cursorLeaveFromRight ? rect.top + buffer : isFloatingWider ? rect.top + buffer : rect.bottom], [rect.right, cursorLeaveFromRight ? isFloatingWider ? rect.top + buffer : rect.bottom : rect.top + buffer]];
-              return [cursorPointOne, cursorPointTwo, ...commonPoints];
-            }
-
-          case 'left':
-            {
-              const cursorPointOne = [x + buffer + 1, isFloatingTaller ? y + buffer / 2 : cursorLeaveFromBottom ? y + buffer * 4 : y - buffer * 4];
-              const cursorPointTwo = [x + buffer + 1, isFloatingTaller ? y - buffer / 2 : cursorLeaveFromBottom ? y + buffer * 4 : y - buffer * 4];
-              const commonPoints = [[cursorLeaveFromBottom ? rect.right - buffer : isFloatingTaller ? rect.right - buffer : rect.left, rect.top], [cursorLeaveFromBottom ? isFloatingTaller ? rect.right - buffer : rect.left : rect.right - buffer, rect.bottom]];
-              return [...commonPoints, cursorPointOne, cursorPointTwo];
-            }
-
-          case 'right':
-            {
-              const cursorPointOne = [x - buffer, isFloatingTaller ? y + buffer / 2 : cursorLeaveFromBottom ? y + buffer * 4 : y - buffer * 4];
-              const cursorPointTwo = [x - buffer, isFloatingTaller ? y - buffer / 2 : cursorLeaveFromBottom ? y + buffer * 4 : y - buffer * 4];
-              const commonPoints = [[cursorLeaveFromBottom ? rect.left + buffer : isFloatingTaller ? rect.left + buffer : rect.right, rect.top], [cursorLeaveFromBottom ? isFloatingTaller ? rect.left + buffer : rect.right : rect.left + buffer, rect.bottom]];
-              return [cursorPointOne, cursorPointTwo, ...commonPoints];
-            }
-        }
-      }
-
-      const poly = getPolygon([x, y]);
-
-      if (false) {}
-
-      if (!isPointInPolygon([clientX, clientY], poly)) {
-        close();
-      } else if (restMs) {
-        timeoutId = setTimeout(onClose, restMs);
-      }
-    };
-  };
-
-  fn.__options = {
-    blockPointerEvents
-  };
-  return fn;
-}
-
-const DEFAULT_ID = 'floating-ui-root';
-const useFloatingPortalNode = function (_temp) {
-  let {
-    id = DEFAULT_ID,
-    enabled = true
-  } = _temp === void 0 ? {} : _temp;
-  const [portalEl, setPortalEl] = React.useState(null);
-  floating_ui_react_dom_interactions_esm_index(() => {
-    if (!enabled) {
-      return;
-    }
-
-    const rootNode = document.getElementById(id);
-
-    if (rootNode) {
-      setPortalEl(rootNode);
-    } else {
-      const newPortalEl = document.createElement('div');
-      newPortalEl.id = id;
-      setPortalEl(newPortalEl);
-
-      if (!document.body.contains(newPortalEl)) {
-        document.body.appendChild(newPortalEl);
-      }
-    }
-  }, [id, enabled]);
-  return portalEl;
-};
-/**
- * Portals your floating element outside of the main app node.
- * @see https://floating-ui.com/docs/FloatingPortal
- */
-
-const FloatingPortal = _ref => {
-  let {
-    children,
-    id = DEFAULT_ID,
-    root = null
-  } = _ref;
-  const portalNode = useFloatingPortalNode({
-    id,
-    enabled: !root
-  });
-
-  if (root) {
-    return /*#__PURE__*/createPortal(children, root);
-  }
-
-  if (portalNode) {
-    return /*#__PURE__*/createPortal(children, portalNode);
-  }
-
-  return null;
-};
-
-function floating_ui_react_dom_interactions_esm_extends() {
-  floating_ui_react_dom_interactions_esm_extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return floating_ui_react_dom_interactions_esm_extends.apply(this, arguments);
-}
-
-// Avoid Chrome DevTools blue warning
+// Avoid Chrome DevTools blue warning.
 function getPlatform() {
   const uaData = navigator.userAgentData;
-
   if (uaData != null && uaData.platform) {
     return uaData.platform;
   }
-
   return navigator.platform;
 }
 function getUserAgent() {
   const uaData = navigator.userAgentData;
-
-  if (uaData != null && uaData.brands) {
+  if (uaData && Array.isArray(uaData.brands)) {
     return uaData.brands.map(_ref => {
       let {
         brand,
@@ -4619,43 +4164,1250 @@ function getUserAgent() {
       return brand + "/" + version;
     }).join(' ');
   }
-
   return navigator.userAgent;
 }
 
+function getWindow(value) {
+  return getDocument(value).defaultView || window;
+}
+function isElement(value) {
+  return value ? value instanceof getWindow(value).Element : false;
+}
+function isHTMLElement(value) {
+  return value ? value instanceof getWindow(value).HTMLElement : false;
+}
+function isShadowRoot(node) {
+  // Browsers without `ShadowRoot` support
+  if (typeof ShadowRoot === 'undefined') {
+    return false;
+  }
+  const OwnElement = getWindow(node).ShadowRoot;
+  return node instanceof OwnElement || node instanceof ShadowRoot;
+}
+
+// License: https://github.com/adobe/react-spectrum/blob/b35d5c02fe900badccd0cf1a8f23bb593419f238/packages/@react-aria/utils/src/isVirtualEvent.ts
+function isVirtualClick(event) {
+  if (event.mozInputSource === 0 && event.isTrusted) {
+    return true;
+  }
+  const androidRe = /Android/i;
+  if ((androidRe.test(getPlatform()) || androidRe.test(getUserAgent())) && event.pointerType) {
+    return event.type === 'click' && event.buttons === 1;
+  }
+  return event.detail === 0 && !event.pointerType;
+}
+function isVirtualPointerEvent(event) {
+  return event.width === 0 && event.height === 0 || event.width === 1 && event.height === 1 && event.pressure === 0 && event.detail === 0 && event.pointerType !== 'mouse' ||
+  // iOS VoiceOver returns 0.333• for width/height.
+  event.width < 1 && event.height < 1 && event.pressure === 0 && event.detail === 0;
+}
+function isSafari() {
+  // Chrome DevTools does not complain about navigator.vendor
+  return /apple/i.test(navigator.vendor);
+}
+function isMac() {
+  return getPlatform().toLowerCase().startsWith('mac') && !navigator.maxTouchPoints;
+}
+function isMouseLikePointerType(pointerType, strict) {
+  // On some Linux machines with Chromium, mouse inputs return a `pointerType`
+  // of "pen": https://github.com/floating-ui/floating-ui/issues/2015
+  const values = ['mouse', 'pen'];
+  if (!strict) {
+    values.push('', undefined);
+  }
+  return values.includes(pointerType);
+}
+
+function floating_ui_react_esm_useLatestRef(value) {
+  const ref = (0,react.useRef)(value);
+  floating_ui_react_esm_index(() => {
+    ref.current = value;
+  });
+  return ref;
+}
+
+const safePolygonIdentifier = 'data-floating-ui-safe-polygon';
+function getDelay(value, prop, pointerType) {
+  if (pointerType && !isMouseLikePointerType(pointerType)) {
+    return 0;
+  }
+  if (typeof value === 'number') {
+    return value;
+  }
+  return value == null ? void 0 : value[prop];
+}
+/**
+ * Opens the floating element while hovering over the reference element, like
+ * CSS `:hover`.
+ * @see https://floating-ui.com/docs/useHover
+ */
+const useHover = function (context, _temp) {
+  let {
+    enabled = true,
+    delay = 0,
+    handleClose = null,
+    mouseOnly = false,
+    restMs = 0,
+    move = true
+  } = _temp === void 0 ? {} : _temp;
+  const {
+    open,
+    onOpenChange,
+    dataRef,
+    events,
+    elements: {
+      domReference,
+      floating
+    },
+    refs
+  } = context;
+  const tree = useFloatingTree();
+  const parentId = useFloatingParentNodeId();
+  const handleCloseRef = floating_ui_react_esm_useLatestRef(handleClose);
+  const delayRef = floating_ui_react_esm_useLatestRef(delay);
+  const pointerTypeRef = react.useRef();
+  const timeoutRef = react.useRef();
+  const handlerRef = react.useRef();
+  const restTimeoutRef = react.useRef();
+  const blockMouseMoveRef = react.useRef(true);
+  const performedPointerEventsMutationRef = react.useRef(false);
+  const unbindMouseMoveRef = react.useRef(() => {});
+  const isHoverOpen = react.useCallback(() => {
+    var _dataRef$current$open;
+    const type = (_dataRef$current$open = dataRef.current.openEvent) == null ? void 0 : _dataRef$current$open.type;
+    return (type == null ? void 0 : type.includes('mouse')) && type !== 'mousedown';
+  }, [dataRef]);
+
+  // When dismissing before opening, clear the delay timeouts to cancel it
+  // from showing.
+  react.useEffect(() => {
+    if (!enabled) {
+      return;
+    }
+    function onDismiss() {
+      clearTimeout(timeoutRef.current);
+      clearTimeout(restTimeoutRef.current);
+      blockMouseMoveRef.current = true;
+    }
+    events.on('dismiss', onDismiss);
+    return () => {
+      events.off('dismiss', onDismiss);
+    };
+  }, [enabled, events]);
+  react.useEffect(() => {
+    if (!enabled || !handleCloseRef.current || !open) {
+      return;
+    }
+    function onLeave() {
+      if (isHoverOpen()) {
+        onOpenChange(false);
+      }
+    }
+    const html = getDocument(floating).documentElement;
+    html.addEventListener('mouseleave', onLeave);
+    return () => {
+      html.removeEventListener('mouseleave', onLeave);
+    };
+  }, [floating, open, onOpenChange, enabled, handleCloseRef, dataRef, isHoverOpen]);
+  const closeWithDelay = react.useCallback(function (runElseBranch) {
+    if (runElseBranch === void 0) {
+      runElseBranch = true;
+    }
+    const closeDelay = getDelay(delayRef.current, 'close', pointerTypeRef.current);
+    if (closeDelay && !handlerRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = setTimeout(() => onOpenChange(false), closeDelay);
+    } else if (runElseBranch) {
+      clearTimeout(timeoutRef.current);
+      onOpenChange(false);
+    }
+  }, [delayRef, onOpenChange]);
+  const cleanupMouseMoveHandler = react.useCallback(() => {
+    unbindMouseMoveRef.current();
+    handlerRef.current = undefined;
+  }, []);
+  const clearPointerEvents = react.useCallback(() => {
+    if (performedPointerEventsMutationRef.current) {
+      const body = getDocument(refs.floating.current).body;
+      body.style.pointerEvents = '';
+      body.removeAttribute(safePolygonIdentifier);
+      performedPointerEventsMutationRef.current = false;
+    }
+  }, [refs]);
+
+  // Registering the mouse events on the reference directly to bypass React's
+  // delegation system. If the cursor was on a disabled element and then entered
+  // the reference (no gap), `mouseenter` doesn't fire in the delegation system.
+  react.useEffect(() => {
+    if (!enabled) {
+      return;
+    }
+    function isClickLikeOpenEvent() {
+      return dataRef.current.openEvent ? ['click', 'mousedown'].includes(dataRef.current.openEvent.type) : false;
+    }
+    function onMouseEnter(event) {
+      clearTimeout(timeoutRef.current);
+      blockMouseMoveRef.current = false;
+      if (mouseOnly && !isMouseLikePointerType(pointerTypeRef.current) || restMs > 0 && getDelay(delayRef.current, 'open') === 0) {
+        return;
+      }
+      dataRef.current.openEvent = event;
+      const openDelay = getDelay(delayRef.current, 'open', pointerTypeRef.current);
+      if (openDelay) {
+        timeoutRef.current = setTimeout(() => {
+          onOpenChange(true);
+        }, openDelay);
+      } else {
+        onOpenChange(true);
+      }
+    }
+    function onMouseLeave(event) {
+      if (isClickLikeOpenEvent()) {
+        return;
+      }
+      unbindMouseMoveRef.current();
+      const doc = getDocument(floating);
+      clearTimeout(restTimeoutRef.current);
+      if (handleCloseRef.current) {
+        // Prevent clearing `onScrollMouseLeave` timeout.
+        if (!open) {
+          clearTimeout(timeoutRef.current);
+        }
+        handlerRef.current = handleCloseRef.current({
+          ...context,
+          tree,
+          x: event.clientX,
+          y: event.clientY,
+          onClose() {
+            clearPointerEvents();
+            cleanupMouseMoveHandler();
+            closeWithDelay();
+          }
+        });
+        const handler = handlerRef.current;
+        doc.addEventListener('mousemove', handler);
+        unbindMouseMoveRef.current = () => {
+          doc.removeEventListener('mousemove', handler);
+        };
+        return;
+      }
+      closeWithDelay();
+    }
+
+    // Ensure the floating element closes after scrolling even if the pointer
+    // did not move.
+    // https://github.com/floating-ui/floating-ui/discussions/1692
+    function onScrollMouseLeave(event) {
+      if (isClickLikeOpenEvent()) {
+        return;
+      }
+      handleCloseRef.current == null ? void 0 : handleCloseRef.current({
+        ...context,
+        tree,
+        x: event.clientX,
+        y: event.clientY,
+        onClose() {
+          clearPointerEvents();
+          cleanupMouseMoveHandler();
+          closeWithDelay();
+        }
+      })(event);
+    }
+    if (isElement(domReference)) {
+      const ref = domReference;
+      open && ref.addEventListener('mouseleave', onScrollMouseLeave);
+      floating == null ? void 0 : floating.addEventListener('mouseleave', onScrollMouseLeave);
+      move && ref.addEventListener('mousemove', onMouseEnter, {
+        once: true
+      });
+      ref.addEventListener('mouseenter', onMouseEnter);
+      ref.addEventListener('mouseleave', onMouseLeave);
+      return () => {
+        open && ref.removeEventListener('mouseleave', onScrollMouseLeave);
+        floating == null ? void 0 : floating.removeEventListener('mouseleave', onScrollMouseLeave);
+        move && ref.removeEventListener('mousemove', onMouseEnter);
+        ref.removeEventListener('mouseenter', onMouseEnter);
+        ref.removeEventListener('mouseleave', onMouseLeave);
+      };
+    }
+  }, [domReference, floating, enabled, context, mouseOnly, restMs, move, closeWithDelay, cleanupMouseMoveHandler, clearPointerEvents, onOpenChange, open, tree, delayRef, handleCloseRef, dataRef]);
+
+  // Block pointer-events of every element other than the reference and floating
+  // while the floating element is open and has a `handleClose` handler. Also
+  // handles nested floating elements.
+  // https://github.com/floating-ui/floating-ui/issues/1722
+  floating_ui_react_esm_index(() => {
+    var _handleCloseRef$curre;
+    if (!enabled) {
+      return;
+    }
+    if (open && (_handleCloseRef$curre = handleCloseRef.current) != null && _handleCloseRef$curre.__options.blockPointerEvents && isHoverOpen()) {
+      const body = getDocument(floating).body;
+      body.setAttribute(safePolygonIdentifier, '');
+      body.style.pointerEvents = 'none';
+      performedPointerEventsMutationRef.current = true;
+      if (isElement(domReference) && floating) {
+        var _tree$nodesRef$curren, _tree$nodesRef$curren2;
+        const ref = domReference;
+        const parentFloating = tree == null ? void 0 : (_tree$nodesRef$curren = tree.nodesRef.current.find(node => node.id === parentId)) == null ? void 0 : (_tree$nodesRef$curren2 = _tree$nodesRef$curren.context) == null ? void 0 : _tree$nodesRef$curren2.elements.floating;
+        if (parentFloating) {
+          parentFloating.style.pointerEvents = '';
+        }
+        ref.style.pointerEvents = 'auto';
+        floating.style.pointerEvents = 'auto';
+        return () => {
+          ref.style.pointerEvents = '';
+          floating.style.pointerEvents = '';
+        };
+      }
+    }
+  }, [enabled, open, parentId, floating, domReference, tree, handleCloseRef, dataRef, isHoverOpen]);
+  floating_ui_react_esm_index(() => {
+    if (!open) {
+      pointerTypeRef.current = undefined;
+      cleanupMouseMoveHandler();
+      clearPointerEvents();
+    }
+  }, [open, cleanupMouseMoveHandler, clearPointerEvents]);
+  react.useEffect(() => {
+    return () => {
+      cleanupMouseMoveHandler();
+      clearTimeout(timeoutRef.current);
+      clearTimeout(restTimeoutRef.current);
+      clearPointerEvents();
+    };
+  }, [enabled, cleanupMouseMoveHandler, clearPointerEvents]);
+  return react.useMemo(() => {
+    if (!enabled) {
+      return {};
+    }
+    function setPointerRef(event) {
+      pointerTypeRef.current = event.pointerType;
+    }
+    return {
+      reference: {
+        onPointerDown: setPointerRef,
+        onPointerEnter: setPointerRef,
+        onMouseMove() {
+          if (open || restMs === 0) {
+            return;
+          }
+          clearTimeout(restTimeoutRef.current);
+          restTimeoutRef.current = setTimeout(() => {
+            if (!blockMouseMoveRef.current) {
+              onOpenChange(true);
+            }
+          }, restMs);
+        }
+      },
+      floating: {
+        onMouseEnter() {
+          clearTimeout(timeoutRef.current);
+        },
+        onMouseLeave() {
+          events.emit('dismiss', {
+            type: 'mouseLeave',
+            data: {
+              returnFocus: false
+            }
+          });
+          closeWithDelay(false);
+        }
+      }
+    };
+  }, [events, enabled, restMs, open, onOpenChange, closeWithDelay]);
+};
+
+const FloatingDelayGroupContext = /*#__PURE__*/react.createContext({
+  delay: 0,
+  initialDelay: 0,
+  timeoutMs: 0,
+  currentId: null,
+  setCurrentId: () => {},
+  setState: () => {},
+  isInstantPhase: false
+});
+const useDelayGroupContext = () => react.useContext(FloatingDelayGroupContext);
+
+/**
+ * Provides context for a group of floating elements that should share a
+ * `delay`.
+ * @see https://floating-ui.com/docs/FloatingDelayGroup
+ */
+const FloatingDelayGroup = _ref => {
+  let {
+    children,
+    delay,
+    timeoutMs = 0
+  } = _ref;
+  const [state, setState] = react.useReducer((prev, next) => ({
+    ...prev,
+    ...next
+  }), {
+    delay,
+    timeoutMs,
+    initialDelay: delay,
+    currentId: null,
+    isInstantPhase: false
+  });
+  const initialCurrentIdRef = react.useRef(null);
+  const setCurrentId = react.useCallback(currentId => {
+    setState({
+      currentId
+    });
+  }, []);
+  floating_ui_react_esm_index(() => {
+    if (state.currentId) {
+      if (initialCurrentIdRef.current === null) {
+        initialCurrentIdRef.current = state.currentId;
+      } else {
+        setState({
+          isInstantPhase: true
+        });
+      }
+    } else {
+      setState({
+        isInstantPhase: false
+      });
+      initialCurrentIdRef.current = null;
+    }
+  }, [state.currentId]);
+  return /*#__PURE__*/react.createElement(FloatingDelayGroupContext.Provider, {
+    value: react.useMemo(() => ({
+      ...state,
+      setState,
+      setCurrentId
+    }), [state, setState, setCurrentId])
+  }, children);
+};
+const useDelayGroup = (_ref2, _ref3) => {
+  let {
+    open,
+    onOpenChange
+  } = _ref2;
+  let {
+    id
+  } = _ref3;
+  const {
+    currentId,
+    setCurrentId,
+    initialDelay,
+    setState,
+    timeoutMs
+  } = useDelayGroupContext();
+  react.useEffect(() => {
+    if (currentId) {
+      setState({
+        delay: {
+          open: 1,
+          close: getDelay(initialDelay, 'close')
+        }
+      });
+      if (currentId !== id) {
+        onOpenChange(false);
+      }
+    }
+  }, [id, onOpenChange, setState, currentId, initialDelay]);
+  react.useEffect(() => {
+    function unset() {
+      onOpenChange(false);
+      setState({
+        delay: initialDelay,
+        currentId: null
+      });
+    }
+    if (!open && currentId === id) {
+      if (timeoutMs) {
+        const timeout = window.setTimeout(unset, timeoutMs);
+        return () => {
+          clearTimeout(timeout);
+        };
+      } else {
+        unset();
+      }
+    }
+  }, [open, setState, currentId, id, onOpenChange, initialDelay, timeoutMs]);
+  react.useEffect(() => {
+    if (open) {
+      setCurrentId(id);
+    }
+  }, [open, setCurrentId, id]);
+};
+
+function floating_ui_react_esm_extends() {
+  floating_ui_react_esm_extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return floating_ui_react_esm_extends.apply(this, arguments);
+}
+
+/**
+ * Find the real active element. Traverses into shadowRoots.
+ */
+function activeElement$1(doc) {
+  let activeElement = doc.activeElement;
+  while (((_activeElement = activeElement) == null ? void 0 : (_activeElement$shadow = _activeElement.shadowRoot) == null ? void 0 : _activeElement$shadow.activeElement) != null) {
+    var _activeElement, _activeElement$shadow;
+    activeElement = activeElement.shadowRoot.activeElement;
+  }
+  return activeElement;
+}
+
+function contains(parent, child) {
+  if (!parent || !child) {
+    return false;
+  }
+  const rootNode = child.getRootNode && child.getRootNode();
+
+  // First, attempt with faster native method
+  if (parent.contains(child)) {
+    return true;
+  }
+  // then fallback to custom implementation with Shadow DOM support
+  else if (rootNode && isShadowRoot(rootNode)) {
+    let next = child;
+    do {
+      if (next && parent === next) {
+        return true;
+      }
+      // @ts-ignore
+      next = next.parentNode || next.host;
+    } while (next);
+  }
+
+  // Give up, the result is false
+  return false;
+}
+
+let rafId = 0;
+function enqueueFocus(el, options) {
+  if (options === void 0) {
+    options = {};
+  }
+  const {
+    preventScroll = false,
+    cancelPrevious = true,
+    sync = false
+  } = options;
+  cancelPrevious && cancelAnimationFrame(rafId);
+  const exec = () => el == null ? void 0 : el.focus({
+    preventScroll
+  });
+  if (sync) {
+    exec();
+  } else {
+    rafId = requestAnimationFrame(exec);
+  }
+}
+
+function getAncestors(nodes, id) {
+  var _nodes$find;
+  let allAncestors = [];
+  let currentParentId = (_nodes$find = nodes.find(node => node.id === id)) == null ? void 0 : _nodes$find.parentId;
+  while (currentParentId) {
+    const currentNode = nodes.find(node => node.id === currentParentId);
+    currentParentId = currentNode == null ? void 0 : currentNode.parentId;
+    if (currentNode) {
+      allAncestors = allAncestors.concat(currentNode);
+    }
+  }
+  return allAncestors;
+}
+
+function getChildren(nodes, id) {
+  let allChildren = nodes.filter(node => {
+    var _node$context;
+    return node.parentId === id && ((_node$context = node.context) == null ? void 0 : _node$context.open);
+  }) || [];
+  let currentChildren = allChildren;
+  while (currentChildren.length) {
+    currentChildren = nodes.filter(node => {
+      var _currentChildren;
+      return (_currentChildren = currentChildren) == null ? void 0 : _currentChildren.some(n => {
+        var _node$context2;
+        return node.parentId === n.id && ((_node$context2 = node.context) == null ? void 0 : _node$context2.open);
+      });
+    }) || [];
+    allChildren = allChildren.concat(currentChildren);
+  }
+  return allChildren;
+}
+
+function getTarget(event) {
+  if ('composedPath' in event) {
+    return event.composedPath()[0];
+  }
+
+  // TS thinks `event` is of type never as it assumes all browsers support
+  // `composedPath()`, but browsers without shadow DOM don't.
+  return event.target;
+}
+
+const TYPEABLE_SELECTOR = (/* unused pure expression or super */ null && ("input:not([type='hidden']):not([disabled])," + "[contenteditable]:not([contenteditable='false']),textarea:not([disabled])"));
+function isTypeableElement(element) {
+  return isHTMLElement(element) && element.matches(TYPEABLE_SELECTOR);
+}
+
+function stopEvent(event) {
+  event.preventDefault();
+  event.stopPropagation();
+}
+
+const getTabbableOptions = () => ({
+  getShadowRoot: true,
+  displayCheck:
+  // JSDOM does not support the `tabbable` library. To solve this we can
+  // check if `ResizeObserver` is a real function (not polyfilled), which
+  // determines if the current environment is JSDOM-like.
+  typeof ResizeObserver === 'function' && ResizeObserver.toString().includes('[native code]') ? 'full' : 'none'
+});
+function getTabbableIn(container, direction) {
+  const allTabbable = tabbable(container, getTabbableOptions());
+  if (direction === 'prev') {
+    allTabbable.reverse();
+  }
+  const activeIndex = allTabbable.indexOf(activeElement$1(getDocument(container)));
+  const nextTabbableElements = allTabbable.slice(activeIndex + 1);
+  return nextTabbableElements[0];
+}
+function getNextTabbable() {
+  return getTabbableIn(document.body, 'next');
+}
+function getPreviousTabbable() {
+  return getTabbableIn(document.body, 'prev');
+}
+function isOutsideEvent(event, container) {
+  const containerElement = container || event.currentTarget;
+  const relatedTarget = event.relatedTarget;
+  return !relatedTarget || !contains(containerElement, relatedTarget);
+}
+function disableFocusInside(container) {
+  const tabbableElements = tabbable(container, getTabbableOptions());
+  tabbableElements.forEach(element => {
+    element.dataset.tabindex = element.getAttribute('tabindex') || '';
+    element.setAttribute('tabindex', '-1');
+  });
+}
+function enableFocusInside(container) {
+  const elements = container.querySelectorAll('[data-tabindex]');
+  elements.forEach(element => {
+    const tabindex = element.dataset.tabindex;
+    delete element.dataset.tabindex;
+    if (tabindex) {
+      element.setAttribute('tabindex', tabindex);
+    } else {
+      element.removeAttribute('tabindex');
+    }
+  });
+}
+
+// `toString()` prevents bundlers from trying to `import { useInsertionEffect } from 'react'`
+const useInsertionEffect = react_namespaceObject[/*#__PURE__*/'useInsertionEffect'.toString()];
+const useSafeInsertionEffect = useInsertionEffect || (fn => fn());
+function useEvent(callback) {
+  const ref = react.useRef(() => {
+    if (false) {}
+  });
+  useSafeInsertionEffect(() => {
+    ref.current = callback;
+  });
+  return react.useCallback(function () {
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+    return ref.current == null ? void 0 : ref.current(...args);
+  }, []);
+}
+
+// See Diego Haz's Sandbox for making this logic work well on Safari/iOS:
+// https://codesandbox.io/s/tabbable-portal-f4tng?file=/src/FocusTrap.tsx
+
+const HIDDEN_STYLES = {
+  border: 0,
+  clip: 'rect(0 0 0 0)',
+  height: '1px',
+  margin: '-1px',
+  overflow: 'hidden',
+  padding: 0,
+  position: 'fixed',
+  whiteSpace: 'nowrap',
+  width: '1px',
+  top: 0,
+  left: 0
+};
+let activeElement;
+let timeoutId;
+function setActiveElementOnTab(event) {
+  if (event.key === 'Tab') {
+    activeElement = event.target;
+    clearTimeout(timeoutId);
+  }
+}
+function isTabFocus(event) {
+  const result = activeElement === event.relatedTarget;
+  activeElement = event.relatedTarget;
+  clearTimeout(timeoutId);
+  return result;
+}
+const FocusGuard = /*#__PURE__*/(/* unused pure expression or super */ null && (React.forwardRef(function FocusGuard(props, ref) {
+  const onFocus = useEvent(props.onFocus);
+  const [role, setRole] = React.useState();
+  floating_ui_react_esm_index(() => {
+    if (isSafari()) {
+      // Unlike other screen readers such as NVDA and JAWS, the virtual cursor
+      // on VoiceOver does trigger the onFocus event, so we can use the focus
+      // trap element. On Safari, only buttons trigger the onFocus event.
+      // NB: "group" role in the Sandbox no longer appears to work, must be a
+      // button role.
+      setRole('button');
+    }
+    document.addEventListener('keydown', setActiveElementOnTab);
+    return () => {
+      document.removeEventListener('keydown', setActiveElementOnTab);
+    };
+  }, []);
+  return /*#__PURE__*/React.createElement("span", floating_ui_react_esm_extends({}, props, {
+    ref: ref,
+    tabIndex: 0
+    // Role is only for VoiceOver
+    ,
+    role: role,
+    "aria-hidden": role ? undefined : true,
+    "data-floating-ui-focus-guard": "",
+    style: HIDDEN_STYLES,
+    onFocus: event => {
+      if (isSafari() && isMac() && !isTabFocus(event)) {
+        // On macOS we need to wait a little bit before moving
+        // focus again.
+        event.persist();
+        timeoutId = window.setTimeout(() => {
+          onFocus(event);
+        }, 50);
+      } else {
+        onFocus(event);
+      }
+    }
+  }));
+})));
+
+const PortalContext = /*#__PURE__*/(/* unused pure expression or super */ null && (React.createContext(null)));
+const useFloatingPortalNode = function (_temp) {
+  let {
+    id,
+    enabled = true
+  } = _temp === void 0 ? {} : _temp;
+  const [portalEl, setPortalEl] = React.useState(null);
+  const uniqueId = useId();
+  const portalContext = usePortalContext();
+  floating_ui_react_esm_index(() => {
+    if (!enabled) {
+      return;
+    }
+    const rootNode = id ? document.getElementById(id) : null;
+    if (rootNode) {
+      rootNode.setAttribute('data-floating-ui-portal', '');
+      setPortalEl(rootNode);
+    } else {
+      const newPortalEl = document.createElement('div');
+      if (id !== '') {
+        newPortalEl.id = id || uniqueId;
+      }
+      newPortalEl.setAttribute('data-floating-ui-portal', '');
+      setPortalEl(newPortalEl);
+      const container = (portalContext == null ? void 0 : portalContext.portalNode) || document.body;
+      container.appendChild(newPortalEl);
+      return () => {
+        container.removeChild(newPortalEl);
+      };
+    }
+  }, [id, portalContext, uniqueId, enabled]);
+  return portalEl;
+};
+
+/**
+ * Portals the floating element into a given container element — by default,
+ * outside of the app root and into the body.
+ * @see https://floating-ui.com/docs/FloatingPortal
+ */
+const FloatingPortal = _ref => {
+  let {
+    children,
+    id,
+    root = null,
+    preserveTabOrder = true
+  } = _ref;
+  const portalNode = useFloatingPortalNode({
+    id,
+    enabled: !root
+  });
+  const [focusManagerState, setFocusManagerState] = React.useState(null);
+  const beforeOutsideRef = React.useRef(null);
+  const afterOutsideRef = React.useRef(null);
+  const beforeInsideRef = React.useRef(null);
+  const afterInsideRef = React.useRef(null);
+  const shouldRenderGuards =
+  // The FocusManager and therefore floating element are currently open/
+  // rendered.
+  !!focusManagerState &&
+  // Guards are only for non-modal focus management.
+  !focusManagerState.modal && !!(root || portalNode) && preserveTabOrder;
+
+  // https://codesandbox.io/s/tabbable-portal-f4tng?file=/src/TabbablePortal.tsx
+  React.useEffect(() => {
+    if (!portalNode || !preserveTabOrder || focusManagerState != null && focusManagerState.modal) {
+      return;
+    }
+
+    // Make sure elements inside the portal element are tabbable only when the
+    // portal has already been focused, either by tabbing into a focus trap
+    // element outside or using the mouse.
+    function onFocus(event) {
+      if (portalNode && isOutsideEvent(event)) {
+        const focusing = event.type === 'focusin';
+        const manageFocus = focusing ? enableFocusInside : disableFocusInside;
+        manageFocus(portalNode);
+      }
+    }
+    // Listen to the event on the capture phase so they run before the focus
+    // trap elements onFocus prop is called.
+    portalNode.addEventListener('focusin', onFocus, true);
+    portalNode.addEventListener('focusout', onFocus, true);
+    return () => {
+      portalNode.removeEventListener('focusin', onFocus, true);
+      portalNode.removeEventListener('focusout', onFocus, true);
+    };
+  }, [portalNode, preserveTabOrder, focusManagerState == null ? void 0 : focusManagerState.modal]);
+  return /*#__PURE__*/React.createElement(PortalContext.Provider, {
+    value: React.useMemo(() => ({
+      preserveTabOrder,
+      beforeOutsideRef,
+      afterOutsideRef,
+      beforeInsideRef,
+      afterInsideRef,
+      portalNode,
+      setFocusManagerState
+    }), [preserveTabOrder, portalNode])
+  }, shouldRenderGuards && portalNode && /*#__PURE__*/React.createElement(FocusGuard, {
+    "data-type": "outside",
+    ref: beforeOutsideRef,
+    onFocus: event => {
+      if (isOutsideEvent(event, portalNode)) {
+        var _beforeInsideRef$curr;
+        (_beforeInsideRef$curr = beforeInsideRef.current) == null ? void 0 : _beforeInsideRef$curr.focus();
+      } else {
+        const prevTabbable = getPreviousTabbable() || (focusManagerState == null ? void 0 : focusManagerState.refs.domReference.current);
+        prevTabbable == null ? void 0 : prevTabbable.focus();
+      }
+    }
+  }), shouldRenderGuards && portalNode && /*#__PURE__*/React.createElement("span", {
+    "aria-owns": portalNode.id,
+    style: HIDDEN_STYLES
+  }), root ? /*#__PURE__*/createPortal(children, root) : portalNode ? /*#__PURE__*/createPortal(children, portalNode) : null, shouldRenderGuards && portalNode && /*#__PURE__*/React.createElement(FocusGuard, {
+    "data-type": "outside",
+    ref: afterOutsideRef,
+    onFocus: event => {
+      if (isOutsideEvent(event, portalNode)) {
+        var _afterInsideRef$curre;
+        (_afterInsideRef$curre = afterInsideRef.current) == null ? void 0 : _afterInsideRef$curre.focus();
+      } else {
+        const nextTabbable = getNextTabbable() || (focusManagerState == null ? void 0 : focusManagerState.refs.domReference.current);
+        nextTabbable == null ? void 0 : nextTabbable.focus();
+        (focusManagerState == null ? void 0 : focusManagerState.closeOnFocusOut) && (focusManagerState == null ? void 0 : focusManagerState.onOpenChange(false));
+      }
+    }
+  }));
+};
+const usePortalContext = () => React.useContext(PortalContext);
+
+const VisuallyHiddenDismiss = /*#__PURE__*/(/* unused pure expression or super */ null && (React.forwardRef(function VisuallyHiddenDismiss(props, ref) {
+  return /*#__PURE__*/React.createElement("button", floating_ui_react_esm_extends({}, props, {
+    type: "button",
+    ref: ref,
+    tabIndex: -1,
+    style: HIDDEN_STYLES
+  }));
+})));
+/**
+ * Provides focus management for the floating element.
+ * @see https://floating-ui.com/docs/FloatingFocusManager
+ */
+function FloatingFocusManager(_ref) {
+  let {
+    context,
+    children,
+    order = ['content'],
+    guards = true,
+    initialFocus = 0,
+    returnFocus = true,
+    modal = true,
+    visuallyHiddenDismiss = false,
+    closeOnFocusOut = true
+  } = _ref;
+  const {
+    refs,
+    nodeId,
+    onOpenChange,
+    events,
+    dataRef,
+    elements: {
+      domReference,
+      floating
+    }
+  } = context;
+  const orderRef = floating_ui_react_esm_useLatestRef(order);
+  const tree = useFloatingTree();
+  const portalContext = usePortalContext();
+  const [tabbableContentLength, setTabbableContentLength] = React.useState(null);
+
+  // Controlled by `useListNavigation`.
+  const ignoreInitialFocus = typeof initialFocus === 'number' && initialFocus < 0;
+  const startDismissButtonRef = React.useRef(null);
+  const endDismissButtonRef = React.useRef(null);
+  const preventReturnFocusRef = React.useRef(false);
+  const previouslyFocusedElementRef = React.useRef(null);
+  const isPointerDownRef = React.useRef(false);
+  const isInsidePortal = portalContext != null;
+
+  // If the reference is a combobox and is typeable (e.g. input/textarea),
+  // there are different focus semantics. The guards should not be rendered, but
+  // aria-hidden should be applied to all nodes still. Further, the visually
+  // hidden dismiss button should only appear at the end of the list, not the
+  // start.
+  const isTypeableCombobox = domReference && domReference.getAttribute('role') === 'combobox' && isTypeableElement(domReference);
+  const getTabbableContent = React.useCallback(function (container) {
+    if (container === void 0) {
+      container = floating;
+    }
+    return container ? tabbable(container, getTabbableOptions()) : [];
+  }, [floating]);
+  const getTabbableElements = React.useCallback(container => {
+    const content = getTabbableContent(container);
+    return orderRef.current.map(type => {
+      if (domReference && type === 'reference') {
+        return domReference;
+      }
+      if (floating && type === 'floating') {
+        return floating;
+      }
+      return content;
+    }).filter(Boolean).flat();
+  }, [domReference, floating, orderRef, getTabbableContent]);
+  React.useEffect(() => {
+    if (!modal) {
+      return;
+    }
+    function onKeyDown(event) {
+      if (event.key === 'Tab') {
+        // The focus guards have nothing to focus, so we need to stop the event.
+        if (getTabbableContent().length === 0 && !isTypeableCombobox) {
+          stopEvent(event);
+        }
+        const els = getTabbableElements();
+        const target = getTarget(event);
+        if (orderRef.current[0] === 'reference' && target === domReference) {
+          stopEvent(event);
+          if (event.shiftKey) {
+            enqueueFocus(els[els.length - 1]);
+          } else {
+            enqueueFocus(els[1]);
+          }
+        }
+        if (orderRef.current[1] === 'floating' && target === floating && event.shiftKey) {
+          stopEvent(event);
+          enqueueFocus(els[0]);
+        }
+      }
+    }
+    const doc = getDocument(floating);
+    doc.addEventListener('keydown', onKeyDown);
+    return () => {
+      doc.removeEventListener('keydown', onKeyDown);
+    };
+  }, [domReference, floating, modal, orderRef, refs, isTypeableCombobox, getTabbableContent, getTabbableElements]);
+  React.useEffect(() => {
+    if (!closeOnFocusOut) {
+      return;
+    }
+
+    // In Safari, buttons lose focus when pressing them.
+    function handlePointerDown() {
+      isPointerDownRef.current = true;
+      setTimeout(() => {
+        isPointerDownRef.current = false;
+      });
+    }
+    function handleFocusOutside(event) {
+      const relatedTarget = event.relatedTarget;
+      const movedToUnrelatedNode = !(contains(domReference, relatedTarget) || contains(floating, relatedTarget) || contains(relatedTarget, floating) || contains(portalContext == null ? void 0 : portalContext.portalNode, relatedTarget) || relatedTarget != null && relatedTarget.hasAttribute('data-floating-ui-focus-guard') || tree && (getChildren(tree.nodesRef.current, nodeId).find(node => {
+        var _node$context, _node$context2;
+        return contains((_node$context = node.context) == null ? void 0 : _node$context.elements.floating, relatedTarget) || contains((_node$context2 = node.context) == null ? void 0 : _node$context2.elements.domReference, relatedTarget);
+      }) || getAncestors(tree.nodesRef.current, nodeId).find(node => {
+        var _node$context3, _node$context4;
+        return ((_node$context3 = node.context) == null ? void 0 : _node$context3.elements.floating) === relatedTarget || ((_node$context4 = node.context) == null ? void 0 : _node$context4.elements.domReference) === relatedTarget;
+      })));
+
+      // Focus did not move inside the floating tree, and there are no tabbable
+      // portal guards to handle closing.
+      if (relatedTarget && movedToUnrelatedNode && !isPointerDownRef.current &&
+      // Fix React 18 Strict Mode returnFocus due to double rendering.
+      relatedTarget !== previouslyFocusedElementRef.current) {
+        preventReturnFocusRef.current = true;
+        // On iOS VoiceOver, dismissing the nested submenu will cause the
+        // first item of the list to receive focus. Delaying it appears to fix
+        // the issue.
+        setTimeout(() => onOpenChange(false));
+      }
+    }
+    if (floating && isHTMLElement(domReference)) {
+      domReference.addEventListener('focusout', handleFocusOutside);
+      domReference.addEventListener('pointerdown', handlePointerDown);
+      !modal && floating.addEventListener('focusout', handleFocusOutside);
+      return () => {
+        domReference.removeEventListener('focusout', handleFocusOutside);
+        domReference.removeEventListener('pointerdown', handlePointerDown);
+        !modal && floating.removeEventListener('focusout', handleFocusOutside);
+      };
+    }
+  }, [domReference, floating, modal, nodeId, tree, portalContext, onOpenChange, closeOnFocusOut]);
+  React.useEffect(() => {
+    var _portalContext$portal;
+    // Don't hide portals nested within the parent portal.
+    const portalNodes = Array.from((portalContext == null ? void 0 : (_portalContext$portal = portalContext.portalNode) == null ? void 0 : _portalContext$portal.querySelectorAll('[data-floating-ui-portal]')) || []);
+    function getDismissButtons() {
+      return [startDismissButtonRef.current, endDismissButtonRef.current].filter(Boolean);
+    }
+    if (floating && modal) {
+      const insideNodes = [floating, ...portalNodes, ...getDismissButtons()];
+      const cleanup = hideOthers(orderRef.current.includes('reference') || isTypeableCombobox ? insideNodes.concat(domReference || []) : insideNodes);
+      return () => {
+        cleanup();
+      };
+    }
+  }, [domReference, floating, modal, orderRef, portalContext, isTypeableCombobox]);
+  React.useEffect(() => {
+    if (modal && !guards && floating) {
+      const tabIndexValues = [];
+      const options = getTabbableOptions();
+      const allTabbable = tabbable(getDocument(floating).body, options);
+      const floatingTabbable = getTabbableElements();
+
+      // Exclude all tabbable elements that are part of the order
+      const elements = allTabbable.filter(el => !floatingTabbable.includes(el));
+      elements.forEach((el, i) => {
+        tabIndexValues[i] = el.getAttribute('tabindex');
+        el.setAttribute('tabindex', '-1');
+      });
+      return () => {
+        elements.forEach((el, i) => {
+          const value = tabIndexValues[i];
+          if (value == null) {
+            el.removeAttribute('tabindex');
+          } else {
+            el.setAttribute('tabindex', value);
+          }
+        });
+      };
+    }
+  }, [floating, modal, guards, getTabbableElements]);
+  floating_ui_react_esm_index(() => {
+    if (!floating) return;
+    const doc = getDocument(floating);
+    let returnFocusValue = returnFocus;
+    let preventReturnFocusScroll = false;
+    const previouslyFocusedElement = activeElement$1(doc);
+    const contextData = dataRef.current;
+    previouslyFocusedElementRef.current = previouslyFocusedElement;
+    const focusableElements = getTabbableElements(floating);
+    const elToFocus = (typeof initialFocus === 'number' ? focusableElements[initialFocus] : initialFocus.current) || floating;
+
+    // If the `useListNavigation` hook is active, always ignore `initialFocus`
+    // because it has its own handling of the initial focus.
+    !ignoreInitialFocus && enqueueFocus(elToFocus, {
+      preventScroll: elToFocus === floating
+    });
+
+    // Dismissing via outside press should always ignore `returnFocus` to
+    // prevent unwanted scrolling.
+    function onDismiss(payload) {
+      if (payload.type === 'escapeKey' && refs.domReference.current) {
+        previouslyFocusedElementRef.current = refs.domReference.current;
+      }
+      if (['referencePress', 'escapeKey'].includes(payload.type)) {
+        return;
+      }
+      const returnFocus = payload.data.returnFocus;
+      if (typeof returnFocus === 'object') {
+        returnFocusValue = true;
+        preventReturnFocusScroll = returnFocus.preventScroll;
+      } else {
+        returnFocusValue = returnFocus;
+      }
+    }
+    events.on('dismiss', onDismiss);
+    return () => {
+      events.off('dismiss', onDismiss);
+      if (contains(floating, activeElement$1(doc)) && refs.domReference.current) {
+        previouslyFocusedElementRef.current = refs.domReference.current;
+      }
+      if (returnFocusValue && isHTMLElement(previouslyFocusedElementRef.current) && !preventReturnFocusRef.current) {
+        // `isPointerDownRef.current` to avoid the focus ring from appearing on
+        // the reference element when click-toggling it.
+        if (!refs.domReference.current || isPointerDownRef.current) {
+          enqueueFocus(previouslyFocusedElementRef.current, {
+            // When dismissing nested floating elements, by the time the rAF has
+            // executed, the menus will all have been unmounted. When they try
+            // to get focused, the calls get ignored — leaving the root
+            // reference focused as desired.
+            cancelPrevious: false,
+            preventScroll: preventReturnFocusScroll
+          });
+        } else {
+          var _previouslyFocusedEle;
+          // If the user has specified a `keydown` listener that calls
+          // setOpen(false) (e.g. selecting an item and closing the floating
+          // element), then sync return focus causes `useClick` to immediately
+          // re-open it, unless they call `event.preventDefault()` in the
+          // `keydown` listener. This helps keep backwards compatibility with
+          // older examples.
+          contextData.__syncReturnFocus = true;
+
+          // In Safari, `useListNavigation` moves focus sync, so making this
+          // sync ensures the initial item remains focused despite this being
+          // invoked in Strict Mode due to double-invoked useEffects. This also
+          // has the positive side effect of closing a modally focus-managed
+          // <Menu> on `Tab` keydown to move naturally to the next focusable
+          // element.
+          (_previouslyFocusedEle = previouslyFocusedElementRef.current) == null ? void 0 : _previouslyFocusedEle.focus({
+            preventScroll: preventReturnFocusScroll
+          });
+          setTimeout(() => {
+            // This isn't an actual property the user should access, make sure
+            // it doesn't persist.
+            delete contextData.__syncReturnFocus;
+          });
+        }
+      }
+    };
+  }, [floating, getTabbableElements, initialFocus, returnFocus, dataRef, refs, events, ignoreInitialFocus]);
+
+  // Synchronize the `context` & `modal` value to the FloatingPortal context.
+  // It will decide whether or not it needs to render its own guards.
+  floating_ui_react_esm_index(() => {
+    if (!portalContext) return;
+    portalContext.setFocusManagerState({
+      ...context,
+      modal,
+      closeOnFocusOut
+      // Not concerned about the <RT> generic type.
+    });
+
+    return () => {
+      portalContext.setFocusManagerState(null);
+    };
+  }, [portalContext, modal, closeOnFocusOut, context]);
+  floating_ui_react_esm_index(() => {
+    if (ignoreInitialFocus || !floating) return;
+    function setState() {
+      setTabbableContentLength(getTabbableContent().length);
+    }
+    setState();
+    if (typeof MutationObserver === 'function') {
+      const observer = new MutationObserver(setState);
+      observer.observe(floating, {
+        childList: true,
+        subtree: true
+      });
+      return () => {
+        observer.disconnect();
+      };
+    }
+  }, [floating, getTabbableContent, ignoreInitialFocus, refs]);
+  const shouldRenderGuards = guards && (isInsidePortal || modal) && !isTypeableCombobox;
+  function renderDismissButton(location) {
+    return visuallyHiddenDismiss && modal ? /*#__PURE__*/React.createElement(VisuallyHiddenDismiss, {
+      ref: location === 'start' ? startDismissButtonRef : endDismissButtonRef,
+      onClick: () => onOpenChange(false)
+    }, typeof visuallyHiddenDismiss === 'string' ? visuallyHiddenDismiss : 'Dismiss') : null;
+  }
+  return /*#__PURE__*/React.createElement(React.Fragment, null, shouldRenderGuards && /*#__PURE__*/React.createElement(FocusGuard, {
+    "data-type": "inside",
+    ref: portalContext == null ? void 0 : portalContext.beforeInsideRef,
+    onFocus: event => {
+      if (modal) {
+        const els = getTabbableElements();
+        enqueueFocus(order[0] === 'reference' ? els[0] : els[els.length - 1]);
+      } else if (portalContext != null && portalContext.preserveTabOrder && portalContext.portalNode) {
+        preventReturnFocusRef.current = false;
+        if (isOutsideEvent(event, portalContext.portalNode)) {
+          const nextTabbable = getNextTabbable() || domReference;
+          nextTabbable == null ? void 0 : nextTabbable.focus();
+        } else {
+          var _portalContext$before;
+          (_portalContext$before = portalContext.beforeOutsideRef.current) == null ? void 0 : _portalContext$before.focus();
+        }
+      }
+    }
+  }), isTypeableCombobox ? null : renderDismissButton('start'), /*#__PURE__*/React.cloneElement(children, tabbableContentLength === 0 || order.includes('floating') ? {
+    tabIndex: 0
+  } : {}), renderDismissButton('end'), shouldRenderGuards && /*#__PURE__*/React.createElement(FocusGuard, {
+    "data-type": "inside",
+    ref: portalContext == null ? void 0 : portalContext.afterInsideRef,
+    onFocus: event => {
+      if (modal) {
+        enqueueFocus(getTabbableElements()[0]);
+      } else if (portalContext != null && portalContext.preserveTabOrder && portalContext.portalNode) {
+        preventReturnFocusRef.current = true;
+        if (isOutsideEvent(event, portalContext.portalNode)) {
+          const prevTabbable = getPreviousTabbable() || domReference;
+          prevTabbable == null ? void 0 : prevTabbable.focus();
+        } else {
+          var _portalContext$afterO;
+          (_portalContext$afterO = portalContext.afterOutsideRef.current) == null ? void 0 : _portalContext$afterO.focus();
+        }
+      }
+    }
+  }));
+}
+
 const identifier = 'data-floating-ui-scroll-lock';
+
 /**
  * Provides base styling for a fixed overlay element to dim content or block
  * pointer events behind a floating element.
  * It's a regular `<div>`, so it can be styled via any CSS solution you prefer.
  * @see https://floating-ui.com/docs/FloatingOverlay
  */
-
 const FloatingOverlay = /*#__PURE__*/(/* unused pure expression or super */ null && (React.forwardRef(function FloatingOverlay(_ref, ref) {
   let {
     lockScroll = false,
     ...rest
   } = _ref;
-  floating_ui_react_dom_interactions_esm_index(() => {
-    var _window$visualViewpor, _window$visualViewpor2, _window$visualViewpor3, _window$visualViewpor4;
-
+  floating_ui_react_esm_index(() => {
+    var _window$visualViewpor, _window$visualViewpor2;
     if (!lockScroll) {
       return;
     }
-
     const alreadyLocked = document.body.hasAttribute(identifier);
-
     if (alreadyLocked) {
       return;
     }
+    document.body.setAttribute(identifier, '');
 
-    document.body.setAttribute(identifier, ''); // RTL <body> scrollbar
-
+    // RTL <body> scrollbar
     const scrollbarX = Math.round(document.documentElement.getBoundingClientRect().left) + document.documentElement.scrollLeft;
     const paddingProp = scrollbarX ? 'paddingLeft' : 'paddingRight';
-    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth; // Only iOS doesn't respect `overflow: hidden` on document.body, and this
-    // technique has fewer side effects.
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 
+    // Only iOS doesn't respect `overflow: hidden` on document.body, and this
+    // technique has fewer side effects.
     if (!/iP(hone|ad|od)|iOS/.test(getPlatform())) {
       Object.assign(document.body.style, {
         overflow: 'hidden',
@@ -4668,11 +5420,11 @@ const FloatingOverlay = /*#__PURE__*/(/* unused pure expression or super */ null
           [paddingProp]: ''
         });
       };
-    } // iOS 12 does not support `visuaViewport`.
+    }
 
-
-    const offsetLeft = (_window$visualViewpor = (_window$visualViewpor2 = window.visualViewport) == null ? void 0 : _window$visualViewpor2.offsetLeft) != null ? _window$visualViewpor : 0;
-    const offsetTop = (_window$visualViewpor3 = (_window$visualViewpor4 = window.visualViewport) == null ? void 0 : _window$visualViewpor4.offsetTop) != null ? _window$visualViewpor3 : 0;
+    // iOS 12 does not support `visualViewport`.
+    const offsetLeft = ((_window$visualViewpor = window.visualViewport) == null ? void 0 : _window$visualViewpor.offsetLeft) || 0;
+    const offsetTop = ((_window$visualViewpor2 = window.visualViewport) == null ? void 0 : _window$visualViewpor2.offsetTop) || 0;
     const scrollX = window.pageXOffset;
     const scrollY = window.pageYOffset;
     Object.assign(document.body.style, {
@@ -4696,7 +5448,7 @@ const FloatingOverlay = /*#__PURE__*/(/* unused pure expression or super */ null
       window.scrollTo(scrollX, scrollY);
     };
   }, [lockScroll]);
-  return /*#__PURE__*/React.createElement("div", floating_ui_react_dom_interactions_esm_extends({
+  return /*#__PURE__*/React.createElement("div", floating_ui_react_esm_extends({
     ref: ref
   }, rest, {
     style: {
@@ -4711,970 +5463,14 @@ const FloatingOverlay = /*#__PURE__*/(/* unused pure expression or super */ null
   }));
 })));
 
-/**
- * Find the real active element. Traverses into shadowRoots.
- */
-function activeElement(doc) {
-  let activeElement = doc.activeElement;
-
-  while (((_activeElement = activeElement) == null ? void 0 : (_activeElement$shadow = _activeElement.shadowRoot) == null ? void 0 : _activeElement$shadow.activeElement) != null) {
-    var _activeElement, _activeElement$shadow;
-
-    activeElement = activeElement.shadowRoot.activeElement;
-  }
-
-  return activeElement;
-}
-
-function getAncestors(nodes, id) {
-  var _nodes$find;
-
-  let allAncestors = [];
-  let currentParentId = (_nodes$find = nodes.find(node => node.id === id)) == null ? void 0 : _nodes$find.parentId;
-
-  while (currentParentId) {
-    const currentNode = nodes.find(node => node.id === currentParentId);
-    currentParentId = currentNode == null ? void 0 : currentNode.parentId;
-
-    if (currentNode) {
-      allAncestors = allAncestors.concat(currentNode);
-    }
-  }
-
-  return allAncestors;
-}
-
-function getTarget(event) {
-  if ('composedPath' in event) {
-    return event.composedPath()[0];
-  } // TS thinks `event` is of type never as it assumes all browsers support
-  // `composedPath()`, but browsers without shadow DOM don't.
-
-
-  return event.target;
-}
-
-const TYPEABLE_SELECTOR = "input:not([type='hidden']):not([disabled])," + "[contenteditable]:not([contenteditable='false']),textarea:not([disabled])";
-function isTypeableElement(element) {
-  return isHTMLElement(element) && element.matches(TYPEABLE_SELECTOR);
-}
-
-function stopEvent(event) {
-  event.preventDefault();
-  event.stopPropagation();
-}
-
-function floating_ui_react_dom_interactions_esm_useLatestRef(value) {
-  const ref = (0,react.useRef)(value);
-  floating_ui_react_dom_interactions_esm_index(() => {
-    ref.current = value;
-  });
-  return ref;
-}
-
-function floating_ui_react_dom_interactions_esm_focus(el, preventScroll) {
-  if (preventScroll === void 0) {
-    preventScroll = false;
-  }
-
-  // `mousedown` clicks occur before `focus`, so the button will steal the
-  // focus unless we wait a frame.
-  requestAnimationFrame(() => {
-    el == null ? void 0 : el.focus({
-      preventScroll
-    });
-  });
-}
-
-const SELECTOR = 'select:not([disabled]),a[href],button:not([disabled]),[tabindex],' + 'iframe,object,embed,area[href],audio[controls],video[controls],' + TYPEABLE_SELECTOR;
-const FocusGuard = /*#__PURE__*/(/* unused pure expression or super */ null && (React.forwardRef(function FocusGuard(props, ref) {
-  return /*#__PURE__*/React.createElement("span", floating_ui_react_dom_interactions_esm_extends({}, props, {
-    ref: ref,
-    tabIndex: 0,
-    style: {
-      position: 'fixed',
-      opacity: '0',
-      pointerEvents: 'none',
-      outline: '0'
-    }
-  }));
-})));
-
-/**
- * Provides focus management for the floating element.
- * @see https://floating-ui.com/docs/FloatingFocusManager
- */
-function FloatingFocusManager(_ref) {
-  let {
-    context: {
-      refs,
-      nodeId,
-      onOpenChange,
-      dataRef,
-      events
-    },
-    children,
-    order = ['content'],
-    endGuard = true,
-    initialFocus = 0,
-    returnFocus = true,
-    modal = true
-  } = _ref;
-  const orderRef = floating_ui_react_dom_interactions_esm_useLatestRef(order);
-  const tree = useFloatingTree();
-  const getTabbableElements = React.useCallback(() => {
-    return orderRef.current.map(type => {
-      if (type === 'reference') {
-        return refs.domReference.current;
-      }
-
-      if (refs.floating.current && type === 'floating') {
-        return refs.floating.current;
-      }
-
-      if (type === 'content') {
-        var _refs$floating$curren, _refs$floating$curren2;
-
-        return Array.from((_refs$floating$curren = (_refs$floating$curren2 = refs.floating.current) == null ? void 0 : _refs$floating$curren2.querySelectorAll(SELECTOR)) != null ? _refs$floating$curren : []);
-      }
-
-      return null;
-    }).flat().filter(el => {
-      if (el === refs.floating.current || el === refs.domReference.current) {
-        return true;
-      }
-
-      if (isHTMLElement(el)) {
-        var _el$getAttribute;
-
-        const tabIndex = (_el$getAttribute = el.getAttribute('tabindex')) != null ? _el$getAttribute : '0';
-        return tabIndex[0].trim() !== '-';
-      }
-    });
-  }, [orderRef, refs]);
-  React.useEffect(() => {
-    if (!modal) {
-      return;
-    } // If the floating element has no focusable elements inside it, fallback
-    // to focusing the floating element and preventing tab navigation
-
-
-    const noTabbableContentElements = getTabbableElements().filter(el => el !== refs.floating.current && el !== refs.domReference.current).length === 0;
-
-    function onKeyDown(event) {
-      if (event.key === 'Tab') {
-        if (noTabbableContentElements) {
-          stopEvent(event);
-        }
-
-        const els = getTabbableElements();
-        const target = getTarget(event);
-
-        if (orderRef.current[0] === 'reference' && target === refs.domReference.current) {
-          stopEvent(event);
-
-          if (event.shiftKey) {
-            floating_ui_react_dom_interactions_esm_focus(els[els.length - 1]);
-          } else {
-            floating_ui_react_dom_interactions_esm_focus(els[1]);
-          }
-        }
-
-        if (orderRef.current[1] === 'floating' && target === refs.floating.current && event.shiftKey) {
-          stopEvent(event);
-          floating_ui_react_dom_interactions_esm_focus(els[0]);
-        }
-      }
-    }
-
-    const doc = getDocument(refs.floating.current);
-    doc.addEventListener('keydown', onKeyDown);
-    return () => {
-      doc.removeEventListener('keydown', onKeyDown);
-    };
-  }, [modal, getTabbableElements, orderRef, refs]);
-  React.useEffect(() => {
-    let isPointerDown = false;
-
-    function onFocusOut(event) {
-      var _refs$floating$curren3, _getAncestors;
-
-      const relatedTarget = event.relatedTarget;
-      const focusMovedOutsideFloating = !((_refs$floating$curren3 = refs.floating.current) != null && _refs$floating$curren3.contains(relatedTarget));
-      const focusMovedOutsideReference = isElement(refs.domReference.current) && !refs.domReference.current.contains(relatedTarget);
-      const isChildOpen = tree && getChildren(tree.nodesRef.current, nodeId).length > 0;
-      const isParentRelated = tree && event.currentTarget === refs.domReference.current && ((_getAncestors = getAncestors(tree.nodesRef.current, nodeId)) == null ? void 0 : _getAncestors.some(node => {
-        var _node$context, _node$context$refs$fl;
-
-        return (_node$context = node.context) == null ? void 0 : (_node$context$refs$fl = _node$context.refs.floating.current) == null ? void 0 : _node$context$refs$fl.contains(relatedTarget);
-      }));
-
-      if (focusMovedOutsideFloating && focusMovedOutsideReference && !isChildOpen && !isParentRelated && !isPointerDown) {
-        onOpenChange(false);
-      }
-    }
-
-    function onPointerDown() {
-      // In Safari, buttons *lose* focus when pressing them. This causes the
-      // reference `focusout` to fire, which closes the floating element.
-      isPointerDown = true;
-      setTimeout(() => {
-        isPointerDown = false;
-      });
-    }
-
-    const floating = refs.floating.current;
-    const reference = refs.domReference.current;
-
-    if (floating && isHTMLElement(reference)) {
-      if (!modal) {
-        floating.addEventListener('focusout', onFocusOut);
-        reference.addEventListener('focusout', onFocusOut);
-        reference.addEventListener('pointerdown', onPointerDown);
-      }
-
-      let cleanup;
-
-      if (modal) {
-        if (orderRef.current.includes('reference')) {
-          cleanup = hideOthers([reference, floating]);
-        } else {
-          cleanup = hideOthers(floating);
-        }
-      }
-
-      return () => {
-        if (!modal) {
-          floating.removeEventListener('focusout', onFocusOut);
-          reference.removeEventListener('focusout', onFocusOut);
-          reference.removeEventListener('pointerdown', onPointerDown);
-        }
-
-        cleanup == null ? void 0 : cleanup();
-      };
-    }
-  }, [nodeId, tree, modal, onOpenChange, orderRef, dataRef, getTabbableElements, refs]);
-  React.useEffect(() => {
-    const floating = refs.floating.current;
-    const doc = getDocument(floating);
-    let returnFocusValue = returnFocus;
-    let preventReturnFocusScroll = false;
-    let previouslyFocusedElement = activeElement(doc);
-
-    if (previouslyFocusedElement === doc.body && refs.domReference.current) {
-      previouslyFocusedElement = refs.domReference.current;
-    }
-
-    if (typeof initialFocus === 'number') {
-      var _getTabbableElements$;
-
-      const el = (_getTabbableElements$ = getTabbableElements()[initialFocus]) != null ? _getTabbableElements$ : floating;
-      floating_ui_react_dom_interactions_esm_focus(el, el === floating);
-    } else if (isHTMLElement(initialFocus.current)) {
-      var _initialFocus$current;
-
-      const el = (_initialFocus$current = initialFocus.current) != null ? _initialFocus$current : floating;
-      floating_ui_react_dom_interactions_esm_focus(el, el === floating);
-    } // Dismissing via outside press should always ignore `returnFocus` to
-    // prevent unwanted scrolling.
-
-
-    function onDismiss(allowReturnFocus) {
-      if (allowReturnFocus === void 0) {
-        allowReturnFocus = false;
-      }
-
-      if (typeof allowReturnFocus === 'object') {
-        returnFocusValue = true;
-        preventReturnFocusScroll = allowReturnFocus.preventScroll;
-      } else {
-        returnFocusValue = allowReturnFocus;
-      }
-    }
-
-    events.on('dismiss', onDismiss);
-    return () => {
-      events.off('dismiss', onDismiss);
-
-      if (returnFocusValue && isHTMLElement(previouslyFocusedElement)) {
-        floating_ui_react_dom_interactions_esm_focus(previouslyFocusedElement, preventReturnFocusScroll);
-      }
-    };
-  }, [getTabbableElements, initialFocus, returnFocus, refs, events]);
-
-  const isTypeableCombobox = () => {
-    var _refs$domReference$cu;
-
-    return ((_refs$domReference$cu = refs.domReference.current) == null ? void 0 : _refs$domReference$cu.getAttribute('role')) === 'combobox' && isTypeableElement(refs.domReference.current);
-  };
-
-  return /*#__PURE__*/React.createElement(React.Fragment, null, modal && /*#__PURE__*/React.createElement(FocusGuard, {
-    onFocus: event => {
-      if (isTypeableCombobox()) {
-        return;
-      }
-
-      stopEvent(event);
-      const els = getTabbableElements();
-
-      if (order[0] === 'reference') {
-        floating_ui_react_dom_interactions_esm_focus(els[0]);
-      } else {
-        floating_ui_react_dom_interactions_esm_focus(els[els.length - 1]);
-      }
-    }
-  }), /*#__PURE__*/React.cloneElement(children, order.includes('floating') ? {
-    tabIndex: 0
-  } : {}), modal && endGuard && /*#__PURE__*/React.createElement(FocusGuard, {
-    onFocus: event => {
-      if (isTypeableCombobox()) {
-        return;
-      }
-
-      stopEvent(event);
-      floating_ui_react_dom_interactions_esm_focus(getTabbableElements()[0]);
-    }
-  }));
-}
-
-function usePrevious(value) {
-  const ref = (0,react.useRef)();
-  floating_ui_react_dom_interactions_esm_index(() => {
-    ref.current = value;
-  }, [value]);
-  return ref.current;
-}
-
-function getDelay(value, prop, pointerType) {
-  if (pointerType && pointerType !== 'mouse') {
-    return 0;
-  }
-
-  if (typeof value === 'number') {
-    return value;
-  }
-
-  return value == null ? void 0 : value[prop];
-}
-
-/**
- * Adds hover event listeners that change the open state, like CSS :hover.
- * @see https://floating-ui.com/docs/useHover
- */
-const useHover = function (context, _temp) {
-  let {
-    enabled = true,
-    delay = 0,
-    handleClose = null,
-    mouseOnly = false,
-    restMs = 0,
-    move = true
-  } = _temp === void 0 ? {} : _temp;
-  const {
-    open,
-    onOpenChange,
-    dataRef,
-    events,
-    refs,
-    _
-  } = context;
-  const tree = useFloatingTree();
-  const parentId = useFloatingParentNodeId();
-  const handleCloseRef = floating_ui_react_dom_interactions_esm_useLatestRef(handleClose);
-  const delayRef = floating_ui_react_dom_interactions_esm_useLatestRef(delay);
-  const previousOpen = usePrevious(open);
-  const pointerTypeRef = react.useRef();
-  const timeoutRef = react.useRef();
-  const handlerRef = react.useRef();
-  const restTimeoutRef = react.useRef();
-  const blockMouseMoveRef = react.useRef(true);
-  const performedPointerEventsMutationRef = react.useRef(false);
-  const isHoverOpen = react.useCallback(() => {
-    var _dataRef$current$open;
-
-    const type = (_dataRef$current$open = dataRef.current.openEvent) == null ? void 0 : _dataRef$current$open.type;
-    return (type == null ? void 0 : type.includes('mouse')) && type !== 'mousedown';
-  }, [dataRef]);
-  react.useEffect(() => {
-    if (!enabled) {
-      return;
-    }
-
-    function onDismiss() {
-      clearTimeout(timeoutRef.current);
-      clearTimeout(restTimeoutRef.current);
-      blockMouseMoveRef.current = true;
-    }
-
-    events.on('dismiss', onDismiss);
-    return () => {
-      events.off('dismiss', onDismiss);
-    };
-  }, [enabled, events, refs]);
-  react.useEffect(() => {
-    if (!enabled || !handleCloseRef.current) {
-      return;
-    }
-
-    function onLeave() {
-      if (isHoverOpen()) {
-        onOpenChange(false);
-      }
-    }
-
-    const html = getDocument(refs.floating.current).documentElement;
-    html.addEventListener('mouseleave', onLeave);
-    return () => {
-      html.removeEventListener('mouseleave', onLeave);
-    };
-  }, [refs, onOpenChange, enabled, handleCloseRef, dataRef, isHoverOpen]);
-  const closeWithDelay = react.useCallback(function (runElseBranch) {
-    if (runElseBranch === void 0) {
-      runElseBranch = true;
-    }
-
-    const closeDelay = getDelay(delayRef.current, 'close', pointerTypeRef.current);
-
-    if (closeDelay && !handlerRef.current) {
-      clearTimeout(timeoutRef.current);
-      timeoutRef.current = setTimeout(() => onOpenChange(false), closeDelay);
-    } else if (runElseBranch) {
-      clearTimeout(timeoutRef.current);
-      onOpenChange(false);
-    }
-  }, [delayRef, onOpenChange]);
-  const cleanupPointerMoveHandler = react.useCallback(() => {
-    if (handlerRef.current) {
-      getDocument(refs.floating.current).removeEventListener('pointermove', handlerRef.current);
-      handlerRef.current = undefined;
-    }
-  }, [refs]);
-  const clearPointerEvents = react.useCallback(() => {
-    getDocument(refs.floating.current).body.style.pointerEvents = '';
-    performedPointerEventsMutationRef.current = false;
-  }, [refs]); // Registering the mouse events on the reference directly to bypass React's
-  // delegation system. If the cursor was on a disabled element and then entered
-  // the reference (no gap), `mouseenter` doesn't fire in the delegation system.
-
-  react.useEffect(() => {
-    if (!enabled) {
-      return;
-    }
-
-    function isClickLikeOpenEvent() {
-      return dataRef.current.openEvent ? ['click', 'mousedown'].includes(dataRef.current.openEvent.type) : false;
-    }
-
-    function onMouseEnter(event) {
-      clearTimeout(timeoutRef.current);
-      blockMouseMoveRef.current = false;
-
-      if (mouseOnly && pointerTypeRef.current !== 'mouse' || restMs > 0 && getDelay(delayRef.current, 'open') === 0) {
-        return;
-      }
-
-      dataRef.current.openEvent = event;
-      const openDelay = getDelay(delayRef.current, 'open', pointerTypeRef.current);
-
-      if (openDelay) {
-        timeoutRef.current = setTimeout(() => {
-          onOpenChange(true);
-        }, openDelay);
-      } else {
-        onOpenChange(true);
-      }
-    }
-
-    function onMouseLeave(event) {
-      if (isClickLikeOpenEvent()) {
-        return;
-      }
-
-      const doc = getDocument(refs.floating.current);
-      clearTimeout(restTimeoutRef.current);
-
-      if (handleCloseRef.current) {
-        clearTimeout(timeoutRef.current);
-        handlerRef.current && doc.removeEventListener('pointermove', handlerRef.current);
-        handlerRef.current = handleCloseRef.current({ ...context,
-          tree,
-          x: event.clientX,
-          y: event.clientY,
-
-          onClose() {
-            clearPointerEvents();
-            cleanupPointerMoveHandler();
-            closeWithDelay();
-          }
-
-        });
-        doc.addEventListener('pointermove', handlerRef.current);
-        return;
-      }
-
-      closeWithDelay();
-    } // Ensure the floating element closes after scrolling even if the pointer
-    // did not move.
-    // https://github.com/floating-ui/floating-ui/discussions/1692
-
-
-    function onScrollMouseLeave(event) {
-      if (isClickLikeOpenEvent()) {
-        return;
-      }
-
-      handleCloseRef.current == null ? void 0 : handleCloseRef.current({ ...context,
-        tree,
-        x: event.clientX,
-        y: event.clientY,
-        leave: true,
-
-        onClose() {
-          clearPointerEvents();
-          cleanupPointerMoveHandler();
-          closeWithDelay();
-        }
-
-      })(event);
-    }
-
-    const floating = refs.floating.current;
-    const reference = refs.domReference.current;
-
-    if (isElement(reference)) {
-      open && reference.addEventListener('mouseleave', onScrollMouseLeave);
-      floating == null ? void 0 : floating.addEventListener('mouseleave', onScrollMouseLeave);
-      move && reference.addEventListener('mousemove', onMouseEnter, {
-        once: true
-      });
-      reference.addEventListener('mouseenter', onMouseEnter);
-      reference.addEventListener('mouseleave', onMouseLeave);
-      return () => {
-        open && reference.removeEventListener('mouseleave', onScrollMouseLeave);
-        floating == null ? void 0 : floating.removeEventListener('mouseleave', onScrollMouseLeave);
-        move && reference.removeEventListener('mousemove', onMouseEnter);
-        reference.removeEventListener('mouseenter', onMouseEnter);
-        reference.removeEventListener('mouseleave', onMouseLeave);
-      };
-    }
-  }, [// Ensure the effect is re-run when the reference changes.
-  // https://github.com/floating-ui/floating-ui/issues/1833
-  _.domReference, enabled, context, mouseOnly, restMs, move, closeWithDelay, cleanupPointerMoveHandler, clearPointerEvents, onOpenChange, open, tree, refs, delayRef, handleCloseRef, dataRef]); // Block pointer-events of every element other than the reference and floating
-  // while the floating element is open and has a `handleClose` handler. Also
-  // handles nested floating elements.
-  // https://github.com/floating-ui/floating-ui/issues/1722
-
-  floating_ui_react_dom_interactions_esm_index(() => {
-    if (!enabled) {
-      return;
-    }
-
-    if (open && handleCloseRef.current && handleCloseRef.current.__options.blockPointerEvents && isHoverOpen()) {
-      getDocument(refs.floating.current).body.style.pointerEvents = 'none';
-      performedPointerEventsMutationRef.current = true;
-      const reference = refs.domReference.current;
-      const floating = refs.floating.current;
-
-      if (isElement(reference) && floating) {
-        var _tree$nodesRef$curren, _tree$nodesRef$curren2;
-
-        const parentFloating = tree == null ? void 0 : (_tree$nodesRef$curren = tree.nodesRef.current.find(node => node.id === parentId)) == null ? void 0 : (_tree$nodesRef$curren2 = _tree$nodesRef$curren.context) == null ? void 0 : _tree$nodesRef$curren2.refs.floating.current;
-
-        if (parentFloating) {
-          parentFloating.style.pointerEvents = '';
-        }
-
-        reference.style.pointerEvents = 'auto';
-        floating.style.pointerEvents = 'auto';
-        return () => {
-          reference.style.pointerEvents = '';
-          floating.style.pointerEvents = '';
-        };
-      }
-    }
-  }, [enabled, open, parentId, refs, tree, handleCloseRef, dataRef, isHoverOpen]);
-  floating_ui_react_dom_interactions_esm_index(() => {
-    if (previousOpen && !open) {
-      pointerTypeRef.current = undefined;
-      cleanupPointerMoveHandler();
-      clearPointerEvents();
-    }
-  });
-  react.useEffect(() => {
-    return () => {
-      cleanupPointerMoveHandler();
-      clearTimeout(timeoutRef.current);
-      clearTimeout(restTimeoutRef.current);
-
-      if (performedPointerEventsMutationRef.current) {
-        clearPointerEvents();
-      }
-    };
-  }, [enabled, cleanupPointerMoveHandler, clearPointerEvents]);
-  return react.useMemo(() => {
-    if (!enabled) {
-      return {};
-    }
-
-    function setPointerRef(event) {
-      pointerTypeRef.current = event.pointerType;
-    }
-
-    return {
-      reference: {
-        onPointerDown: setPointerRef,
-        onPointerEnter: setPointerRef,
-
-        onMouseMove() {
-          if (open || restMs === 0) {
-            return;
-          }
-
-          clearTimeout(restTimeoutRef.current);
-          restTimeoutRef.current = setTimeout(() => {
-            if (!blockMouseMoveRef.current) {
-              onOpenChange(true);
-            }
-          }, restMs);
-        }
-
-      },
-      floating: {
-        onMouseEnter() {
-          clearTimeout(timeoutRef.current);
-        },
-
-        onMouseLeave() {
-          closeWithDelay(false);
-        }
-
-      }
-    };
-  }, [enabled, restMs, open, onOpenChange, closeWithDelay]);
-};
-
-const FloatingDelayGroupContext = /*#__PURE__*/react.createContext({
-  delay: 1000,
-  initialDelay: 1000,
-  currentId: null,
-  setCurrentId: () => {},
-  setState: () => {}
-});
-const useDelayGroupContext = () => react.useContext(FloatingDelayGroupContext);
-/**
- * Provides context for a group of floating elements that should share a
- * `delay`.
- * @see https://floating-ui.com/docs/FloatingDelayGroup
- */
-
-const FloatingDelayGroup = _ref => {
-  let {
-    children,
-    delay
-  } = _ref;
-  const [state, setState] = react.useState({
-    delay,
-    initialDelay: delay,
-    currentId: null
-  });
-  const setCurrentId = react.useCallback(currentId => {
-    setState(state => ({ ...state,
-      currentId
-    }));
-  }, []);
-  return /*#__PURE__*/react.createElement(FloatingDelayGroupContext.Provider, {
-    value: react.useMemo(() => ({ ...state,
-      setState,
-      setCurrentId
-    }), [state, setState, setCurrentId])
-  }, children);
-};
-const useDelayGroup = (_ref2, _ref3) => {
-  let {
-    open,
-    onOpenChange
-  } = _ref2;
-  let {
-    id
-  } = _ref3;
-  const {
-    currentId,
-    initialDelay,
-    setState
-  } = useDelayGroupContext();
-  react.useEffect(() => {
-    if (currentId) {
-      setState(state => ({ ...state,
-        delay: {
-          open: 1,
-          close: getDelay(initialDelay, 'close')
-        }
-      }));
-
-      if (currentId !== id) {
-        onOpenChange(false);
-      }
-    }
-  }, [id, onOpenChange, setState, currentId, initialDelay]);
-  react.useEffect(() => {
-    if (!open && currentId === id) {
-      onOpenChange(false);
-      setState(state => ({ ...state,
-        delay: initialDelay,
-        currentId: null
-      }));
-    }
-  }, [open, setState, currentId, id, onOpenChange, initialDelay]);
-};
-
-function getArgsWithCustomFloatingHeight(args, prop) {
-  return { ...args,
-    rects: { ...args.rects,
-      floating: { ...args.rects.floating,
-        height: args.elements.floating[prop]
-      }
-    }
-  };
-}
-
-const inner = options => ({
-  name: 'inner',
-  options,
-
-  async fn(middlewareArguments) {
-    const {
-      listRef,
-      overflowRef,
-      onFallbackChange,
-      offset: innerOffset = 0,
-      index = 0,
-      minItemsVisible = 4,
-      referenceOverflowThreshold = 0,
-      ...detectOverflowOptions
-    } = options;
-    const {
-      rects,
-      elements: {
-        floating
-      }
-    } = middlewareArguments;
-    const item = listRef.current[index];
-
-    if (false) {}
-
-    if (!item) {
-      return {};
-    }
-
-    const nextArgs = { ...middlewareArguments,
-      ...(await offset(-item.offsetTop - rects.reference.height / 2 - item.offsetHeight / 2 - innerOffset).fn(middlewareArguments))
-    };
-    const overflow = await detectOverflow(getArgsWithCustomFloatingHeight(nextArgs, 'scrollHeight'), detectOverflowOptions);
-    const refOverflow = await detectOverflow(nextArgs, { ...detectOverflowOptions,
-      elementContext: 'reference'
-    });
-    const diffY = Math.max(0, overflow.top);
-    const nextY = nextArgs.y + diffY;
-    const maxHeight = Math.max(0, floating.scrollHeight - diffY - Math.max(0, overflow.bottom));
-    floating.style.maxHeight = maxHeight + "px";
-    floating.scrollTop = diffY; // There is not enough space, fallback to standard anchored positioning
-
-    if (onFallbackChange) {
-      if (floating.offsetHeight < item.offsetHeight * Math.min(minItemsVisible, listRef.current.length - 1) - 1 || refOverflow.top >= -referenceOverflowThreshold || refOverflow.bottom >= -referenceOverflowThreshold) {
-        flushSync(() => onFallbackChange(true));
-      } else {
-        flushSync(() => onFallbackChange(false));
-      }
-    }
-
-    if (overflowRef) {
-      overflowRef.current = await detectOverflow(getArgsWithCustomFloatingHeight({ ...nextArgs,
-        y: nextY
-      }, 'offsetHeight'), detectOverflowOptions);
-    }
-
-    return {
-      y: nextY
-    };
-  }
-
-});
-const useInnerOffset = (_ref, _ref2) => {
-  let {
-    open,
-    refs
-  } = _ref;
-  let {
-    enabled = true,
-    overflowRef,
-    onChange: unstable_onChange
-  } = _ref2;
-  const onChange = useEvent(unstable_onChange);
-  const controlledScrollingRef = React.useRef(false);
-  const prevScrollTopRef = React.useRef(null);
-  const initialOverflowRef = React.useRef(null);
-  React.useEffect(() => {
-    if (!enabled) {
-      return;
-    }
-
-    function onWheel(e) {
-      if (e.ctrlKey || !el || overflowRef.current == null) {
-        return;
-      }
-
-      const dY = e.deltaY;
-      const isAtTop = overflowRef.current.top >= -0.5;
-      const isAtBottom = overflowRef.current.bottom >= -0.5;
-      const remainingScroll = el.scrollHeight - el.clientHeight;
-      const sign = dY < 0 ? -1 : 1;
-      const method = dY < 0 ? 'max' : 'min';
-
-      if (el.scrollHeight <= el.clientHeight) {
-        return;
-      }
-
-      if (!isAtTop && dY > 0 || !isAtBottom && dY < 0) {
-        e.preventDefault();
-        flushSync(() => {
-          onChange(d => d + Math[method](dY, remainingScroll * sign));
-        });
-      } else if (/firefox/i.test(getUserAgent())) {
-        // Needed to propagate scrolling during momentum scrolling phase once
-        // it gets limited by the boundary. UX improvement, not critical.
-        el.scrollTop += dY;
-      }
-    }
-
-    const el = refs.floating.current;
-
-    if (open && el) {
-      el.addEventListener('wheel', onWheel); // Wait for the position to be ready.
-
-      requestAnimationFrame(() => {
-        prevScrollTopRef.current = el.scrollTop;
-
-        if (overflowRef.current != null) {
-          initialOverflowRef.current = { ...overflowRef.current
-          };
-        }
-      });
-      return () => {
-        prevScrollTopRef.current = null;
-        initialOverflowRef.current = null;
-        el.removeEventListener('wheel', onWheel);
-      };
-    }
-  }, [enabled, open, refs, overflowRef, onChange]);
-  return React.useMemo(() => {
-    if (!enabled) {
-      return {};
-    }
-
-    return {
-      floating: {
-        onKeyDown() {
-          controlledScrollingRef.current = true;
-        },
-
-        onWheel() {
-          controlledScrollingRef.current = false;
-        },
-
-        onPointerMove() {
-          controlledScrollingRef.current = false;
-        },
-
-        onScroll() {
-          const el = refs.floating.current;
-
-          if (!overflowRef.current || !el || !controlledScrollingRef.current) {
-            return;
-          }
-
-          if (prevScrollTopRef.current !== null) {
-            const scrollDiff = el.scrollTop - prevScrollTopRef.current;
-
-            if (overflowRef.current.bottom < -0.5 && scrollDiff < -1 || overflowRef.current.top < -0.5 && scrollDiff > 1) {
-              flushSync(() => onChange(d => d + scrollDiff));
-            }
-          } // [Firefox] Wait for the height change to have been applied.
-
-
-          requestAnimationFrame(() => {
-            prevScrollTopRef.current = el.scrollTop;
-          });
-        }
-
-      }
-    };
-  }, [enabled, overflowRef, refs, onChange]);
-};
-
-/**
- * Adds relevant screen reader props for a given element `role`.
- * @see https://floating-ui.com/docs/useRole
- */
-const useRole = function (_ref, _temp) {
-  let {
-    open
-  } = _ref;
-  let {
-    enabled = true,
-    role = 'dialog'
-  } = _temp === void 0 ? {} : _temp;
-  const rootId = useId();
-  const referenceId = useId();
-  return react.useMemo(() => {
-    const floatingProps = {
-      id: rootId,
-      role
-    };
-
-    if (!enabled) {
-      return {};
-    }
-
-    if (role === 'tooltip') {
-      return {
-        reference: {
-          'aria-describedby': open ? rootId : undefined
-        },
-        floating: floatingProps
-      };
-    }
-
-    return {
-      reference: {
-        'aria-expanded': open ? 'true' : 'false',
-        'aria-haspopup': role === 'alertdialog' ? 'dialog' : role,
-        'aria-controls': open ? rootId : undefined,
-        ...(role === 'listbox' && {
-          role: 'combobox'
-        }),
-        ...(role === 'menu' && {
-          id: referenceId
-        })
-      },
-      floating: { ...floatingProps,
-        ...(role === 'menu' && {
-          'aria-labelledby': referenceId
-        })
-      }
-    };
-  }, [enabled, role, open, rootId, referenceId]);
-};
-
 function isButtonTarget(event) {
   return isHTMLElement(event.target) && event.target.tagName === 'BUTTON';
 }
-
 function isSpaceIgnored(element) {
   return isTypeableElement(element);
 }
-
 /**
- * Adds click event listeners that change the open state.
+ * Opens or closes the floating element when clicking the reference element.
  * @see https://floating-ui.com/docs/useClick
  */
 const useClick = function (_ref, _temp) {
@@ -5682,7 +5478,9 @@ const useClick = function (_ref, _temp) {
     open,
     onOpenChange,
     dataRef,
-    refs
+    elements: {
+      domReference
+    }
   } = _ref;
   let {
     enabled = true,
@@ -5696,49 +5494,45 @@ const useClick = function (_ref, _temp) {
     if (!enabled) {
       return {};
     }
-
     return {
       reference: {
         onPointerDown(event) {
           pointerTypeRef.current = event.pointerType;
         },
-
         onMouseDown(event) {
           // Ignore all buttons except for the "main" button.
           // https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/button
           if (event.button !== 0) {
             return;
           }
-
-          if (pointerTypeRef.current === 'mouse' && ignoreMouse) {
+          if (isMouseLikePointerType(pointerTypeRef.current, true) && ignoreMouse) {
             return;
           }
-
           if (eventOption === 'click') {
             return;
           }
-
           if (open) {
             if (toggle && (dataRef.current.openEvent ? dataRef.current.openEvent.type === 'mousedown' : true)) {
               onOpenChange(false);
             }
           } else {
+            // Prevent stealing focus from the floating element
+            event.preventDefault();
             onOpenChange(true);
           }
-
           dataRef.current.openEvent = event.nativeEvent;
         },
-
         onClick(event) {
+          if (dataRef.current.__syncReturnFocus) {
+            return;
+          }
           if (eventOption === 'mousedown' && pointerTypeRef.current) {
             pointerTypeRef.current = undefined;
             return;
           }
-
-          if (pointerTypeRef.current === 'mouse' && ignoreMouse) {
+          if (isMouseLikePointerType(pointerTypeRef.current, true) && ignoreMouse) {
             return;
           }
-
           if (open) {
             if (toggle && (dataRef.current.openEvent ? dataRef.current.openEvent.type === 'click' : true)) {
               onOpenChange(false);
@@ -5746,26 +5540,20 @@ const useClick = function (_ref, _temp) {
           } else {
             onOpenChange(true);
           }
-
           dataRef.current.openEvent = event.nativeEvent;
         },
-
         onKeyDown(event) {
           pointerTypeRef.current = undefined;
-
           if (!keyboardHandlers) {
             return;
           }
-
           if (isButtonTarget(event)) {
             return;
           }
-
-          if (event.key === ' ' && !isSpaceIgnored(refs.domReference.current)) {
-            // Prvent scrolling
+          if (event.key === ' ' && !isSpaceIgnored(domReference)) {
+            // Prevent scrolling
             event.preventDefault();
           }
-
           if (event.key === 'Enter') {
             if (open) {
               if (toggle) {
@@ -5776,16 +5564,13 @@ const useClick = function (_ref, _temp) {
             }
           }
         },
-
         onKeyUp(event) {
           if (!keyboardHandlers) {
             return;
           }
-
-          if (isButtonTarget(event) || isSpaceIgnored(refs.domReference.current)) {
+          if (isButtonTarget(event) || isSpaceIgnored(domReference)) {
             return;
           }
-
           if (event.key === ' ') {
             if (open) {
               if (toggle) {
@@ -5796,10 +5581,9 @@ const useClick = function (_ref, _temp) {
             }
           }
         }
-
       }
     };
-  }, [enabled, dataRef, eventOption, ignoreMouse, keyboardHandlers, refs, toggle, open, onOpenChange]);
+  }, [enabled, dataRef, eventOption, ignoreMouse, keyboardHandlers, domReference, toggle, open, onOpenChange]);
 };
 
 /**
@@ -5813,12 +5597,11 @@ function isEventTargetWithin(event, node) {
   if (node == null) {
     return false;
   }
-
   if ('composedPath' in event) {
     return event.composedPath().includes(node);
-  } // TS thinks `event` is of type never as it assumes all browsers support composedPath, but browsers without shadow dom don't
+  }
 
-
+  // TS thinks `event` is of type never as it assumes all browsers support composedPath, but browsers without shadow dom don't
   const e = event;
   return e.target != null && node.contains(e.target);
 }
@@ -5833,23 +5616,38 @@ const captureHandlerKeys = {
   mousedown: 'onMouseDownCapture',
   click: 'onClickCapture'
 };
-
+const normalizeBubblesProp = function (bubbles) {
+  var _bubbles$escapeKey, _bubbles$outsidePress;
+  if (bubbles === void 0) {
+    bubbles = true;
+  }
+  return {
+    escapeKeyBubbles: typeof bubbles === 'boolean' ? bubbles : (_bubbles$escapeKey = bubbles.escapeKey) != null ? _bubbles$escapeKey : true,
+    outsidePressBubbles: typeof bubbles === 'boolean' ? bubbles : (_bubbles$outsidePress = bubbles.outsidePress) != null ? _bubbles$outsidePress : true
+  };
+};
 /**
- * Adds listeners that dismiss (close) the floating element.
+ * Closes the floating element when a dismissal is requested — by default, when
+ * the user presses the `escape` key or outside of the floating element.
  * @see https://floating-ui.com/docs/useDismiss
  */
 const useDismiss = function (_ref, _temp) {
   let {
     open,
     onOpenChange,
-    refs,
     events,
-    nodeId
+    nodeId,
+    elements: {
+      reference,
+      domReference,
+      floating
+    },
+    dataRef
   } = _ref;
   let {
     enabled = true,
     escapeKey = true,
-    outsidePress = true,
+    outsidePress: unstable_outsidePress = true,
     outsidePressEvent = 'pointerdown',
     referencePress = false,
     referencePressEvent = 'pointerdown',
@@ -5858,110 +5656,133 @@ const useDismiss = function (_ref, _temp) {
   } = _temp === void 0 ? {} : _temp;
   const tree = useFloatingTree();
   const nested = useFloatingParentNodeId() != null;
+  const outsidePressFn = useEvent(typeof unstable_outsidePress === 'function' ? unstable_outsidePress : () => false);
+  const outsidePress = typeof unstable_outsidePress === 'function' ? outsidePressFn : unstable_outsidePress;
   const insideReactTreeRef = react.useRef(false);
+  const {
+    escapeKeyBubbles,
+    outsidePressBubbles
+  } = normalizeBubblesProp(bubbles);
   react.useEffect(() => {
     if (!open || !enabled) {
       return;
     }
-
+    dataRef.current.__escapeKeyBubbles = escapeKeyBubbles;
+    dataRef.current.__outsidePressBubbles = outsidePressBubbles;
     function onKeyDown(event) {
       if (event.key === 'Escape') {
-        if (!bubbles && tree && getChildren(tree.nodesRef.current, nodeId).length > 0) {
-          return;
+        const children = tree ? getChildren(tree.nodesRef.current, nodeId) : [];
+        if (children.length > 0) {
+          let shouldDismiss = true;
+          children.forEach(child => {
+            var _child$context;
+            if ((_child$context = child.context) != null && _child$context.open && !child.context.dataRef.current.__escapeKeyBubbles) {
+              shouldDismiss = false;
+              return;
+            }
+          });
+          if (!shouldDismiss) {
+            return;
+          }
         }
-
         events.emit('dismiss', {
-          preventScroll: false
+          type: 'escapeKey',
+          data: {
+            returnFocus: {
+              preventScroll: false
+            }
+          }
         });
         onOpenChange(false);
       }
     }
-
     function onOutsidePress(event) {
       // Given developers can stop the propagation of the synthetic event,
       // we can only be confident with a positive value.
       const insideReactTree = insideReactTreeRef.current;
       insideReactTreeRef.current = false;
-
       if (insideReactTree) {
         return;
       }
+      if (typeof outsidePress === 'function' && !outsidePress(event)) {
+        return;
+      }
+      const target = getTarget(event);
 
-      const target = getTarget(event); // Check if the click occurred on the scrollbar
-
-      if (isElement(target) && refs.floating.current) {
-        var _refs$floating$curren;
-
-        const win = (_refs$floating$curren = refs.floating.current.ownerDocument.defaultView) != null ? _refs$floating$curren : window;
+      // Check if the click occurred on the scrollbar
+      if (isHTMLElement(target) && floating) {
+        const win = floating.ownerDocument.defaultView || window;
         const canScrollX = target.scrollWidth > target.clientWidth;
         const canScrollY = target.scrollHeight > target.clientHeight;
-        let xCond = canScrollY && event.offsetX > target.clientWidth; // In some browsers it is possible to change the <body> (or window)
+        let xCond = canScrollY && event.offsetX > target.clientWidth;
+
+        // In some browsers it is possible to change the <body> (or window)
         // scrollbar to the left side, but is very rare and is difficult to
         // check for. Plus, for modal dialogs with backdrops, it is more
         // important that the backdrop is checked but not so much the window.
-
         if (canScrollY) {
           const isRTL = win.getComputedStyle(target).direction === 'rtl';
-
           if (isRTL) {
             xCond = event.offsetX <= target.offsetWidth - target.clientWidth;
           }
         }
-
         if (xCond || canScrollX && event.offsetY > target.clientHeight) {
           return;
         }
       }
-
       const targetIsInsideChildren = tree && getChildren(tree.nodesRef.current, nodeId).some(node => {
         var _node$context;
-
-        return isEventTargetWithin(event, (_node$context = node.context) == null ? void 0 : _node$context.refs.floating.current);
+        return isEventTargetWithin(event, (_node$context = node.context) == null ? void 0 : _node$context.elements.floating);
       });
-
-      if (isEventTargetWithin(event, refs.floating.current) || isEventTargetWithin(event, refs.domReference.current) || targetIsInsideChildren) {
+      if (isEventTargetWithin(event, floating) || isEventTargetWithin(event, domReference) || targetIsInsideChildren) {
         return;
       }
-
-      if (!bubbles && tree && getChildren(tree.nodesRef.current, nodeId).length > 0) {
-        return;
+      const children = tree ? getChildren(tree.nodesRef.current, nodeId) : [];
+      if (children.length > 0) {
+        let shouldDismiss = true;
+        children.forEach(child => {
+          var _child$context2;
+          if ((_child$context2 = child.context) != null && _child$context2.open && !child.context.dataRef.current.__outsidePressBubbles) {
+            shouldDismiss = false;
+            return;
+          }
+        });
+        if (!shouldDismiss) {
+          return;
+        }
       }
-
-      events.emit('dismiss', nested ? {
-        preventScroll: true
-      } : false);
+      events.emit('dismiss', {
+        type: 'outsidePress',
+        data: {
+          returnFocus: nested ? {
+            preventScroll: true
+          } : isVirtualClick(event) || isVirtualPointerEvent(event)
+        }
+      });
       onOpenChange(false);
     }
-
     function onScroll() {
       onOpenChange(false);
     }
-
-    const doc = getDocument(refs.floating.current);
+    const doc = getDocument(floating);
     escapeKey && doc.addEventListener('keydown', onKeyDown);
     outsidePress && doc.addEventListener(outsidePressEvent, onOutsidePress);
     let ancestors = [];
-
     if (ancestorScroll) {
-      if (isElement(refs.domReference.current)) {
-        ancestors = H(refs.domReference.current);
+      if (isElement(domReference)) {
+        ancestors = floating_ui_dom_browser_min_D(domReference);
       }
-
-      if (isElement(refs.floating.current)) {
-        ancestors = ancestors.concat(H(refs.floating.current));
+      if (isElement(floating)) {
+        ancestors = ancestors.concat(floating_ui_dom_browser_min_D(floating));
       }
-
-      if (!isElement(refs.reference.current) && refs.reference.current && // @ts-expect-error is VirtualElement
-      refs.reference.current.contextElement) {
-        ancestors = ancestors.concat( // @ts-expect-error is VirtualElement
-        H(refs.reference.current.contextElement));
+      if (!isElement(reference) && reference && reference.contextElement) {
+        ancestors = ancestors.concat(floating_ui_dom_browser_min_D(reference.contextElement));
       }
-    } // Ignore the visual viewport for scrolling dismissal (allow pinch-zoom)
+    }
 
-
+    // Ignore the visual viewport for scrolling dismissal (allow pinch-zoom)
     ancestors = ancestors.filter(ancestor => {
       var _doc$defaultView;
-
       return ancestor !== ((_doc$defaultView = doc.defaultView) == null ? void 0 : _doc$defaultView.visualViewport);
     });
     ancestors.forEach(ancestor => {
@@ -5976,7 +5797,7 @@ const useDismiss = function (_ref, _temp) {
         ancestor.removeEventListener('scroll', onScroll);
       });
     };
-  }, [escapeKey, outsidePress, outsidePressEvent, events, tree, nodeId, open, onOpenChange, ancestorScroll, enabled, bubbles, refs, nested]);
+  }, [dataRef, floating, domReference, reference, escapeKey, outsidePress, outsidePressEvent, events, tree, nodeId, open, onOpenChange, ancestorScroll, enabled, escapeKeyBubbles, outsidePressBubbles, nested]);
   react.useEffect(() => {
     insideReactTreeRef.current = false;
   }, [outsidePress, outsidePressEvent]);
@@ -5984,12 +5805,16 @@ const useDismiss = function (_ref, _temp) {
     if (!enabled) {
       return {};
     }
-
     return {
       reference: {
         [bubbleHandlerKeys[referencePressEvent]]: () => {
           if (referencePress) {
-            events.emit('dismiss');
+            events.emit('dismiss', {
+              type: 'referencePress',
+              data: {
+                returnFocus: false
+              }
+            });
             onOpenChange(false);
           }
         }
@@ -6004,7 +5829,8 @@ const useDismiss = function (_ref, _temp) {
 };
 
 /**
- * Adds focus event listeners that change the open state, like CSS :focus.
+ * Opens the floating element while the reference element has focus, like CSS
+ * `:focus`.
  * @see https://floating-ui.com/docs/useFocus
  */
 const useFocus = function (_ref, _temp) {
@@ -6012,8 +5838,12 @@ const useFocus = function (_ref, _temp) {
     open,
     onOpenChange,
     dataRef,
+    events,
     refs,
-    events
+    elements: {
+      floating,
+      domReference
+    }
   } = _ref;
   let {
     enabled = true,
@@ -6023,35 +5853,34 @@ const useFocus = function (_ref, _temp) {
   const blockFocusRef = react.useRef(false);
   const timeoutRef = react.useRef();
   react.useEffect(() => {
-    var _doc$defaultView;
-
     if (!enabled) {
       return;
     }
+    const doc = getDocument(floating);
+    const win = doc.defaultView || window;
 
-    const doc = getDocument(refs.floating.current);
-    const win = (_doc$defaultView = doc.defaultView) != null ? _doc$defaultView : window;
-
+    // If the reference was focused and the user left the tab/window, and the
+    // floating element was not open, the focus should be blocked when they
+    // return to the tab/window.
     function onBlur() {
-      if (!open && isHTMLElement(refs.domReference.current)) {
-        refs.domReference.current.blur();
+      if (!open && isHTMLElement(domReference) && domReference === activeElement$1(getDocument(domReference))) {
+        blockFocusRef.current = true;
       }
     }
-
     win.addEventListener('blur', onBlur);
     return () => {
       win.removeEventListener('blur', onBlur);
     };
-  }, [refs, open, enabled]);
+  }, [floating, domReference, open, enabled]);
   react.useEffect(() => {
     if (!enabled) {
       return;
     }
-
-    function onDismiss() {
-      blockFocusRef.current = true;
+    function onDismiss(payload) {
+      if (payload.type === 'referencePress' || payload.type === 'escapeKey') {
+        blockFocusRef.current = true;
+      }
     }
-
     events.on('dismiss', onDismiss);
     return () => {
       events.off('dismiss', onDismiss);
@@ -6066,7 +5895,6 @@ const useFocus = function (_ref, _temp) {
     if (!enabled) {
       return {};
     }
-
     return {
       reference: {
         onPointerDown(_ref2) {
@@ -6076,64 +5904,58 @@ const useFocus = function (_ref, _temp) {
           pointerTypeRef.current = pointerType;
           blockFocusRef.current = !!(pointerType && keyboardOnly);
         },
-
-        onPointerLeave() {
+        onMouseLeave() {
           blockFocusRef.current = false;
         },
-
         onFocus(event) {
-          var _dataRef$current$open, _refs$domReference$cu, _dataRef$current$open2;
-
+          var _dataRef$current$open;
           if (blockFocusRef.current) {
-            return;
-          } // Dismiss with click should ignore the subsequent `focus` trigger, but
-          // only if the click originated inside the reference element.
-
-
-          if (event.type === 'focus' && ((_dataRef$current$open = dataRef.current.openEvent) == null ? void 0 : _dataRef$current$open.type) === 'mousedown' && (_refs$domReference$cu = refs.domReference.current) != null && _refs$domReference$cu.contains((_dataRef$current$open2 = dataRef.current.openEvent) == null ? void 0 : _dataRef$current$open2.target)) {
             return;
           }
 
+          // Dismiss with click should ignore the subsequent `focus` trigger,
+          // but only if the click originated inside the reference element.
+          if (event.type === 'focus' && ((_dataRef$current$open = dataRef.current.openEvent) == null ? void 0 : _dataRef$current$open.type) === 'mousedown' && dataRef.current.openEvent && isEventTargetWithin(dataRef.current.openEvent, domReference)) {
+            return;
+          }
           dataRef.current.openEvent = event.nativeEvent;
           onOpenChange(true);
         },
-
         onBlur(event) {
-          const target = event.relatedTarget; // Wait for the window blur listener to fire.
+          blockFocusRef.current = false;
+          const relatedTarget = event.relatedTarget;
 
+          // Hit the non-modal focus management portal guard. Focus will be
+          // moved into the floating element immediately after.
+          const movedToFocusGuard = isElement(relatedTarget) && relatedTarget.hasAttribute('data-floating-ui-focus-guard') && relatedTarget.getAttribute('data-type') === 'outside';
+
+          // Wait for the window blur listener to fire.
           timeoutRef.current = setTimeout(() => {
-            var _refs$floating$curren, _refs$domReference$cu2;
-
             // When focusing the reference element (e.g. regular click), then
             // clicking into the floating element, prevent it from hiding.
             // Note: it must be focusable, e.g. `tabindex="-1"`.
-            if ((_refs$floating$curren = refs.floating.current) != null && _refs$floating$curren.contains(target) || (_refs$domReference$cu2 = refs.domReference.current) != null && _refs$domReference$cu2.contains(target)) {
+            if (contains(refs.floating.current, relatedTarget) || contains(domReference, relatedTarget) || movedToFocusGuard) {
               return;
             }
-
-            blockFocusRef.current = false;
             onOpenChange(false);
           });
         }
-
       }
     };
-  }, [enabled, keyboardOnly, refs, dataRef, onOpenChange]);
+  }, [enabled, keyboardOnly, domReference, refs, dataRef, onOpenChange]);
 };
 
+let isPreventScrollSupported = false;
 const ARROW_UP = 'ArrowUp';
 const ARROW_DOWN = 'ArrowDown';
 const ARROW_LEFT = 'ArrowLeft';
 const ARROW_RIGHT = 'ArrowRight';
-
 function isDifferentRow(index, cols, prevRow) {
   return Math.floor(index / cols) !== prevRow;
 }
-
 function isIndexOutOfBounds(listRef, index) {
   return index < 0 || index >= listRef.current.length;
 }
-
 function findNonDisabledIndex(listRef, _temp) {
   let {
     startingIndex = -1,
@@ -6143,59 +5965,47 @@ function findNonDisabledIndex(listRef, _temp) {
   } = _temp === void 0 ? {} : _temp;
   const list = listRef.current;
   let index = startingIndex;
-
   do {
     var _list$index, _list$index2;
-
     index = index + (decrement ? -amount : amount);
   } while (index >= 0 && index <= list.length - 1 && (disabledIndices ? disabledIndices.includes(index) : list[index] == null || ((_list$index = list[index]) == null ? void 0 : _list$index.hasAttribute('disabled')) || ((_list$index2 = list[index]) == null ? void 0 : _list$index2.getAttribute('aria-disabled')) === 'true'));
-
   return index;
 }
-
 function doSwitch(orientation, vertical, horizontal) {
   switch (orientation) {
     case 'vertical':
       return vertical;
-
     case 'horizontal':
       return horizontal;
-
     default:
       return vertical || horizontal;
   }
 }
-
 function isMainOrientationKey(key, orientation) {
   const vertical = key === ARROW_UP || key === ARROW_DOWN;
   const horizontal = key === ARROW_LEFT || key === ARROW_RIGHT;
   return doSwitch(orientation, vertical, horizontal);
 }
-
 function isMainOrientationToEndKey(key, orientation, rtl) {
   const vertical = key === ARROW_DOWN;
   const horizontal = rtl ? key === ARROW_LEFT : key === ARROW_RIGHT;
   return doSwitch(orientation, vertical, horizontal) || key === 'Enter' || key == ' ' || key === '';
 }
-
 function isCrossOrientationOpenKey(key, orientation, rtl) {
   const vertical = rtl ? key === ARROW_LEFT : key === ARROW_RIGHT;
   const horizontal = key === ARROW_DOWN;
   return doSwitch(orientation, vertical, horizontal);
 }
-
 function isCrossOrientationCloseKey(key, orientation, rtl) {
   const vertical = rtl ? key === ARROW_RIGHT : key === ARROW_LEFT;
   const horizontal = key === ARROW_UP;
   return doSwitch(orientation, vertical, horizontal);
 }
-
 function getMinIndex(listRef, disabledIndices) {
   return findNonDisabledIndex(listRef, {
     disabledIndices
   });
 }
-
 function getMaxIndex(listRef, disabledIndices) {
   return findNonDisabledIndex(listRef, {
     decrement: true,
@@ -6203,17 +6013,19 @@ function getMaxIndex(listRef, disabledIndices) {
     disabledIndices
   });
 }
-
 /**
- * Adds focus-managed indexed navigation via arrow keys to a list of items
- * within the floating element.
+ * Adds arrow key-based navigation of a list of items, either using real DOM
+ * focus or virtual focus.
  * @see https://floating-ui.com/docs/useListNavigation
  */
 const useListNavigation = function (_ref, _temp2) {
   let {
     open,
     onOpenChange,
-    refs
+    refs,
+    elements: {
+      domReference
+    }
   } = _ref;
   let {
     listRef,
@@ -6231,7 +6043,8 @@ const useListNavigation = function (_ref, _temp2) {
     openOnArrowKeyDown = true,
     disabledIndices = undefined,
     orientation = 'vertical',
-    cols = 1
+    cols = 1,
+    scrollItemIntoView = true
   } = _temp2 === void 0 ? {
     listRef: {
       current: []
@@ -6239,153 +6052,237 @@ const useListNavigation = function (_ref, _temp2) {
     activeIndex: null,
     onNavigate: () => {}
   } : _temp2;
-
   if (false) {}
-
   const parentId = useFloatingParentNodeId();
   const tree = useFloatingTree();
-  const previousOpen = usePrevious(open);
   const onNavigate = useEvent(unstable_onNavigate);
-  const previousOnNavigate = useEvent(usePrevious(unstable_onNavigate));
   const focusItemOnOpenRef = React.useRef(focusItemOnOpen);
   const indexRef = React.useRef(selectedIndex != null ? selectedIndex : -1);
   const keyRef = React.useRef(null);
-  const disabledIndicesRef = floating_ui_react_dom_interactions_esm_useLatestRef(disabledIndices);
-  const blockPointerLeaveRef = React.useRef(false);
-  const frameRef = React.useRef(-1);
+  const isPointerModalityRef = React.useRef(true);
+  const previousOnNavigateRef = React.useRef(onNavigate);
+  const previousOpenRef = React.useRef(open);
+  const forceSyncFocus = React.useRef(false);
+  const forceScrollIntoViewRef = React.useRef(false);
+  const disabledIndicesRef = floating_ui_react_esm_useLatestRef(disabledIndices);
+  const latestOpenRef = floating_ui_react_esm_useLatestRef(open);
+  const scrollItemIntoViewRef = floating_ui_react_esm_useLatestRef(scrollItemIntoView);
   const [activeId, setActiveId] = React.useState();
-  const focusItem = React.useCallback((listRef, indexRef) => {
-    // `mousedown` clicks occur before `focus`, so the button will steal the
-    // focus unless we wait a frame.
-    frameRef.current = requestAnimationFrame(() => {
-      if (virtual) {
-        var _listRef$current$inde;
-
-        setActiveId((_listRef$current$inde = listRef.current[indexRef.current]) == null ? void 0 : _listRef$current$inde.id);
-      } else {
-        var _listRef$current$inde2;
-
-        (_listRef$current$inde2 = listRef.current[indexRef.current]) == null ? void 0 : _listRef$current$inde2.focus({
-          preventScroll: true
-        });
+  const focusItem = React.useCallback(function (listRef, indexRef, forceScrollIntoView) {
+    if (forceScrollIntoView === void 0) {
+      forceScrollIntoView = false;
+    }
+    const item = listRef.current[indexRef.current];
+    if (virtual) {
+      setActiveId(item == null ? void 0 : item.id);
+    } else {
+      enqueueFocus(item, {
+        preventScroll: true,
+        // Mac Safari does not move the virtual cursor unless the focus call
+        // is sync. However, for the very first focus call, we need to wait
+        // for the position to be ready in order to prevent unwanted
+        // scrolling. This means the virtual cursor will not move to the first
+        // item when first opening the floating element, but will on
+        // subsequent calls. `preventScroll` is supported in modern Safari,
+        // so we can use that instead.
+        // iOS Safari must be async or the first item will not be focused.
+        sync: isMac() && isSafari() ? isPreventScrollSupported || forceSyncFocus.current : false
+      });
+    }
+    requestAnimationFrame(() => {
+      const scrollIntoViewOptions = scrollItemIntoViewRef.current;
+      const shouldScrollIntoView = scrollIntoViewOptions && item && (forceScrollIntoView || !isPointerModalityRef.current);
+      if (shouldScrollIntoView) {
+        // JSDOM doesn't support `.scrollIntoView()` but it's widely supported
+        // by all browsers.
+        item.scrollIntoView == null ? void 0 : item.scrollIntoView(typeof scrollIntoViewOptions === 'boolean' ? {
+          block: 'nearest',
+          inline: 'nearest'
+        } : scrollIntoViewOptions);
       }
     });
-  }, [virtual]); // Sync `selectedIndex` to be the `activeIndex` upon opening the floating
+  }, [virtual, scrollItemIntoViewRef]);
+  floating_ui_react_esm_index(() => {
+    document.createElement('div').focus({
+      get preventScroll() {
+        isPreventScrollSupported = true;
+        return false;
+      }
+    });
+  }, []);
+
+  // Sync `selectedIndex` to be the `activeIndex` upon opening the floating
   // element. Also, reset `activeIndex` upon closing the floating element.
-
-  floating_ui_react_dom_interactions_esm_index(() => {
+  floating_ui_react_esm_index(() => {
     if (!enabled) {
       return;
     }
-
-    if (!previousOpen && open && focusItemOnOpenRef.current && selectedIndex != null) {
-      onNavigate(selectedIndex);
-    } // Unset `activeIndex`. Since the user can specify `onNavigate`
-    // conditionally (onNavigate: open ? setActiveIndex : setSelectedIndex)
-    // we store and call the previous function
-
-
-    if (previousOpen && !open) {
-      cancelAnimationFrame(frameRef.current);
+    if (open) {
+      if (focusItemOnOpenRef.current && selectedIndex != null) {
+        // Regardless of the pointer modality, we want to ensure the selected
+        // item comes into view when the floating element is opened.
+        forceScrollIntoViewRef.current = true;
+        onNavigate(selectedIndex);
+      }
+    } else if (previousOpenRef.current) {
+      // Since the user can specify `onNavigate` conditionally
+      // (onNavigate: open ? setActiveIndex : setSelectedIndex),
+      // we store and call the previous function.
       indexRef.current = -1;
-      previousOnNavigate(null);
+      previousOnNavigateRef.current(null);
     }
-  }, [open, previousOpen, selectedIndex, listRef, focusItem, enabled, onNavigate, previousOnNavigate]); // Sync `activeIndex` to be the focused item while the floating element is
-  // open.
+  }, [enabled, open, selectedIndex, onNavigate]);
 
-  floating_ui_react_dom_interactions_esm_index(() => {
+  // Sync `activeIndex` to be the focused item while the floating element is
+  // open.
+  floating_ui_react_esm_index(() => {
     if (!enabled) {
       return;
     }
-
     if (open) {
       if (activeIndex == null) {
+        forceSyncFocus.current = false;
         if (selectedIndex != null) {
           return;
-        } // Reset while the floating element was open (e.g. the list changed).
+        }
 
-
-        if (previousOpen) {
+        // Reset while the floating element was open (e.g. the list changed).
+        if (previousOpenRef.current) {
           indexRef.current = -1;
           focusItem(listRef, indexRef);
-        } // Initial sync
+        }
 
-
-        if (!previousOpen && focusItemOnOpenRef.current && (keyRef.current != null || focusItemOnOpenRef.current === true && keyRef.current == null)) {
+        // Initial sync.
+        if (!previousOpenRef.current && focusItemOnOpenRef.current && (keyRef.current != null || focusItemOnOpenRef.current === true && keyRef.current == null)) {
           indexRef.current = keyRef.current == null || isMainOrientationToEndKey(keyRef.current, orientation, rtl) || nested ? getMinIndex(listRef, disabledIndicesRef.current) : getMaxIndex(listRef, disabledIndicesRef.current);
           onNavigate(indexRef.current);
-          focusItem(listRef, indexRef);
         }
       } else if (!isIndexOutOfBounds(listRef, activeIndex)) {
         indexRef.current = activeIndex;
-        focusItem(listRef, indexRef);
+        focusItem(listRef, indexRef, forceScrollIntoViewRef.current);
+        forceScrollIntoViewRef.current = false;
       }
     }
-  }, [open, previousOpen, activeIndex, selectedIndex, nested, listRef, onNavigate, focusItem, enabled, allowEscape, orientation, rtl, virtual, disabledIndicesRef]); // Ensure the parent floating element has focus when a nested child closes
-  // to allow arrow key navigation to work after the pointer leaves the child.
+  }, [enabled, open, activeIndex, selectedIndex, nested, listRef, orientation, rtl, onNavigate, focusItem, disabledIndicesRef]);
 
-  floating_ui_react_dom_interactions_esm_index(() => {
+  // Ensure the parent floating element has focus when a nested child closes
+  // to allow arrow key navigation to work after the pointer leaves the child.
+  floating_ui_react_esm_index(() => {
     if (!enabled) {
       return;
     }
-
-    if (!open && previousOpen) {
+    if (previousOpenRef.current && !open) {
       var _tree$nodesRef$curren, _tree$nodesRef$curren2;
-
-      const parentFloating = tree == null ? void 0 : (_tree$nodesRef$curren = tree.nodesRef.current.find(node => node.id === parentId)) == null ? void 0 : (_tree$nodesRef$curren2 = _tree$nodesRef$curren.context) == null ? void 0 : _tree$nodesRef$curren2.refs.floating.current;
-
-      if (parentFloating && !parentFloating.contains(activeElement(getDocument(parentFloating)))) {
+      const parentFloating = tree == null ? void 0 : (_tree$nodesRef$curren = tree.nodesRef.current.find(node => node.id === parentId)) == null ? void 0 : (_tree$nodesRef$curren2 = _tree$nodesRef$curren.context) == null ? void 0 : _tree$nodesRef$curren2.elements.floating;
+      if (parentFloating && !contains(parentFloating, activeElement$1(getDocument(parentFloating)))) {
         parentFloating.focus({
           preventScroll: true
         });
       }
     }
-  }, [enabled, open, previousOpen, tree, parentId]);
-  floating_ui_react_dom_interactions_esm_index(() => {
+  }, [enabled, open, tree, parentId]);
+  floating_ui_react_esm_index(() => {
     keyRef.current = null;
+    previousOnNavigateRef.current = onNavigate;
+    previousOpenRef.current = open;
   });
+  const hasActiveIndex = activeIndex != null;
+  const item = React.useMemo(() => {
+    function syncCurrentTarget(currentTarget) {
+      if (!open) return;
+      const index = listRef.current.indexOf(currentTarget);
+      if (index !== -1) {
+        onNavigate(index);
+      }
+    }
+    const props = {
+      onFocus(_ref2) {
+        let {
+          currentTarget
+        } = _ref2;
+        syncCurrentTarget(currentTarget);
+      },
+      onClick: _ref3 => {
+        let {
+          currentTarget
+        } = _ref3;
+        return currentTarget.focus({
+          preventScroll: true
+        });
+      },
+      // Safari
+      ...(focusItemOnHover && {
+        onMouseMove(_ref4) {
+          let {
+            currentTarget
+          } = _ref4;
+          syncCurrentTarget(currentTarget);
+        },
+        onPointerLeave() {
+          if (!isPointerModalityRef.current) {
+            return;
+          }
+          indexRef.current = -1;
+          focusItem(listRef, indexRef);
+
+          // Virtual cursor with VoiceOver on iOS needs this to be flushed
+          // synchronously or there is a glitch that prevents nested
+          // submenus from being accessible.
+          flushSync(() => onNavigate(null));
+          if (!virtual) {
+            var _refs$floating$curren;
+            // This also needs to be sync to prevent fast mouse movements
+            // from leaving behind a stale active item when landing on a
+            // disabled button item.
+            (_refs$floating$curren = refs.floating.current) == null ? void 0 : _refs$floating$curren.focus({
+              preventScroll: true
+            });
+          }
+        }
+      })
+    };
+    return props;
+  }, [open, refs, focusItem, focusItemOnHover, listRef, onNavigate, virtual]);
   return React.useMemo(() => {
     if (!enabled) {
       return {};
     }
-
     const disabledIndices = disabledIndicesRef.current;
-
     function onKeyDown(event) {
-      blockPointerLeaveRef.current = true;
+      isPointerModalityRef.current = false;
+      forceSyncFocus.current = true;
 
+      // If the floating element is animating out, ignore navigation. Otherwise,
+      // the `activeIndex` gets set to 0 despite not being open so the next time
+      // the user ArrowDowns, the first item won't be focused.
+      if (!latestOpenRef.current && event.currentTarget === refs.floating.current) {
+        return;
+      }
       if (nested && isCrossOrientationCloseKey(event.key, orientation, rtl)) {
         stopEvent(event);
         onOpenChange(false);
-
-        if (isHTMLElement(refs.domReference.current)) {
-          refs.domReference.current.focus();
+        if (isHTMLElement(domReference)) {
+          domReference.focus();
         }
-
         return;
       }
-
       const currentIndex = indexRef.current;
       const minIndex = getMinIndex(listRef, disabledIndices);
       const maxIndex = getMaxIndex(listRef, disabledIndices);
-
       if (event.key === 'Home') {
         indexRef.current = minIndex;
         onNavigate(indexRef.current);
       }
-
       if (event.key === 'End') {
         indexRef.current = maxIndex;
         onNavigate(indexRef.current);
-      } // Grid navigation
+      }
 
-
+      // Grid navigation.
       if (cols > 1) {
         const prevIndex = indexRef.current;
-
         if (event.key === ARROW_UP) {
           stopEvent(event);
-
           if (prevIndex === -1) {
             indexRef.current = maxIndex;
           } else {
@@ -6395,12 +6292,10 @@ const useListNavigation = function (_ref, _temp2) {
               decrement: true,
               disabledIndices
             });
-
             if (loop && (prevIndex - cols < minIndex || indexRef.current < 0)) {
               const col = prevIndex % cols;
               const maxCol = maxIndex % cols;
               const offset = maxIndex - (maxCol - col);
-
               if (maxCol === col) {
                 indexRef.current = maxIndex;
               } else {
@@ -6408,17 +6303,13 @@ const useListNavigation = function (_ref, _temp2) {
               }
             }
           }
-
           if (isIndexOutOfBounds(listRef, indexRef.current)) {
             indexRef.current = prevIndex;
           }
-
           onNavigate(indexRef.current);
         }
-
         if (event.key === ARROW_DOWN) {
           stopEvent(event);
-
           if (prevIndex === -1) {
             indexRef.current = minIndex;
           } else {
@@ -6427,7 +6318,6 @@ const useListNavigation = function (_ref, _temp2) {
               amount: cols,
               disabledIndices
             });
-
             if (loop && prevIndex + cols > maxIndex) {
               indexRef.current = findNonDisabledIndex(listRef, {
                 startingIndex: prevIndex % cols - cols,
@@ -6436,27 +6326,22 @@ const useListNavigation = function (_ref, _temp2) {
               });
             }
           }
-
           if (isIndexOutOfBounds(listRef, indexRef.current)) {
             indexRef.current = prevIndex;
           }
-
           onNavigate(indexRef.current);
-        } // Remains on the same row/column
+        }
 
-
+        // Remains on the same row/column.
         if (orientation === 'both') {
           const prevRow = Math.floor(prevIndex / cols);
-
           if (event.key === ARROW_RIGHT) {
             stopEvent(event);
-
             if (prevIndex % cols !== cols - 1) {
               indexRef.current = findNonDisabledIndex(listRef, {
                 startingIndex: prevIndex,
                 disabledIndices
               });
-
               if (loop && isDifferentRow(indexRef.current, cols, prevRow)) {
                 indexRef.current = findNonDisabledIndex(listRef, {
                   startingIndex: prevIndex - prevIndex % cols - 1,
@@ -6469,22 +6354,18 @@ const useListNavigation = function (_ref, _temp2) {
                 disabledIndices
               });
             }
-
             if (isDifferentRow(indexRef.current, cols, prevRow)) {
               indexRef.current = prevIndex;
             }
           }
-
           if (event.key === ARROW_LEFT) {
             stopEvent(event);
-
             if (prevIndex % cols !== 0) {
               indexRef.current = findNonDisabledIndex(listRef, {
                 startingIndex: prevIndex,
                 disabledIndices,
                 decrement: true
               });
-
               if (loop && isDifferentRow(indexRef.current, cols, prevRow)) {
                 indexRef.current = findNonDisabledIndex(listRef, {
                   startingIndex: prevIndex + (cols - prevIndex % cols),
@@ -6499,14 +6380,11 @@ const useListNavigation = function (_ref, _temp2) {
                 disabledIndices
               });
             }
-
             if (isDifferentRow(indexRef.current, cols, prevRow)) {
               indexRef.current = prevIndex;
             }
           }
-
           const lastRow = Math.floor(maxIndex / cols) === prevRow;
-
           if (isIndexOutOfBounds(listRef, indexRef.current)) {
             if (loop && lastRow) {
               indexRef.current = event.key === ARROW_LEFT ? maxIndex : findNonDisabledIndex(listRef, {
@@ -6517,21 +6395,19 @@ const useListNavigation = function (_ref, _temp2) {
               indexRef.current = prevIndex;
             }
           }
-
           onNavigate(indexRef.current);
           return;
         }
       }
-
       if (isMainOrientationKey(event.key, orientation)) {
-        stopEvent(event); // Reset the index if no item is focused.
+        stopEvent(event);
 
-        if (open && !virtual && activeElement(event.currentTarget.ownerDocument) === event.currentTarget) {
+        // Reset the index if no item is focused.
+        if (open && !virtual && activeElement$1(event.currentTarget.ownerDocument) === event.currentTarget) {
           indexRef.current = isMainOrientationToEndKey(event.key, orientation, rtl) ? minIndex : maxIndex;
           onNavigate(indexRef.current);
           return;
         }
-
         if (isMainOrientationToEndKey(event.key, orientation, rtl)) {
           if (loop) {
             indexRef.current = currentIndex >= maxIndex ? allowEscape && currentIndex !== listRef.current.length ? -1 : minIndex : findNonDisabledIndex(listRef, {
@@ -6559,7 +6435,6 @@ const useListNavigation = function (_ref, _temp2) {
             }));
           }
         }
-
         if (isIndexOutOfBounds(listRef, indexRef.current)) {
           onNavigate(null);
         } else {
@@ -6567,29 +6442,43 @@ const useListNavigation = function (_ref, _temp2) {
         }
       }
     }
-
+    function checkVirtualMouse(event) {
+      if (focusItemOnOpen === 'auto' && isVirtualClick(event.nativeEvent)) {
+        focusItemOnOpenRef.current = true;
+      }
+    }
+    function checkVirtualPointer(event) {
+      // `pointerdown` fires first, reset the state then perform the checks.
+      focusItemOnOpenRef.current = focusItemOnOpen;
+      if (focusItemOnOpen === 'auto' && isVirtualPointerEvent(event.nativeEvent)) {
+        focusItemOnOpenRef.current = true;
+      }
+    }
+    const ariaActiveDescendantProp = virtual && open && hasActiveIndex && {
+      'aria-activedescendant': activeId
+    };
     return {
-      reference: { ...(virtual && open && activeIndex != null && {
-          'aria-activedescendant': activeId
-        }),
-
+      reference: {
+        ...ariaActiveDescendantProp,
         onKeyDown(event) {
-          blockPointerLeaveRef.current = true;
-
+          isPointerModalityRef.current = false;
+          const isArrowKey = event.key.indexOf('Arrow') === 0;
           if (virtual && open) {
             return onKeyDown(event);
           }
 
-          const isNavigationKey = event.key.indexOf('Arrow') === 0 || event.key === 'Enter' || event.key === ' ' || event.key === '';
-
+          // If a floating element should not open on arrow key down, avoid
+          // setting `activeIndex` while it's closed.
+          if (!open && !openOnArrowKeyDown && isArrowKey) {
+            return;
+          }
+          const isNavigationKey = isArrowKey || event.key === 'Enter' || event.key === ' ' || event.key === '';
           if (isNavigationKey) {
             keyRef.current = event.key;
           }
-
           if (nested) {
             if (isCrossOrientationOpenKey(event.key, orientation, rtl)) {
               stopEvent(event);
-
               if (open) {
                 indexRef.current = getMinIndex(listRef, disabledIndices);
                 onNavigate(indexRef.current);
@@ -6597,102 +6486,263 @@ const useListNavigation = function (_ref, _temp2) {
                 onOpenChange(true);
               }
             }
-
             return;
           }
-
           if (isMainOrientationKey(event.key, orientation)) {
             if (selectedIndex != null) {
               indexRef.current = selectedIndex;
             }
-
             stopEvent(event);
-
             if (!open && openOnArrowKeyDown) {
               onOpenChange(true);
             } else {
               onKeyDown(event);
             }
-
             if (open) {
               onNavigate(indexRef.current);
             }
           }
-        }
-
+        },
+        onFocus() {
+          if (open) {
+            onNavigate(null);
+          }
+        },
+        onPointerDown: checkVirtualPointer,
+        onMouseDown: checkVirtualMouse,
+        onClick: checkVirtualMouse
       },
       floating: {
         'aria-orientation': orientation === 'both' ? undefined : orientation,
-        ...(virtual && activeIndex != null && {
-          'aria-activedescendant': activeId
-        }),
+        ...ariaActiveDescendantProp,
         onKeyDown,
-
         onPointerMove() {
-          blockPointerLeaveRef.current = false;
+          isPointerModalityRef.current = true;
         }
-
       },
-      item: {
-        onFocus(_ref2) {
-          let {
-            currentTarget
-          } = _ref2;
-          const index = listRef.current.indexOf(currentTarget);
+      item
+    };
+  }, [domReference, refs, activeId, disabledIndicesRef, latestOpenRef, listRef, enabled, orientation, rtl, virtual, open, hasActiveIndex, nested, selectedIndex, openOnArrowKeyDown, allowEscape, cols, loop, focusItemOnOpen, onNavigate, onOpenChange, item]);
+};
 
-          if (index !== -1) {
-            onNavigate(index);
-          }
+/**
+ * Merges an array of refs into a single memoized callback ref or `null`.
+ * @see https://floating-ui.com/docs/useMergeRefs
+ */
+function useMergeRefs(refs) {
+  return React.useMemo(() => {
+    if (refs.every(ref => ref == null)) {
+      return null;
+    }
+    return value => {
+      refs.forEach(ref => {
+        if (typeof ref === 'function') {
+          ref(value);
+        } else if (ref != null) {
+          ref.current = value;
+        }
+      });
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, refs);
+}
+
+/**
+ * Adds base screen reader props to the reference and floating elements for a
+ * given floating element `role`.
+ * @see https://floating-ui.com/docs/useRole
+ */
+const useRole = function (_ref, _temp) {
+  let {
+    open
+  } = _ref;
+  let {
+    enabled = true,
+    role = 'dialog'
+  } = _temp === void 0 ? {} : _temp;
+  const rootId = useId();
+  const referenceId = useId();
+  return react.useMemo(() => {
+    const floatingProps = {
+      id: rootId,
+      role
+    };
+    if (!enabled) {
+      return {};
+    }
+    if (role === 'tooltip') {
+      return {
+        reference: {
+          'aria-describedby': open ? rootId : undefined
         },
-
-        onClick: _ref3 => {
-          let {
-            currentTarget
-          } = _ref3;
-          return currentTarget.focus({
-            preventScroll: true
-          });
-        },
-        // Safari
-        ...(focusItemOnHover && {
-          onMouseMove(_ref4) {
-            let {
-              currentTarget
-            } = _ref4;
-            const target = currentTarget;
-
-            if (target) {
-              const index = listRef.current.indexOf(target);
-
-              if (index !== -1) {
-                onNavigate(index);
-              }
-            }
-          },
-
-          onPointerLeave() {
-            if (!blockPointerLeaveRef.current) {
-              indexRef.current = -1;
-              focusItem(listRef, indexRef);
-              onNavigate(null);
-
-              if (!virtual) {
-                requestAnimationFrame(() => {
-                  var _refs$floating$curren;
-
-                  (_refs$floating$curren = refs.floating.current) == null ? void 0 : _refs$floating$curren.focus({
-                    preventScroll: true
-                  });
-                });
-              }
-            }
-          }
-
+        floating: floatingProps
+      };
+    }
+    return {
+      reference: {
+        'aria-expanded': open ? 'true' : 'false',
+        'aria-haspopup': role === 'alertdialog' ? 'dialog' : role,
+        'aria-controls': open ? rootId : undefined,
+        ...(role === 'listbox' && {
+          role: 'combobox'
+        }),
+        ...(role === 'menu' && {
+          id: referenceId
+        })
+      },
+      floating: {
+        ...floatingProps,
+        ...(role === 'menu' && {
+          'aria-labelledby': referenceId
         })
       }
     };
-  }, [activeId, disabledIndicesRef, listRef, enabled, orientation, rtl, virtual, open, activeIndex, nested, selectedIndex, openOnArrowKeyDown, focusItemOnHover, allowEscape, cols, loop, refs, focusItem, onNavigate, onOpenChange]);
+  }, [enabled, role, open, rootId, referenceId]);
 };
+
+// Converts a JS style key like `backgroundColor` to a CSS transition-property
+// like `background-color`.
+const camelCaseToKebabCase = str => str.replace(/[A-Z]+(?![a-z])|[A-Z]/g, ($, ofs) => (ofs ? '-' : '') + $.toLowerCase());
+function useDelayUnmount(open, durationMs) {
+  const [isMounted, setIsMounted] = React.useState(open);
+  if (open && !isMounted) {
+    setIsMounted(true);
+  }
+  React.useEffect(() => {
+    if (!open) {
+      const timeout = setTimeout(() => setIsMounted(false), durationMs);
+      return () => clearTimeout(timeout);
+    }
+  }, [open, durationMs]);
+  return isMounted;
+}
+/**
+ * Provides a status string to apply CSS transitions to a floating element,
+ * correctly handling placement-aware transitions.
+ * @see https://floating-ui.com/docs/useTransition#usetransitionstatus
+ */
+function useTransitionStatus(_ref, _temp) {
+  let {
+    open,
+    elements: {
+      floating
+    }
+  } = _ref;
+  let {
+    duration = 250
+  } = _temp === void 0 ? {} : _temp;
+  const isNumberDuration = typeof duration === 'number';
+  const closeDuration = (isNumberDuration ? duration : duration.close) || 0;
+  const [initiated, setInitiated] = React.useState(false);
+  const [status, setStatus] = React.useState('unmounted');
+  const isMounted = useDelayUnmount(open, closeDuration);
+
+  // `initiated` check prevents this `setState` call from breaking
+  // <FloatingPortal />. This call is necessary to ensure subsequent opens
+  // after the initial one allows the correct side animation to play when the
+  // placement has changed.
+  floating_ui_react_esm_index(() => {
+    if (initiated && !isMounted) {
+      setStatus('unmounted');
+    }
+  }, [initiated, isMounted]);
+  floating_ui_react_esm_index(() => {
+    if (!floating) return;
+    if (open) {
+      setStatus('initial');
+      const frame = requestAnimationFrame(() => {
+        setStatus('open');
+      });
+      return () => {
+        cancelAnimationFrame(frame);
+      };
+    } else {
+      setInitiated(true);
+      setStatus('close');
+    }
+  }, [open, floating]);
+  return {
+    isMounted,
+    status
+  };
+}
+/**
+ * Provides styles to apply CSS transitions to a floating element, correctly
+ * handling placement-aware transitions. Wrapper around `useTransitionStatus`.
+ * @see https://floating-ui.com/docs/useTransition#usetransitionstyles
+ */
+function useTransitionStyles(context, _temp2) {
+  let {
+    initial: unstable_initial = {
+      opacity: 0
+    },
+    open: unstable_open,
+    close: unstable_close,
+    common: unstable_common,
+    duration = 250
+  } = _temp2 === void 0 ? {} : _temp2;
+  const placement = context.placement;
+  const side = placement.split('-')[0];
+  const [styles, setStyles] = React.useState({});
+  const {
+    isMounted,
+    status
+  } = useTransitionStatus(context, {
+    duration
+  });
+  const initialRef = floating_ui_react_esm_useLatestRef(unstable_initial);
+  const openRef = floating_ui_react_esm_useLatestRef(unstable_open);
+  const closeRef = floating_ui_react_esm_useLatestRef(unstable_close);
+  const commonRef = floating_ui_react_esm_useLatestRef(unstable_common);
+  const isNumberDuration = typeof duration === 'number';
+  const openDuration = (isNumberDuration ? duration : duration.open) || 0;
+  const closeDuration = (isNumberDuration ? duration : duration.close) || 0;
+  floating_ui_react_esm_index(() => {
+    const fnArgs = {
+      side,
+      placement
+    };
+    const initial = initialRef.current;
+    const close = closeRef.current;
+    const open = openRef.current;
+    const common = commonRef.current;
+    const initialStyles = typeof initial === 'function' ? initial(fnArgs) : initial;
+    const closeStyles = typeof close === 'function' ? close(fnArgs) : close;
+    const commonStyles = typeof common === 'function' ? common(fnArgs) : common;
+    const openStyles = (typeof open === 'function' ? open(fnArgs) : open) || Object.keys(initialStyles).reduce((acc, key) => {
+      acc[key] = '';
+      return acc;
+    }, {});
+    if (status === 'initial' || status === 'unmounted') {
+      setStyles(styles => ({
+        transitionProperty: styles.transitionProperty,
+        ...commonStyles,
+        ...initialStyles
+      }));
+    }
+    if (status === 'open') {
+      setStyles({
+        transitionProperty: Object.keys(openStyles).map(camelCaseToKebabCase).join(','),
+        transitionDuration: openDuration + "ms",
+        ...commonStyles,
+        ...openStyles
+      });
+    }
+    if (status === 'close') {
+      const styles = closeStyles || initialStyles;
+      setStyles({
+        transitionProperty: Object.keys(styles).map(camelCaseToKebabCase).join(','),
+        transitionDuration: closeDuration + "ms",
+        ...commonStyles,
+        ...styles
+      });
+    }
+  }, [side, placement, closeDuration, closeRef, initialRef, openRef, commonRef, openDuration, status]);
+  return {
+    isMounted,
+    styles
+  };
+}
 
 /**
  * Provides a matching callback that can be used to focus an item as the user
@@ -6701,10 +6751,10 @@ const useListNavigation = function (_ref, _temp2) {
  */
 const useTypeahead = function (_ref, _temp) {
   var _ref2;
-
   let {
     open,
-    dataRef
+    dataRef,
+    refs
   } = _ref;
   let {
     listRef,
@@ -6726,20 +6776,19 @@ const useTypeahead = function (_ref, _temp) {
   const prevIndexRef = React.useRef((_ref2 = selectedIndex != null ? selectedIndex : activeIndex) != null ? _ref2 : -1);
   const matchIndexRef = React.useRef(null);
   const onMatch = useEvent(unstable_onMatch);
-  const findMatchRef = floating_ui_react_dom_interactions_esm_useLatestRef(findMatch);
-  const ignoreKeysRef = floating_ui_react_dom_interactions_esm_useLatestRef(ignoreKeys);
-  floating_ui_react_dom_interactions_esm_index(() => {
+  const findMatchRef = floating_ui_react_esm_useLatestRef(findMatch);
+  const ignoreKeysRef = floating_ui_react_esm_useLatestRef(ignoreKeys);
+  floating_ui_react_esm_index(() => {
     if (open) {
       clearTimeout(timeoutIdRef.current);
       matchIndexRef.current = null;
       stringRef.current = '';
     }
   }, [open]);
-  floating_ui_react_dom_interactions_esm_index(() => {
-    // Sync arrow key navigation but not typeahead navigation
+  floating_ui_react_esm_index(() => {
+    // Sync arrow key navigation but not typeahead navigation.
     if (open && stringRef.current === '') {
       var _ref3;
-
       prevIndexRef.current = (_ref3 = selectedIndex != null ? selectedIndex : activeIndex) != null ? _ref3 : -1;
     }
   }, [open, selectedIndex, activeIndex]);
@@ -6747,47 +6796,43 @@ const useTypeahead = function (_ref, _temp) {
     if (!enabled) {
       return {};
     }
-
     function onKeyDown(event) {
+      var _refs$floating$curren;
       // Correctly scope nested non-portalled floating elements. Since the nested
       // floating element is inside of the another, we find the closest role
       // that indicates the floating element scope.
       const target = getTarget(event.nativeEvent);
-
-      if (isElement(target) && (activeElement(getDocument(target)) !== event.currentTarget ? target.closest('[role="dialog"],[role="menu"],[role="listbox"],[role="tree"],[role="grid"]') !== event.currentTarget : false)) {
+      if (isElement(target) && (activeElement$1(getDocument(target)) !== event.currentTarget ? (_refs$floating$curren = refs.floating.current) != null && _refs$floating$curren.contains(target) ? target.closest('[role="dialog"],[role="menu"],[role="listbox"],[role="tree"],[role="grid"]') !== event.currentTarget : false : !event.currentTarget.contains(target))) {
         return;
       }
-
       if (stringRef.current.length > 0 && stringRef.current[0] !== ' ') {
         dataRef.current.typing = true;
-
         if (event.key === ' ') {
           stopEvent(event);
         }
       }
-
       const listContent = listRef.current;
-
-      if (listContent == null || ignoreKeysRef.current.includes(event.key) || // Character key
-      event.key.length !== 1 || // Modifier key
+      if (listContent == null || ignoreKeysRef.current.includes(event.key) ||
+      // Character key.
+      event.key.length !== 1 ||
+      // Modifier key.
       event.ctrlKey || event.metaKey || event.altKey) {
         return;
-      } // Bail out if the list contains a word like "llama" or "aaron". TODO:
+      }
+
+      // Bail out if the list contains a word like "llama" or "aaron". TODO:
       // allow it in this case, too.
-
-
       const allowRapidSuccessionOfFirstLetter = listContent.every(text => {
         var _text$, _text$2;
-
         return text ? ((_text$ = text[0]) == null ? void 0 : _text$.toLocaleLowerCase()) !== ((_text$2 = text[1]) == null ? void 0 : _text$2.toLocaleLowerCase()) : true;
-      }); // Allows the user to cycle through items that start with the same letter
-      // in rapid succession
+      });
 
+      // Allows the user to cycle through items that start with the same letter
+      // in rapid succession.
       if (allowRapidSuccessionOfFirstLetter && stringRef.current === event.key) {
         stringRef.current = '';
         prevIndexRef.current = matchIndexRef.current;
       }
-
       stringRef.current += event.key;
       clearTimeout(timeoutIdRef.current);
       timeoutIdRef.current = setTimeout(() => {
@@ -6796,16 +6841,14 @@ const useTypeahead = function (_ref, _temp) {
         dataRef.current.typing = false;
       }, resetMs);
       const prevIndex = prevIndexRef.current;
-      const orderedList = [...listContent.slice((prevIndex != null ? prevIndex : 0) + 1), ...listContent.slice(0, (prevIndex != null ? prevIndex : 0) + 1)];
+      const orderedList = [...listContent.slice((prevIndex || 0) + 1), ...listContent.slice(0, (prevIndex || 0) + 1)];
       const str = findMatchRef.current ? findMatchRef.current(orderedList, stringRef.current) : orderedList.find(text => (text == null ? void 0 : text.toLocaleLowerCase().indexOf(stringRef.current.toLocaleLowerCase())) === 0);
       const index = str ? listContent.indexOf(str) : -1;
-
       if (index !== -1) {
         onMatch(index);
         matchIndexRef.current = index;
       }
     }
-
     return {
       reference: {
         onKeyDown
@@ -6814,7 +6857,507 @@ const useTypeahead = function (_ref, _temp) {
         onKeyDown
       }
     };
-  }, [enabled, dataRef, listRef, resetMs, ignoreKeysRef, findMatchRef, onMatch]);
+  }, [enabled, dataRef, listRef, resetMs, ignoreKeysRef, findMatchRef, onMatch, refs]);
+};
+
+function getArgsWithCustomFloatingHeight(state, height) {
+  return {
+    ...state,
+    rects: {
+      ...state.rects,
+      floating: {
+        ...state.rects.floating,
+        height
+      }
+    }
+  };
+}
+/**
+ * Positions the floating element such that an inner element inside
+ * of it is anchored to the reference element.
+ * @see https://floating-ui.com/docs/inner
+ */
+const inner = props => ({
+  name: 'inner',
+  options: props,
+  async fn(state) {
+    const {
+      listRef,
+      overflowRef,
+      onFallbackChange,
+      offset: innerOffset = 0,
+      index = 0,
+      minItemsVisible = 4,
+      referenceOverflowThreshold = 0,
+      scrollRef,
+      ...detectOverflowOptions
+    } = props;
+    const {
+      rects,
+      elements: {
+        floating
+      }
+    } = state;
+    const item = listRef.current[index];
+    if (false) {}
+    if (!item) {
+      return {};
+    }
+    const nextArgs = {
+      ...state,
+      ...(await offset(-item.offsetTop - rects.reference.height / 2 - item.offsetHeight / 2 - innerOffset).fn(state))
+    };
+    const el = (scrollRef == null ? void 0 : scrollRef.current) || floating;
+    const overflow = await detectOverflow(getArgsWithCustomFloatingHeight(nextArgs, el.scrollHeight), detectOverflowOptions);
+    const refOverflow = await detectOverflow(nextArgs, {
+      ...detectOverflowOptions,
+      elementContext: 'reference'
+    });
+    const diffY = Math.max(0, overflow.top);
+    const nextY = nextArgs.y + diffY;
+    const maxHeight = Math.max(0, el.scrollHeight - diffY - Math.max(0, overflow.bottom));
+    el.style.maxHeight = maxHeight + "px";
+    el.scrollTop = diffY;
+
+    // There is not enough space, fallback to standard anchored positioning
+    if (onFallbackChange) {
+      if (el.offsetHeight < item.offsetHeight * Math.min(minItemsVisible, listRef.current.length - 1) - 1 || refOverflow.top >= -referenceOverflowThreshold || refOverflow.bottom >= -referenceOverflowThreshold) {
+        flushSync(() => onFallbackChange(true));
+      } else {
+        flushSync(() => onFallbackChange(false));
+      }
+    }
+    if (overflowRef) {
+      overflowRef.current = await detectOverflow(getArgsWithCustomFloatingHeight({
+        ...nextArgs,
+        y: nextY
+      }, el.offsetHeight), detectOverflowOptions);
+    }
+    return {
+      y: nextY
+    };
+  }
+});
+/**
+ * Changes the `inner` middleware's `offset` upon a `wheel` event to
+ * expand the floating element's height, revealing more list items.
+ * @see https://floating-ui.com/docs/inner
+ */
+const useInnerOffset = (_ref, _ref2) => {
+  let {
+    open,
+    elements
+  } = _ref;
+  let {
+    enabled = true,
+    overflowRef,
+    scrollRef,
+    onChange: unstable_onChange
+  } = _ref2;
+  const onChange = useEvent(unstable_onChange);
+  const controlledScrollingRef = React.useRef(false);
+  const prevScrollTopRef = React.useRef(null);
+  const initialOverflowRef = React.useRef(null);
+  React.useEffect(() => {
+    if (!enabled) {
+      return;
+    }
+    function onWheel(e) {
+      if (e.ctrlKey || !el || overflowRef.current == null) {
+        return;
+      }
+      const dY = e.deltaY;
+      const isAtTop = overflowRef.current.top >= -0.5;
+      const isAtBottom = overflowRef.current.bottom >= -0.5;
+      const remainingScroll = el.scrollHeight - el.clientHeight;
+      const sign = dY < 0 ? -1 : 1;
+      const method = dY < 0 ? 'max' : 'min';
+      if (el.scrollHeight <= el.clientHeight) {
+        return;
+      }
+      if (!isAtTop && dY > 0 || !isAtBottom && dY < 0) {
+        e.preventDefault();
+        flushSync(() => {
+          onChange(d => d + Math[method](dY, remainingScroll * sign));
+        });
+      } else if (/firefox/i.test(getUserAgent())) {
+        // Needed to propagate scrolling during momentum scrolling phase once
+        // it gets limited by the boundary. UX improvement, not critical.
+        el.scrollTop += dY;
+      }
+    }
+    const el = (scrollRef == null ? void 0 : scrollRef.current) || elements.floating;
+    if (open && el) {
+      el.addEventListener('wheel', onWheel);
+
+      // Wait for the position to be ready.
+      requestAnimationFrame(() => {
+        prevScrollTopRef.current = el.scrollTop;
+        if (overflowRef.current != null) {
+          initialOverflowRef.current = {
+            ...overflowRef.current
+          };
+        }
+      });
+      return () => {
+        prevScrollTopRef.current = null;
+        initialOverflowRef.current = null;
+        el.removeEventListener('wheel', onWheel);
+      };
+    }
+  }, [enabled, open, elements.floating, overflowRef, scrollRef, onChange]);
+  return React.useMemo(() => {
+    if (!enabled) {
+      return {};
+    }
+    return {
+      floating: {
+        onKeyDown() {
+          controlledScrollingRef.current = true;
+        },
+        onWheel() {
+          controlledScrollingRef.current = false;
+        },
+        onPointerMove() {
+          controlledScrollingRef.current = false;
+        },
+        onScroll() {
+          const el = (scrollRef == null ? void 0 : scrollRef.current) || elements.floating;
+          if (!overflowRef.current || !el || !controlledScrollingRef.current) {
+            return;
+          }
+          if (prevScrollTopRef.current !== null) {
+            const scrollDiff = el.scrollTop - prevScrollTopRef.current;
+            if (overflowRef.current.bottom < -0.5 && scrollDiff < -1 || overflowRef.current.top < -0.5 && scrollDiff > 1) {
+              flushSync(() => onChange(d => d + scrollDiff));
+            }
+          }
+
+          // [Firefox] Wait for the height change to have been applied.
+          requestAnimationFrame(() => {
+            prevScrollTopRef.current = el.scrollTop;
+          });
+        }
+      }
+    };
+  }, [enabled, overflowRef, elements.floating, scrollRef, onChange]);
+};
+
+function isPointInPolygon(point, polygon) {
+  const [x, y] = point;
+  let isInside = false;
+  const length = polygon.length;
+  for (let i = 0, j = length - 1; i < length; j = i++) {
+    const [xi, yi] = polygon[i] || [0, 0];
+    const [xj, yj] = polygon[j] || [0, 0];
+    const intersect = yi >= y !== yj >= y && x <= (xj - xi) * (y - yi) / (yj - yi) + xi;
+    if (intersect) {
+      isInside = !isInside;
+    }
+  }
+  return isInside;
+}
+function isInside(point, rect) {
+  return point[0] >= rect.x && point[0] <= rect.x + rect.width && point[1] >= rect.y && point[1] <= rect.y + rect.height;
+}
+function safePolygon(_temp) {
+  let {
+    restMs = 0,
+    buffer = 0.5,
+    blockPointerEvents = false
+  } = _temp === void 0 ? {} : _temp;
+  let timeoutId;
+  let isInsideRect = false;
+  let hasLanded = false;
+  const fn = _ref => {
+    let {
+      x,
+      y,
+      placement,
+      elements,
+      onClose,
+      nodeId,
+      tree
+    } = _ref;
+    return function onMouseMove(event) {
+      function close() {
+        clearTimeout(timeoutId);
+        onClose();
+      }
+      clearTimeout(timeoutId);
+      if (!elements.domReference || !elements.floating || placement == null || x == null || y == null) {
+        return;
+      }
+      const {
+        clientX,
+        clientY
+      } = event;
+      const clientPoint = [clientX, clientY];
+      const target = getTarget(event);
+      const isLeave = event.type === 'mouseleave';
+      const isOverFloatingEl = contains(elements.floating, target);
+      const isOverReferenceEl = contains(elements.domReference, target);
+      const refRect = elements.domReference.getBoundingClientRect();
+      const rect = elements.floating.getBoundingClientRect();
+      const side = placement.split('-')[0];
+      const cursorLeaveFromRight = x > rect.right - rect.width / 2;
+      const cursorLeaveFromBottom = y > rect.bottom - rect.height / 2;
+      const isOverReferenceRect = isInside(clientPoint, refRect);
+      if (isOverFloatingEl) {
+        hasLanded = true;
+        if (!isLeave) {
+          return;
+        }
+      }
+      if (isOverReferenceEl) {
+        hasLanded = false;
+      }
+      if (isOverReferenceEl && !isLeave) {
+        hasLanded = true;
+        return;
+      }
+
+      // Prevent overlapping floating element from being stuck in an open-close
+      // loop: https://github.com/floating-ui/floating-ui/issues/1910
+      if (isLeave && isElement(event.relatedTarget) && contains(elements.floating, event.relatedTarget)) {
+        return;
+      }
+
+      // If any nested child is open, abort.
+      if (tree && getChildren(tree.nodesRef.current, nodeId).some(_ref2 => {
+        let {
+          context
+        } = _ref2;
+        return context == null ? void 0 : context.open;
+      })) {
+        return;
+      }
+
+      // If the pointer is leaving from the opposite side, the "buffer" logic
+      // creates a point where the floating element remains open, but should be
+      // ignored.
+      // A constant of 1 handles floating point rounding errors.
+      if (side === 'top' && y >= refRect.bottom - 1 || side === 'bottom' && y <= refRect.top + 1 || side === 'left' && x >= refRect.right - 1 || side === 'right' && x <= refRect.left + 1) {
+        return close();
+      }
+
+      // Ignore when the cursor is within the rectangular trough between the
+      // two elements. Since the triangle is created from the cursor point,
+      // which can start beyond the ref element's edge, traversing back and
+      // forth from the ref to the floating element can cause it to close. This
+      // ensures it always remains open in that case.
+      let rectPoly = [];
+      switch (side) {
+        case 'top':
+          rectPoly = [[rect.left, refRect.top + 1], [rect.left, rect.bottom - 1], [rect.right, rect.bottom - 1], [rect.right, refRect.top + 1]];
+          isInsideRect = clientX >= rect.left && clientX <= rect.right && clientY >= rect.top && clientY <= refRect.top + 1;
+          break;
+        case 'bottom':
+          rectPoly = [[rect.left, rect.top + 1], [rect.left, refRect.bottom - 1], [rect.right, refRect.bottom - 1], [rect.right, rect.top + 1]];
+          isInsideRect = clientX >= rect.left && clientX <= rect.right && clientY >= refRect.bottom - 1 && clientY <= rect.bottom;
+          break;
+        case 'left':
+          rectPoly = [[rect.right - 1, rect.bottom], [rect.right - 1, rect.top], [refRect.left + 1, rect.top], [refRect.left + 1, rect.bottom]];
+          isInsideRect = clientX >= rect.left && clientX <= refRect.left + 1 && clientY >= rect.top && clientY <= rect.bottom;
+          break;
+        case 'right':
+          rectPoly = [[refRect.right - 1, rect.bottom], [refRect.right - 1, rect.top], [rect.left + 1, rect.top], [rect.left + 1, rect.bottom]];
+          isInsideRect = clientX >= refRect.right - 1 && clientX <= rect.right && clientY >= rect.top && clientY <= rect.bottom;
+          break;
+      }
+      function getPolygon(_ref3) {
+        let [x, y] = _ref3;
+        const isFloatingWider = rect.width > refRect.width;
+        const isFloatingTaller = rect.height > refRect.height;
+        switch (side) {
+          case 'top':
+            {
+              const cursorPointOne = [isFloatingWider ? x + buffer / 2 : cursorLeaveFromRight ? x + buffer * 4 : x - buffer * 4, y + buffer + 1];
+              const cursorPointTwo = [isFloatingWider ? x - buffer / 2 : cursorLeaveFromRight ? x + buffer * 4 : x - buffer * 4, y + buffer + 1];
+              const commonPoints = [[rect.left, cursorLeaveFromRight ? rect.bottom - buffer : isFloatingWider ? rect.bottom - buffer : rect.top], [rect.right, cursorLeaveFromRight ? isFloatingWider ? rect.bottom - buffer : rect.top : rect.bottom - buffer]];
+              return [cursorPointOne, cursorPointTwo, ...commonPoints];
+            }
+          case 'bottom':
+            {
+              const cursorPointOne = [isFloatingWider ? x + buffer / 2 : cursorLeaveFromRight ? x + buffer * 4 : x - buffer * 4, y - buffer];
+              const cursorPointTwo = [isFloatingWider ? x - buffer / 2 : cursorLeaveFromRight ? x + buffer * 4 : x - buffer * 4, y - buffer];
+              const commonPoints = [[rect.left, cursorLeaveFromRight ? rect.top + buffer : isFloatingWider ? rect.top + buffer : rect.bottom], [rect.right, cursorLeaveFromRight ? isFloatingWider ? rect.top + buffer : rect.bottom : rect.top + buffer]];
+              return [cursorPointOne, cursorPointTwo, ...commonPoints];
+            }
+          case 'left':
+            {
+              const cursorPointOne = [x + buffer + 1, isFloatingTaller ? y + buffer / 2 : cursorLeaveFromBottom ? y + buffer * 4 : y - buffer * 4];
+              const cursorPointTwo = [x + buffer + 1, isFloatingTaller ? y - buffer / 2 : cursorLeaveFromBottom ? y + buffer * 4 : y - buffer * 4];
+              const commonPoints = [[cursorLeaveFromBottom ? rect.right - buffer : isFloatingTaller ? rect.right - buffer : rect.left, rect.top], [cursorLeaveFromBottom ? isFloatingTaller ? rect.right - buffer : rect.left : rect.right - buffer, rect.bottom]];
+              return [...commonPoints, cursorPointOne, cursorPointTwo];
+            }
+          case 'right':
+            {
+              const cursorPointOne = [x - buffer, isFloatingTaller ? y + buffer / 2 : cursorLeaveFromBottom ? y + buffer * 4 : y - buffer * 4];
+              const cursorPointTwo = [x - buffer, isFloatingTaller ? y - buffer / 2 : cursorLeaveFromBottom ? y + buffer * 4 : y - buffer * 4];
+              const commonPoints = [[cursorLeaveFromBottom ? rect.left + buffer : isFloatingTaller ? rect.left + buffer : rect.right, rect.top], [cursorLeaveFromBottom ? isFloatingTaller ? rect.left + buffer : rect.right : rect.left + buffer, rect.bottom]];
+              return [cursorPointOne, cursorPointTwo, ...commonPoints];
+            }
+        }
+      }
+      const poly = isInsideRect ? rectPoly : getPolygon([x, y]);
+      if (isInsideRect) {
+        return;
+      } else if (hasLanded && !isOverReferenceRect) {
+        return close();
+      }
+      if (!isPointInPolygon([clientX, clientY], poly)) {
+        close();
+      } else if (restMs && !hasLanded) {
+        timeoutId = setTimeout(close, restMs);
+      }
+    };
+  };
+  fn.__options = {
+    blockPointerEvents
+  };
+  return fn;
+}
+
+/**
+ * Provides data to position a floating element and context to add interactions.
+ * @see https://floating-ui.com/docs/react
+ */
+function floating_ui_react_esm_useFloating(options) {
+  if (options === void 0) {
+    options = {};
+  }
+  const {
+    open = false,
+    onOpenChange: unstable_onOpenChange,
+    nodeId
+  } = options;
+  const position = useFloating(options);
+  const tree = useFloatingTree();
+  const domReferenceRef = react.useRef(null);
+  const dataRef = react.useRef({});
+  const events = react.useState(() => createPubSub())[0];
+  const [domReference, setDomReference] = react.useState(null);
+  const setPositionReference = react.useCallback(node => {
+    const positionReference = isElement(node) ? {
+      getBoundingClientRect: () => node.getBoundingClientRect(),
+      contextElement: node
+    } : node;
+    position.refs.setReference(positionReference);
+  }, [position.refs]);
+  const setReference = react.useCallback(node => {
+    if (isElement(node) || node === null) {
+      domReferenceRef.current = node;
+      setDomReference(node);
+    }
+
+    // Backwards-compatibility for passing a virtual element to `reference`
+    // after it has set the DOM reference.
+    if (isElement(position.refs.reference.current) || position.refs.reference.current === null ||
+    // Don't allow setting virtual elements using the old technique back to
+    // `null` to support `positionReference` + an unstable `reference`
+    // callback ref.
+    node !== null && !isElement(node)) {
+      position.refs.setReference(node);
+    }
+  }, [position.refs]);
+  const refs = react.useMemo(() => ({
+    ...position.refs,
+    setReference,
+    setPositionReference,
+    domReference: domReferenceRef
+  }), [position.refs, setReference, setPositionReference]);
+  const elements = react.useMemo(() => ({
+    ...position.elements,
+    domReference: domReference
+  }), [position.elements, domReference]);
+  const onOpenChange = useEvent(unstable_onOpenChange);
+  const context = react.useMemo(() => ({
+    ...position,
+    refs,
+    elements,
+    dataRef,
+    nodeId,
+    events,
+    open,
+    onOpenChange
+  }), [position, nodeId, events, open, onOpenChange, refs, elements]);
+  floating_ui_react_esm_index(() => {
+    const node = tree == null ? void 0 : tree.nodesRef.current.find(node => node.id === nodeId);
+    if (node) {
+      node.context = context;
+    }
+  });
+  return react.useMemo(() => ({
+    ...position,
+    context,
+    refs,
+    reference: setReference,
+    positionReference: setPositionReference
+  }), [position, refs, context, setReference, setPositionReference]);
+}
+
+function mergeProps(userProps, propsList, elementKey) {
+  const map = new Map();
+  return {
+    ...(elementKey === 'floating' && {
+      tabIndex: -1
+    }),
+    ...userProps,
+    ...propsList.map(value => value ? value[elementKey] : null).concat(userProps).reduce((acc, props) => {
+      if (!props) {
+        return acc;
+      }
+      Object.entries(props).forEach(_ref => {
+        let [key, value] = _ref;
+        if (key.indexOf('on') === 0) {
+          if (!map.has(key)) {
+            map.set(key, []);
+          }
+          if (typeof value === 'function') {
+            var _map$get;
+            (_map$get = map.get(key)) == null ? void 0 : _map$get.push(value);
+            acc[key] = function () {
+              var _map$get2;
+              for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+                args[_key] = arguments[_key];
+              }
+              (_map$get2 = map.get(key)) == null ? void 0 : _map$get2.forEach(fn => fn(...args));
+            };
+          }
+        } else {
+          acc[key] = value;
+        }
+      });
+      return acc;
+    }, {})
+  };
+}
+const useInteractions = function (propsList) {
+  if (propsList === void 0) {
+    propsList = [];
+  }
+  // The dependencies are a dynamic array, so we can't use the linter's
+  // suggestion to add it to the deps array.
+  const deps = propsList;
+  const getReferenceProps = react.useCallback(userProps => mergeProps(userProps, propsList, 'reference'),
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  deps);
+  const getFloatingProps = react.useCallback(userProps => mergeProps(userProps, propsList, 'floating'),
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  deps);
+  const getItemProps = react.useCallback(userProps => mergeProps(userProps, propsList, 'item'),
+  // Granularly check for `item` changes, because the `getItemProps` getter
+  // should be as referentially stable as possible since it may be passed as
+  // a prop to many components. All `item` key values must therefore be
+  // memoized.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  propsList.map(key => key == null ? void 0 : key.item));
+  return react.useMemo(() => ({
+    getReferenceProps,
+    getFloatingProps,
+    getItemProps
+  }), [getReferenceProps, getFloatingProps, getItemProps]);
 };
 
 
@@ -6920,10 +7463,10 @@ function useFloatingTooltip({
 }) {
   const [opened, setOpened] = (0,react.useState)(false);
   const boundaryRef = (0,react.useRef)();
-  const { x, y, reference, floating, refs, update, placement } = floating_ui_react_dom_interactions_esm_useFloating({
+  const { x, y, reference, floating, refs, update, placement } = floating_ui_react_esm_useFloating({
     placement: position,
     middleware: [
-      L({
+      D({
         crossAxis: true,
         padding: 5,
         rootBoundary: "document"
@@ -6952,7 +7495,7 @@ function useFloatingTooltip({
     if (refs.floating.current) {
       const boundary = boundaryRef.current;
       boundary.addEventListener("mousemove", handleMouseMove);
-      const parents = H(refs.floating.current);
+      const parents = floating_ui_dom_browser_min_D(refs.floating.current);
       parents.forEach((parent) => {
         parent.addEventListener("scroll", update);
       });
@@ -6964,7 +7507,7 @@ function useFloatingTooltip({
       };
     }
     return void 0;
-  }, [reference, refs.floating, update, handleMouseMove, opened]);
+  }, [reference, refs.floating.current, update, handleMouseMove, opened]);
   return { handleMouseMove, x, y, opened, setOpened, boundaryRef, floating };
 }
 
@@ -7143,7 +7686,7 @@ function TooltipFloating(props) {
     offset,
     position
   });
-  const { classes, cx } = Tooltip_styles({ radius, color, multiline, width }, { name: "Tooltip", classNames, styles, unstyled });
+  const { classes, cx } = Tooltip_styles({ radius, color, multiline, width }, { name: "TooltipFloating", classNames, styles, unstyled });
   if (!(0,is_element/* isElement */.k)(children)) {
     throw new Error(TOOLTIP_ERRORS.children);
   }
@@ -7159,9 +7702,6 @@ function TooltipFloating(props) {
     (_b2 = (_a2 = children.props).onMouseLeave) == null ? void 0 : _b2.call(_a2, event);
     setOpened(false);
   };
-  if (disabled) {
-    return /* @__PURE__ */ react.createElement(react.Fragment, null, children);
-  }
   return /* @__PURE__ */ react.createElement(react.Fragment, null, /* @__PURE__ */ react.createElement(OptionalPortal, {
     withinPortal
   }, /* @__PURE__ */ react.createElement(Box/* Box */.x, TooltipFloating_spreadProps(TooltipFloating_spreadValues({}, others), {
@@ -7169,7 +7709,7 @@ function TooltipFloating(props) {
     className: cx(classes.tooltip, className),
     style: TooltipFloating_spreadProps(TooltipFloating_spreadValues({}, style), {
       zIndex,
-      display: opened ? "block" : "none",
+      display: !disabled && opened ? "block" : "none",
       top: y != null ? y : "",
       left: (_b = Math.round(x)) != null ? _b : ""
     })
@@ -7195,10 +7735,10 @@ function useFloatingAutoUpdate({ opened, floating, positionDependencies }) {
   const [delayedUpdate, setDelayedUpdate] = (0,react.useState)(0);
   (0,react.useEffect)(() => {
     if (floating.refs.reference.current && floating.refs.floating.current) {
-      return C(floating.refs.reference.current, floating.refs.floating.current, floating.update);
+      return floating_ui_dom_browser_min_P(floating.refs.reference.current, floating.refs.floating.current, floating.update);
     }
     return void 0;
-  }, [floating.refs.reference, floating.refs.floating, opened, delayedUpdate]);
+  }, [floating.refs.reference.current, floating.refs.floating.current, opened, delayedUpdate]);
   (0,use_did_update/* useDidUpdate */.l)(() => {
     floating.update();
   }, positionDependencies);
@@ -7240,16 +7780,16 @@ function useTooltip(settings) {
     update,
     placement,
     middlewareData: { arrow: { x: arrowX, y: arrowY } = {} }
-  } = floating_ui_react_dom_interactions_esm_useFloating({
+  } = floating_ui_react_esm_useFloating({
     placement: settings.position,
     open: opened,
     onOpenChange: onChange,
     middleware: [
-      T(settings.offset),
-      L({ padding: 8 }),
+      O(settings.offset),
+      D({ padding: 8 }),
       b(),
       arrow({ element: settings.arrowRef, padding: settings.arrowOffset }),
-      ...settings.inline ? [E()] : []
+      ...settings.inline ? [T()] : []
     ]
   });
   const { getReferenceProps, getFloatingProps } = useInteractions([
@@ -7326,6 +7866,30 @@ var get_arrow_position_styles_spreadValues = (a, b) => {
   return a;
 };
 var get_arrow_position_styles_spreadProps = (a, b) => get_arrow_position_styles_defProps(a, get_arrow_position_styles_getOwnPropDescs(b));
+function horizontalSide(placement, arrowY, arrowOffset, arrowPosition) {
+  if (placement === "center" || arrowPosition === "center") {
+    return { top: arrowY };
+  }
+  if (placement === "end") {
+    return { bottom: arrowOffset };
+  }
+  if (placement === "start") {
+    return { top: arrowOffset };
+  }
+  return {};
+}
+function verticalSide(placement, arrowX, arrowOffset, arrowPosition, dir) {
+  if (placement === "center" || arrowPosition === "center") {
+    return { left: arrowX };
+  }
+  if (placement === "end") {
+    return { [dir === "ltr" ? "right" : "left"]: arrowOffset };
+  }
+  if (placement === "start") {
+    return { [dir === "ltr" ? "left" : "right"]: arrowOffset };
+  }
+  return {};
+}
 const radiusByFloatingSide = {
   bottom: "borderTopLeftRadius",
   left: "borderTopRightRadius",
@@ -7336,11 +7900,14 @@ function getArrowPositionStyles({
   position,
   withBorder,
   arrowSize,
+  arrowOffset,
   arrowRadius,
+  arrowPosition,
   arrowX,
-  arrowY
+  arrowY,
+  dir
 }) {
-  const [side] = position.split("-");
+  const [side, placement = "center"] = position.split("-");
   const baseStyles = {
     width: arrowSize,
     height: arrowSize,
@@ -7348,35 +7915,31 @@ function getArrowPositionStyles({
     position: "absolute",
     [radiusByFloatingSide[side]]: arrowRadius
   };
-  const arrowPosition = withBorder ? -arrowSize / 2 - 1 : -arrowSize / 2;
+  const arrowPlacement = withBorder ? -arrowSize / 2 - 1 : -arrowSize / 2;
   if (side === "left") {
-    return get_arrow_position_styles_spreadProps(get_arrow_position_styles_spreadValues({}, baseStyles), {
-      top: arrowY,
-      right: arrowPosition,
+    return get_arrow_position_styles_spreadProps(get_arrow_position_styles_spreadValues(get_arrow_position_styles_spreadValues({}, baseStyles), horizontalSide(placement, arrowY, arrowOffset, arrowPosition)), {
+      right: arrowPlacement,
       borderLeft: 0,
       borderBottom: 0
     });
   }
   if (side === "right") {
-    return get_arrow_position_styles_spreadProps(get_arrow_position_styles_spreadValues({}, baseStyles), {
-      top: arrowY,
-      left: arrowPosition,
+    return get_arrow_position_styles_spreadProps(get_arrow_position_styles_spreadValues(get_arrow_position_styles_spreadValues({}, baseStyles), horizontalSide(placement, arrowY, arrowOffset, arrowPosition)), {
+      left: arrowPlacement,
       borderRight: 0,
       borderTop: 0
     });
   }
   if (side === "top") {
-    return get_arrow_position_styles_spreadProps(get_arrow_position_styles_spreadValues({}, baseStyles), {
-      left: arrowX,
-      bottom: arrowPosition,
+    return get_arrow_position_styles_spreadProps(get_arrow_position_styles_spreadValues(get_arrow_position_styles_spreadValues({}, baseStyles), verticalSide(placement, arrowX, arrowOffset, arrowPosition, dir)), {
+      bottom: arrowPlacement,
       borderTop: 0,
       borderLeft: 0
     });
   }
   if (side === "bottom") {
-    return get_arrow_position_styles_spreadProps(get_arrow_position_styles_spreadValues({}, baseStyles), {
-      left: arrowX,
-      top: arrowPosition,
+    return get_arrow_position_styles_spreadProps(get_arrow_position_styles_spreadValues(get_arrow_position_styles_spreadValues({}, baseStyles), verticalSide(placement, arrowX, arrowOffset, arrowPosition, dir)), {
+      top: arrowPlacement,
       borderBottom: 0,
       borderRight: 0
     });
@@ -7388,6 +7951,7 @@ function getArrowPositionStyles({
 //# sourceMappingURL=get-arrow-position-styles.js.map
 
 ;// CONCATENATED MODULE: ./node_modules/@mantine/core/esm/Floating/FloatingArrow/FloatingArrow.js
+
 
 
 
@@ -7423,7 +7987,28 @@ var FloatingArrow_objRest = (source, exclude) => {
   return target;
 };
 const FloatingArrow = (0,react.forwardRef)((_a, ref) => {
-  var _b = _a, { withBorder, position, arrowSize, arrowRadius, visible, arrowX, arrowY } = _b, others = FloatingArrow_objRest(_b, ["withBorder", "position", "arrowSize", "arrowRadius", "visible", "arrowX", "arrowY"]);
+  var _b = _a, {
+    withBorder,
+    position,
+    arrowSize,
+    arrowOffset,
+    arrowRadius,
+    arrowPosition,
+    visible,
+    arrowX,
+    arrowY
+  } = _b, others = FloatingArrow_objRest(_b, [
+    "withBorder",
+    "position",
+    "arrowSize",
+    "arrowOffset",
+    "arrowRadius",
+    "arrowPosition",
+    "visible",
+    "arrowX",
+    "arrowY"
+  ]);
+  const theme = (0,MantineProvider/* useMantineTheme */.rZ)();
   if (!visible) {
     return null;
   }
@@ -7433,7 +8018,10 @@ const FloatingArrow = (0,react.forwardRef)((_a, ref) => {
       withBorder,
       position,
       arrowSize,
+      arrowOffset,
       arrowRadius,
+      arrowPosition,
+      dir: theme.dir,
       arrowX,
       arrowY
     })
@@ -7499,6 +8087,7 @@ const Tooltip_defaultProps = {
   arrowSize: 4,
   arrowOffset: 5,
   arrowRadius: 0,
+  arrowPosition: "side",
   offset: 5,
   transition: "fade",
   transitionDuration: 100,
@@ -7530,6 +8119,7 @@ const _Tooltip = (0,react.forwardRef)((props, ref) => {
     arrowSize,
     arrowOffset,
     arrowRadius,
+    arrowPosition,
     offset,
     transition,
     transitionDuration,
@@ -7564,6 +8154,7 @@ const _Tooltip = (0,react.forwardRef)((props, ref) => {
     "arrowSize",
     "arrowOffset",
     "arrowRadius",
+    "arrowPosition",
     "offset",
     "transition",
     "transitionDuration",
@@ -7620,7 +8211,9 @@ const _Tooltip = (0,react.forwardRef)((props, ref) => {
       withBorder: false,
       position: tooltip.placement,
       arrowSize,
+      arrowOffset,
       arrowRadius,
+      arrowPosition,
       className: classes.arrow
     }));
   })), (0,react.cloneElement)(children, tooltip.getReferenceProps(Tooltip_spreadValues({
@@ -8267,43 +8860,6 @@ PrismExport.Panel = PrismPanel;
 
 /***/ }),
 
-/***/ 4526:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "F": () => (/* binding */ useContextStylesApi),
-/* harmony export */   "V": () => (/* binding */ StylesApiProvider)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
-
-
-const StylesApiContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)({
-  classNames: {},
-  styles: {},
-  unstyled: false
-});
-function StylesApiProvider({
-  children,
-  classNames,
-  unstyled,
-  styles,
-  staticSelector
-}) {
-  return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(StylesApiContext.Provider, {
-    value: { classNames, styles, unstyled, staticSelector }
-  }, children);
-}
-function useContextStylesApi() {
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(StylesApiContext);
-}
-
-
-//# sourceMappingURL=StylesApiContext.js.map
-
-
-/***/ }),
-
 /***/ 8216:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -8766,8 +9322,8 @@ var esm_extends = __webpack_require__(7462);
 var react = __webpack_require__(7294);
 // EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js
 var react_router_dom = __webpack_require__(3727);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/core/node_modules/@docusaurus/utils-common/lib/index.js
-var lib = __webpack_require__(9356);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/utils-common/lib/index.js
+var lib = __webpack_require__(8780);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
 var useDocusaurusContext = __webpack_require__(2263);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/isInternalUrl.js
@@ -8818,41 +9374,6 @@ return()=>{if(IOSupported&&ioRef.current){ioRef.current.disconnect();}};},[ioRef
 react.createElement("a",(0,esm_extends/* default */.Z)({ref:innerRef,href:targetLink},targetLinkUnprefixed&&!isInternal&&{target:'_blank',rel:'noopener noreferrer'},props)):/*#__PURE__*/react.createElement(LinkComponent,(0,esm_extends/* default */.Z)({},props,{onMouseEnter:onInteractionEnter,onTouchStart:onInteractionEnter,innerRef:handleRef,to:targetLink// Avoid "React does not recognize the `activeClassName` prop on a DOM
 // element"
 },isNavLink&&{isActive,activeClassName}));}/* harmony default export */ const exports_Link = (/*#__PURE__*/react.forwardRef(Link));
-
-/***/ }),
-
-/***/ 5743:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */Object.defineProperty(exports, "__esModule", ({value:true}));// Trailing slash handling depends in some site configuration options
-function applyTrailingSlash(path,options){const{trailingSlash,baseUrl}=options;if(path.startsWith('#')){// Never apply trailing slash to an anchor link
-return path;}// TODO deduplicate: also present in @docusaurus/utils
-function addTrailingSlash(str){return str.endsWith('/')?str:`${str}/`;}function removeTrailingSlash(str){return str.endsWith('/')?str.slice(0,-1):str;}function handleTrailingSlash(str,trailing){return trailing?addTrailingSlash(str):removeTrailingSlash(str);}// undefined = legacy retrocompatible behavior
-if(typeof trailingSlash==='undefined'){return path;}// The trailing slash should be handled before the ?search#hash !
-const[pathname]=path.split(/[#?]/);// Never transform '/' to ''
-// Never remove the baseUrl trailing slash!
-// If baseUrl = /myBase/, we want to emit /myBase/index.html and not
-// /myBase.html! See https://github.com/facebook/docusaurus/issues/5077
-const shouldNotApply=pathname==='/'||pathname===baseUrl;const newPathname=shouldNotApply?pathname:handleTrailingSlash(pathname,trailingSlash);return path.replace(pathname,newPathname);}exports["default"]=applyTrailingSlash;
-
-/***/ }),
-
-/***/ 9356:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */var __importDefault=this&&this.__importDefault||function(mod){return mod&&mod.__esModule?mod:{"default":mod};};Object.defineProperty(exports, "__esModule", ({value:true}));exports.applyTrailingSlash=exports.blogPostContainerID=void 0;exports.blogPostContainerID='post-content';var applyTrailingSlash_1=__webpack_require__(5743);Object.defineProperty(exports, "applyTrailingSlash", ({enumerable:true,get:function(){return __importDefault(applyTrailingSlash_1).default;}}));
 
 /***/ }),
 
@@ -9247,6 +9768,8 @@ var clsx_m = __webpack_require__(6010);
 var Translate = __webpack_require__(5999);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/useThemeConfig.js
 var useThemeConfig = __webpack_require__(6668);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Link.js + 1 modules
+var Link = __webpack_require__(9960);
 ;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Heading/styles.module.css
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const styles_module = ({"anchorWithStickyNavbar":"anchorWithStickyNavbar_LWe7","anchorWithHideOnScrollNavbar":"anchorWithHideOnScrollNavbar_WYt5"});
@@ -9257,7 +9780,7 @@ var useThemeConfig = __webpack_require__(6668);
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */function Heading(_ref){let{as:As,id,...props}=_ref;const{navbar:{hideOnScroll}}=(0,useThemeConfig/* useThemeConfig */.L)();// H1 headings do not need an id because they don't appear in the TOC.
-if(As==='h1'||!id){return/*#__PURE__*/react.createElement(As,(0,esm_extends/* default */.Z)({},props,{id:undefined}));}return/*#__PURE__*/react.createElement(As,(0,esm_extends/* default */.Z)({},props,{className:(0,clsx_m/* default */.Z)('anchor',hideOnScroll?styles_module.anchorWithHideOnScrollNavbar:styles_module.anchorWithStickyNavbar),id:id}),props.children,/*#__PURE__*/react.createElement("a",{className:"hash-link",href:`#${id}`,title:(0,Translate/* translate */.I)({id:'theme.common.headingLinkTitle',message:'Direct link to heading',description:'Title for link to heading'})},"\u200B"));}
+if(As==='h1'||!id){return/*#__PURE__*/react.createElement(As,(0,esm_extends/* default */.Z)({},props,{id:undefined}));}const anchorTitle=(0,Translate/* translate */.I)({id:'theme.common.headingLinkTitle',message:'Direct link to {heading}',description:'Title for link to heading'},{heading:typeof props.children==='string'?props.children:id});return/*#__PURE__*/react.createElement(As,(0,esm_extends/* default */.Z)({},props,{className:(0,clsx_m/* default */.Z)('anchor',hideOnScroll?styles_module.anchorWithHideOnScrollNavbar:styles_module.anchorWithStickyNavbar,props.className),id:id}),props.children,/*#__PURE__*/react.createElement(Link/* default */.Z,{className:"hash-link",to:`#${id}`,"aria-label":anchorTitle,title:anchorTitle},"\u200B"));}
 
 /***/ }),
 
@@ -9521,6 +10044,41 @@ return getCommentPattern(Object.keys(commentPatterns),magicCommentDirectives);}}
 if(metastring&&metastringLinesRangeRegex.test(metastring)){const linesRange=metastring.match(metastringLinesRangeRegex).groups.range;if(magicComments.length===0){throw new Error(`A highlight range has been given in code block's metastring (\`\`\` ${metastring}), but no magic comment config is available. Docusaurus applies the first magic comment entry's className for metastring ranges.`);}const metastringRangeClassName=magicComments[0].className;const lines=rangeParser(linesRange).filter(n=>n>0).map(n=>[n-1,[metastringRangeClassName]]);return{lineClassNames:Object.fromEntries(lines),code};}if(language===undefined){return{lineClassNames:{},code};}const directiveRegex=getAllMagicCommentDirectiveStyles(language,magicComments);// Go through line by line
 const lines=code.split('\n');const blocks=Object.fromEntries(magicComments.map(d=>[d.className,{start:0,range:''}]));const lineToClassName=Object.fromEntries(magicComments.filter(d=>d.line).map(_ref=>{let{className,line}=_ref;return[line,className];}));const blockStartToClassName=Object.fromEntries(magicComments.filter(d=>d.block).map(_ref2=>{let{className,block}=_ref2;return[block.start,className];}));const blockEndToClassName=Object.fromEntries(magicComments.filter(d=>d.block).map(_ref3=>{let{className,block}=_ref3;return[block.end,className];}));for(let lineNumber=0;lineNumber<lines.length;){const line=lines[lineNumber];const match=line.match(directiveRegex);if(!match){// Lines without directives are unchanged
 lineNumber+=1;continue;}const directive=match.slice(1).find(item=>item!==undefined);if(lineToClassName[directive]){blocks[lineToClassName[directive]].range+=`${lineNumber},`;}else if(blockStartToClassName[directive]){blocks[blockStartToClassName[directive]].start=lineNumber;}else if(blockEndToClassName[directive]){blocks[blockEndToClassName[directive]].range+=`${blocks[blockEndToClassName[directive]].start}-${lineNumber-1},`;}lines.splice(lineNumber,1);}code=lines.join('\n');const lineClassNames={};Object.entries(blocks).forEach(_ref4=>{let[className,{range}]=_ref4;rangeParser(range).forEach(l=>{lineClassNames[l]??=[];lineClassNames[l].push(className);});});return{lineClassNames,code};}function getPrismCssVariables(prismTheme){const mapping={color:'--prism-color',backgroundColor:'--prism-background-color'};const properties={};Object.entries(prismTheme.plain).forEach(_ref5=>{let[key,value]=_ref5;const varName=mapping[key];if(varName&&typeof value==='string'){properties[varName]=value;}});return properties;}
+
+/***/ }),
+
+/***/ 8802:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */Object.defineProperty(exports, "__esModule", ({value:true}));// Trailing slash handling depends in some site configuration options
+function applyTrailingSlash(path,options){const{trailingSlash,baseUrl}=options;if(path.startsWith('#')){// Never apply trailing slash to an anchor link
+return path;}// TODO deduplicate: also present in @docusaurus/utils
+function addTrailingSlash(str){return str.endsWith('/')?str:`${str}/`;}function removeTrailingSlash(str){return str.endsWith('/')?str.slice(0,-1):str;}function handleTrailingSlash(str,trailing){return trailing?addTrailingSlash(str):removeTrailingSlash(str);}// undefined = legacy retrocompatible behavior
+if(typeof trailingSlash==='undefined'){return path;}// The trailing slash should be handled before the ?search#hash !
+const[pathname]=path.split(/[#?]/);// Never transform '/' to ''
+// Never remove the baseUrl trailing slash!
+// If baseUrl = /myBase/, we want to emit /myBase/index.html and not
+// /myBase.html! See https://github.com/facebook/docusaurus/issues/5077
+const shouldNotApply=pathname==='/'||pathname===baseUrl;const newPathname=shouldNotApply?pathname:handleTrailingSlash(pathname,trailingSlash);return path.replace(pathname,newPathname);}exports["default"]=applyTrailingSlash;
+
+/***/ }),
+
+/***/ 8780:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var __importDefault=this&&this.__importDefault||function(mod){return mod&&mod.__esModule?mod:{"default":mod};};Object.defineProperty(exports, "__esModule", ({value:true}));exports.applyTrailingSlash=exports.blogPostContainerID=void 0;exports.blogPostContainerID='post-content';var applyTrailingSlash_1=__webpack_require__(8802);Object.defineProperty(exports, "applyTrailingSlash", ({enumerable:true,get:function(){return __importDefault(applyTrailingSlash_1).default;}}));
 
 /***/ }),
 

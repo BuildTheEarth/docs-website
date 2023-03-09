@@ -14,8 +14,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
-// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 25 modules
-var MantineProvider = __webpack_require__(4215);
+// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 26 modules
+var MantineProvider = __webpack_require__(8495);
 // EXTERNAL MODULE: ./node_modules/@mantine/utils/esm/create-polymorphic-component/create-polymorphic-component.js
 var create_polymorphic_component = __webpack_require__(8427);
 // EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/tss/create-styles.js + 1 modules
@@ -255,8 +255,8 @@ const sortedTags=letterTags.sort((tag1,tag2)=>tag1.label.localeCompare(tag2.labe
 var metadataUtils = __webpack_require__(1944);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/ThemeClassNames.js
 var ThemeClassNames = __webpack_require__(5281);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 19 modules
-var Layout = __webpack_require__(1837);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 18 modules
+var Layout = __webpack_require__(4204);
 // EXTERNAL MODULE: ./src/theme/Tag/index.tsx
 var Tag = __webpack_require__(4316);
 ;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/TagsListByLetter/styles.module.css

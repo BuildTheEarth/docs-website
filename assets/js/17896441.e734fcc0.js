@@ -37,7 +37,7 @@ var codeBlockUtils = __webpack_require__(7016);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/useThemeConfig.js
 var useThemeConfig = __webpack_require__(6668);
 // EXTERNAL MODULE: ./node_modules/@mantine/prism/esm/index.js + 51 modules
-var esm = __webpack_require__(4895);
+var esm = __webpack_require__(8604);
 ;// CONCATENATED MODULE: ./src/theme/CodeBlock/Content/String.tsx
 function CodeBlockString(_ref){let{children,className:blockClassName="",metastring,title:titleProp,showLineNumbers:showLineNumbersProp,language:languageProp}=_ref;const{prism:{defaultLanguage,magicComments}}=(0,useThemeConfig/* useThemeConfig */.L)();const language=languageProp??(0,codeBlockUtils/* parseLanguage */.Vo)(blockClassName)??defaultLanguage;// We still parse the metastring in case we want to support more syntax in the
 // future. Note that MDX doesn't strip quotes when parsing metastring:
@@ -66,7 +66,7 @@ const isBrowser=(0,useIsBrowser/* default */.Z)();const children=maybeStringifyC
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Z": () => (/* binding */ DocBreadcrumbs)
 /* harmony export */ });
-/* harmony import */ var _mantine_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4215);
+/* harmony import */ var _mantine_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8495);
 /* harmony import */ var _mantine_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3284);
 /* harmony import */ var _mantine_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4685);
 /* harmony import */ var _docusaurus_theme_common_internal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3438);
@@ -89,7 +89,7 @@ function DocBreadcrumbs(){const breadcrumbs=(0,_docusaurus_theme_common_internal
 /* harmony import */ var _docusaurus_theme_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5281);
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6010);
 /* harmony import */ var _docusaurus_theme_common_internal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5130);
-/* harmony import */ var _mantine_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(4215);
+/* harmony import */ var _mantine_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8495);
 /**
  Title can be declared inside md content or declared through
  front matter and added manually. To make both cases consistent,

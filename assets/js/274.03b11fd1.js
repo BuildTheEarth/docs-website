@@ -14,8 +14,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
-// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 25 modules
-var MantineProvider = __webpack_require__(4215);
+// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 26 modules
+var MantineProvider = __webpack_require__(8495);
 // EXTERNAL MODULE: ./node_modules/@mantine/utils/esm/create-polymorphic-component/create-polymorphic-component.js
 var create_polymorphic_component = __webpack_require__(8427);
 // EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/tss/create-styles.js + 1 modules
@@ -222,11 +222,9 @@ var Input_styles_useStyles = (0,create_styles/* createStyles */.k)((theme, {
           color: theme.colors.dark[2]
         }
       },
-      "&::placeholder": {
-        opacity: 1,
-        userSelect: "none",
-        color: theme.colorScheme === "dark" ? theme.colors.dark[3] : theme.colors.gray[5]
-      },
+      "&::placeholder": __spreadProps(Input_styles_spreadValues({}, theme.fn.placeholderStyles()), {
+        opacity: 1
+      }),
       "&::-webkit-inner-spin-button, &::-webkit-outer-spin-button, &::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button, &::-webkit-search-results-decoration": {
         appearance: "none"
       },
@@ -583,7 +581,7 @@ const Button = (0,create_polymorphic_component/* createPolymorphicComponent */.F
 /* harmony export */ });
 /* unused harmony export _Center */
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
-/* harmony import */ var _mantine_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4215);
+/* harmony import */ var _mantine_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8495);
 /* harmony import */ var _mantine_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7818);
 /* harmony import */ var _mantine_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8427);
 /* harmony import */ var _Box_Box_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7414);
@@ -654,8 +652,8 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
-// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 25 modules
-var MantineProvider = __webpack_require__(4215);
+// EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/theme/MantineProvider.js + 26 modules
+var MantineProvider = __webpack_require__(8495);
 // EXTERNAL MODULE: ./node_modules/@mantine/styles/esm/tss/create-styles.js + 1 modules
 var create_styles = __webpack_require__(6817);
 ;// CONCATENATED MODULE: ./node_modules/@mantine/core/esm/Title/Title.styles.js
