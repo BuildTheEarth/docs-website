@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 1
 title: Staff (Testing)
 ---
 # Server Roles and Descriptions
