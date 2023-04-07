@@ -6,9 +6,6 @@ title: Staff (Testing)
 
 Here is a list of roles in the server and their descriptions so that you know who to contact, as well as the applications for certain teams. A staff structure diagram may be found [here](https://bte-structure.web.app/). Try asking around in #channel for basic issues before pinging or direct messaging them.
 
-## Woody
-The person the most amazing person in bte like super cool great takes care of everything basically
-
 ## Pippen
 The original creator of Build The Earth. This role is solely held by PippenFTS, the founder of the Build The Earth project.
 
