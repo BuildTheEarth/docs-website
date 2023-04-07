@@ -7334,7 +7334,7 @@ var react = __webpack_require__(7294);
 // EXTERNAL MODULE: ./.docusaurus/docusaurus.config.mjs
 var docusaurus_config = __webpack_require__(6809);
 ;// CONCATENATED MODULE: ./.docusaurus/globalData.json
-const globalData_namespaceObject = JSON.parse('{"docusaurus-plugin-content-docs":{"default":{"path":"/docs","versions":[{"name":"current","label":"Next","isLast":true,"path":"/docs","mainDocId":"development/apis","docs":[{"id":"development/apis","path":"/docs/development/apis","sidebar":"tutorialSidebar"},{"id":"staff/index","path":"/docs/staff/","sidebar":"tutorialSidebar"},{"id":"/category/development","path":"/docs/category/development","sidebar":"tutorialSidebar"}],"draftIds":[],"sidebars":{"tutorialSidebar":{"link":{"path":"/docs/category/development","label":"Development"}}}}],"breadcrumbs":true}}}');
+const globalData_namespaceObject = JSON.parse('{"docusaurus-plugin-content-docs":{"default":{"path":"/docs","versions":[{"name":"current","label":"Next","isLast":true,"path":"/docs","mainDocId":"staff/index","docs":[{"id":"development/apis","path":"/docs/development/apis","sidebar":"tutorialSidebar"},{"id":"staff/index","path":"/docs/staff/","sidebar":"tutorialSidebar"},{"id":"/category/development","path":"/docs/category/development","sidebar":"tutorialSidebar"}],"draftIds":[],"sidebars":{"tutorialSidebar":{"link":{"path":"/docs/staff/","label":"Staff (Testing)"}}}}],"breadcrumbs":true}}}');
 ;// CONCATENATED MODULE: ./.docusaurus/i18n.json
 const i18n_namespaceObject = JSON.parse('{"defaultLocale":"en","locales":["en"],"path":"i18n","currentLocale":"en","localeConfigs":{"en":{"label":"English","direction":"ltr","htmlLang":"en","calendar":"gregory","path":"en"}}}');
 // EXTERNAL MODULE: ./.docusaurus/codeTranslations.json
