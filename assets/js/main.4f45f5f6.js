@@ -18702,7 +18702,7 @@ __webpack_require__.r(__webpack_exports__);
         {
           "type": "doc",
           "docId": "intro",
-          "label": "Tutorial",
+          "label": "Docs",
           "to": "/docs/intro",
           "position": "left"
         },
