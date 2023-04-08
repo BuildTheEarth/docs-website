@@ -1,41 +1,50 @@
-# Website
+<br/>
+<p align="center">
+  <a href="https://github.com/BuildTheEarth/docs-website">
+    <img src="https://buildtheearth.net/assets/img/site-logo-animated.gif?v=1587215843" alt="Logo" width="80" height="80">
+  </a>
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+  <h3 align="center">Docs Website</h3>
+
+  <p align="center">
+    A Collection of useful Information about the BuildTheEarth Project
+    <br/>
+    <br/>
+    <a href="https://github.com/BuildTheEarth/docs-website/issues">Report Bug</a>
+    -
+    <a href="https://github.com/BuildTheEarth/docs-website/issues">Request Feature</a>
+  </p>
+</p>
+
+![Contributors](https://img.shields.io/github/contributors/BuildTheEarth/docs-website?color=dark-green) ![Issues](https://img.shields.io/github/issues/BuildTheEarth/docs-website)  ![License](https://img.shields.io/github/license/BuildTheEarth/docs-website) [![Website](https://img.shields.io/badge/website-visit-brightgreen)](https://docs.buildtheearth.net)
+
+
+## Built With
+
+This website is built using [Docosaurus 2](https://docusaurus.io/), a modern static website generator.
+
+## Getting Started
+
 
 ### Installation
 
-```
-$ yarn
-```
+1. Install NPM packages
 
-### Local Development
-
+```sh
+npm install
 ```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
+```sh
+yarn
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
+2. Start the Development Server
+```sh
+npm run start
 ```
-$ USE_SSH=true yarn deploy
+```sh
+yarn start
 ```
 
-Not using SSH:
+## License
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Distributed under the MIT License. See [LICENSE](https://github.com/BuildTheEarth/docs-website/blob/main/LICENSE.md) for more information.
