@@ -4,9 +4,18 @@ import React from "react";
 
 const NavbarRoot = (props: any) => {
   return (
-    <Accordion mt={120} defaultValue={props.path}>
+    <Accordion
+      pt={60}
+      defaultValue={
+        window.location.pathname
+          .split("/")
+          .slice(0, 2 + 1)
+          .join("/") + "/"
+      }
+      style={{ height: "100vh" }}
+    >
       {props.sidebar.map((element: any) => (
-        <Accordion.Item value={element.href}>
+        <Accordion.Item value={element.href} style={{ border: "none" }}>
           <Accordion.Control
             chevron={element.type == "link" && "ㅤ"}
             onClick={(e) =>
@@ -19,7 +28,7 @@ const NavbarRoot = (props: any) => {
           </Accordion.Control>
           {element.type != "link" && (
             <Accordion.Panel>
-              <NavbarItem {...element} />
+              <NavbarItem {...element} depth={3} />
             </Accordion.Panel>
           )}
         </Accordion.Item>

@@ -90,7 +90,6 @@ export default function Admonition(props) {
   } = processAdmonitionProps(props);
   const typeConfig = getAdmonitionConfig(type);
   const titleLabel = title || typeConfig.label;
-  console.log(titleLabel);
   const { iconComponent } = typeConfig;
   const icon = iconProp ?? iconComponent;
   return (

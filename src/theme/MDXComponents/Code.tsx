@@ -36,7 +36,6 @@ export default function MDXCode(props) {
     "var",
     "wbr",
   ];
-  console.log(props);
   const shouldBeInline = React.Children.toArray(props.children).every(
     (el) =>
       (typeof el === "string" && !el.includes("\n")) ||
