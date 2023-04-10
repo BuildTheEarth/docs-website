@@ -6736,7 +6736,7 @@ var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
 // EXTERNAL MODULE: ./.docusaurus/routesChunkNames.json
 var routesChunkNames = __webpack_require__(6887);
 ;// CONCATENATED MODULE: ./.docusaurus/registry.js
-/* harmony default export */ const registry = ({'083ee91e':[()=>__webpack_require__.e(/* import() | 083ee91e */ 66).then(__webpack_require__.t.bind(__webpack_require__, 3769, 19)),'/home/runner/work/docs-website/docs-website/.docusaurus/docusaurus-plugin-content-docs/default/plugin-route-context-module-100.json',/*require.resolve*/(3769)],'14eb3368':[()=>Promise.all(/* import() | 14eb3368 */[__webpack_require__.e(532), __webpack_require__.e(817)]).then(__webpack_require__.bind(__webpack_require__, 5340)),'@theme/DocCategoryGeneratedIndexPage',/*require.resolve*/(5340)],'17896441':[()=>Promise.all(/* import() | 17896441 */[__webpack_require__.e(532), __webpack_require__.e(870), __webpack_require__.e(918)]).then(__webpack_require__.bind(__webpack_require__, 1189)),'@theme/DocItem',/*require.resolve*/(1189)],'1be78505':[()=>Promise.all(/* import() | 1be78505 */[__webpack_require__.e(532), __webpack_require__.e(274), __webpack_require__.e(604), __webpack_require__.e(514)]).then(__webpack_require__.bind(__webpack_require__, 1651)),'@theme/DocPage',/*require.resolve*/(1651)],'1df93b7f':[()=>Promise.all(/* import() | 1df93b7f */[__webpack_require__.e(274), __webpack_require__.e(237)]).then(__webpack_require__.bind(__webpack_require__, 6945)),'@site/src/pages/index.tsx',/*require.resolve*/(6945)],'3720c009':[()=>Promise.all(/* import() | 3720c009 */[__webpack_require__.e(532), __webpack_require__.e(751)]).then(__webpack_require__.bind(__webpack_require__, 9861)),'@theme/DocTagsListPage',/*require.resolve*/(9861)],'3ef332b8':[()=>__webpack_require__.e(/* import() | 3ef332b8 */ 425).then(__webpack_require__.bind(__webpack_require__, 8219)),'@site/docs/development/apis.md',/*require.resolve*/(8219)],'3f27afb6':[()=>__webpack_require__.e(/* import() | 3f27afb6 */ 618).then(__webpack_require__.bind(__webpack_require__, 8614)),'@site/docs/staff/index.md',/*require.resolve*/(8614)],'4916ac73':[()=>__webpack_require__.e(/* import() | 4916ac73 */ 218).then(__webpack_require__.bind(__webpack_require__, 2981)),'@site/docs/staff/moderation/general-rules-specifications/index.md',/*require.resolve*/(2981)],'55960ee5':[()=>__webpack_require__.e(/* import() | 55960ee5 */ 121).then(__webpack_require__.t.bind(__webpack_require__, 8070, 19)),'~docs/default/tags-list-current-prop-15a.json',/*require.resolve*/(8070)],'5e9f5e1a':[()=>Promise.resolve(/* import() */).then(__webpack_require__.bind(__webpack_require__, 6809)),'@generated/docusaurus.config',/*require.resolve*/(6809)],'71f35c7b':[()=>__webpack_require__.e(/* import() | 71f35c7b */ 664).then(__webpack_require__.t.bind(__webpack_require__, 7876, 19)),'~docs/default/category-docs-tutorialsidebar-category-development-8c5.json',/*require.resolve*/(7876)],'823128eb':[()=>__webpack_require__.e(/* import() | 823128eb */ 735).then(__webpack_require__.t.bind(__webpack_require__, 9407, 19)),'~docs/default/tag-docs-tags-website-d9e.json',/*require.resolve*/(9407)],'87a50603':[()=>__webpack_require__.e(/* import() | 87a50603 */ 723).then(__webpack_require__.t.bind(__webpack_require__, 9602, 19)),'~docs/default/tag-docs-tags-api-a37.json',/*require.resolve*/(9602)],'935f2afb':[()=>__webpack_require__.e(/* import() | 935f2afb */ 53).then(__webpack_require__.t.bind(__webpack_require__, 1109, 19)),'~docs/default/version-current-metadata-prop-751.json',/*require.resolve*/(1109)],'9c584f2d':[()=>__webpack_require__.e(/* import() | 9c584f2d */ 210).then(__webpack_require__.t.bind(__webpack_require__, 5481, 19)),'~docs/default/tag-docs-tags-plot-system-97d.json',/*require.resolve*/(5481)],'a4784511':[()=>__webpack_require__.e(/* import() | a4784511 */ 964).then(__webpack_require__.bind(__webpack_require__, 1528)),'@site/docs/staff/moderation/index.md',/*require.resolve*/(1528)],'df203c0f':[()=>__webpack_require__.e(/* import() | df203c0f */ 924).then(__webpack_require__.bind(__webpack_require__, 7068)),'@theme/DocTagDocListPage',/*require.resolve*/(7068)],'ee0d642a':[()=>__webpack_require__.e(/* import() | ee0d642a */ 378).then(__webpack_require__.t.bind(__webpack_require__, 5745, 19)),'/home/runner/work/docs-website/docs-website/.docusaurus/docusaurus-plugin-content-pages/default/plugin-route-context-module-100.json',/*require.resolve*/(5745)]});
+/* harmony default export */ const registry = ({'083ee91e':[()=>__webpack_require__.e(/* import() | 083ee91e */ 66).then(__webpack_require__.t.bind(__webpack_require__, 3769, 19)),'/home/runner/work/docs-website/docs-website/.docusaurus/docusaurus-plugin-content-docs/default/plugin-route-context-module-100.json',/*require.resolve*/(3769)],'17896441':[()=>Promise.all(/* import() | 17896441 */[__webpack_require__.e(532), __webpack_require__.e(995), __webpack_require__.e(856), __webpack_require__.e(918)]).then(__webpack_require__.bind(__webpack_require__, 5603)),'@theme/DocItem',/*require.resolve*/(5603)],'1be78505':[()=>Promise.all(/* import() | 1be78505 */[__webpack_require__.e(532), __webpack_require__.e(274), __webpack_require__.e(995), __webpack_require__.e(514)]).then(__webpack_require__.bind(__webpack_require__, 8345)),'@theme/DocPage',/*require.resolve*/(8345)],'1df93b7f':[()=>Promise.all(/* import() | 1df93b7f */[__webpack_require__.e(274), __webpack_require__.e(237)]).then(__webpack_require__.bind(__webpack_require__, 6945)),'@site/src/pages/index.tsx',/*require.resolve*/(6945)],'3720c009':[()=>Promise.all(/* import() | 3720c009 */[__webpack_require__.e(532), __webpack_require__.e(751)]).then(__webpack_require__.bind(__webpack_require__, 9861)),'@theme/DocTagsListPage',/*require.resolve*/(9861)],'3ef332b8':[()=>__webpack_require__.e(/* import() | 3ef332b8 */ 425).then(__webpack_require__.bind(__webpack_require__, 8219)),'@site/docs/development/apis.md',/*require.resolve*/(8219)],'3f27afb6':[()=>__webpack_require__.e(/* import() | 3f27afb6 */ 618).then(__webpack_require__.bind(__webpack_require__, 8614)),'@site/docs/staff/index.md',/*require.resolve*/(8614)],'4916ac73':[()=>__webpack_require__.e(/* import() | 4916ac73 */ 218).then(__webpack_require__.bind(__webpack_require__, 2981)),'@site/docs/staff/moderation/general-rules-specifications/index.md',/*require.resolve*/(2981)],'55960ee5':[()=>__webpack_require__.e(/* import() | 55960ee5 */ 121).then(__webpack_require__.t.bind(__webpack_require__, 8070, 19)),'~docs/default/tags-list-current-prop-15a.json',/*require.resolve*/(8070)],'5e9f5e1a':[()=>Promise.resolve(/* import() */).then(__webpack_require__.bind(__webpack_require__, 6809)),'@generated/docusaurus.config',/*require.resolve*/(6809)],'6dcaddc4':[()=>__webpack_require__.e(/* import() | 6dcaddc4 */ 577).then(__webpack_require__.bind(__webpack_require__, 6141)),'@site/docs/development/index.md',/*require.resolve*/(6141)],'823128eb':[()=>__webpack_require__.e(/* import() | 823128eb */ 735).then(__webpack_require__.t.bind(__webpack_require__, 9407, 19)),'~docs/default/tag-docs-tags-website-d9e.json',/*require.resolve*/(9407)],'87a50603':[()=>__webpack_require__.e(/* import() | 87a50603 */ 723).then(__webpack_require__.t.bind(__webpack_require__, 9602, 19)),'~docs/default/tag-docs-tags-api-a37.json',/*require.resolve*/(9602)],'935f2afb':[()=>__webpack_require__.e(/* import() | 935f2afb */ 53).then(__webpack_require__.t.bind(__webpack_require__, 1109, 19)),'~docs/default/version-current-metadata-prop-751.json',/*require.resolve*/(1109)],'9c584f2d':[()=>__webpack_require__.e(/* import() | 9c584f2d */ 210).then(__webpack_require__.t.bind(__webpack_require__, 5481, 19)),'~docs/default/tag-docs-tags-plot-system-97d.json',/*require.resolve*/(5481)],'a4784511':[()=>__webpack_require__.e(/* import() | a4784511 */ 964).then(__webpack_require__.bind(__webpack_require__, 1528)),'@site/docs/staff/moderation/index.md',/*require.resolve*/(1528)],'df203c0f':[()=>__webpack_require__.e(/* import() | df203c0f */ 924).then(__webpack_require__.bind(__webpack_require__, 7068)),'@theme/DocTagDocListPage',/*require.resolve*/(7068)],'ee0d642a':[()=>__webpack_require__.e(/* import() | ee0d642a */ 378).then(__webpack_require__.t.bind(__webpack_require__, 5745, 19)),'/home/runner/work/docs-website/docs-website/.docusaurus/docusaurus-plugin-content-pages/default/plugin-route-context-module-100.json',/*require.resolve*/(5745)]});
 ;// CONCATENATED MODULE: ./node_modules/@docusaurus/core/lib/client/theme-fallback/Loading/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -6786,7 +6786,7 @@ if(typeof chunk==='object'||typeof chunk==='function'){Object.keys(loadedModule)
 let val=loadedModules;const keyPaths=keyPath.split('.');keyPaths.slice(0,-1).forEach(k=>{val=val[k];});val[keyPaths[keyPaths.length-1]]=chunk;});/* eslint-disable no-underscore-dangle */const Component=loadedModules.__comp;delete loadedModules.__comp;const routeContext=loadedModules.__context;delete loadedModules.__context;/* eslint-enable no-underscore-dangle */ // Is there any way to put this RouteContextProvider upper in the tree?
 return/*#__PURE__*/react.createElement(client_routeContext/* RouteContextProvider */.z,{value:routeContext},/*#__PURE__*/react.createElement(Component,(0,esm_extends/* default */.Z)({},loadedModules,props)));}});}
 ;// CONCATENATED MODULE: ./.docusaurus/routes.js
-/* harmony default export */ const routes = ([{path:'/docs/tags',component:ComponentCreator('/docs/tags','80a'),exact:true},{path:'/docs/tags/api',component:ComponentCreator('/docs/tags/api','f94'),exact:true},{path:'/docs/tags/plot-system',component:ComponentCreator('/docs/tags/plot-system','0af'),exact:true},{path:'/docs/tags/website',component:ComponentCreator('/docs/tags/website','e05'),exact:true},{path:'/docs',component:ComponentCreator('/docs','6ce'),routes:[{path:'/docs/category/development',component:ComponentCreator('/docs/category/development','089'),exact:true,sidebar:"tutorialSidebar"},{path:'/docs/development/apis',component:ComponentCreator('/docs/development/apis','e51'),exact:true,sidebar:"tutorialSidebar"},{path:'/docs/staff',component:ComponentCreator('/docs/staff','70d'),exact:true,sidebar:"tutorialSidebar"},{path:'/docs/staff/moderation',component:ComponentCreator('/docs/staff/moderation','683'),exact:true,sidebar:"tutorialSidebar"},{path:'/docs/staff/moderation/general-rules-specifications',component:ComponentCreator('/docs/staff/moderation/general-rules-specifications','db7'),exact:true,sidebar:"tutorialSidebar"}]},{path:'/',component:ComponentCreator('/','b3e'),exact:true},{path:'*',component:ComponentCreator('*')}]);
+/* harmony default export */ const routes = ([{path:'/docs/tags',component:ComponentCreator('/docs/tags','80a'),exact:true},{path:'/docs/tags/api',component:ComponentCreator('/docs/tags/api','f94'),exact:true},{path:'/docs/tags/plot-system',component:ComponentCreator('/docs/tags/plot-system','0af'),exact:true},{path:'/docs/tags/website',component:ComponentCreator('/docs/tags/website','e05'),exact:true},{path:'/docs',component:ComponentCreator('/docs','24a'),routes:[{path:'/docs/development',component:ComponentCreator('/docs/development','a60'),exact:true,sidebar:"tutorialSidebar"},{path:'/docs/development/apis',component:ComponentCreator('/docs/development/apis','e51'),exact:true,sidebar:"tutorialSidebar"},{path:'/docs/staff',component:ComponentCreator('/docs/staff','70d'),exact:true,sidebar:"tutorialSidebar"},{path:'/docs/staff/moderation',component:ComponentCreator('/docs/staff/moderation','683'),exact:true,sidebar:"tutorialSidebar"},{path:'/docs/staff/moderation/general-rules-specifications',component:ComponentCreator('/docs/staff/moderation/general-rules-specifications','db7'),exact:true,sidebar:"tutorialSidebar"}]},{path:'/',component:ComponentCreator('/','b3e'),exact:true},{path:'*',component:ComponentCreator('*')}]);
 
 /***/ }),
 
@@ -7334,7 +7334,7 @@ var react = __webpack_require__(7294);
 // EXTERNAL MODULE: ./.docusaurus/docusaurus.config.mjs
 var docusaurus_config = __webpack_require__(6809);
 ;// CONCATENATED MODULE: ./.docusaurus/globalData.json
-const globalData_namespaceObject = JSON.parse('{"docusaurus-plugin-content-docs":{"default":{"path":"/docs","versions":[{"name":"current","label":"Next","isLast":true,"path":"/docs","mainDocId":"staff/index","docs":[{"id":"development/apis","path":"/docs/development/apis","sidebar":"tutorialSidebar"},{"id":"staff/index","path":"/docs/staff/","sidebar":"tutorialSidebar"},{"id":"staff/moderation/general-rules-specifications/index","path":"/docs/staff/moderation/general-rules-specifications/","sidebar":"tutorialSidebar"},{"id":"staff/moderation/index","path":"/docs/staff/moderation/","sidebar":"tutorialSidebar"},{"id":"/category/development","path":"/docs/category/development","sidebar":"tutorialSidebar"}],"draftIds":[],"sidebars":{"tutorialSidebar":{"link":{"path":"/docs/staff/","label":"Staff (Testing)"}}}}],"breadcrumbs":true}}}');
+const globalData_namespaceObject = JSON.parse('{"docusaurus-plugin-content-docs":{"default":{"path":"/docs","versions":[{"name":"current","label":"Next","isLast":true,"path":"/docs","mainDocId":"development/index","docs":[{"id":"development/apis","path":"/docs/development/apis","sidebar":"tutorialSidebar"},{"id":"development/index","path":"/docs/development/","sidebar":"tutorialSidebar"},{"id":"staff/index","path":"/docs/staff/","sidebar":"tutorialSidebar"},{"id":"staff/moderation/general-rules-specifications/index","path":"/docs/staff/moderation/general-rules-specifications/","sidebar":"tutorialSidebar"},{"id":"staff/moderation/index","path":"/docs/staff/moderation/","sidebar":"tutorialSidebar"}],"draftIds":[],"sidebars":{"tutorialSidebar":{"link":{"path":"/docs/development/","label":"Development"}}}}],"breadcrumbs":true}}}');
 ;// CONCATENATED MODULE: ./.docusaurus/i18n.json
 const i18n_namespaceObject = JSON.parse('{"defaultLocale":"en","locales":["en"],"path":"i18n","currentLocale":"en","localeConfigs":{"en":{"label":"English","direction":"ltr","htmlLang":"en","calendar":"gregory","path":"en"}}}');
 // EXTERNAL MODULE: ./.docusaurus/codeTranslations.json
@@ -7369,8 +7369,8 @@ var react = __webpack_require__(7294);
 var ExecutionEnvironment = __webpack_require__(412);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Head.js
 var Head = __webpack_require__(5742);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 18 modules
-var Layout = __webpack_require__(4204);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 21 modules
+var Layout = __webpack_require__(6706);
 ;// CONCATENATED MODULE: ./node_modules/@docusaurus/core/lib/client/theme-fallback/Error/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -7729,7 +7729,7 @@ __webpack_require__(6726)(`./prism-${lang}`);});delete globalThis.Prism;}
 
 /***/ }),
 
-/***/ 4204:
+/***/ 6706:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -7859,24 +7859,81 @@ function Navbar(){const{siteConfig}=(0,useDocusaurusContext/* default */.Z)();co
 // EXTERNAL MODULE: ./src/components/Footer.tsx
 var Footer = __webpack_require__(5800);
 ;// CONCATENATED MODULE: ./src/theme/Footer/index.tsx
-function Footer_Footer(){const{footer}=(0,useThemeConfig/* useThemeConfig */.L)();if(!footer){return null;}var items=[];const{copyright,links,logo,style}=footer;links.forEach(link=>{link.items.forEach(i=>items.push({label:i.label,link:i.href}));});console.log(copyright,links,logo,style);return/*#__PURE__*/react.createElement(Footer/* default */.Z,{links:items,copyright:copyright});}/* harmony default export */ const theme_Footer = (/*#__PURE__*/react.memo(Footer_Footer));
+function Footer_Footer(){const{footer}=(0,useThemeConfig/* useThemeConfig */.L)();if(!footer){return null;}var items=[];const{copyright,links,logo,style}=footer;links.forEach(link=>{link.items.forEach(i=>items.push({label:i.label,link:i.href}));});return/*#__PURE__*/react.createElement(Footer/* default */.Z,{links:items,copyright:copyright});}/* harmony default export */ const theme_Footer = (/*#__PURE__*/react.memo(Footer_Footer));
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/contexts/colorMode.js
 var colorMode = __webpack_require__(2949);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/scrollUtils.js
 var scrollUtils = __webpack_require__(2466);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/contexts/docsPreferredVersion.js
 var docsPreferredVersion = __webpack_require__(373);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/contexts/navbarMobileSidebar.js + 1 modules
-var navbarMobileSidebar = __webpack_require__(2961);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/contexts/navbarSecondaryMenu/content.js
-var navbarSecondaryMenu_content = __webpack_require__(3102);
+;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-common/lib/contexts/navbarSecondaryMenu/content.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const content_Context=/*#__PURE__*/react.createContext(null);/** @internal */function NavbarSecondaryMenuContentProvider(_ref){let{children}=_ref;const value=(0,react.useState)({component:null,props:null});return/*#__PURE__*/ (// @ts-expect-error: this context is hard to type
+react.createElement(content_Context.Provider,{value:value},children));}/** @internal */function content_useNavbarSecondaryMenuContent(){const value=(0,react.useContext)(content_Context);if(!value){throw new reactUtils/* ReactContextError */.i6('NavbarSecondaryMenuContentProvider');}return value[0];}/**
+ * This component renders nothing by itself, but it fills the placeholder in the
+ * generic secondary menu layout. This reduces coupling between the main layout
+ * and the specific page.
+ *
+ * This kind of feature is often called portal/teleport/gateway/outlet...
+ * Various unmaintained React libs exist. Most up-to-date one:
+ * https://github.com/gregberge/react-teleporter
+ * Not sure any of those is safe regarding concurrent mode.
+ */function NavbarSecondaryMenuFiller(_ref2){let{component,props}=_ref2;const context=useContext(content_Context);if(!context){throw new ReactContextError('NavbarSecondaryMenuContentProvider');}const[,setContent]=context;// To avoid useless context re-renders, props are memoized shallowly
+const memoizedProps=useShallowMemoObject(props);useEffect(()=>{// @ts-expect-error: this context is hard to type
+setContent({component,props:memoizedProps});},[setContent,component,memoizedProps]);useEffect(()=>()=>setContent({component:null,props:null}),[setContent]);return null;}
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/hooks/useWindowSize.js
+var useWindowSize = __webpack_require__(7524);
+// EXTERNAL MODULE: ./node_modules/use-sync-external-store/shim/index.js
+var shim = __webpack_require__(1688);
+;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/historyUtils.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */// @ts-expect-error: TODO temporary until React 18 upgrade
+/**
+ * Permits to register a handler that will be called on history actions (pop,
+ * push, replace). If the handler returns `false`, the navigation transition
+ * will be blocked/cancelled.
+ */function useHistoryActionHandler(handler){const history=(0,react_router/* useHistory */.k6)();const stableHandler=(0,reactUtils/* useEvent */.zX)(handler);(0,react.useEffect)(// See https://github.com/remix-run/history/blob/main/docs/blocking-transitions.md
+()=>history.block((location,action)=>stableHandler(location,action)),[history,stableHandler]);}/**
+ * Permits to register a handler that will be called on history pop navigation
+ * (backward/forward). If the handler returns `false`, the backward/forward
+ * transition will be blocked. Unfortunately there's no good way to detect the
+ * "direction" (backward/forward) of the POP event.
+ */function useHistoryPopHandler(handler){useHistoryActionHandler((location,action)=>{if(action==='POP'){// Maybe block navigation if handler returns false
+return handler(location,action);}// Don't block other navigation actions
+return undefined;});}/**
+ * Permits to efficiently subscribe to a slice of the history
+ * See https://thisweekinreact.com/articles/useSyncExternalStore-the-underrated-react-api
+ * @param selector
+ */function useHistorySelector(selector){const history=useHistory();return useSyncExternalStore(history.listen,()=>selector(history),()=>selector(history));}/**
+ * Permits to efficiently subscribe to a specific querystring value
+ * @param key
+ */function useQueryStringValue(key){return useHistorySelector(history=>{if(key===null){return null;}return new URLSearchParams(history.location.search).get(key);});}
+;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-common/lib/contexts/navbarMobileSidebar.js
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */const navbarMobileSidebar_Context=/*#__PURE__*/react.createContext(undefined);function useIsNavbarMobileSidebarDisabled(){const secondaryMenuContent=content_useNavbarSecondaryMenuContent();const{items}=(0,useThemeConfig/* useThemeConfig */.L)().navbar;return items.length===0&&!secondaryMenuContent.component;}function navbarMobileSidebar_useContextValue(){const disabled=useIsNavbarMobileSidebarDisabled();const windowSize=(0,useWindowSize/* useWindowSize */.i)();const shouldRender=!disabled&&windowSize==='mobile';const[shown,setShown]=(0,react.useState)(false);// Close mobile sidebar on navigation pop
+// Most likely firing when using the Android back button (but not only)
+useHistoryPopHandler(()=>{if(shown){setShown(false);// Prevent pop navigation; seems desirable enough
+// See https://github.com/facebook/docusaurus/pull/5462#issuecomment-911699846
+return false;}return undefined;});const toggle=(0,react.useCallback)(()=>{setShown(s=>!s);},[]);(0,react.useEffect)(()=>{if(windowSize==='desktop'){setShown(false);}},[windowSize]);return (0,react.useMemo)(()=>({disabled,shouldRender,toggle,shown}),[disabled,shouldRender,toggle,shown]);}function NavbarMobileSidebarProvider(_ref){let{children}=_ref;const value=navbarMobileSidebar_useContextValue();return/*#__PURE__*/react.createElement(navbarMobileSidebar_Context.Provider,{value:value},children);}function useNavbarMobileSidebar(){const context=react.useContext(navbarMobileSidebar_Context);if(context===undefined){throw new reactUtils/* ReactContextError */.i6('NavbarMobileSidebarProvider');}return context;}
 ;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-common/lib/contexts/navbarSecondaryMenu/display.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */const display_Context=/*#__PURE__*/react.createContext(null);function display_useContextValue(){const mobileSidebar=(0,navbarMobileSidebar/* useNavbarMobileSidebar */.e)();const content=(0,navbarSecondaryMenu_content/* useNavbarSecondaryMenuContent */.HY)();const[shown,setShown]=(0,react.useState)(false);const hasContent=content.component!==null;const previousHasContent=(0,reactUtils/* usePrevious */.D9)(hasContent);// When content is become available for the first time (set in useEffect)
+ */const display_Context=/*#__PURE__*/react.createContext(null);function display_useContextValue(){const mobileSidebar=useNavbarMobileSidebar();const content=content_useNavbarSecondaryMenuContent();const[shown,setShown]=(0,react.useState)(false);const hasContent=content.component!==null;const previousHasContent=(0,reactUtils/* usePrevious */.D9)(hasContent);// When content is become available for the first time (set in useEffect)
 // we set this content to be shown!
 (0,react.useEffect)(()=>{const contentBecameAvailable=hasContent&&!previousHasContent;if(contentBecameAvailable){setShown(true);}},[hasContent,previousHasContent]);// On sidebar close, secondary menu is set to be shown on next re-opening
 // (if any secondary menu content available)
@@ -7892,7 +7949,7 @@ var navbarSecondaryMenu_content = __webpack_require__(3102);
  */function splitNavbarItems(items){function isLeft(item){return(item.position??DefaultNavItemPosition)==='left';}const leftItems=items.filter(isLeft);const rightItems=items.filter(item=>!isLeft(item));return[leftItems,rightItems];}/**
  * Composes multiple navbar state providers that are mutually dependent and
  * hence can't be re-ordered.
- */function NavbarProvider(_ref){let{children}=_ref;return/*#__PURE__*/react.createElement(navbarSecondaryMenu_content/* NavbarSecondaryMenuContentProvider */.n2,null,/*#__PURE__*/react.createElement(navbarMobileSidebar/* NavbarMobileSidebarProvider */.M,null,/*#__PURE__*/react.createElement(NavbarSecondaryMenuDisplayProvider,null,children)));}
+ */function NavbarProvider(_ref){let{children}=_ref;return/*#__PURE__*/react.createElement(NavbarSecondaryMenuContentProvider,null,/*#__PURE__*/react.createElement(NavbarMobileSidebarProvider,null,/*#__PURE__*/react.createElement(NavbarSecondaryMenuDisplayProvider,null,children)));}
 ;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/Provider/index.js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -8048,127 +8105,6 @@ const EmptyContext=Symbol('EmptyContext');const Context=/*#__PURE__*/react__WEBP
 
 /***/ }),
 
-/***/ 4477:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "E": () => (/* binding */ useDocsVersion),
-/* harmony export */   "q": () => (/* binding */ DocsVersionProvider)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
-/* harmony import */ var _utils_reactUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(902);
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const Context=/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);/**
- * Provide the current version's metadata to your children.
- */function DocsVersionProvider(_ref){let{children,version}=_ref;return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Context.Provider,{value:version},children);}/**
- * Gets the version metadata of the current doc page.
- */function useDocsVersion(){const version=(0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(Context);if(version===null){throw new _utils_reactUtils__WEBPACK_IMPORTED_MODULE_1__/* .ReactContextError */ .i6('DocsVersionProvider');}return version;}
-
-/***/ }),
-
-/***/ 2961:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "M": () => (/* binding */ NavbarMobileSidebarProvider),
-  "e": () => (/* binding */ useNavbarMobileSidebar)
-});
-
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(7294);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/contexts/navbarSecondaryMenu/content.js
-var content = __webpack_require__(3102);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/hooks/useWindowSize.js
-var useWindowSize = __webpack_require__(7524);
-// EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js
-var react_router = __webpack_require__(6550);
-// EXTERNAL MODULE: ./node_modules/use-sync-external-store/shim/index.js
-var shim = __webpack_require__(1688);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/reactUtils.js
-var reactUtils = __webpack_require__(902);
-;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/historyUtils.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */// @ts-expect-error: TODO temporary until React 18 upgrade
-/**
- * Permits to register a handler that will be called on history actions (pop,
- * push, replace). If the handler returns `false`, the navigation transition
- * will be blocked/cancelled.
- */function useHistoryActionHandler(handler){const history=(0,react_router/* useHistory */.k6)();const stableHandler=(0,reactUtils/* useEvent */.zX)(handler);(0,react.useEffect)(// See https://github.com/remix-run/history/blob/main/docs/blocking-transitions.md
-()=>history.block((location,action)=>stableHandler(location,action)),[history,stableHandler]);}/**
- * Permits to register a handler that will be called on history pop navigation
- * (backward/forward). If the handler returns `false`, the backward/forward
- * transition will be blocked. Unfortunately there's no good way to detect the
- * "direction" (backward/forward) of the POP event.
- */function useHistoryPopHandler(handler){useHistoryActionHandler((location,action)=>{if(action==='POP'){// Maybe block navigation if handler returns false
-return handler(location,action);}// Don't block other navigation actions
-return undefined;});}/**
- * Permits to efficiently subscribe to a slice of the history
- * See https://thisweekinreact.com/articles/useSyncExternalStore-the-underrated-react-api
- * @param selector
- */function useHistorySelector(selector){const history=useHistory();return useSyncExternalStore(history.listen,()=>selector(history),()=>selector(history));}/**
- * Permits to efficiently subscribe to a specific querystring value
- * @param key
- */function useQueryStringValue(key){return useHistorySelector(history=>{if(key===null){return null;}return new URLSearchParams(history.location.search).get(key);});}
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-common/lib/utils/useThemeConfig.js
-var useThemeConfig = __webpack_require__(6668);
-;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-common/lib/contexts/navbarMobileSidebar.js
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const Context=/*#__PURE__*/react.createContext(undefined);function useIsNavbarMobileSidebarDisabled(){const secondaryMenuContent=(0,content/* useNavbarSecondaryMenuContent */.HY)();const{items}=(0,useThemeConfig/* useThemeConfig */.L)().navbar;return items.length===0&&!secondaryMenuContent.component;}function useContextValue(){const disabled=useIsNavbarMobileSidebarDisabled();const windowSize=(0,useWindowSize/* useWindowSize */.i)();const shouldRender=!disabled&&windowSize==='mobile';const[shown,setShown]=(0,react.useState)(false);// Close mobile sidebar on navigation pop
-// Most likely firing when using the Android back button (but not only)
-useHistoryPopHandler(()=>{if(shown){setShown(false);// Prevent pop navigation; seems desirable enough
-// See https://github.com/facebook/docusaurus/pull/5462#issuecomment-911699846
-return false;}return undefined;});const toggle=(0,react.useCallback)(()=>{setShown(s=>!s);},[]);(0,react.useEffect)(()=>{if(windowSize==='desktop'){setShown(false);}},[windowSize]);return (0,react.useMemo)(()=>({disabled,shouldRender,toggle,shown}),[disabled,shouldRender,toggle,shown]);}function NavbarMobileSidebarProvider(_ref){let{children}=_ref;const value=useContextValue();return/*#__PURE__*/react.createElement(Context.Provider,{value:value},children);}function useNavbarMobileSidebar(){const context=react.useContext(Context);if(context===undefined){throw new reactUtils/* ReactContextError */.i6('NavbarMobileSidebarProvider');}return context;}
-
-/***/ }),
-
-/***/ 3102:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "HY": () => (/* binding */ useNavbarSecondaryMenuContent),
-/* harmony export */   "Zo": () => (/* binding */ NavbarSecondaryMenuFiller),
-/* harmony export */   "n2": () => (/* binding */ NavbarSecondaryMenuContentProvider)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
-/* harmony import */ var _utils_reactUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(902);
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */const Context=/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);/** @internal */function NavbarSecondaryMenuContentProvider(_ref){let{children}=_ref;const value=(0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({component:null,props:null});return/*#__PURE__*/ (// @ts-expect-error: this context is hard to type
-react__WEBPACK_IMPORTED_MODULE_0__.createElement(Context.Provider,{value:value},children));}/** @internal */function useNavbarSecondaryMenuContent(){const value=(0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(Context);if(!value){throw new _utils_reactUtils__WEBPACK_IMPORTED_MODULE_1__/* .ReactContextError */ .i6('NavbarSecondaryMenuContentProvider');}return value[0];}/**
- * This component renders nothing by itself, but it fills the placeholder in the
- * generic secondary menu layout. This reduces coupling between the main layout
- * and the specific page.
- *
- * This kind of feature is often called portal/teleport/gateway/outlet...
- * Various unmaintained React libs exist. Most up-to-date one:
- * https://github.com/gregberge/react-teleporter
- * Not sure any of those is safe regarding concurrent mode.
- */function NavbarSecondaryMenuFiller(_ref2){let{component,props}=_ref2;const context=(0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(Context);if(!context){throw new _utils_reactUtils__WEBPACK_IMPORTED_MODULE_1__/* .ReactContextError */ .i6('NavbarSecondaryMenuContentProvider');}const[,setContent]=context;// To avoid useless context re-renders, props are memoized shallowly
-const memoizedProps=(0,_utils_reactUtils__WEBPACK_IMPORTED_MODULE_1__/* .useShallowMemoObject */ .Ql)(props);(0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(()=>{// @ts-expect-error: this context is hard to type
-setContent({component,props:memoizedProps});},[setContent,component,memoizedProps]);(0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(()=>()=>setContent({component:null,props:null}),[setContent]);return null;}
-
-/***/ }),
-
 /***/ 9727:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -8265,30 +8201,24 @@ var react = __webpack_require__(7294);
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "MN": () => (/* binding */ filterDocCardListItems),
-/* harmony export */   "Wl": () => (/* binding */ findFirstCategoryLink),
-/* harmony export */   "_F": () => (/* binding */ isActiveSidebarItem),
 /* harmony export */   "cE": () => (/* binding */ isDocsPluginEnabled),
 /* harmony export */   "hI": () => (/* binding */ useDocRouteMetadata),
-/* harmony export */   "jA": () => (/* binding */ useCurrentSidebarCategory),
-/* harmony export */   "s1": () => (/* binding */ useSidebarBreadcrumbs),
-/* harmony export */   "xz": () => (/* binding */ useDocById)
+/* harmony export */   "s1": () => (/* binding */ useSidebarBreadcrumbs)
 /* harmony export */ });
-/* unused harmony exports findSidebarCategory, useDocsVersionCandidates, useLayoutDocsSidebar, useLayoutDoc */
+/* unused harmony exports useDocById, findSidebarCategory, findFirstCategoryLink, useCurrentSidebarCategory, isActiveSidebarItem, useDocsVersionCandidates, useLayoutDocsSidebar, useLayoutDoc, filterDocCardListItems */
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
-/* harmony import */ var _docusaurus_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6550);
-/* harmony import */ var _docusaurus_renderRoutes__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8790);
+/* harmony import */ var _docusaurus_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6550);
+/* harmony import */ var _docusaurus_renderRoutes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8790);
 /* harmony import */ var _docusaurus_plugin_content_docs_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(143);
-/* harmony import */ var _contexts_docsVersion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4477);
-/* harmony import */ var _contexts_docsSidebar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1116);
-/* harmony import */ var _routesUtils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8596);
+/* harmony import */ var _contexts_docsSidebar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1116);
+/* harmony import */ var _routesUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8596);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */// TODO not ideal, see also "useDocs"
-const isDocsPluginEnabled=!!_docusaurus_plugin_content_docs_client__WEBPACK_IMPORTED_MODULE_1__/* .useAllDocsData */ ._r;function useDocById(id){const version=(0,_contexts_docsVersion__WEBPACK_IMPORTED_MODULE_2__/* .useDocsVersion */ .E)();if(!id){return undefined;}const doc=version.docs[id];if(!doc){throw new Error(`no version doc found by id=${id}`);}return doc;}/**
+const isDocsPluginEnabled=!!_docusaurus_plugin_content_docs_client__WEBPACK_IMPORTED_MODULE_1__/* .useAllDocsData */ ._r;function useDocById(id){const version=useDocsVersion();if(!id){return undefined;}const doc=version.docs[id];if(!doc){throw new Error(`no version doc found by id=${id}`);}return doc;}/**
  * Pure function, similar to `Array#find`, but works on the sidebar tree.
  */function findSidebarCategory(sidebar,predicate){for(const item of sidebar){if(item.type==='category'){if(predicate(item)){return item;}const subItem=findSidebarCategory(item.items,predicate);if(subItem){return subItem;}}}return undefined;}/**
  * Best effort to assign a link to a sidebar category. If the category doesn't
@@ -8297,15 +8227,15 @@ const isDocsPluginEnabled=!!_docusaurus_plugin_content_docs_client__WEBPACK_IMPO
 }return undefined;}/**
  * Gets the category associated with the current location. Should only be used
  * on category index pages.
- */function useCurrentSidebarCategory(){const{pathname}=(0,_docusaurus_router__WEBPACK_IMPORTED_MODULE_3__/* .useLocation */ .TH)();const sidebar=(0,_contexts_docsSidebar__WEBPACK_IMPORTED_MODULE_4__/* .useDocsSidebar */ .V)();if(!sidebar){throw new Error('Unexpected: cant find current sidebar in context');}const categoryBreadcrumbs=getSidebarBreadcrumbs({sidebarItems:sidebar.items,pathname,onlyCategories:true});const deepestCategory=categoryBreadcrumbs.slice(-1)[0];if(!deepestCategory){throw new Error(`${pathname} is not associated with a category. useCurrentSidebarCategory() should only be used on category index pages.`);}return deepestCategory;}const isActive=(testedPath,activePath)=>typeof testedPath!=='undefined'&&(0,_routesUtils__WEBPACK_IMPORTED_MODULE_5__/* .isSamePath */ .Mg)(testedPath,activePath);const containsActiveSidebarItem=(items,activePath)=>items.some(subItem=>isActiveSidebarItem(subItem,activePath));/**
+ */function useCurrentSidebarCategory(){const{pathname}=useLocation();const sidebar=useDocsSidebar();if(!sidebar){throw new Error('Unexpected: cant find current sidebar in context');}const categoryBreadcrumbs=getSidebarBreadcrumbs({sidebarItems:sidebar.items,pathname,onlyCategories:true});const deepestCategory=categoryBreadcrumbs.slice(-1)[0];if(!deepestCategory){throw new Error(`${pathname} is not associated with a category. useCurrentSidebarCategory() should only be used on category index pages.`);}return deepestCategory;}const isActive=(testedPath,activePath)=>typeof testedPath!=='undefined'&&isSamePath(testedPath,activePath);const containsActiveSidebarItem=(items,activePath)=>items.some(subItem=>isActiveSidebarItem(subItem,activePath));/**
  * Checks if a sidebar item should be active, based on the active path.
  */function isActiveSidebarItem(item,activePath){if(item.type==='link'){return isActive(item.href,activePath);}if(item.type==='category'){return isActive(item.href,activePath)||containsActiveSidebarItem(item.items,activePath);}return false;}/**
  * Get the sidebar the breadcrumbs for a given pathname
  * Ordered from top to bottom
- */function getSidebarBreadcrumbs(_ref){let{sidebarItems,pathname,onlyCategories=false}=_ref;const breadcrumbs=[];function extract(items){for(const item of items){if(item.type==='category'&&((0,_routesUtils__WEBPACK_IMPORTED_MODULE_5__/* .isSamePath */ .Mg)(item.href,pathname)||extract(item.items))||item.type==='link'&&(0,_routesUtils__WEBPACK_IMPORTED_MODULE_5__/* .isSamePath */ .Mg)(item.href,pathname)){const filtered=onlyCategories&&item.type!=='category';if(!filtered){breadcrumbs.unshift(item);}return true;}}return false;}extract(sidebarItems);return breadcrumbs;}/**
+ */function getSidebarBreadcrumbs(_ref){let{sidebarItems,pathname,onlyCategories=false}=_ref;const breadcrumbs=[];function extract(items){for(const item of items){if(item.type==='category'&&((0,_routesUtils__WEBPACK_IMPORTED_MODULE_2__/* .isSamePath */ .Mg)(item.href,pathname)||extract(item.items))||item.type==='link'&&(0,_routesUtils__WEBPACK_IMPORTED_MODULE_2__/* .isSamePath */ .Mg)(item.href,pathname)){const filtered=onlyCategories&&item.type!=='category';if(!filtered){breadcrumbs.unshift(item);}return true;}}return false;}extract(sidebarItems);return breadcrumbs;}/**
  * Gets the breadcrumbs of the current doc page, based on its sidebar location.
  * Returns `null` if there's no sidebar or breadcrumbs are disabled.
- */function useSidebarBreadcrumbs(){const sidebar=(0,_contexts_docsSidebar__WEBPACK_IMPORTED_MODULE_4__/* .useDocsSidebar */ .V)();const{pathname}=(0,_docusaurus_router__WEBPACK_IMPORTED_MODULE_3__/* .useLocation */ .TH)();const breadcrumbsOption=(0,_docusaurus_plugin_content_docs_client__WEBPACK_IMPORTED_MODULE_1__/* .useActivePlugin */ .gA)()?.pluginData.breadcrumbs;if(breadcrumbsOption===false||!sidebar){return null;}return getSidebarBreadcrumbs({sidebarItems:sidebar.items,pathname});}/**
+ */function useSidebarBreadcrumbs(){const sidebar=(0,_contexts_docsSidebar__WEBPACK_IMPORTED_MODULE_3__/* .useDocsSidebar */ .V)();const{pathname}=(0,_docusaurus_router__WEBPACK_IMPORTED_MODULE_4__/* .useLocation */ .TH)();const breadcrumbsOption=(0,_docusaurus_plugin_content_docs_client__WEBPACK_IMPORTED_MODULE_1__/* .useActivePlugin */ .gA)()?.pluginData.breadcrumbs;if(breadcrumbsOption===false||!sidebar){return null;}return getSidebarBreadcrumbs({sidebarItems:sidebar.items,pathname});}/**
  * "Version candidates" are mostly useful for the layout components, which must
  * be able to work on all pages. For example, if a user has `{ type: "doc",
  * docId: "intro" }` as a navbar item, which version does that refer to? We
@@ -8348,8 +8278,8 @@ Available doc ids are:
  * @param props The props received by `@theme/DocPage`
  * @returns The data of the relevant document at the current location, or `null`
  * if no document associated with the current location can be found.
- */function useDocRouteMetadata(_ref2){let{route,versionMetadata}=_ref2;const location=(0,_docusaurus_router__WEBPACK_IMPORTED_MODULE_3__/* .useLocation */ .TH)();const docRoutes=route.routes;const currentDocRoute=docRoutes.find(docRoute=>(0,_docusaurus_router__WEBPACK_IMPORTED_MODULE_3__/* .matchPath */ .LX)(location.pathname,docRoute));if(!currentDocRoute){return null;}// For now, the sidebarName is added as route config: not ideal!
-const sidebarName=currentDocRoute.sidebar;const sidebarItems=sidebarName?versionMetadata.docsSidebars[sidebarName]:undefined;const docElement=(0,_docusaurus_renderRoutes__WEBPACK_IMPORTED_MODULE_6__/* .renderRoutes */ .H)(docRoutes);return{docElement,sidebarName,sidebarItems};}/**
+ */function useDocRouteMetadata(_ref2){let{route,versionMetadata}=_ref2;const location=(0,_docusaurus_router__WEBPACK_IMPORTED_MODULE_4__/* .useLocation */ .TH)();const docRoutes=route.routes;const currentDocRoute=docRoutes.find(docRoute=>(0,_docusaurus_router__WEBPACK_IMPORTED_MODULE_4__/* .matchPath */ .LX)(location.pathname,docRoute));if(!currentDocRoute){return null;}// For now, the sidebarName is added as route config: not ideal!
+const sidebarName=currentDocRoute.sidebar;const sidebarItems=sidebarName?versionMetadata.docsSidebars[sidebarName]:undefined;const docElement=(0,_docusaurus_renderRoutes__WEBPACK_IMPORTED_MODULE_5__/* .renderRoutes */ .H)(docRoutes);return{docElement,sidebarName,sidebarItems};}/**
  * Filter categories that don't have a link.
  * @param items
  */function filterDocCardListItems(items){return items.filter(item=>{if(item.type==='category'){return!!findFirstCategoryLink(item);}return true;});}
@@ -8425,11 +8355,10 @@ Array.isArray(keywords)?keywords.join(','):keywords}),pageImage&&/*#__PURE__*/re
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "D9": () => (/* binding */ usePrevious),
 /* harmony export */   "Qc": () => (/* binding */ composeProviders),
-/* harmony export */   "Ql": () => (/* binding */ useShallowMemoObject),
 /* harmony export */   "i6": () => (/* binding */ ReactContextError),
 /* harmony export */   "zX": () => (/* binding */ useEvent)
 /* harmony export */ });
-/* unused harmony export useIsomorphicLayoutEffect */
+/* unused harmony exports useIsomorphicLayoutEffect, useShallowMemoObject */
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
 /* harmony import */ var _docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(412);
 /**
@@ -8472,7 +8401,7 @@ return (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function(){return ref.
  * @param obj
  */function useShallowMemoObject(obj){const deps=Object.entries(obj);// Sort by keys to make it order-insensitive
 deps.sort((a,b)=>a[0].localeCompare(b[0]));// eslint-disable-next-line react-hooks/exhaustive-deps
-return (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(()=>obj,deps.flat());}/**
+return useMemo(()=>obj,deps.flat());}/**
  * Creates a single React provider from an array of existing providers
  * assuming providers only take "children" as props.
  *
@@ -19093,7 +19022,7 @@ module.exports = {};
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"/docs/tags-80a":{"__comp":"3720c009","__context":{"plugin":"083ee91e"},"tags":"55960ee5"},"/docs/tags/api-f94":{"__comp":"df203c0f","__context":{"plugin":"083ee91e"},"tag":"87a50603"},"/docs/tags/plot-system-0af":{"__comp":"df203c0f","__context":{"plugin":"083ee91e"},"tag":"9c584f2d"},"/docs/tags/website-e05":{"__comp":"df203c0f","__context":{"plugin":"083ee91e"},"tag":"823128eb"},"/docs-6ce":{"__comp":"1be78505","__context":{"plugin":"083ee91e"},"versionMetadata":"935f2afb"},"/docs/category/development-089":{"__comp":"14eb3368","categoryGeneratedIndex":"71f35c7b"},"/docs/development/apis-e51":{"__comp":"17896441","content":"3ef332b8"},"/docs/staff-70d":{"__comp":"17896441","content":"3f27afb6"},"/docs/staff/moderation-683":{"__comp":"17896441","content":"a4784511"},"/docs/staff/moderation/general-rules-specifications-db7":{"__comp":"17896441","content":"4916ac73"},"/-b3e":{"__comp":"1df93b7f","__context":{"plugin":"ee0d642a"},"config":"5e9f5e1a"}}');
+module.exports = JSON.parse('{"/docs/tags-80a":{"__comp":"3720c009","__context":{"plugin":"083ee91e"},"tags":"55960ee5"},"/docs/tags/api-f94":{"__comp":"df203c0f","__context":{"plugin":"083ee91e"},"tag":"87a50603"},"/docs/tags/plot-system-0af":{"__comp":"df203c0f","__context":{"plugin":"083ee91e"},"tag":"9c584f2d"},"/docs/tags/website-e05":{"__comp":"df203c0f","__context":{"plugin":"083ee91e"},"tag":"823128eb"},"/docs-24a":{"__comp":"1be78505","__context":{"plugin":"083ee91e"},"versionMetadata":"935f2afb"},"/docs/development-a60":{"__comp":"17896441","content":"6dcaddc4"},"/docs/development/apis-e51":{"__comp":"17896441","content":"3ef332b8"},"/docs/staff-70d":{"__comp":"17896441","content":"3f27afb6"},"/docs/staff/moderation-683":{"__comp":"17896441","content":"a4784511"},"/docs/staff/moderation/general-rules-specifications-db7":{"__comp":"17896441","content":"4916ac73"},"/-b3e":{"__comp":"1df93b7f","__context":{"plugin":"ee0d642a"},"config":"5e9f5e1a"}}');
 
 /***/ })
 

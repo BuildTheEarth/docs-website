@@ -3305,34 +3305,6 @@ body {
   flex-direction: column;
 }
 
-.cardContainer_S8oU {
-  --ifm-link-color: var(--ifm-color-emphasis-800);
-  --ifm-link-hover-color: var(--ifm-color-emphasis-700);
-  --ifm-link-hover-decoration: none;
-
-  box-shadow: 0 1.5px 3px 0 rgb(0 0 0 / 15%);
-  border: 1px solid var(--ifm-color-emphasis-200);
-  transition: all var(--ifm-transition-fast) ease;
-  transition-property: border, box-shadow;
-}
-
-.cardContainer_S8oU:hover {
-  border-color: var(--ifm-color-primary);
-  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%);
-}
-
-.cardContainer_S8oU *:last-child {
-  margin-bottom: 0;
-}
-
-.cardTitle_HoSo {
-  font-size: 1.2rem;
-}
-
-.cardDescription_c27F {
-  font-size: 0.8rem;
-}
-
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -3366,68 +3338,6 @@ body {
   .lastUpdated_vwxv {
     text-align: right;
   }
-}
-
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-.tocCollapsibleButton_TO0P {
-  font-size: inherit;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.4rem 0.8rem;
-  width: 100%;
-}
-
-.tocCollapsibleButton_TO0P::after {
-  content: '';
-  background: var(--ifm-menu-link-sublist-icon) 50% 50% / 2rem 2rem no-repeat;
-  filter: var(--ifm-menu-link-sublist-icon-filter);
-  height: 1.25rem;
-  width: 1.25rem;
-  transform: rotate(180deg);
-  transition: transform var(--ifm-transition-fast);
-}
-
-.tocCollapsibleButtonExpanded_MG3E::after {
-  transform: none;
-}
-
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-.tocCollapsible_ETCw {
-  background-color: var(--ifm-menu-color-background-active);
-  border-radius: var(--ifm-global-radius);
-  margin: 1rem 0;
-}
-
-.tocCollapsibleContent_vkbj > ul {
-  border-left: none;
-  border-top: 1px solid var(--ifm-color-emphasis-300);
-  padding: 0.2rem 0;
-  font-size: 15px;
-}
-
-.tocCollapsibleContent_vkbj ul li {
-  margin: 0.4rem 0.8rem;
-}
-
-.tocCollapsibleContent_vkbj a {
-  display: block;
-}
-
-.tocCollapsibleExpanded_sAul {
-  transform: none;
 }
 
 /**
@@ -3485,33 +3395,6 @@ See https://twitter.com/JoshWComeau/status/1332015868725891076
 .hash-link:focus,
 *:hover > .hash-link {
   opacity: 1;
-}
-
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-@media (min-width: 997px) {
-  .generatedIndexPage_vN6x {
-    max-width: 75% !important;
-  }
-
-  .list_eTzJ article:nth-last-child(-n + 2) {
-    margin-bottom: 0 !important;
-  }
-}
-
-/* Duplicated from .markdown h1 */
-.title_kItE {
-  --ifm-h1-font-size: 3rem;
-  margin-bottom: calc(1.25 * var(--ifm-leading));
-}
-
-.list_eTzJ article:last-child {
-  margin-bottom: 0 !important;
 }
 
 /**
@@ -3734,42 +3617,6 @@ CSS variables, meant to be overridden by final theme
 @media (min-width: 997px) {
   .docItemCol_VOVn {
     max-width: 75% !important;
-  }
-}
-
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-.iconExternalLink_nPIU {
-  margin-left: 0.3rem;
-}
-
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-.menuExternalLink_NmtK {
-  align-items: center;
-}
-
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-@media (min-width: 997px) {
-  .menuHtmlItem_M9Kj {
-    padding: var(--ifm-menu-link-padding-vertical)
-      var(--ifm-menu-link-padding-horizontal);
   }
 }
 

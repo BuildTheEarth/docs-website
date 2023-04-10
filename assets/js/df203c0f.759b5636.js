@@ -130,8 +130,8 @@ var metadataUtils = __webpack_require__(1944);
 var ThemeClassNames = __webpack_require__(5281);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Translate.js + 1 modules
 var Translate = __webpack_require__(5999);
-// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 18 modules
-var Layout = __webpack_require__(4204);
+// EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js + 21 modules
+var Layout = __webpack_require__(6706);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/SearchMetadata/index.js
 var SearchMetadata = __webpack_require__(197);
 ;// CONCATENATED MODULE: ./node_modules/@docusaurus/theme-classic/lib/theme/DocTagDocListPage/index.js
