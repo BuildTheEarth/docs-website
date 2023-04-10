@@ -16,7 +16,7 @@ export default function TOCCollapsile({ className, ...props }) {
   else
     return (
       <MediaQuery largerThan={997} styles={{ display: "none" }}>
-        <Accordion variant="contained">
+        <Accordion variant="contained" mb="md">
           <Accordion.Item value="toc">
             <Accordion.Control>
               <Group>

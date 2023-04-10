@@ -15,8 +15,16 @@ export default function DocBreadcrumbs() {
     return null;
   }
   return (
-    <Breadcrumbs style={{ marginBottom: theme.spacing.lg * 2 }}>
-      <Anchor href={"/docs"}>
+    <Breadcrumbs
+      styles={{
+        root: {
+          marginBottom: theme.spacing.lg,
+          maxWidth: "100vw",
+          overflow: "hidden",
+        },
+      }}
+    >
+      <Anchor href={"/docs/intro"}>
         <IconHome color="white" size={18} />
       </Anchor>
       {breadcrumbs.map((item, idx) => (
