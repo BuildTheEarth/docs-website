@@ -197,7 +197,7 @@ We have a collection of helpful resources to use while moderating.
 
 ### 6.1 Minimum Ages
 
-The full list is available [here](https://www.google.com/url?q=https://www.google.com/url?q%3Dhttps://support.discord.com/hc/en-us/articles/360040724612-Why-is-Discord-asking-for-my-birthday-%26amp;sa%3DD%26amp;source%3Deditors%26amp;ust%3D1681151725695479%26amp;usg%3DAOvVaw2oI_ldiLBLEsLkIfUZs-UJ&sa=D&source=docs&ust=1681151725724865&usg=AOvVaw3VGWvzmCZs478-_uN4-FLh).
+The full list is available [here](https://support.discord.com/hc/en-us/articles/360040724612-Why-is-Discord-asking-for-my-birthday-).
 
 For all countries not listed below, 13 is the minimum age.
 
