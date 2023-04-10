@@ -138,8 +138,7 @@ Situations like these may end up requiring conversing within the team. Make a de
 
 When dealing with a complaint about your brand, it is important to respond at times. Being unresponsive generally incites (more) anger. A response that illustrates respect and understanding of the concerns will indicate your intention to rectify any problems. It is best to communicate that you intend to escalate the complaint to another member of the organization, in which case it is important to acknowledge receipt of the complaint and make the community member feel heard.
 
-### \
-5.3 MODERATION STANDARDS
+### 5.3 MODERATION STANDARDS
 
 As mentioned previously, we use a 4 tier system for our moderation.
 
