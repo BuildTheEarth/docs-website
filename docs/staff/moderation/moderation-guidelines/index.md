@@ -14,11 +14,11 @@ It is important to remember that BuildTheEarth is a community project, unlike mo
 
 ## 3.0 STAFF HIERARCHY
 
-The complete Build The Earth staff structure can be found [here](https://app.milanote.com/1N4MYa15e6msad/bte-staff-organization-chart?p=sfH31jITyc6).
+The complete BuildTheEarth staff structure can be found [here](https://app.milanote.com/1N4MYa15e6msad/bte-staff-organization-chart?p=sfH31jITyc6).
 
 Our staff team works with a tiered hierarchy, but it is essential to remember that no staff is above another. It's simply a system of who has what permissions and who reports to whom.
 
-#### Moderation Hierarchy
+### Moderation Hierarchy
 
 Trial Moderator → Moderator → Senior Moderator → Moderation Manager → Administrator
 
@@ -36,7 +36,7 @@ As briefly mentioned earlier, it's vital that your conduct is representative of 
 
 ### 4.1 COMPLIANCE
 
-Build The earth uses a strike system within the staff team read more about it [here](https://docs.google.com/document/d/1YPlIHXve3Ksnjs4M4poSMguP7lTjXvqHLMGTmiB6gnw).
+BuildTheEarth uses a strike system within the staff team read more about it [here](https://docs.google.com/document/d/1YPlIHXve3Ksnjs4M4poSMguP7lTjXvqHLMGTmiB6gnw).
 
 ## 5.0 Moderation
 
@@ -44,7 +44,7 @@ All discussion about moderation actions and the usage of moderation commands sho
 
 ### 5.1 RULES
 
-Details about each rule and which Tier violations fall under it can be found [here](https://docs.buildtheearth.net/docs/staff/moderation/general-rules-specifications).
+Details about each rule and which Tier violations fall under it can be found [here](https://docs.BuildTheEarth.net/docs/staff/moderation/general-rules-specifications).
 
 #### Rule 1: All forms of prejudice are prohibited.
 
@@ -63,9 +63,9 @@ Details about each rule and which Tier violations fall under it can be found [he
 
 #### Rule 4: Discord ToS, Developer ToS and Guidelines must be followed.
 
-* This includes but is not limited to the age requirement of 13 ([or your country's minimum age](https://support.discord.com/hc/en-us/articles/360040724612).
-* Discord ToS: <https://discord.com/terms>
-* Developer ToS: <https://discord.com/developers/docs/legal>
+* This includes but is not limited to the age requirement of 13 ([or your country's minimum age](https://support.discord.com/hc/en-us/articles/360040724612)).
+* Discord ToS: [here](https://discord.com/terms)
+* Developer ToS: [here](https://discord.com/developers/docs/legal)
 
 #### Rule 5: Criminal behavior or criminal discussion is prohibited.
 
@@ -146,17 +146,17 @@ If the previous infractions are similar, the infraction process can be quicker.
 
 A list of what words are banned can be found [here](https://www.google.com/url?q=https://www.google.com/url?q%3Dhttps://docs.google.com/document/d/1-74Ykhf6sr2wJgrf6DhAreBxqOzLg-5D-NPKUEwplaE/edit%2523heading%253Dh.944wyfhyz4vd%26amp;sa%3DD%26amp;source%3Deditors%26amp;ust%3D1681151725685030%26amp;usg%3DAOvVaw3-oR-RTt8TkvXO02knDcq9&sa=D&source=docs&ust=1681151725721783&usg=AOvVaw2bSsnxDSWhNygHnYp8fWjW).
 
-#### 1st Tier Infractions - 1st warning > 2nd warning (If dissimilar) > 3 hour mute > 6h mute > 12h mute
+#### 1st Tier Infractions - 1st warning &gt; 2nd warning (If dissimilar) &gt; 3 hour mute &gt; 6h mute &gt; 12h mute
 
 * Spamming / Toxicity towards other members / NSFW or Gore in text, voice, emojis, or reactions / Continuous Caps Spam / Minor death threat (Very flexible, should always look for context in these situations) / Misusing channels/spam tagging staff / talking about how to get a cracked Minecraft account / excessive swearing (tasteful swearing is allowed, but if they are doing it just for the sake of swearing, please take action) / Discussion of politics / Advertising (YouTube channels, Minecraft servers, etc.) / Borderline homophobia, transphobia, xenophobia, racism, sexism
 * Exception: Bobwalls are 1st Tier
 
-#### 2nd Tier Infractions - Immediate 3 hour mute > 12 hour mute > 7 day ban
+#### 2nd Tier Infractions - Immediate 3 hour mute &gt; 12 hour mute &gt; 7 day ban
 
 * Blatant spam / Copypasta text walls / Blatant trolling (Coming into a chat with the sole purpose of stirring people up) / Blatant or high-level toxicity
 * *Note: Messages that surpass 500 to 700 characters are considered text-walls.*
 
-#### 3rd Tier Infractions - Immediate 7-day ban > Permanent ban
+#### 3rd Tier Infractions - Immediate 7-day ban &gt; Permanent ban
 
 * DM advertising / Harassment in DMs; anything that would result in someone getting triggered (ethnocentrism, strong religious beliefs, forcing opinions on other people) / Anyone from the minor infractions bracket who already had a 12 hour mute
 
@@ -164,9 +164,9 @@ A list of what words are banned can be found [here](https://www.google.com/url?
 
 * Posting NSFW or Gruesome content (Image, video or link) / being younger than the required age for the use of Discord by country (in most countries 13y old) (or other significant violations of Discord's Terms of Service) / n-word, other disturbing topics(Neo-Nazis, blatant homophobia, blatant bashing of any culture, race, religion, etc.) / Punishment evasion.
 * *Note: Video/Image with the intent of discriminating - Permanent*
-* A video/image with the n-word - 3d -> Permanent if done again
+* A video/image with the n-word - 3d -&gt; Permanent if done again
 
-#### Kick Infractions - Kick > 1 day ban > 7 day ban > Permanent ban
+#### Kick Infractions - Kick &gt; 1 day ban &gt; 7 day ban &gt; Permanent ban
 
 * Having a username, profile picture, Game Activity, or status that violates our rules / Impersonating Staff (ONLY if profile picture and username/nickname is nearly or fully identical)
 
@@ -174,15 +174,15 @@ A list of what words are banned can be found [here](https://www.google.com/url?
 
 BTE uses a bot for auto-moderation. When a message has a word in it that is banned, the message will be deleted and will show up in #moderation-logs, where the option to punish the user or pardon them will be there. Banned words can be added by moderators+ (See section 5.5)
 
-We also have moderation reason placeholders allowing you to use {{<placeholder name>}} instead of typing out long punishment reasons.
+We also have moderation reason placeholders allowing you to use {{&lt;placeholder name&gt;}} instead of typing out long punishment reasons.
 
 ### 5.5 MODERATION BOTS
 
-#### Build The Earth bot
+#### BuildTheEarth bot
 
-This is our in-house bot and the one we primarily use. In this subsection, you’ll find info and usages of each command. Use this section as a quick, small introduction to the commands we use the most. (More info about any of these can be found with /help <command name>). 
+This is our in-house bot and the one we primarily use. In this subsection, you’ll find info and usages of each command. Use this section as a quick, small introduction to the commands we use the most. (More info about any of these can be found with /help &lt;command name&gt;). 
 
-Argument names enclosed in \[square brackets] are optional. Ones enclosed in <angle brackets> are required. The ones enclosed in \['single quotes'] mean that you should type their name to toggle an option (instead of providing a value of your own). Ones separated by <vertical | bars> mean you can choose between one of them (this also applies to quoted arguments).
+Argument names enclosed in \[square brackets] are optional. Ones enclosed in &lt;angle brackets&gt; are required. The ones enclosed in \['single quotes'] mean that you should type their name to toggle an option (instead of providing a value of your own). Ones separated by &lt;vertical | bars&gt; mean you can choose between one of them (this also applies to quoted arguments).
 
 #### Vortex (Backup Bot)
 
