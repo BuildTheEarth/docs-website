@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 title: General Rules Specifications
 ---
 # General Rules Specifications
