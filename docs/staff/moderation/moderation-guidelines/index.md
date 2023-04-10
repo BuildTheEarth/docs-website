@@ -170,3 +170,69 @@ A list of what words are banned can be found [here](https://www.google.com/url?
 #### Kick Infractions - Kick > 1 day ban > 7 day ban > Permanent ban
 
 * Having a username, profile picture, Game Activity, or status that violates our rules / Impersonating Staff (ONLY if profile picture and username/nickname is nearly or fully identical)
+
+### 5.4 AUTO-MODERATION
+
+BTE uses a bot for auto-moderation. When a message has a word in it that is banned, the message will be deleted and will show up in #moderation-logs, where the option to punish the user or pardon them will be there. Banned words can be added by moderators+ (See section 5.5)
+
+We also have moderation reason placeholders allowing you to use {{<placeholder name>}} instead of typing out long punishment reasons.
+
+### 5.5 MODERATION BOTS
+
+#### Build The Earth bot
+
+This is our in-house bot and the one we primarily use. In this subsection, you’ll find info and usages of each command. Use this section as a quick, small introduction to the commands we use the most. (More info about any of these can be found with /help <command name>). 
+
+Argument names enclosed in \[square brackets] are optional. Ones enclosed in <angle brackets> are required. The ones enclosed in \['single quotes'] mean that you should type their name to toggle an option (instead of providing a value of your own). Ones separated by <vertical | bars> mean you can choose between one of them (this also applies to quoted arguments).
+
+#### Vortex (Backup Bot)
+
+### 5.6 @MODERATOR ON DUTY
+
+The Moderator On Duty role is for when you are online and ready to moderate. While you have this role you consent to getting pinged for any and all reasons. You can give yourself this role by running /duty.
+
+## 6.0 OTHER RESOURCES
+
+We have a collection of helpful resources to use while moderating.
+
+### 6.1 Minimum Ages
+
+The full list is available [here](https://www.google.com/url?q=https://www.google.com/url?q%3Dhttps://support.discord.com/hc/en-us/articles/360040724612-Why-is-Discord-asking-for-my-birthday-%26amp;sa%3DD%26amp;source%3Deditors%26amp;ust%3D1681151725695479%26amp;usg%3DAOvVaw2oI_ldiLBLEsLkIfUZs-UJ&sa=D&source=docs&ust=1681151725724865&usg=AOvVaw3VGWvzmCZs478-_uN4-FLh).
+
+For all countries not listed below, 13 is the minimum age.
+
+#### Asia
+
+* South Korea: 14+
+* Vietnam: 15+
+
+#### Europe
+
+* Austria: 14+
+* Bulgaria: 14+
+* Croatia: 16+
+* Cyprus: 14+
+* Czech Republic: 15+
+* France: 15+
+* Germany: 16+
+* Greece: 15+
+* Hungary: 16+
+* Ireland: 16+
+* Italy: 14+
+* Lithuania: 14+
+* Luxembourg: 16+
+* Netherlands: 16+
+* Poland: 16+
+* Romania: 16+
+* San Marino: 16+
+* Serbia: 15+
+* Slovakia: 16+
+* Slovenia: 16+
+* Spain: 14+
+
+#### South America
+
+* Chile: 14+
+* Colombia: 14+
+* Peru: 14+
+* Venezuela: 14+
