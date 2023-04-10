@@ -146,17 +146,17 @@ If the previous infractions are similar, the infraction process can be quicker.
 
 A list of what words are banned can be found [here](https://www.google.com/url?q=https://www.google.com/url?q%3Dhttps://docs.google.com/document/d/1-74Ykhf6sr2wJgrf6DhAreBxqOzLg-5D-NPKUEwplaE/edit%2523heading%253Dh.944wyfhyz4vd%26amp;sa%3DD%26amp;source%3Deditors%26amp;ust%3D1681151725685030%26amp;usg%3DAOvVaw3-oR-RTt8TkvXO02knDcq9&sa=D&source=docs&ust=1681151725721783&usg=AOvVaw2bSsnxDSWhNygHnYp8fWjW).
 
-#### 1st Tier Infractions - 1st warning &gt; 2nd warning (If dissimilar) &gt; 3 hour mute &gt; 6h mute &gt; 12h mute
+#### 1st Tier Infractions - 1st warning → 2nd warning (If dissimilar) → 3 hour mute → 6h mute → 12h mute
 
 * Spamming / Toxicity towards other members / NSFW or Gore in text, voice, emojis, or reactions / Continuous Caps Spam / Minor death threat (Very flexible, should always look for context in these situations) / Misusing channels/spam tagging staff / talking about how to get a cracked Minecraft account / excessive swearing (tasteful swearing is allowed, but if they are doing it just for the sake of swearing, please take action) / Discussion of politics / Advertising (YouTube channels, Minecraft servers, etc.) / Borderline homophobia, transphobia, xenophobia, racism, sexism
 * Exception: Bobwalls are 1st Tier
 
-#### 2nd Tier Infractions - Immediate 3 hour mute &gt; 12 hour mute &gt; 7 day ban
+#### 2nd Tier Infractions - Immediate 3 hour mute → 12 hour mute → 7 day ban
 
 * Blatant spam / Copypasta text walls / Blatant trolling (Coming into a chat with the sole purpose of stirring people up) / Blatant or high-level toxicity
 * *Note: Messages that surpass 500 to 700 characters are considered text-walls.*
 
-#### 3rd Tier Infractions - Immediate 7-day ban &gt; Permanent ban
+#### 3rd Tier Infractions - Immediate 7-day ban → Permanent ban
 
 * DM advertising / Harassment in DMs; anything that would result in someone getting triggered (ethnocentrism, strong religious beliefs, forcing opinions on other people) / Anyone from the minor infractions bracket who already had a 12 hour mute
 
@@ -166,7 +166,7 @@ A list of what words are banned can be found [here](https://www.google.com/url?
 * *Note: Video/Image with the intent of discriminating - Permanent*
 * A video/image with the n-word - 3d -&gt; Permanent if done again
 
-#### Kick Infractions - Kick &gt; 1 day ban &gt; 7 day ban &gt; Permanent ban
+#### Kick Infractions - Kick → 1 day ban → 7 day ban → Permanent ban
 
 * Having a username, profile picture, Game Activity, or status that violates our rules / Impersonating Staff (ONLY if profile picture and username/nickname is nearly or fully identical)
 
