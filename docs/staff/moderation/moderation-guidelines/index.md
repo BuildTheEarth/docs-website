@@ -178,6 +178,12 @@ We also have moderation reason placeholders allowing you to use {{&lt;placeholde
 
 ### 5.5 MODERATION BOTS
 
+:::note
+
+Command descriptions need to be updated to slash commands and added.
+
+:::
+
 #### BuildTheEarth bot
 
 This is our in-house bot and the one we primarily use. In this subsection, you’ll find info and usages of each command. Use this section as a quick, small introduction to the commands we use the most. (More info about any of these can be found with /help &lt;command name&gt;). 
