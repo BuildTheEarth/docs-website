@@ -14,7 +14,11 @@ const NavbarItem = (props: any) => {
       }
     >
       {props.items.map((element: any) => (
-        <Accordion.Item value={element.href} style={{ border: "none" }}>
+        <Accordion.Item
+          value={element.href}
+          style={{ border: "none" }}
+          key={element.href}
+        >
           <Accordion.Control
             chevron={element.type == "link" && "ㅤ"}
             style={{

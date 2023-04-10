@@ -45,9 +45,14 @@ const useStyles = createStyles((theme) => ({
 interface TableOfContentsProps {
   links: { label: string; link: string; order: number }[];
   active: string;
+  displayTitle?: boolean;
 }
 
-export function TableOfContents({ links, active }: TableOfContentsProps) {
+export function TableOfContents({
+  links,
+  active,
+  displayTitle = true,
+}: TableOfContentsProps) {
   const { classes, cx } = useStyles();
   const items = links.map((item) => (
     <Box<"a">
@@ -65,12 +70,14 @@ export function TableOfContents({ links, active }: TableOfContentsProps) {
 
   return (
     <div>
-      <Group mb="md">
-        <IconList size={18} stroke={1.5} />
-        <Text color="dimmed" fz="sm">
-          Table of contents
-        </Text>
-      </Group>
+      {displayTitle && (
+        <Group mb="md">
+          <IconList size={18} stroke={1.5} />
+          <Text color="dimmed" fz="sm">
+            Table of contents
+          </Text>
+        </Group>
+      )}
       {items}
     </div>
   );

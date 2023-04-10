@@ -15,7 +15,11 @@ const NavbarRoot = (props: any) => {
       style={{ height: "100vh" }}
     >
       {props.sidebar.map((element: any) => (
-        <Accordion.Item value={element.href} style={{ border: "none" }}>
+        <Accordion.Item
+          value={element.href}
+          style={{ border: "none" }}
+          key={element.href}
+        >
           <Accordion.Control
             chevron={element.type == "link" && "ㅤ"}
             onClick={(e) =>
