@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Staff (Testing)
+title: Staff
 ---
 # Server Roles and Descriptions
 
