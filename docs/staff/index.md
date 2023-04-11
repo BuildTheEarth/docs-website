@@ -82,7 +82,7 @@ The Review Manager makes sure that review standards are met to the highest quali
 
 # Staff Teams
 
-## Moderation
+## [Moderation](/docs/staff/moderation)
 
 ### Senior Moderators
 
