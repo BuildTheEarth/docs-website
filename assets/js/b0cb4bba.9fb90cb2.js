@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkbte_docs"] = self["webpackChunkbte_docs"] || []).push([[796],{
+(self["webpackChunkbte_docs"] = self["webpackChunkbte_docs"] || []).push([[478],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 3363:
+/***/ 6952:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -227,7 +227,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_runner_work_docs_website_docs_website_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7462);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3905);
-/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */const frontMatter={sidebar_position:2,title:'Building Guidelines'};const contentTitle=undefined;const metadata={"unversionedId":"staff/guidebook/index","id":"staff/guidebook/index","title":"Building Guidelines","description":"Either a link to all docs, or everything on one page with # links","source":"@site/docs/staff/guidebook/index.md","sourceDirName":"staff/guidebook","slug":"/staff/guidebook/","permalink":"/docs/staff/guidebook/","draft":false,"tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"sidebar_position":2,"title":"Building Guidelines"},"sidebar":"tutorialSidebar","previous":{"title":"Staff Strike System","permalink":"/docs/staff/moderation/staff-strike-system/"}};const assets={};const toc=[];const layoutProps={toc};const MDXLayout="wrapper";function MDXContent(_ref){let{components,...props}=_ref;return (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout,(0,_home_runner_work_docs_website_docs_website_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z)({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p",null,`Either a link to all docs, or everything on one page with # links`));};MDXContent.isMDXComponent=true;
+/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */const frontMatter={sidebar_position:2,title:'Building Guidelines'};const contentTitle=undefined;const metadata={"unversionedId":"guidebook/index","id":"guidebook/index","title":"Building Guidelines","description":"Either a link to all docs, or everything on one page with # links","source":"@site/docs/guidebook/index.md","sourceDirName":"guidebook","slug":"/guidebook/","permalink":"/docs/guidebook/","draft":false,"tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"sidebar_position":2,"title":"Building Guidelines"},"sidebar":"tutorialSidebar","previous":{"title":"Staff Strike System","permalink":"/docs/staff/moderation/staff-strike-system/"}};const assets={};const toc=[];const layoutProps={toc};const MDXLayout="wrapper";function MDXContent(_ref){let{components,...props}=_ref;return (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout,(0,_home_runner_work_docs_website_docs_website_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z)({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p",null,`Either a link to all docs, or everything on one page with # links`));};MDXContent.isMDXComponent=true;
 
 /***/ })
 
