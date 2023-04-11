@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkbte_docs"] = self["webpackChunkbte_docs"] || []).push([[964],{
+(self["webpackChunkbte_docs"] = self["webpackChunkbte_docs"] || []).push([[796],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 1528:
+/***/ 3363:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -227,7 +227,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_runner_work_docs_website_docs_website_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7462);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3905);
-/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */const frontMatter={sidebar_position:1,title:'Moderation'};const contentTitle=undefined;const metadata={"unversionedId":"staff/moderation/index","id":"staff/moderation/index","title":"Moderation","description":"mod","source":"@site/docs/staff/moderation/index.md","sourceDirName":"staff/moderation","slug":"/staff/moderation/","permalink":"/docs/staff/moderation/","draft":false,"tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"sidebar_position":1,"title":"Moderation"},"sidebar":"tutorialSidebar","previous":{"title":"Building Guidelines","permalink":"/docs/staff/d/"},"next":{"title":"General Rules Specifications","permalink":"/docs/staff/moderation/general-rules-specifications/"}};const assets={};const toc=[];const layoutProps={toc};const MDXLayout="wrapper";function MDXContent(_ref){let{components,...props}=_ref;return (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout,(0,_home_runner_work_docs_website_docs_website_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z)({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p",null,`mod`));};MDXContent.isMDXComponent=true;
+/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */const frontMatter={sidebar_position:1,title:'Building Guidelines'};const contentTitle=undefined;const metadata={"unversionedId":"staff/guidebook/index","id":"staff/guidebook/index","title":"Building Guidelines","description":"Either a link to all docs, or everything on one page with # links","source":"@site/docs/staff/guidebook/index.md","sourceDirName":"staff/guidebook","slug":"/staff/guidebook/","permalink":"/docs/staff/guidebook/","draft":false,"tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"sidebar_position":1,"title":"Building Guidelines"},"sidebar":"tutorialSidebar","previous":{"title":"Staff","permalink":"/docs/staff/"},"next":{"title":"Moderation","permalink":"/docs/staff/moderation/"}};const assets={};const toc=[];const layoutProps={toc};const MDXLayout="wrapper";function MDXContent(_ref){let{components,...props}=_ref;return (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout,(0,_home_runner_work_docs_website_docs_website_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z)({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p",null,`Either a link to all docs, or everything on one page with # links`));};MDXContent.isMDXComponent=true;
 
 /***/ })
 
