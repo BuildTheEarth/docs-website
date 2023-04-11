@@ -77,10 +77,6 @@ The results of a tier 5 strike are:
 * Issuing a tier 5 strike to the person or people in question
 * The person or people in question will be allowed to return to the main server after 6 months have passed and will be allowed to return to the staff once an additional 6 months have passed, totaling to 1 year
 
-
-
-
-
 As a general rule 2 infractions of a tier will result in the next higher tier. Exceptions are: 
 
 * Tier 1 discussions are meant to encourage improvement and self reflection. Multiple discussions do not automatically lead to strikes.
@@ -97,8 +93,6 @@ Strikes can be completely removed if either 
 * The situation was completely misunderstood
 * The strike was issued to the wrong person
 * All parties agree that no strike was warranted in some other way
-
-
 
 ## More detailed explanation of the tiers
 
@@ -119,26 +113,18 @@ Some guidelines that these discussions should follow:
 An example of how the discussion might look like:
 
 1. Short but positive start to the conversation
-
 2. The Manager names the topic and the observed behaviour and briefly describes what problems were caused
-
 3. You get the chance to explain your view on the situation, the Manager listens and asks questions to better understand the situation from your perspective.
-
 4. You discuss what caused the behaviour together
-
 5. You discuss the problems that were caused together
-
 6. You discuss what should be done to prevent this from happening in the future together
-
 7. You discuss how the Manager or other team structures might help together
-
 8. You agree on future behaviours in similar situations
-
 9. You find a good positive ending for the conversation
 
-#### For Managers/Admins
+##### For Managers/Admins
 
-##### Before you start make sure you know the following:
+**Before you start make sure you know the following:**
 
 * What has happened? (Do not rely on hearsay or rumors. Check, observe and evaluate.)
 * What is the Staff members part in this situation?
@@ -146,7 +132,7 @@ An example of how the discussion might look like:
 * Do you yourself have a part in this situation? Are you involved? Did you do the right things to prevent the situation?
 * Did something like that happen before? What happened in the past?
 
-##### During the discussion:
+**During the discussion:**
 
 * Use active listening, ask questions. It should be the Staff member that does most of the talking
 * Talk about facts and observations. Do not criticise character
@@ -161,12 +147,10 @@ An example of how the discussion might look like:
 * Encourage self-control and self-management
 * Do not forget about positive sides and achievements
 
-##### After the discussion:
+**After the discussion:**
 
 * Reflect on the discussion and think about what went well and what did not go well
 * If you feel very motivated write down some important points to keep in mind about the situation (conflict log)
-
-
 
 ### Tier 2: Minor strike
 
@@ -182,11 +166,9 @@ While this conversation is still best held under four eyes you may ask a friend 
 
 The strike will be issued at the end of the discussion only if it is still deemed necessary strikes are issued with expiry dates and you should be informed about the expiry date
 
-#### For Managers/Admins:
+##### For Managers/Admins:
 
 Make sure the above mentioned points are fulfilled. Discuss the situation with the Admins and optionally managers before initialising the discussion. The strike must be recorded in the #strike-log by the Admin. (See [Strike logging:](https://docs.google.com/document/d/1YPlIHXve3Ksnjs4M4poSMguP7lTjXvqHLMGTmiB6gnw/edit#heading=h.1p66vs6773ze)) 
-
-
 
 ### Tier 3: Major strike
 
@@ -209,11 +191,9 @@ An example of how the discussion might look like:
 6. Discuss what can be done to prevent this behaviour in the future
 7. Consequences for future similar misbehaviour are made clear (kick from the staff team)
 
-#### For Managers/Admins
+**For Managers/Admins**
 
 Make absolutely certain that you have a good overview over the situation. Prepare as well as possible. Be polite but decisive. Do not let the staff member take the discussion out of your hand. Be prepared that the staff member will address your pity. The strike must be recorded in the #strike-log by the Admin. (See [Strike logging:](https://docs.google.com/document/d/1YPlIHXve3Ksnjs4M4poSMguP7lTjXvqHLMGTmiB6gnw/edit#heading=h.1p66vs6773ze))
-
-
 
 ### Tier 4: Removal from Staff 
 
@@ -231,11 +211,9 @@ The procedure is the same as for the Tier 3 Major strike.
 
 The strike must be recorded in the #strike-log by the Admin. (See [Strike logging:](https://docs.google.com/document/d/1YPlIHXve3Ksnjs4M4poSMguP7lTjXvqHLMGTmiB6gnw/edit#heading=h.1p66vs6773ze)) 
 
-#### Special case underage: 
+**Special case underage:** 
 
 For underage cases, this can not be appealed, the staff member would need to create a new account when they are above the required age for Discord Terms of Service ([Discord Minimum age](https://support.discord.com/hc/articles/360040724612)). After that, they may reapply to staff without any restrictions.
-
-
 
 # Strike logging
 
@@ -256,8 +234,6 @@ People with active strikes may not return to the staff team disregarding if they
 
 *Currently the strike log is a simple channel which works fine for now but in the future it might change.*
 
-
-
 ## Emergency measures
 
 In the past rash decisions have been taken in the hope to limit damage. If staff members behaved in a problematic way in the public. Not always have these emergency measures lead to a deescalation of the situation.
@@ -269,17 +245,13 @@ The first priority is to move the problem from a public stage (any channel that 
 
 In the case of public infractions that might lead to removal from BTE the staff member may be removed from the main server but not from the staff server without talking to the person first. (Especially if the person is currently offline e.g. in the case that rumours/hearsay boil up “over night”) The person must be informed in DM  why they were banned and that they were removed from the main server temporarily in order to clarify the situation. 
 
-
-
 ## Return to Staff
 
 BTE is a long term project and people change a lot while growing up. We decided to keep a possibility for people to return to staff. If someone was removed from the staff team or from BTE but was allowed to return (either because the ban was temporary or because they successfully appealed the ban) they have the chance to reapply for the staff team if at least 3 trusted members of the current staff team vouch for their improved/changed character and they show that they understand the reason for their removal. The case will also be discussed among the Managers and Admins before the return is approved.
 
 When you return you will automatically be issued a Tier 3 Major Strike for 6 months.
 
-
-
-# Example Catalogue
+## Example Catalogue
 
 Some examples of what would lead to the different tiers times this not a complete list. The intention is to create a rough frame of reference to guide decisions
 
