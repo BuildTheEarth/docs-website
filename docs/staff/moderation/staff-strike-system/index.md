@@ -116,8 +116,10 @@ Some guidelines that these discussions should follow:
 * Critic should be based on observations and not on rumors or hearsay
 * The discussion should be solution focussed
 
-An example of how the discussion might look like:\
-1. Short but positive start to the conversation\
+An example of how the discussion might look like:
+
+1. Short but positive start to the conversation
+
 2. The Manager names the topic and the observed behaviour and briefly describes what problems were caused
 
 3. You get the chance to explain your view on the situation, the Manager listens and asks questions to better understand the situation from your perspective.
@@ -128,7 +130,8 @@ An example of how the discussion might look like:\
 
 6. You discuss what should be done to prevent this from happening in the future together
 
-7. You discuss how the Manager or other team structures might help together\
+7. You discuss how the Manager or other team structures might help together
+
 8. You agree on future behaviours in similar situations
 
 9. You find a good positive ending for the conversation
@@ -162,3 +165,169 @@ An example of how the discussion might look like:\
 
 * Reflect on the discussion and think about what went well and what did not go well
 * If you feel very motivated write down some important points to keep in mind about the situation (conflict log)
+
+
+
+### Tier 2: Minor strike
+
+### If the behaviour/ problems has larger implications a minor strike will be considered.
+
+A minor strike is accompanied by a discussion as described above. With the following differences:
+
+* The discussion is initiated by an Admin.
+* In the beginning you will be informed that a minor strike is being considered.
+* Your team manager will be at least informed that a strike is being considered.
+
+While this conversation is still best held under four eyes you may ask a friend or member of the HR team to join as an observer.
+
+The strike will be issued at the end of the discussion only if it is still deemed necessary strikes are issued with expiry dates and you should be informed about the expiry date
+
+#### For Managers/Admins:
+
+Make sure the above mentioned points are fulfilled. Discuss the situation with the Admins and optionally managers before initialising the discussion. The strike must be recorded in the #strike-log by the Admin. (See [Strike logging:](https://docs.google.com/document/d/1YPlIHXve3Ksnjs4M4poSMguP7lTjXvqHLMGTmiB6gnw/edit#heading=h.1p66vs6773ze)) 
+
+
+
+### Tier 3: Major strike
+
+If a behaviour has serious effects on the BTE project work a major strike is considered. If that is the case the decision has already been weighed among the admins and optionally the Managers.
+
+The discussion will be slightly different:
+
+* The Discussion is led by an Admin with a Manager or second Admin as additional point of reference/observer/witness.
+* You are allowed to have a friend or member of the HR team join as observer if you wish
+* You will be told that a major strike is being issued (major strikes should be well discussed among the Admins and optionally Managers before the discussion starts).
+* If during it turns out during the discussion that a major strike is uncalled for you will be issued a minor strike
+
+An example of how the discussion might look like:
+
+1. The discussion is initialized by an Admin briefly mentioning the reason for the discussion and informing that a major strike is being considered
+2. You are asked if you wish to bring another person into the discussion as an observer. The discussion is paused until everybody has arrived.
+3. The admin describes the situation and explains the reasoning for considering a major strike.
+4. The staff member gets the opportunity to explain the situation from their perspective.
+5. The strike is officially issued
+6. Discuss what can be done to prevent this behaviour in the future
+7. Consequences for future similar misbehaviour are made clear (kick from the staff team)
+
+#### For Managers/Admins
+
+Make absolutely certain that you have a good overview over the situation. Prepare as well as possible. Be polite but decisive. Do not let the staff member take the discussion out of your hand. Be prepared that the staff member will address your pity. The strike must be recorded in the #strike-log by the Admin. (See [Strike logging:](https://docs.google.com/document/d/1YPlIHXve3Ksnjs4M4poSMguP7lTjXvqHLMGTmiB6gnw/edit#heading=h.1p66vs6773ze))
+
+
+
+### Tier 4: Removal from Staff 
+
+If the behaviour is considered to be very serious or if multiple strikes have been issued before a Staff member can be removed from Staff.
+
+The procedure is the same as for the Tier 3 Major strike. 
+
+Removal from staff is permanent by default (see [Return to Staff](https://docs.google.com/document/d/1YPlIHXve3Ksnjs4M4poSMguP7lTjXvqHLMGTmiB6gnw/edit#heading=h.wc99gbb90cef) for additional info) and no “former staff” role is given. The removal must be recorded in the #strike-log by the Admin. (See [Strike logging:](https://docs.google.com/document/d/1YPlIHXve3Ksnjs4M4poSMguP7lTjXvqHLMGTmiB6gnw/edit#heading=h.1p66vs6773ze))
+
+### Tier 5: Removal from BTE
+
+If a staff member breaks a rule that would be punished by a ban on the main server or a different severe infraction. They will be removed from staff and banned from the BTE main discord for the appropriate time according to the main server rules. After that they may return to the project but not to the staff team (see [Return to Staff](https://docs.google.com/document/d/1YPlIHXve3Ksnjs4M4poSMguP7lTjXvqHLMGTmiB6gnw/edit#heading=h.wc99gbb90cef) for additional info). They may appeal this ban using the appeals email address on the website.
+
+The procedure is the same as for the Tier 3 Major strike.
+
+The strike must be recorded in the #strike-log by the Admin. (See [Strike logging:](https://docs.google.com/document/d/1YPlIHXve3Ksnjs4M4poSMguP7lTjXvqHLMGTmiB6gnw/edit#heading=h.1p66vs6773ze)) 
+
+#### Special case underage: 
+
+For underage cases, this can not be appealed, the staff member would need to create a new account when they are above the required age for Discord Terms of Service ([Discord Minimum age](https://support.discord.com/hc/articles/360040724612)). After that, they may reapply to staff without any restrictions.
+
+
+
+# Strike logging
+
+Tier 2+ infractions (minor strike, major strike, Removal from Staff, Removal from BTE) are permanently logged in a #strike-log channel visible only to the Admins. 
+
+Information in the strike-log must not be shared with anybody. (**Exception**: Team managers may inquire < privately if an active strike exists for a specific member of their team if they have a specific reason.) 
+
+The strike log should be updated immediately after a strike or removal has been issued with the following information:
+
+* Name (Discord tag and common nickname if not the same) 
+* devID 
+* Tier of infraction
+* Why the strike/removal was issued. (Short but meaningful )
+* Expiry date (status)
+* Admin that issued the strike
+
+People with active strikes may not return to the staff team disregarding if they have left voluntarily (due to any reason) or where kicked.
+
+*Currently the strike log is a simple channel which works fine for now but in the future it might change.*
+
+
+
+## Emergency measures
+
+In the past rash decisions have been taken in the hope to limit damage. If staff members behaved in a problematic way in the public. Not always have these emergency measures lead to a deescalation of the situation.
+
+The first priority is to move the problem from a public stage (any channel that is accessible to a group of people that is larger than those directly involved.). 
+
+* Ask the involved people to stop arguing in public and announce that it will be taken up internally. Ask the people that were involved to contact the appropriate people (managers/admins) in a DM (preferably someone that is currently online).
+* The staff member and (optionally) others involved in the situation may be muted if the discussion persists (only after they have been told who to DM instead, otherwise people might assume we are suppressing discourse or critique).
+
+In the case of public infractions that might lead to removal from BTE the staff member may be removed from the main server but not from the staff server without talking to the person first. (Especially if the person is currently offline e.g. in the case that rumours/hearsay boil up “over night”) The person must be informed in DM  why they were banned and that they were removed from the main server temporarily in order to clarify the situation. 
+
+
+
+## Return to Staff
+
+BTE is a long term project and people change a lot while growing up. We decided to keep a possibility for people to return to staff. If someone was removed from the staff team or from BTE but was allowed to return (either because the ban was temporary or because they successfully appealed the ban) they have the chance to reapply for the staff team if at least 3 trusted members of the current staff team vouch for their improved/changed character and they show that they understand the reason for their removal. The case will also be discussed among the Managers and Admins before the return is approved.
+
+When you return you will automatically be issued a Tier 3 Major Strike for 6 months.
+
+
+
+# Example Catalogue
+
+Some examples of what would lead to the different tiers times this not a complete list. The intention is to create a rough frame of reference to guide decisions
+
+*Refer to the main server rules for additional specifications.*
+
+### Revealing Information:
+
+* Revealing low impact staff only information (e.g. information that we kept back to surprise the community such as event information(dates, topics) or minor  upcoming updates. (1)
+* Revealing medium impact staff only information (e.g. Information that impacts the work the work of a staff team or subteam e.g. undermining “hype”  that has been build towards) (2)
+* Revealing strike information about others (revealing strike information within management and administration is fine, revealing strike information within the staff should require permission from the manager whose team the person who got a strike is in (or was), but revealing strike information on the main server or any BTE “related” server that isn’t the staff server should be disallowed and will warrant a tier 3 strike) (3)
+* Revealing sensitive information to people who have not been cleared to view said information without the team managers or Admins permission (3)
+* Revealing personal information that another staff member shared on the staff server on a different server without their permission (any personal information that doesn’t fall under the doxing rule (i.e. psychological status of a member), if it does, it’s a tier 5 strike). (4)
+* Revealing information that can damage the BTE infrastructure, for example sensitive information about the network or login details to the website panel. (5)
+* Revealing information that is damaging the BTE brand or future business. (5)
+* Revealing sensitive personal information that another staff member shared on the staff server on a different server without their permission. (5)
+
+### Encouraging drama and/or conflicts:
+
+* Actively encouraging a pointless argument (a fight perhaps) within the staff server channels (1)
+* Pointing out inactive channels (e.g. “dead chat”) (1)
+* Unintentionally escalating conflicts (1)
+* Intentionally escalating conflicts (2)
+* Toxic behavior towards other staff or community members (3)
+* Repeated toxic behavior and/or bullying of other staff members in the staff server (4)
+* Open hostility/toxic behaviour/bullying against Staff or Community members (5)
+
+### Hindering staff work:
+
+* Repeated inactivity (1)
+* Withholding non-critical but important information related to BTE (1)
+* Withholding critical information that may be beneficial or damaging to BTE, the staff or a specific staff team (2)
+* Repeatedly leaving and joining staff within 3 months with little to no explanation without negative effects to the staff team (2)
+* Repeatedly leaving and joining staff within 2 months with little to no explanation with objectively negative effects to the staff team (3)
+* Repeatedly and/or willfully undermining the work of a non-staff team, this applies to the Review Committee and similar non-staff teams (3)
+* Repeatedly and/or willfully undermining the work of the staff or a specific staff team (4)
+* Leaving staff for an extended period without explanation and without ensuring that crucial tasks and resources you control are accounted for (4)
+
+### Publicly defaming the BTE project, the staff team, BTE as a brand or staff members:
+
+*NOTE: We do accept criticism in a controlled environment (open discussion including the people that are involved). When it’s done improperly or in an inappropriate way that creates additional drama, like in the form of a rant in a public channel on the main server (or any other channel in any other BTE related server including the staff server) that creates unnecessary drama, it will be dealt with according to what’s listed above.*\
+*You are welcome to express your opinion on any matter but remember that you are representing the whole staff team towards the community.*
+
+*As you will notice most of the listed infractions are here to protect individual staff members from being targeted.*
+
+* Publicly criticizing BTE or specific members of the project which reduces the public opinion of individuals or BTE in general. (1)
+* Publicly blaming an individual member of the staff team for a small scale problem which leads to low level animosity towards this individual (2)
+* Publicly going on a rant about smaller, non-critical decisions (2)
+* Publicly blaming an individual member of the staff team for a large scale problem which leads to personal animosity against this individual. (3)
+* Presenting decisions made by BTE in a very negative light in the community. (3)
+* Publicly criticizing or going on a rant about BTE executive decisions in the community (larger decisions made by leads, managers and admins) (4)
+* Going against the decisions made by a team collectively or by the team’s manager with negative consequences for the project (doing something without the approval of the manager that is damaging to the team’s work/performance) (4)
