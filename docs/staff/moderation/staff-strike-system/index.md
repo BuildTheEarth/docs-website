@@ -215,7 +215,9 @@ The strike must be recorded in the #strike-log by the Admin. (See [Strike loggin
 
 For underage cases, this can not be appealed, the staff member would need to create a new account when they are above the required age for Discord Terms of Service ([Discord Minimum age](https://support.discord.com/hc/articles/360040724612)). After that, they may reapply to staff without any restrictions.
 
-# Strike logging
+
+
+## Strike logging
 
 Tier 2+ infractions (minor strike, major strike, Removal from Staff, Removal from BTE) are permanently logged in a #strike-log channel visible only to the Admins. 
 
