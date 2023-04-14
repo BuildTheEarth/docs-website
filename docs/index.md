@@ -21,7 +21,7 @@ With this, we use a variety of online tools such as:
 * Google Streetview: used to view 360° images of the Earth.
 * Google Earth: used to find the height/altitude of things like buildings or mountains.
 
-Along with these we also use many country or region-specific map services.
+Along with these we also use Youtube videos or pictures found online, in addition to many country or region-specific map services.
 
 ## Build Teams
 
