@@ -1,5 +1,5 @@
 ---
 sidebar_position: 0
-title: support
+title: Support
 ---
 support docs
