@@ -1,5 +1,5 @@
 ---
 sidebar_position: 2
-title: Support Docs WIP
+title: Support
 ---
-this is a test
+sup
