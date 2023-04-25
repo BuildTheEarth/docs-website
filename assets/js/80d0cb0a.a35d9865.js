@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkbte_docs"] = self["webpackChunkbte_docs"] || []).push([[207],{
+(self["webpackChunkbte_docs"] = self["webpackChunkbte_docs"] || []).push([[935],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 9261:
+/***/ 6635:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -227,7 +227,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_runner_work_docs_website_docs_website_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7462);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3905);
-/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */const frontMatter={sidebar_position:1,title:'Moderation'};const contentTitle=undefined;const metadata={"unversionedId":"intro/staff/moderation/index","id":"intro/staff/moderation/index","title":"Moderation","description":"mod","source":"@site/docs/intro/staff/moderation/index.md","sourceDirName":"intro/staff/moderation","slug":"/intro/staff/moderation/","permalink":"/docs/intro/staff/moderation/","draft":false,"tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"sidebar_position":1,"title":"Moderation"},"sidebar":"tutorialSidebar","previous":{"title":"Staff","permalink":"/docs/intro/staff/"},"next":{"title":"General Rules Specifications","permalink":"/docs/intro/staff/moderation/general-rules-specifications/"}};const assets={};const toc=[];const layoutProps={toc};const MDXLayout="wrapper";function MDXContent(_ref){let{components,...props}=_ref;return (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout,(0,_home_runner_work_docs_website_docs_website_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z)({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p",null,`mod`));};MDXContent.isMDXComponent=true;
+/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */const frontMatter={sidebar_position:0,title:'support'};const contentTitle=undefined;const metadata={"unversionedId":"intro/staff/support/index","id":"intro/staff/support/index","title":"support","description":"support docs","source":"@site/docs/intro/staff/support/index.md","sourceDirName":"intro/staff/support","slug":"/intro/staff/support/","permalink":"/docs/intro/staff/support/","draft":false,"tags":[],"version":"current","sidebarPosition":0,"frontMatter":{"sidebar_position":0,"title":"support"},"sidebar":"tutorialSidebar","previous":{"title":"Staff","permalink":"/docs/intro/staff/"},"next":{"title":"Moderation","permalink":"/docs/intro/staff/moderation/"}};const assets={};const toc=[];const layoutProps={toc};const MDXLayout="wrapper";function MDXContent(_ref){let{components,...props}=_ref;return (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout,(0,_home_runner_work_docs_website_docs_website_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z)({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p",null,`support docs`));};MDXContent.isMDXComponent=true;
 
 /***/ })
 
