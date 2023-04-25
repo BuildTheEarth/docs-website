@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkbte_docs"] = self["webpackChunkbte_docs"] || []).push([[935],{
+(self["webpackChunkbte_docs"] = self["webpackChunkbte_docs"] || []).push([[460],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 6635:
+/***/ 7322:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -227,7 +227,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_runner_work_docs_website_docs_website_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7462);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3905);
-/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */const frontMatter={sidebar_position:0,title:'Support'};const contentTitle=undefined;const metadata={"unversionedId":"intro/staff/support/index","id":"intro/staff/support/index","title":"Support","description":"support docs","source":"@site/docs/intro/staff/support/index.md","sourceDirName":"intro/staff/support","slug":"/intro/staff/support/","permalink":"/docs/intro/staff/support/","draft":false,"tags":[],"version":"current","sidebarPosition":0,"frontMatter":{"sidebar_position":0,"title":"Support"},"sidebar":"tutorialSidebar","previous":{"title":"Staff","permalink":"/docs/intro/staff/"},"next":{"title":"Moderation","permalink":"/docs/intro/staff/moderation/"}};const assets={};const toc=[];const layoutProps={toc};const MDXLayout="wrapper";function MDXContent(_ref){let{components,...props}=_ref;return (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout,(0,_home_runner_work_docs_website_docs_website_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z)({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p",null,`support docs`));};MDXContent.isMDXComponent=true;
+/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */const frontMatter={sidebar_position:2,title:'Builders Guidebook'};const contentTitle=undefined;const metadata={"unversionedId":"intro/guidebook/index","id":"intro/guidebook/index","title":"Builders Guidebook","description":"Either a link to all docs, or everything on one page with # links","source":"@site/docs/intro/guidebook/index.md","sourceDirName":"intro/guidebook","slug":"/intro/guidebook/","permalink":"/docs/intro/guidebook/","draft":false,"tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"sidebar_position":2,"title":"Builders Guidebook"},"sidebar":"tutorialSidebar","previous":{"title":"Support","permalink":"/docs/intro/staff/support/"},"next":{"title":"Becoming a builder (WIP)","permalink":"/docs/"}};const assets={};const toc=[];const layoutProps={toc};const MDXLayout="wrapper";function MDXContent(_ref){let{components,...props}=_ref;return (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout,(0,_home_runner_work_docs_website_docs_website_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z)({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p",null,`Either a link to all docs, or everything on one page with # links`));};MDXContent.isMDXComponent=true;
 
 /***/ })
 
