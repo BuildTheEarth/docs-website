@@ -32,8 +32,6 @@ Kick > 1 day ban > 7 day ban > Permanent ban
 
 ## Rules Specifications
 
-
-
 ### Rule 1: All forms of prejudice are prohibited.
 
 * Borderline prejudice (1)
@@ -42,8 +40,6 @@ Kick > 1 day ban > 7 day ban > Permanent ban
 * Hate towards a specific group of people (Race, Ethnicity, Religion, Gender) (4)
 * Other forms of blatant prejudice (4)
 
-
-
 ### Rule 2: Sending NSFW content is prohibited.
 
 * NSFW in text, voice, emotes or reactions. (1)
@@ -51,13 +47,9 @@ Kick > 1 day ban > 7 day ban > Permanent ban
 * Not graphic, but NSFW content through emotes, images, links or videos (3)
 * Graphic NSFW/Gore through emotes, images, links or videos (4)
 
-
-
 ### Rule 3: Politics and other heavy topics are prohibited.
 
 * Discussion about politics or other heavy topics (1)
-
-
 
 ### Rule 4: Discord ToS, Developer ToS and Guidelines must be followed.
 
@@ -65,15 +57,11 @@ Kick > 1 day ban > 7 day ban > Permanent ban
 * Promoting use of cracked accounts (1)
 * Participating to the project with a cracked account (4)
 
-
-
 ### Rule 5: Criminal behavior or criminal discussion is prohibited.
 
 * Hint/Joke about criminal behaviour (1)
 * Any form of ‘kill you’ that can be taken out of context, f. Ex during a video game (1)
 * An act of real/serious criminal behaviour displayed (4)
-
-
 
 ### Rule 6: Disrupting the chat is prohibited.
 
@@ -87,27 +75,19 @@ Kick > 1 day ban > 7 day ban > Permanent ban
 * Blank/Copypasta text walls (2)
 * Spamming people through DMs (3)
 
-
-
 ### Rule 7: Having a profile that contains content in violation of our rules is prohibited.
 
 * Any username, profile picture, Game Activity or status against our rules (K)
 * Having a nearly identical username/nickname and profile picture to a member of staff (K)
-
-
 
 ### Rule 8: Unsolicited advertising is prohibited
 
 * Advertising unrelated to the BTE project (1)
 * Advertising to people through DMs (3)
 
-
-
 ### Rule 9: Accusing someone for breaking rules in public chats is prohibited.
 
 * Publicly and falsely accusing other members of breaking the rules (1)
-
-
 
 ### Rule 10: General toxicity is prohibited.
 
@@ -118,21 +98,15 @@ Kick > 1 day ban > 7 day ban > Permanent ban
 * Blatant toxicity (2)
 * Toxicity/Harassment to members through DMs (3)
 
-
-
 ### Rule 11: Contact the right people when needed.
 
 * Mentioning an entire role (1)
 * Spam-mentioning the Moderator, Bedrock or Support on Duty roles (1)
 * Mass-pinging multiple roles (2)
 
-
-
 ### Rule 12: Use channels for their intended purpose.
 
 * Excessively misusing a channel for its specific purpose (1)
-
-
 
 ### Rule 13: Exploiting loopholes is prohibited.
 
@@ -141,9 +115,23 @@ Kick > 1 day ban > 7 day ban > Permanent ban
 * Adding reactions with the Muted role (1)
 * Chatting in any channel with the Muted role (2)
 
-
-
 If you feel as if you’ve been unfairly punished by a Moderator, take it to the Moderation Manager.
 
 Ban appeals are to be taken to Xylotrupes#6278, or alternatively, you can send an email to [appeals@buildtheearth.net](mailto:appeals@buildtheearth.net).
 
+<!--StartFragment-->
+
+|     |     |     |     |
+| --- | --- | --- | --- |
+|     |     |     |     |
+|     |     |     |     |
+|     |     |     |     |
+|     |     |     |     |
+|     |     |     |     |
+|     |     |     |     |
+|     |     |     |     |
+|     |     |     |     |
+|     |     |     |     |
+|     |     |     |     |
+
+<!--EndFragment-->
