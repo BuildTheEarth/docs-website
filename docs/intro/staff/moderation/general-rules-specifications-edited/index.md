@@ -146,3 +146,4 @@ Kick > 1 day ban > 7 day ban > Permanent ban
 If you feel as if you’ve been unfairly punished by a Moderator, take it to the Moderation Manager.
 
 Ban appeals are to be taken to Xylotrupes#6278, or alternatively, you can send an email to [appeals@buildtheearth.net](mailto:appeals@buildtheearth.net).
+
