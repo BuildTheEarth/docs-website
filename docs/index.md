@@ -64,4 +64,14 @@ If any of these solutions did not work, contact support on our [Discord server](
 
 ### TPLL
 
-At the base of all builds created in this project is the TPLL command. This command allows us
+At the base of all builds created in this project is the TPLL command. This command allows us to teleport to anywhere in the world in Minecraft.
+
+It does this by using real-world coordinates and does some complicated math to convert this into Minecraft coordinates.
+
+Here is how you use it:
+
+1. Launch Minecraft with the BTE mod pack selected.
+2. Click `Singleplayer`
+3. Join the world called "INSERT NAME HERE"
+4. Without closing Minecraft, launch your preferred internet browser
+5. Go to <https://www.google.com/maps>
