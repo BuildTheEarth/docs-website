@@ -6,9 +6,9 @@ title: How Build The Earth Works
 
 ## Our goal
 
-Our goal is precisely to build the whole exterior of the entire earth in Minecraft on a 1:1 scale.
+Our aim is to build as much of the earth as possible on a 1:1 scale in Minecraft and to allow anyone in the world to explore this virtual recreation from the comfort of their own home.
 
-We do not necessarily set to build things that are not "attached" to the earth such as vehicles.
+We do not build the inside of private property, and do not necessarily set to build things that are not "attached" to the earth such as vehicles.
 
 There is no estimate made of when it will be done, but it will probably be in a decade or more.
 
