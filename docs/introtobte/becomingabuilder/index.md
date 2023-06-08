@@ -72,7 +72,7 @@ Here is how you use it:
 
 1. Launch Minecraft with the BTE mod pack selected.
 
-   ![](https://media.discordapp.net/attachments/1096118472909533368/1116480293864472576/Minecraft_play_modpack.png)
+   ![](https://media.discordapp.net/attachments/1096118472909533368/1116481422266486916/Minecraft_play_modpack.png)
 2. Click `Singleplayer`
 3. Join the world called "INSERT NAME HERE"
 4. Without closing Minecraft, launch your preferred internet browser
