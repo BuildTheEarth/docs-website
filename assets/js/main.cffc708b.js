@@ -18659,13 +18659,29 @@ __webpack_require__.r(__webpack_exports__);
         {
           "type": "doc",
           "docId": "intro",
-          "label": "Docs",
+          "label": "Introduction",
           "to": "/docs/intro",
           "position": "left"
         },
         {
-          "to": "https://github.com/BuildTheEarth/docs-website",
-          "label": "GitHub",
+          "type": "doc",
+          "docId": "building",
+          "label": "Building",
+          "to": "/docs/category/building",
+          "position": "left"
+        },
+        {
+          "type": "doc",
+          "docId": "staff",
+          "label": "Staff",
+          "to": "/docs/category/staff",
+          "position": "left"
+        },
+        {
+          "type": "doc",
+          "docId": "development",
+          "label": "Development",
+          "to": "/docs/category/development",
           "position": "left"
         }
       ],
