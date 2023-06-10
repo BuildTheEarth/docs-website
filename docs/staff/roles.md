@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
-title: Staff
+sidebar_position: 0
+title: Roles
 ---
 # Server Roles and Descriptions
 

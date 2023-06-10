@@ -1,36 +1,19 @@
 import {
-  ActionIcon,
-  Avatar,
-  Badge,
-  Box,
   Burger,
-  Button,
   Container,
-  Divider,
   Group,
-  Indicator,
   Header as MantineHeader,
-  Menu,
   Paper,
-  Text,
   Transition,
-  UnstyledButton,
   createStyles,
   useMantineColorScheme,
   useMantineTheme,
 } from "@mantine/core";
+import React, { CSSProperties, useState } from "react";
 import {
-  ChevronDown,
-  FileSearch,
-  FileUpload,
-  Logout,
-  MoonStars,
-  Sun,
-  World,
-} from "tabler-icons-react";
-import { IconMoonStars, IconSun } from "@tabler/icons";
-import React, { CSSProperties, useEffect, useState } from "react";
-import { useClickOutside, useDisclosure, useInterval } from "@mantine/hooks";
+  useClickOutside,
+  useDisclosure,
+} from "@mantine/hooks";
 
 import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 import clsx from "clsx";
@@ -201,11 +184,7 @@ const Header = ({ links, className, title }: HeaderProps) => {
   if (!ExecutionEnvironment.canUseDOM) return <></>;
   else
     return (
-      <MantineHeader
-        height={60}
-        className={clsx(classes.root, className)}
-        fixed
-      >
+      <MantineHeader height={60} className={clsx(classes.root, className)}>
         <Container className={classes.header} size={"xl"}>
           <Group
             spacing={5}

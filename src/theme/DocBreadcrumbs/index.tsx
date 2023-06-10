@@ -24,7 +24,7 @@ export default function DocBreadcrumbs() {
         },
       }}
     >
-      <Anchor href={"/docs/intro"}>
+      <Anchor href={"/"}>
         <IconHome color="white" size={18} />
       </Anchor>
       {breadcrumbs.map((item, idx) => (

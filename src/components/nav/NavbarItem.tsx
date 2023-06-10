@@ -1,17 +1,23 @@
 import { Accordion, useMantineTheme } from "@mantine/core";
 
 import React from "react";
+import { highlightLink } from "@site/src/util/nav";
+import { useSidebarBreadcrumbs } from "@docusaurus/theme-common/internal";
 
 const NavbarItem = (props: any) => {
   const theme = useMantineTheme();
+  const breadcrumbs = useSidebarBreadcrumbs();
+  const bcLinks = breadcrumbs.map((bc) => bc.href);
   return (
     <Accordion
-      defaultValue={
+      multiple
+      defaultValue={[
         window.location.pathname
           .split("/")
           .slice(0, props.depth + 1)
-          .join("/") + "/"
-      }
+          .join("/") + (props.depth >= 3 ? "/" : ""),
+        bcLinks[props.depth - 2],
+      ]}
     >
       {props.items.map((element: any) => (
         <Accordion.Item
@@ -22,13 +28,15 @@ const NavbarItem = (props: any) => {
           <Accordion.Control
             chevron={element.type == "link" && "ㅤ"}
             style={{
-              backgroundColor:
-                (window.location.pathname + "/").replace("//", "/") ==
-                element.href
-                  ? theme.colorScheme == "dark"
-                    ? theme.colors.dark[5]
-                    : theme.colors.gray[1]
-                  : undefined,
+              backgroundColor: highlightLink(
+                window.location.pathname,
+                element.href,
+                breadcrumbs
+              )
+                ? theme.colorScheme == "dark"
+                  ? theme.colors.dark[5]
+                  : theme.colors.gray[1]
+                : undefined,
             }}
             onClick={(e) =>
               element.type == "link"
@@ -36,7 +44,9 @@ const NavbarItem = (props: any) => {
                 : undefined
             }
           >
-            {element.label}
+            <div onClick={(e) => (window.location.href = element.href)}>
+              {element.label}
+            </div>
           </Accordion.Control>
           {element.type != "link" && (
             <Accordion.Panel>
