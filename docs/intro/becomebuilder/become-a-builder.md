@@ -62,18 +62,16 @@ If any of these solutions did not work, contact support on our [Discord server](
 
 ## Building your first build
 
-### TPLL
+### Joining "The BTE world"
 
-At the base of all builds created in this project is the TPLL command. This command allows us to teleport to anywhere in the world in Minecraft.
+To build the earth in Minecraft, we have created a special world that is a 1:1 scale of the earth.
 
-It does this by using real-world coordinates and does some complicated math to convert this into Minecraft coordinates.
+ In this tutorial, you will be going into a singleplayer BTE world where you are going to be building two buildings of your choice, that you can use in the application to a build team.
 
-Here is how you use it:
+Here is how you can access this world:
 
 1. Launch Minecraft with the BTE mod pack selected.
 
    ![](https://media.discordapp.net/attachments/1096118472909533368/1116481422266486916/Minecraft_play_modpack.png)
 2. Click `Singleplayer`
 3. Join the world called "INSERT NAME HERE"
-4. Without closing Minecraft, launch your preferred internet browser
-5. Go to <https://www.google.com/maps>
