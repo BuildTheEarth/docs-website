@@ -66,12 +66,24 @@ If any of these solutions did not work, contact support on our [Discord server](
 
 To build the earth in Minecraft, we have created a special world that is a 1:1 scale of the earth.
 
- In this tutorial, you will be going into a singleplayer BTE world where you are going to be building two buildings of your choice, that you can use in the application to a build team.
+In this tutorial, you will be going into a singleplayer BTE world where you are going to be building two buildings of your choice, that you can use in the application to a build team.
 
-Here is how you can access this world:
+Here is how you can go into this world:
 
 1. Launch Minecraft with the BTE mod pack selected.
 
    ![](https://media.discordapp.net/attachments/1096118472909533368/1116481422266486916/Minecraft_play_modpack.png)
 2. Click `Singleplayer`
-3. Join the world called "INSERT NAME HERE"
+
+   ![](https://media.discordapp.net/attachments/1096118472909533368/1121151105070534706/step2ting.png?width=1692&height=905)
+3. Join the world called `Build The Earth (new projection)`
+
+   ![](https://media.discordapp.net/attachments/1096118472909533368/1121152302951170048/joinverden.png?width=1692&height=905)
+
+### Teleporting with TPLL
+
+Now that you are in the BTE world, it's time to find a building to build.
+
+To travel to different places in the world we will use the TPLL command. This command takes real-world coordinates and using some mathematical equations converts this to the corresponding location in the BTE world, and then teleports you there.
+
+Here is how you use it:
