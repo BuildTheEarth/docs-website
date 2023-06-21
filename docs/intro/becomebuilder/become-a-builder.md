@@ -87,3 +87,7 @@ Now that you are in the BTE world, it's time to find a building to build.
 To travel to different places in the world we will use the TPLL command. This command takes real-world coordinates and using some mathematical equations converts this to the corresponding location in the BTE world, and then teleports you there.
 
 Here is how you use it:
+
+1. Open Google Maps by clicking [here](https://www.google.com/maps)
+2. Use the search bar (write in an address/location and press enter) to find a place to teleport to. (Doesn't need to be the place you want to build, we will go over that later)
+3. Navigate the map by dragging and scrolling
