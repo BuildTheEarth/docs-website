@@ -82,12 +82,58 @@ Here is how you can go into this world:
 
 ### Teleporting with TPLL
 
-Now that you are in the BTE world, it's time to find a building to build.
+Now that you are in the BTE world, it's time to learn how to explore it.
 
 To travel to different places in the world we will use the TPLL command. This command takes real-world coordinates and using some mathematical equations converts this to the corresponding location in the BTE world, and then teleports you there.
 
 Here is how you use it:
 
-1. Open Google Maps by clicking [here](https://www.google.com/maps)
+1. Without shutting down Minecraft, open Google Maps by clicking [here](https://www.google.com/maps)
 2. Use the search bar (write in an address/location and press enter) to find a place to teleport to. (Doesn't need to be the place you want to build, we will go over that later)
+
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1121212261906780293/googlemapssearch.png?width=1709&height=905)
 3. Navigate the map by dragging and scrolling
+4. After navigating to your location, right click a spesific spot where you will teleport to.
+
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1121551115335512274/eiffeltowergooglemapsedit.png?width=1709&height=905)
+5. Left click the coordinates in the first row in the pop-up.
+
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1121552593760567376/eiffeltowergooglemapsclickcoordiantes.png?width=1709&height=905)
+6. In Minecraft, write "/tpll" then press `CTRL + V` to paste the coordinates, then press `Enter`
+
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1121554927639072859/tpllminecraftedit.png?width=1664&height=905)
+7. After waiting for a bit, you will be teleported to our location! Remember that this is your private survival world, and you will not find any buildings (unless you build them of course :D).
+
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1121555911937364049/minecraftatlocation.png?width=1692&height=905)
+
+### Choosing a building to build
+
+When making your first build, it's important to pick something simple.
+
+For a building to be easy to make, it should be:
+
+* Located in a somewhat big city where Google Maps 3D data is available. [Click here to find out which cities have 3D](https://list.fandom.com/wiki/List_of_3D_locations_in_Google_Earth)
+* Not so big, but very square. Suburban buildings are often good example of this.
+* Visible from Google Streetview
+* Not full of small details.
+* A straight roof
+
+Here are some good examples from around the world:
+* Aalborg, Denmark
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1121568813201240115/denmarkexample.png?width=1786&height=905)
+* Rouen, France
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1121568869333614713/franceexample.png?width=1797&height=905)
+* Houston, Texas, USA
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1121568843123396669/usaexample.png?width=1795&height=905)
+* Buenos Aries, Argentina
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1121568812639211560/argentinaexample.png?width=1795&height=905)
+
+You will have to find two buildings to build.
+
+### How to build a building
+
+Now that you have found your two buildings, let's make them in Minecraft!
+
+In this tutorial, we will just use a building in Aalborg as an example. The process to make a building is the same for whatever building you choose, so follow along as you are building your own.
+
+1. 
