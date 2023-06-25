@@ -130,10 +130,15 @@ Here are some good examples from around the world:
 
 You will have to find two buildings to build.
 
-### How to build a building
+### Making the building outline
 
-Now that you have found your two buildings, let's make them in Minecraft!
+Now that you have found your two buildings, let's start making them in Minecraft!
 
-In this tutorial, we will just use a building in Aalborg as an example. The process to make a building is the same for whatever building you choose, so follow along as you are building your own.
+The first step to making any building is building the building footprint, or what we call the outline. By making this first, we can extend these into walls and then make a roof on top.
 
-1. 
+Here is how you do it:
+Note: In this tutorial, we will just use a building in Aalborg as an example. The process to make a building is the same for whatever building you choose, so follow along as you are building your own.
+1. Turn on Google Maps 3D view
+2.  Use the TPLL command you used above to teleport to each corner of the building, and make sure to place a block where you land in Minecraft.
+(picture)
+(picture)
