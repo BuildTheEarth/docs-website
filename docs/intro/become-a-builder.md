@@ -136,9 +136,25 @@ Now that you have found your two buildings, let's start making them in Minecraft
 
 The first step to making any building is building the building footprint, or what we call the outline. By making this first, we can extend these into walls and then make a roof on top.
 
+If you have watched some of PippenFTS' old videos you might wonder "why not just use the brick outline?". In later times we found out that the brick outlines are not accurate, and therefore we make our own.
+
 Here is how you do it:
-Note: In this tutorial, we will just use a building in Aalborg as an example. The process to make a building is the same for whatever building you choose, so follow along as you are building your own.
-1. Turn on Google Maps 3D view
-2.  Use the TPLL command you used above to teleport to each corner of the building, and make sure to place a block where you land in Minecraft.
-(picture)
-(picture)
+
+Note: In this tutorial, we will just use a building in Bergen as an example. The process to make a building is the same for whatever building you choose, so follow along as you are building your own.
+
+1. In Google Maps, go to one of the building you want to build
+2. Click on Layers in the bottom-left area of your map.
+
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1122972729369436291/how-to-make-google-maps-3D-layers.webp)
+3. Click on More.
+
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1122972730472550580/how-to-make-google-maps-3D-more.webp)
+4. Click on Satellite and ensure that Globe View is checked.
+
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1122972729855979670/how-to-make-google-maps-3D-globe-view.webp)
+5. Use the TPLL command you used above to teleport to each corner of the building, and make sure to place a block where you land in Minecraft.
+
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1122978773772554270/buildinbergenplaintpll.png?width=674&height=476)
+
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1122979299809566760/tpllinminecraft.png?width=1692&height=905)
+6. In Minecraft, do the command `//wand`. This should give you a wooden axe
