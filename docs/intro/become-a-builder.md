@@ -62,7 +62,7 @@ If any of these solutions did not work, contact support on our [Discord server](
 
 ## Building your first build
 
-### Joining "The BTE world"
+### Joining The BTE world
 
 To build the earth in Minecraft, we have created a special world that is a 1:1 scale of the earth.
 
@@ -130,7 +130,7 @@ Here are some good examples from around the world:
 
 You will have to find two buildings to build.
 
-### Making the building outline
+### Making the shell part 1: Making the building outline
 
 Now that you have found your two buildings, let's start making them in Minecraft!
 
@@ -152,9 +152,28 @@ Note: In this tutorial, we will just use a building in Bergen as an example. The
 4. Click on Satellite and ensure that Globe View is checked.
 
     ![](https://media.discordapp.net/attachments/1096118472909533368/1122972729855979670/how-to-make-google-maps-3D-globe-view.webp)
-5. Use the TPLL command you used above to teleport to each corner of the building, and make sure to place a block where you land in Minecraft.
+5. Remove all nearby trees with the command `//replacenear 40 log,leaves air`
 
-    ![](https://media.discordapp.net/attachments/1096118472909533368/1122978773772554270/buildinbergenplaintpll.png?width=674&height=476)
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1123268394796462191/replacenar.png?width=1692&height=905)
+6. Use the TPLL command you used above to teleport to each corner of the building, and make sure to place a block where you land in Minecraft.
 
-    ![](https://media.discordapp.net/attachments/1096118472909533368/1122979299809566760/tpllinminecraft.png?width=1692&height=905)
-6. In Minecraft, do the command `//wand`. This should give you a wooden axe
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1123268340715110412/bergenbuildtpllpoinjts.png?width=1793&height=905)
+
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1123269034994044978/tpllinminecraft.png?width=1692&height=905)
+7. In Minecraft, do the command `//wand`. This should give you a wooden axe
+
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1123285205143277722/wandinmc.png?width=1692&height=905)
+8. With your axe in hand, left click one of the blocks you placed, then right click one of the blocks next to it.
+
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1123290504398905404/2023-06-27_18.29.03.png?width=1255&height=671)
+
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1123290504906407976/2023-06-27_18.29.15.png?width=1255&height=671)
+9. Execute the command `//line wool` (Note: Minecraft block id's are quite different in 1.12, go to [this list](https://minecraft-ids.grahamedgecombe.com/) to see a list of id's). 
+
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1123291419482804384/2023-06-27_18.38.14_2.png?width=1255&height=671)
+10. Now do this with all the points so that you have a full shape. To get rid of the selection box do `//desel`. Note: You might ask "Why is my building no straight? Can i rotate it to make it easier to build?". No. "Why?". Most buildings are not on a straight north-south rotation, in additon to the BTE map having a weird rotation some places. This means that we have to build them diagonally, but don't worry, it's not as hard as you think. [Here is an interesting video from PippenFTS about the problem](https://www.youtube.com/watch?v=5o8Psc6FvZ4&pp=ygUYYnVpbGQgc3RyYWlnaHQgcGlwcGVuZnRz)
+
+    ![](https://media.discordapp.net/attachments/1096118472909533368/1123291420346814514/2023-06-27_18.38.52.png?width=1255&height=671)
+11. place blocks under yay will write again im tired
+
+### Making the shell part 2: Making the building walls
