@@ -20,7 +20,7 @@ Team Managers oversee specific teams of staff:
 
 ### Community Manager
 
-The Community Managers gather community feedback and organizes community events, with the help of the Event Team. If you have any concerns about the community, they are the right people to contact.
+The Community Managers gather community feedback and organize community events, with the help of the Event Team. If you have any concerns about the community, they are the right people to contact.
 
 * Current Community Managers: @user, @user
 * Responsible Admin: @user, @user (Events)
@@ -50,24 +50,24 @@ This is the lead of the RBTL team. Please only contact them for important matter
 
 ### Support Manager
 
-The Support Manager is the head of BTE support. They oversee and manage the Support staff, overlook support applications, create support related materials, and also answer and manage the Ticket Bot system.
+The Support Manager is the head of BTE support. They oversee and manage the Support staff, monitor support applications, create support related materials and also answer and manage the Ticket Bot system.
 
-* Current Support Manager: @user
-* Responsible Admin: @user
+* Current Support Manager: @george112n
+* Responsible Admin: @Xylotrupes
 
 ### PR Manager
 
 The Public Relations Manager handles all major decisions and changes within PR sub-teams and works with team leads on the application process where they are sent out respectively. They create and organize workspaces for sub-teams, and make announcements regarding videos and social media. PR Managers are also the immediate outlet for sources to contact (see website for more information).
 
-* Current PR Managers: @user
-* Responsible Admins: @user (Influencer outreach), @user (Corporate Outreach & Socials)
+* Current PR Managers: @diamondman207
+* Responsible Admins: @user (Influencer outreach), @minefact (Corporate Outreach & Socials)
 
 ### Developer Manager
 
 The Developer Manager is responsible for overseeing all current development projects, developers on staff, and brainstorming new projects to work on. They are responsible for maintaining current projects and working as a community to create new solutions. All suggestions, questions, or concerns that relate to development should be brought up with members of the development team.
 
 * Current Developer Manager: @user
-* Responsible Admin: @user
+* Responsible Admin: @minefact
 
 ### Website Manager
 
@@ -111,7 +111,7 @@ The Review Manager makes sure that review standards are met to the highest quali
 
 ## Support
 
-* Provides support in #channel channel and answers tickets in the Ticket Bot system
+* Provide support in the #support channel and answer tickets in the Ticket Bot system
 * Can help with modpack errors and server setup
 
 ## Public Relations
