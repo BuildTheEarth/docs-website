@@ -86,4 +86,6 @@ Here is how you do it:
 
 ### Without 3D data
 
-##
+## Making windows and doors
+
+## Adding details

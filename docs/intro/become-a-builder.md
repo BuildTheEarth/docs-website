@@ -4,28 +4,15 @@ title: Becoming a builder (WIP)
 ---
 # Becoming a builder
 
-Before following this tutorial, go to [this map](https://www.google.com/maps/d/u/0/viewer?mid=114VY4uNAIJ0cEuiOagkJgpFYaT26vw0E&ll=-3.81666561775622e-14%2C73.98213445019763&z=2) and join the Discord server of the team you want to join.
+To become a builder you need to join a build team, go to [this map](https://www.google.com/maps/d/u/0/viewer?mid=114VY4uNAIJ0cEuiOagkJgpFYaT26vw0E&ll=-3.81666561775622e-14%2C73.98213445019763&z=2) and join the Discord server of the team you want to join.
 
-If you are applying to any of these teams, you will NOT be able to follow this tutorial, and you must read through their Discord for more information:
-
-* Any USA team
-* BTE Canada
-* Minefact network
-* BTE Alps
-* Team KH-MU
-* BTE Chile
-* BTE Israel
-
-These teams require an invite or extraordinary experience:
-
-* BTE ETB
-* BTE TBE
-* BTE Controversy
-* BTE Mainland China
+You can read about the three different application types below.
 
 ## Downloading the mod pack
 
-DISCLAIMER: This is only for Java Minecraft
+If your team uses 1.12.2, it's reccomended you download the modpack.
+
+DISCLAIMER: This is only for Minecraft Java Edition.
 
 [Video tutorial](https://www.youtube.com/watch?v=T174gWwD1MU)
 
@@ -59,3 +46,21 @@ DISCLAIMER: This is only for Java Minecraft
   Solution: Open `System Preferences` &rarr; `Security & Privacy` &rarr; `General` &rarr; `Open Anyway` &rarr; `Open`
 
 If any of these solutions did not work, contact support on our [Discord server](https://discord.gg/buildtheearth)
+
+## Trial system
+
+The trial system involves building on a build team server. You first get a trial role that grants you access to build in a confined area. Then you build 1 or 2 buildings to use in your application.
+
+It generally works like this:
+
+1. Join the Discord server of the team you want to join. [Here is a map of all teams](https://www.google.com/maps/d/u/0/viewer?mid=114VY4uNAIJ0cEuiOagkJgpFYaT26vw0E&ll=-3.81666561775622e-14%2C73.98213445019763&z=2)
+2. Get the trial role on your Discord and Minecraft account, either by getting it on Discord and linking your Discord and Minecraft account, or sending a ticket. This depends on the team, you should try to look for a "become builder" channel.
+3. Go on their Minecarft server (ip should be on their Discord somewhere). Then go to the trial zone, usually by doing /trial or /warp (something).
+4. Build 1 or 2 buldings (depends on team) using the buildings guidebook.
+5. Take pictures of the building/buildings in Minecraft by pressing F2. Then upload them to [imgur.com](https://imgur.com/) to get a link for the pictures.
+6. Take pictures of the building/buildings in real life. Some teams will want streetview images, some will want Google Earth images, some will want the google link, and some will want the coordinates.
+7. 
+
+## Plot system
+
+## Singleplayer application
