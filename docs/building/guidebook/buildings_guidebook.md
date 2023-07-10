@@ -67,7 +67,7 @@ Here is how you do it:
 9. Execute the command `//line wool` (Note: Minecraft block id's are quite different in 1.12, go to [this list](https://minecraft-ids.grahamedgecombe.com/) to see a list of id's). 
 
     ![](https://media.discordapp.net/attachments/1096118472909533368/1123291419482804384/2023-06-27_18.38.14_2.png?width=1255&height=671)
-10. Now do this with all the points so that you have a full shape. To get rid of the selection box do `//desel`. Note: You might ask "Why is my building no straight? Can i rotate it to make it easier to build?". No. "Why?". Most buildings are not on a straight north-south rotation, in additon to the BTE map having a weird rotation some places. This means that we have to build them diagonally, but don't worry, it's not as hard as you think. [Here is an interesting video from PippenFTS about the problem](https://www.youtube.com/watch?v=5o8Psc6FvZ4&pp=ygUYYnVpbGQgc3RyYWlnaHQgcGlwcGVuZnRz)
+10. Now do this with all the points so that you have a full shape. To get rid of the selection box do `//desel`. Note: You might ask "Why is my building no straight? Can i rotate it to make it easier to build?". No. Most buildings are not on a straight north-south rotation, in additon to the BTE map having a weird rotation some places. This means that we have to build them diagonally, but don't worry, it's not as hard as you think. [Here is an interesting video from PippenFTS about the problem](https://www.youtube.com/watch?v=5o8Psc6FvZ4&pp=ygUYYnVpbGQgc3RyYWlnaHQgcGlwcGVuZnRz)
 
     ![](https://media.discordapp.net/attachments/1096118472909533368/1123291420346814514/2023-06-27_18.38.52.png?width=1255&height=671)
 11. place blocks under yay will write again im tired
