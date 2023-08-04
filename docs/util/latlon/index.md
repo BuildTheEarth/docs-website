@@ -1,6 +1,0 @@
----
-sidebar_position: 1
-title: Conversion between XYZ and Latitude/Longitude
----
-> Below is a tool that will help you convert up to 1000 coordinates at a time from the BTE Dymaxion projection to latitude and longitude and vice-versa. Input one coordinate pair per line, separated by a space, in the order x, z or latitude, longitude. Courtesy of [SmylerMC](https://github.com/SmylerMC).
-<iframe src='/html/smybte.html' width='100%'></iframe> 
