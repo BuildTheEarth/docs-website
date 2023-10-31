@@ -1,6 +1,7 @@
 backend:
   name: github
   branch: main
+  auth_scope: public_repo
   repo: BuildTheEarth/docs-website
   base_url: https://netauth.buildtheearth.net
   commit_messages:
