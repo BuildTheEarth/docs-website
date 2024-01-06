@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 title: General Development
 ---
 The BuildTheEarth Development Team is divided into multiple Subteams:

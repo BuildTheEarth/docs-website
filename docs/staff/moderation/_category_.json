@@ -2,7 +2,6 @@
   "label": "Moderation",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Moderation Documents"
+    "type": "generated-index"
   }
 }
