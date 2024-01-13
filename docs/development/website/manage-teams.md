@@ -62,7 +62,28 @@ In the Dialog boxes for each Question you will also see an example of how the qu
 As a form of styling you can add icons to each question, a list of avaible icons can be found at [tabler/icons](https://tabler.io/icons). If you want to remove the icon, delete everything in the Icon Input. Some question types will also allow for additional information to validate input data before submission.
 Dont forget to save your settings!
 
+# Reviewing
+
+Some changes have been made to the review process on the new website. This includes the removal of the "claimed" state of applications. Multiple people can review one application at the same time without blocking each other. You can also change the review status of an application after the initial status change. 
+Note that this will also remove the users builder's role on discord.
+
+:::note Reasons
+
+You can still enter a rejection reason for applications, the form will appear when you press the reject button
+
+:::
+
 # Showcase Images
 
 You can upload images of built places to be showcased on the Gallery and Main page of the Website. These images will rotate randomly every 2 minutes. 
 If you want to add an image, please input the name of the location in the format of `[Building], [City]` (Or only `[City]`) . The Date should be the Date of Construction, not your uploading date.
+
+# API
+
+The new website now supports an API. Documentation can be found at [https://buildtheearth.github.io/website-node-backend/](https://buildtheearth.github.io/website-node-backend/). There are three components of the API:
+
+![API Overview](api.png)
+
+1. **Public API:** Data that can be accessed without needing to sign in or providing a token. For example [/api/v1/buildteams](https://api.buildtheearth.net/api/v1/buildteams) or [/api/v1/faq](https://api.buildtheearth.net/api/v1/faq)
+2. **Private API:** All routes in this part of the API are only accessable with a valid access_token from Keycloak and the correct [permissions](#permissions). This is so only registered users can manipulate data.
+3. **Teams API:** These routes can be accessed with your BuildTeam Token and work the same way as Private Routes, but only for your BuildTeam. They dont require additional permissions. Use these for integration into your website or other systems.
