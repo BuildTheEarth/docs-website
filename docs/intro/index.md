@@ -2,6 +2,7 @@
 sidebar_position: 0
 title: Introduction
 ---
+
 # How Build The Earth Works
 
 ## Our goal
@@ -16,8 +17,8 @@ There is no estimate made of when it will be done, but it will probably be in a 
 
 First off, the project uses two essential mods:
 
-* TerraPlusPlus: uses public datasets to create a 1:1 scale of the planet in Minecraft
-* CubicChunks: modifies the way chunks work which makes us able to build to an infinite height
+- TerraPlusPlus: uses public datasets to create a 1:1 scale of the planet in Minecraft
+- CubicChunks: modifies the way chunks work which makes us able to build to an infinite height
 
 Additionally, we also created a map to limit distortion called the Dymaxion Map Projection: (each color band adds 0.1 meters of distortion)
 
@@ -25,11 +26,11 @@ Additionally, we also created a map to limit distortion called the Dymaxion Map 
 
 With this, we use a variety of online tools such as:
 
-* Google Maps: used to find the coordinate position of everything on Earth.
-* Google Streetview: used to view 360° images of the Earth.
-* Google Earth: used to find the height/altitude of things like buildings or mountains.
+- Google Maps: used to find the coordinate position of everything on Earth.
+- Google Streetview: used to view 360° images of the Earth.
+- Google Earth: used to find the height/altitude of things like buildings or mountains.
 
-We also use Youtube videos or pictures found online, in addition to many country or region-specific map services.
+We also use YouTube videos or pictures found online, in addition to many country or region-specific map services.
 
 ## Build Teams
 
@@ -39,8 +40,8 @@ Teams offer a fun and supportive environment with people from your own country o
 
 There are two different types of Build Teams:
 
-* Regional Build Teams: aims to build the entirety of one or more countries.
-* Non-regional Build Teams: builds in places all over the world
+- Regional Build Teams: aims to build the entirety of one or more countries.
+- Non-regional Build Teams: builds in places all over the world
 
 ## Discord
 
