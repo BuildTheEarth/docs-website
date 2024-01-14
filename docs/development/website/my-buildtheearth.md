@@ -2,9 +2,10 @@
 sidebar_position: 0
 title: My BuildTheEarth
 ---
+
 ![Alt text](beta.buildtheearth.net_me.png)
 
-You can access your My BuildTheEarth Page when you are signed in at [https://buildtheearth.net/me](https://buildtheearth.net/me) or by clicking on your account and selecting "My BuildTheEarth".
+You can access your My BuildTheEarth Page when you are signed in at <https://buildtheearth.net/me> or by clicking on your account and selecting "My BuildTheEarth".
 
 On the My BuildTheEarth page you can find details about your status at BuildTheEarth, for example all Build Teams you have joined or are a Manager of. You can also view all claims associated with your account on the bottom and create new ones.
 
