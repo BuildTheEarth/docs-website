@@ -3,7 +3,7 @@ sidebar_position: 0
 title: General Development
 ---
 
-The BuildTheEarth Development Team is divided into multiple Subteams: e
+The BuildTheEarth Development Team is divided into multiple Subteams:
 
 | Subeam                | Projects                                                                |
 | --------------------- | ----------------------------------------------------------------------- |
