@@ -2,7 +2,11 @@
 sidebar_position: 2
 title: Building Guidebook
 ---
-# Building guidebook
+# Building Guidebook
+
+## Constructing Buildings
+
+In this part of the guidebook, we go step by step showing you how to make any building. Whether it's a house, factory, shopping mall, or even skyscraper. They all use the same technique when building.
 
 ## Teleporting with TPLL
 
@@ -15,10 +19,10 @@ Here is how you use it:
 
     ![](https://media.discordapp.net/attachments/1096118472909533368/1121212261906780293/googlemapssearch.png?width=1709&height=905)
 3. Navigate the map by dragging and scrolling
-4. After navigating to your location, right click a specific spot where you will teleport to
+4. After navigating to your location, right-click a specific spot where you will teleport to
 
     ![](https://media.discordapp.net/attachments/1096118472909533368/1121551115335512274/eiffeltowergooglemapsedit.png?width=1709&height=905)
-5. Left click the coordinates in the first row in the pop-up
+5. Left-click the coordinates in the first row in the pop-up
 
     ![](https://media.discordapp.net/attachments/1096118472909533368/1121552593760567376/eiffeltowergooglemapsclickcoordiantes.png?width=1709&height=905)
 6. In Minecraft, write "/tpll" then press `CTRL + V` to paste the coordinates, then press `Enter`
@@ -32,13 +36,13 @@ Here is how you use it:
 
 The first step to making any building is building the building footprint, or what we call the outline. By making this first, we can extend these into walls and then make a roof on top.
 
-If you have watched some of PippenFTS' old videos you might wonder "why not just use the brick outline?". In later times we found out that the brick outlines are not accurate, and therefore we make our own.
+If you have watched some of PippenFTS' old videos you might wonder "Why not just use the brick outline?". In later times we found out that the brick outlines were not accurate, and therefore we make our own.
 
 Here is how you do it:
 
 ### With 3D data
 
-1. In Google Maps, go to one of the building you want to build
+1. In Google Maps, go to one of the buildings you want to build
 2. Click on Layers in the bottom-left area of your map.
 
     ![](https://media.discordapp.net/attachments/1096118472909533368/1122972729369436291/how-to-make-google-maps-3D-layers.webp)
@@ -70,7 +74,8 @@ Here is how you do it:
 10. Now do this with all the points so that you have a full shape. To get rid of the selection box do `//desel`. Note: You might ask "Why is my building not straight? Can i rotate it to make it easier to build?". No. Most buildings are not on a straight north-south rotation, in additon to the BTE map having a weird rotation some places. This means that we have to build them diagonally, but don't worry, it's not as hard as you think. [Here is an interesting video from PippenFTS about the problem](https://www.youtube.com/watch?v=5o8Psc6FvZ4&pp=ygUYYnVpbGQgc3RyYWlnaHQgcGlwcGVuZnRz)
 
     ![](https://media.discordapp.net/attachments/1096118472909533368/1123291420346814514/2023-06-27_18.38.52.png?width=1255&height=671)
-11. place blocks under yay will write again im tired
+
+11. If your building is on varying terrain, you should place blocks under the outline so that it goes all the way to the ground. You can do this manually or with commands. To do this with world edit, make a selection surrounding the whole building, then expand it so that it reaches the top of the outline with `//expand (amount of blocks) up`. Now create a mask which makes it so commands only affect air blocks with `//gmask air`. Now do the command `//replace <wool wool` until the outline has reached the bottom.
 
 ### Without 3D data
 
