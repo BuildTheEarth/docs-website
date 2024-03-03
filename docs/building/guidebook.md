@@ -76,9 +76,9 @@ Here is how you do it:
     ![](https://media.discordapp.net/attachments/1096118472909533368/1123291420346814514/2023-06-27_18.38.52.png?width=1255&height=671)
 11. If your building is on varying terrain, you should place blocks under the outline so that it goes all the way to the ground. You can do this manually or with commands. To do this with world edit, make a selection surrounding the whole building, then expand it so that it reaches the top of the outline with `//expand (amount of blocks) up`. Now create a mask which makes it so commands only affect air blocks with `//gmask air`. Now do the command `//replace <(block of choice) (block of choice)` until the outline has reached the bottom.
 
-![](/img/content/2024-01-18_20.12.30.png)
+![](2024-01-18_20.12.30.png)
 
-![](/img/content/2024-01-18_20.13.13.png)
+![](2024-01-18_20.13.13.png)
 
 ### Without 3D data
 
