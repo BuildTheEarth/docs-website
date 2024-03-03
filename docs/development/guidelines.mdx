@@ -1,0 +1,314 @@
+---
+sidebar_position: 1
+title: Development Guidelines
+---
+
+import { Prism } from "@mantine/prism";
+
+# Development Guidelines
+
+## 1. Naming Conventions
+
+### 1.1 General
+
+When having unused variables in loops or callbacks, they should be prefixed with an underscore (`_`) to show that they are not used.
+
+:::danger Bad
+
+```tsx
+users.forEach((user, index) => console.log(index));
+```
+
+:::
+
+:::tip Good
+
+```tsx
+users.forEach((_user, index) => console.log(index));
+```
+
+:::
+
+If there are multiple nested loops inside each other, recurring variable names should get shorter with each level of duplication.
+
+:::danger Bad
+
+```tsx
+users.forEach((user, index) =>
+  user.jobs.map((job, index2) => ({ name: job.getName() }))
+);
+```
+
+:::
+
+:::tip Good
+
+```tsx
+users.forEach((user, _index) =>
+  user.jobs.map((job, _idx) => ({ name: job.getName() }))
+);
+```
+
+:::
+
+### 1.2 Variables and Functions
+
+All variables should be named using camelCase for better readability. They should additionally not describe their own type in their name.
+
+:::danger Bad
+
+```java
+ArrayList<String> SortedMessageList = handleBody();
+```
+
+:::
+
+:::tip Good
+
+```java
+ArrayList<String> sortedMessages = handleBody();
+```
+
+:::
+
+Variables which have already been declared and initialized but received updates should be prefixed with an identifier to show their updated state:
+
+:::danger Bad
+
+```java
+Messages messages2 = messages.sort();
+```
+
+:::
+
+:::tip Good
+
+```java
+Messages sortedMessages = messages.sort();
+```
+
+:::
+
+All constants and enum contents should be named using UPPER_SNAKE_CASE for better readability. They should additionally not describe their own type in their name and should be declared to be constant.
+
+:::danger Bad
+
+```java
+ArrayList<String> SORTED-MESSAGE-LIST;
+static final int spigotProjectID;
+final int SPIGOT_PROJECT_ID;
+static int SPIGOT_PROJECT_ID;
+public enum ExampleEnum {
+    low,
+    medium,
+    high;
+}
+
+```
+
+:::
+
+:::tip Good
+
+```java
+static final int SPIGOT_PROJECT_ID = 1564233;
+public enum ExampleEnum {
+    LOW,
+    MEDIUM,
+    HIGH;
+}
+
+```
+
+:::
+
+As with variables, functions should also be named using camelCase. Additionally, functions should be **prefixed **with keywords like get, update, add, to to describe their usage and possible responses.
+
+:::danger Bad
+
+```java
+public static void helloWorld() {}
+private String New_Name() {}
+private int number() {}
+
+```
+
+:::
+
+:::tip Good
+
+```java
+public static void sendHelloWorld() {}
+private String getNewName() {}
+private int toNumber() {}
+
+```
+
+:::
+
+### 1.3 Classes and Files
+
+Classes, Files and Enums should be named using UpperCamelCase for better readability. In addition, **suffixing **should be applied to group multiple classes and files together.
+
+:::danger Bad
+
+```tsx
+class APPLICATION_CONTROLLER {
+	…
+}
+class RandomClaim {
+…
+}
+enum Log_Levels {
+…
+}
+
+
+```
+
+:::
+
+:::tip Good
+
+```tsx
+class ApplicationController {
+	…
+}
+enum LogLevel {
+…
+}
+
+
+```
+
+:::
+
+### 1.4 Numbers
+
+If possible, numbers should be **avoided **in variables, functions, enums and especially classes and file names. If required, numbers should be written as numeric characters and not as letters.
+If the used programming language supports number **separators**, they should be used for numbers larger than 10.000.
+
+:::danger Bad
+
+```tsx
+const MAX_FILE_SIZE = 64000000;
+```
+
+:::
+
+:::tip Good
+
+```tsx
+const MAX_FILE_SIZE = 64_000_000;
+```
+
+:::
+
+## 2. Code Formatting
+
+### 2.1 Code Style
+
+The opening curly brace should be placed on the same line as the control structure or function declaration.
+
+In all files, tabs should be used as the form of indentation. A fallback indentation with two spaces is also possible.
+
+When writing strings, single quotes (‘) should be used. If the programming syntax does not allow it, double quotes (“) can be used.
+
+### 2.2 Code Comments
+
+Code comments should be **clear **and **descriptive** and be placed on a separate line with a blank line above. The only comments that can be inline are type explanations.
+
+### 2.3 Imports
+
+Imports should always be **sorted**,** grouped** and **used**. Unused imports should be deleted.
+
+## 3. Best Practices
+
+To keep clean code, all unused imports and variables should be removed. In addition, duplicated code should be **avoided**, if the code is being used in multiple files it should be placed inside a function in a utility class or file.
+
+Written code should be understandable for everyone with **clear**, **descriptive **names and code comments if needed.
+
+Classes should be placed in separate files to avoid large files with multiple different class exports.
+
+There should be no invisible or other non-latin characters present in any file. If needed Greek characters are allowed.
+
+Always use configuration files for dynamic and deployment specific variables, only never changing constants should be hardcoded.Two possible ways of configuration are environment files (.env) or config files in JSON or YAML.
+
+## 4. System Design
+
+### 4.1 Frameworks
+
+BuildTheEarth is mainly focused on Java and JavaScript as those are two popular languages. Java is being used in all Minecraft Development projects (Plugins and Mods). All other components are written in JavaScript or TypeScript.
+
+#### 4.1.1 Java
+
+#### 4.1.2 JavaScript
+
+The Package Manager of choice for all JavaScript and Node.js projects is yarn ([https://yarnpkg.com](https://yarnpkg.com)), as a fallback the default node package manager should be used.
+
+The basic project should always use **TypeScript**,** eslint** and **Prettier **as Dev-Dependencies. When using TypeScript excessive usage of the any type should be avoided. Type exports from third-party packages can be manipulated if the result is beneficial for the development experience or removes build errors or warnings.
+
+### 4.2 REST APIs
+
+url structure: plural namespace
+
+json body
+
+error: \{
+
+"error": true,
+
+"errors": [],
+
+"message": "Not Found.",
+
+"code": 404
+
+}
+
+ids always in objects
+
+### 4.3 Minecraft Plugins
+
+### 4.4 Websites
+
+## 5. Languages
+## 6. Version Control
+
+The usage of large monorepos for multiple services of one project should be avoided, instead a single repository per service should be used.
+
+naming: dashed case
+
+### 6.1 Commits
+
+conventional commits
+
+if possible with emojis
+
+type(namespace): emoji Title
+
+description and breaking changes optional
+
+### 6.2 Branching
+
+suggested
+
+### 6.3 Actions and Workflows
+
+## 7. Linting
+
+before deployment or release
+
+## 8. Deployment
+
+ideally docker-compose, otherwise Dockerfile
+
+build steps if necessary in github actions
+
+## 9. Documentation
+
+Words like 2D or 4K should be written without any spaces or dashes. &lt;- thats for docs lol
+
+## 10. Conclusion
+
+This Development Guide should only be seen as a guide and not required. If you want to read more about programming language specific style guides, Google Opensource has some in-depth documents: [The Google Style Guide](https://google.github.io/styleguide/) ([Java](https://google.github.io/styleguide/javaguide.html), [TypeScript](https://google.github.io/styleguide/tsguide.html), [HTML/CSS](https://google.github.io/styleguide/htmlcssguide.html))
