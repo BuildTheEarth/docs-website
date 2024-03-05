@@ -7,6 +7,13 @@ import { Prism } from "@mantine/prism";
 
 # Development Guidelines
 
+## 0. Summary
+
+- Naming: Variables and Functions in camelCase, Enums in UPPER_SNAKE_CASE, Classes and Files using UpperCamelCase
+- Descriptive Comments, with one free line above
+- Sorted Imports
+- Conventional Commits
+
 ## 1. Naming Conventions
 
 ### 1.1 General
@@ -210,43 +217,106 @@ const MAX_FILE_SIZE = 64_000_000;
 
 The opening curly brace should be placed on the same line as the control structure or function declaration.
 
-In all files, tabs should be used as the form of indentation. A fallback indentation with two spaces is also possible.
+:::danger Bad
 
-When writing strings, single quotes (‘) should be used. If the programming syntax does not allow it, double quotes (“) can be used.
+```tsx
+function calculateResult() {
+  return a + b;
+}
+```
+
+:::
+
+:::tip Good
+
+```tsx
+function calculateResult() {
+  return a + b;
+}
+```
+
+:::
+
+In all files, tabs should be used as the form of indentation. A fallback indentation with two spaces is also possible.
 
 ### 2.2 Code Comments
 
 Code comments should be **clear **and **descriptive** and be placed on a separate line with a blank line above. The only comments that can be inline are type explanations.
 
+:::danger Bad
+
+```tsx
+const test: string = "test";
+//very clear what this does
+function getTest(): string {
+  return players.forEach((player) => player.kick(test)); // Good
+}
+```
+
+:::
+
+:::tip Good
+
+```tsx
+const test: string = "test";
+
+// Returns a double array containing the fibonacci sequence
+function getFibonnaciSequence(length: number) {}
+
+const locData: string[]; // [street, city, country]
+```
+
+:::
+
 ### 2.3 Imports
 
 Imports should always be **sorted**,** grouped** and **used**. Unused imports should be deleted.
 
+:::danger Bad
+
+```tsx
+import { useForm } from "@mantine/form";
+import { NextPage } from "next"; // Unused
+import { IconPencil } from "@tabler/icons-react";
+import { useRouter } from "next/router";
+import { IconPlus } from "@tabler/icons-react";
+```
+
+:::
+
+:::tip Good
+
+```tsx
+import { useForm } from "@mantine/form";
+import { IconPlus, IconPencil } from "@tabler/icons-react";
+import { useRouter } from "next/router";
+```
+
+:::
+
 ## 3. Best Practices
 
-To keep clean code, all unused imports and variables should be removed. In addition, duplicated code should be **avoided**, if the code is being used in multiple files it should be placed inside a function in a utility class or file.
-
-Written code should be understandable for everyone with **clear**, **descriptive **names and code comments if needed.
-
-Classes should be placed in separate files to avoid large files with multiple different class exports.
-
-There should be no invisible or other non-latin characters present in any file. If needed Greek characters are allowed.
-
-Always use configuration files for dynamic and deployment specific variables, only never changing constants should be hardcoded.Two possible ways of configuration are environment files (.env) or config files in JSON or YAML.
+- To keep clean code, all unused imports and variables should be removed (see [2.3](#23-imports)). In addition, duplicated code should be **avoided**, if the code is being used in multiple files it should be placed inside a function in a utility class or file.
+- Written code should be understandable for everyone with **clear**, **descriptive **names and code comments (see [2.2](#22-code-comments)) if needed.
+- Classes should be placed in separate files to avoid large files with multiple different class exports.
+- There should be no invisible or other non-latin characters present in any file. If needed Greek characters are allowed.
+- Always use configuration files for dynamic and deployment specific variables, only never changing constants should be hardcoded.Two possible ways of configuration are environment files (.env) or config files in JSON or YAML.
 
 ## 4. System Design
 
-### 4.1 Frameworks
+### 4.1 Frameworks and Languages
 
 BuildTheEarth is mainly focused on Java and JavaScript as those are two popular languages. Java is being used in all Minecraft Development projects (Plugins and Mods). All other components are written in JavaScript or TypeScript.
 
 #### 4.1.1 Java
 
+`// TODO`
+
 #### 4.1.2 JavaScript
 
-The Package Manager of choice for all JavaScript and Node.js projects is yarn ([https://yarnpkg.com](https://yarnpkg.com)), as a fallback the default node package manager should be used.
+The Package Manager of choice for all JavaScript and Node.js projects is yarn ([Download](https://yarnpkg.com)), as a fallback the default node package manager should be used.
 
-The basic project should always use **TypeScript**,** eslint** and **Prettier **as Dev-Dependencies. When using TypeScript excessive usage of the any type should be avoided. Type exports from third-party packages can be manipulated if the result is beneficial for the development experience or removes build errors or warnings.
+The basic project should always use **TypeScript**,** eslint** and **Prettier **as Dev-Dependencies. When using TypeScript excessive usage of the `any` type should be avoided. Type exports from third-party packages can be manipulated if the result is beneficial for the development experience or removes build errors or warnings.
 
 ### 4.2 REST APIs
 
@@ -270,45 +340,64 @@ ids always in objects
 
 ### 4.3 Minecraft Plugins
 
+`// TODO`
+
 ### 4.4 Websites
 
-## 5. Languages
+`// TODO`
+
 ## 6. Version Control
 
 The usage of large monorepos for multiple services of one project should be avoided, instead a single repository per service should be used.
+Repositories should be named using kebab-case:
 
-naming: dashed case
+:::danger Bad
+
+```
+BuildTheEarth/NewWebsite
+
+```
+
+:::
+
+:::tip Good
+
+```
+BuildTheEarth/website-frontend
+BuildTheEarth/website-backend
+
+```
+
+The Repository has been split into two
+:::
 
 ### 6.1 Commits
 
-conventional commits
+When committing files to Github, the [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/#summary) standard should be applied to commit messages:
 
-if possible with emojis
+:::info Usage
+```
+<type>(<scope>): [optional emoji] <short title>
 
-type(namespace): emoji Title
+[optional body]
 
-description and breaking changes optional
+[optional footer(s) or breaking changes]
+```
 
-### 6.2 Branching
+:::
 
-suggested
+Usage of emojis is optional. If you are developing in VS Code, the marketplace has a good extension with emoji support aviable.
 
-### 6.3 Actions and Workflows
+Commits should, if possible, always be signed.
 
-## 7. Linting
+### 6.2 Actions and Workflows
 
-before deployment or release
+When a project requires specific build steps before beeing deployed, they should happen on Github using Github Actions. Building on the Client should be avoided and only used for local testing.
 
-## 8. Deployment
+## 7. Deployment
 
-ideally docker-compose, otherwise Dockerfile
+Building and Depolyment should be prepared and done on Github Actions (see [6.2](#62-actions-and-workflows)). Ideally, a docker-compose configuration should be aviable to depoly. If not, detailed instruction on how to deploy should be aviable in the `README.md`. 
 
-build steps if necessary in github actions
-
-## 9. Documentation
-
-Words like 2D or 4K should be written without any spaces or dashes. &lt;- thats for docs lol
-
-## 10. Conclusion
+## 8. Conclusion
 
 This Development Guide should only be seen as a guide and not required. If you want to read more about programming language specific style guides, Google Opensource has some in-depth documents: [The Google Style Guide](https://google.github.io/styleguide/) ([Java](https://google.github.io/styleguide/javaguide.html), [TypeScript](https://google.github.io/styleguide/tsguide.html), [HTML/CSS](https://google.github.io/styleguide/htmlcssguide.html))
