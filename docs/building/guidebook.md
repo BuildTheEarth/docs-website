@@ -112,18 +112,83 @@ Here is how you do it:
 
 ### Without 3D data
 
+1. Turn off 3d
+2. Find corner, tpll top and bottom point
+3. In Minecraft copy the difference in blocks
+4. Tpll rest of points and use //paste
+5. Follow steps from above
+
 ## Making the shell part 2: Making the building walls
 
 ### With 3D data
 
+1. Download google earth
+2. Go to building
+3. Find difference in elevataion to get height
+4. In minecraft make selection
+5. Expand selection
+6. Replace above until reached height
+
 ### Without 3D data
+
+#### With streetview
+
+1. Go into streetview, if you dont have go down.
+2. Estimate with windows/doors
+3. Follow steps from above
+
+#### Without streetview
+
+1. Technique 1: Find videos or images online
+2. Technique 2: Go back in date in google earth and estimate with windows/doors
+3. Follow stepts from above
 
 ## Making the shell part 3: Making the building roof
 
 ### With 3D data
 
+1. Create layer above outline
+2. TPLL to roof points
+3. //line the edges
+4. connect top to bottom layer
+
 ### Without 3D data
+
+1. Create layer above outline
+2. Estimate block difference
+3. Follow steps from above
 
 ## Making windows and doors
 
+### With 3D data
+
+1. For doors, tpll and place. IF u have streetviw make it like it is
+2. For windows, find the height of them with google earth
+3. Tpll to left and right most window, use math to find the spacing.
+4. Place the windows, chea a little bit maybe.
+
+### Without 3D data
+
+1. For doors if you have streetview, estimate where it is and place. IF you dont have streetview estimate like from above
+2. For windows, estimate height, place block for marker.  IF you dont have streetview estimate like from above
+3. Estimate position, use math
+4. Place windows, cheat a little maybe
+
+## Coloring
+
+### With streetview
+
+### Without streetview
+
 ## Adding details
+
+### With streetview
+
+### Without streetview
+
+## Constructing Roads
+
+## Constructing Forests
+
+## Constructing Fields
+
