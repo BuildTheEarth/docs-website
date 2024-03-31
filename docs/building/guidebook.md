@@ -18,28 +18,28 @@ Here is how you use it:
 1. Open Google Maps by clicking [here](https://www.google.com/maps)
 2. Use the search bar (write in an address/location and press enter) to find the building you want to build test
 
-![](https://media.discordapp.net/attachments/1096118472909533368/1121212261906780293/googlemapssearch.png?ex=65f22f4a&is=65dfba4a&hm=ae4cb317859bdc311c28968d44f6a237ea467cac05aa8ddc7732165239b16625&=&format=webp&quality=lossless&width=1875&height=993)
+![](googlemapssearch.png)
 
 3. Navigate the map by dragging and scrolling
 
 4. After navigating to your location, right-click a specific spot where you will teleport to
 
-   ![](https://media.discordapp.net/attachments/1096118472909533368/1121551115335512274/eiffeltowergooglemapsedit.png?width=1709&height=905)
+   ![](eiffeltowergooglemapsedit.png)
 
 
 5. Left-click the coordinates in the first row in the pop-up
 
-   ![](https://media.discordapp.net/attachments/1096118472909533368/1121552593760567376/eiffeltowergooglemapsclickcoordiantes.png?width=1709&height=905)
+   ![](eiffeltowergooglemapsclickcoordiantes.png)
 
 
 6. In Minecraft, write "/tpll" then press `CTRL + V` to paste the coordinates, then press `Enter`
 
-   ![](https://media.discordapp.net/attachments/1096118472909533368/1121554927639072859/tpllminecraftedit.png?width=1664&height=905)
+   ![](tpllminecraftedit.png)
 
 
 7. After waiting for a bit, you will be teleported to your location!
 
-   ![](https://media.discordapp.net/attachments/1096118472909533368/1121555911937364049/minecraftatlocation.png?width=1692&height=905)
+   ![](minecraftatlocation.png)
 
 
 
@@ -57,51 +57,51 @@ Here is how you do it:
 
  2. Hover over Layers in the bottom-left area of your map.
 
-    ![](https://media.discordapp.net/attachments/1096118472909533368/1122972729369436291/how-to-make-google-maps-3D-layers.webp)
+    ![](https://www.groovypost.com/wp-content/uploads/2022/05/how-to-make-google-maps-3D-layers.png)
 
 
  3. Click on More.
 
-    ![](https://media.discordapp.net/attachments/1096118472909533368/1122972730472550580/how-to-make-google-maps-3D-more.webp)
+    ![](https://www.groovypost.com/wp-content/uploads/2022/05/how-to-make-google-maps-3D-more.png)
 
 
  4. Click on Satellite and ensure that Globe View is checked. You can now get an angled view by holding shift while dragging. If you still see flat buildings go down to [Without 3D data](#without-3d-data) below
 
-    ![](https://media.discordapp.net/attachments/1096118472909533368/1122972729855979670/how-to-make-google-maps-3D-globe-view.webp)
+    ![](https://www.groovypost.com/wp-content/uploads/2022/05/how-to-make-google-maps-3D-globe-view.png)
 
 
  5. Remove all nearby trees with the command `//replacenear 40 log,leaves air`
 
-    ![](https://media.discordapp.net/attachments/1096118472909533368/1123268394796462191/replacenar.png?width=1692&height=905)
+    ![](replacenar.png)
 
 
  6. Use the TPLL command you used above to teleport to each corner of the building, and make sure to place a block where you land in Minecraft.
 
-    ![](https://media.discordapp.net/attachments/1096118472909533368/1123268340715110412/bergenbuildtpllpoinjts.png?width=1793&height=905)
+    ![](buildinbergenplaintpll.png)
 
-    ![](https://media.discordapp.net/attachments/1096118472909533368/1123269034994044978/tpllinminecraft.png?width=1692&height=905)
+    ![](tpllinminecraft.png)
 
 
  7. In Minecraft, do the command `//wand`. This should give you a wooden axe
 
-    ![](https://media.discordapp.net/attachments/1096118472909533368/1123285205143277722/wandinmc.png?width=1692&height=905)
+    ![](wandinmc.png)
 
 
  8. With your axe in hand, left click one of the blocks you placed, then right click one of the blocks next to it.
 
-    ![](https://media.discordapp.net/attachments/1096118472909533368/1123290504398905404/2023-06-27_18.29.03.png?width=1255&height=671)
+    ![](selectedblock1.png)
 
-    ![](https://media.discordapp.net/attachments/1096118472909533368/1123290504906407976/2023-06-27_18.29.15.png?width=1255&height=671)
-
-
- 9. Execute the command `//line (block of choice)2` (Note: Minecraft block id's are quite different in 1.12, go to [this list](https://minecraft-ids.grahamedgecombe.com/) to see a list of id's).
-
-    ![](https://media.discordapp.net/attachments/1096118472909533368/1123291419482804384/2023-06-27_18.38.14_2.png?width=1255&height=671)
+    ![](selectedblock2.png)
 
 
-10. Now do this with all the points so that you have a full shape. To get rid of the selection box do `//desel`. Note: You might ask "Why is my building not straight? Can i rotate it to make it easier to build?". No. Most buildings are not on a straight north-south rotation, in additon to the BTE map having a weird rotation some places. This means that we have to build them diagonally, but don't worry, it's not as hard as you think. [Here is an interesting video from PippenFTS about the problem](https://www.youtube.com/watch?v=5o8Psc6FvZ4&pp=ygUYYnVpbGQgc3RyYWlnaHQgcGlwcGVuZnRz)
+ 9. Execute the command `//line (block of choice)` (Note: Minecraft block id's are quite different in 1.12, go to [this list](https://minecraft-ids.grahamedgecombe.com/) to see a list of id's).
 
-    ![](https://media.discordapp.net/attachments/1096118472909533368/1123291420346814514/2023-06-27_18.38.52.png?width=1255&height=671)
+    ![](linecommand.png)
+
+
+10. Now do this with all the points so that you have a full shape. To get rid of the selection box do `//desel`. Note: If you are wondering why the outline is not straight: Most buildings are not on a straight north-south rotation, in additon to the BTE map having a weird rotation some places. This means that we have to build them diagonally, but don't worry, it's not as hard as you think. [Here is an interesting video from PippenFTS about the problem](https://www.youtube.com/watch?v=5o8Psc6FvZ4&pp=ygUYYnVpbGQgc3RyYWlnaHQgcGlwcGVuZnRz)
+
+    ![](fulloutline.png)
 
 
 11. If your building is on varying terrain, you should place blocks under the outline so that it goes all the way to the ground. You can do this manually or with commands. To do this with world edit, make a selection surrounding the whole building, then expand it so that it reaches the top of the outline with `//expand (amount of blocks) up`. Now create a mask which makes it so commands only affect air blocks with `//gmask air`. Now do the command `//replace <(block of choice) (block of choice)` until the outline has reached the bottom.
