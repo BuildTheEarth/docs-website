@@ -104,7 +104,7 @@ Here is how you do it:
     ![](fulloutline.png)
 
 
-11. If your building is on varying terrain, you should place blocks under the outline so that it goes all the way to the ground. You can do this manually or with commands. To do this with world edit, make a selection surrounding the whole building, then expand it so that it reaches the top of the outline with `//expand (amount of blocks) up`. Now create a mask which makes it so commands only affect air blocks with `//gmask air`. Now do the command `//replace <(block of choice) (block of choice)` until the outline has reached the bottom.
+11. If your building is on varying terrain, you should extend the outline to the ground. You can do this manually or with commands. To do this with world edit, make a selection surrounding the whole building, then expand it so that it reaches the top of the outline with `//expand (amount of blocks) up`. Now do `//gmask air` to only affect air. Now do `//replace <(block of choice) (block of choice)` until the outline has reached the bottom. Note: do `//gmask` to turn off the mask.s
 
 ![](2024-01-18_20.12.30.png)
 
@@ -176,15 +176,50 @@ Here is how you do it:
 
 ## Coloring
 
-### With streetview
+It is now time to find the right blocks for your build. Follow steps for both roof and walls. There are 3 main different ways of doing so:
 
-### Without streetview
+### Mix
+
+If your building is the same blank color like the one's below, you should use a mix of blocks.
+
+(pictures of walls that are good for mixes)
+
+1. First, find blocks
+2. Use //replace
+
+### Pattern
+
+If your building is the same blank color like the one's below, you should use a mix of blocks.
+
+(pictures of walls that are good for mixes)
+
+1. First, find blocks
+2. Make pattern, copy and use //paste #copy
+
+### Gradient
+
+If your building is the same blank color like the one's below, you should use a mix of blocks.
+
+(pictures of walls that are good for mixes)
+
+1. First, find blocks
+2. Use //replace in levels
+3. Use //repl to add detail
 
 ## Adding details
 
-### With streetview
+Finally, only finishing touches. This will of course depend on your build, but below are some general things.
 
-### Without streetview
+### Building details
+
+1. Chimneys
+2. Air conditioning
+3. Signs / Advertisements
+
+### Gardens
+
+1. Mix for grass
+2. Small plants
 
 ## Constructing Roads
 
