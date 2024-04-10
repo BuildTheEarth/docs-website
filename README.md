@@ -10,13 +10,11 @@
     A Collection of useful Information about the BuildTheEarth Project
     <br/>
     <br/>
-    <a href="https://github.com/BuildTheEarth/docs-website/issues">Report Bug</a>
-    -
-    <a href="https://github.com/BuildTheEarth/docs-website/issues">Request Feature</a>
+   Archived
   </p>
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/BuildTheEarth/docs-website?color=dark-green) ![Issues](https://img.shields.io/github/issues/BuildTheEarth/docs-website)  ![License](https://img.shields.io/github/license/BuildTheEarth/docs-website) [![Website](https://img.shields.io/badge/website-visit-brightgreen)](https://docs.buildtheearth.net)
+![Contributors](https://img.shields.io/github/contributors/BuildTheEarth/docs-website?color=dark-green) ![Issues](https://img.shields.io/github/issues/BuildTheEarth/docs-website)  ![License](https://img.shields.io/github/license/BuildTheEarth/docs-website)
 
 
 ## Built With
